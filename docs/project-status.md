@@ -10,7 +10,7 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 
 ## v0.6 当前进展
 
-- 分支：`main`，v0.5 X 后台采集已合并；v0.6 正在将其升级为一次认证、多人使用的公开订阅源；
+- 分支：`main`，v0.6 公开订阅发布器已合并，提交 `c8efc11`；
 - 真实来源：OpenAI Codex、Anthropic Claude Code GitHub Release Atom；
 - Agent 核心：RunState、确定性 Planner、Tool Registry、停止条件；
 - 来源分发：GitHub Atom 可直接运行；X 由维护者授权的后台发布器统一运行；
@@ -19,7 +19,8 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 - 可观察性：每次 Planner 决策与工具调用写入 JSONL Trace；
 - 输出：Markdown 知识卡片、趋势雷达、AI Pulse 日报；
 - 订阅输出：滚动 RSS 2.0 与 JSON Feed 1.1，最多保留 200 条；
-- 评测：3/3 案例通过，平均 2.0/2。
+- 公开地址：RSS 与 JSON Feed 已由 GitHub Pages 匿名提供，首批包含 8 条真实 OpenAI/Anthropic 官方 Release；
+- 评测：42 项测试、3/3 严格评测和 GitHub Pages 构建均通过。
 - X 可靠性：`since_id` 增量读取，Feed 成功发布后才提交检查点；账号数据库与 Cookie 不进入 Git。
 
 ## 当前限制
@@ -28,13 +29,13 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 - 已实现 X 来源检查点，但尚未形成跨所有工具的通用 Resume、幂等和自动重试；
 - 6 个官方网页来源等待采集适配器；
 - X 免费路线依赖非官方接口，存在失效、限速和账号风控风险；生产仍需官方 API；
-- GitHub Pages 和发布器 Secret 尚需在仓库设置中启用，公开 Feed 当前仍是空壳；
+- GitHub Pages 已启用；X 发布器账号变量与 Cookie Secret 尚未配置，因此当前公开 Feed 先覆盖 GitHub Release；
 - Reddit 等待 OAuth 授权与采集适配器；
 - 评测集只有 3 个案例，尚不足以覆盖长期运行风险。
 
 ## 下一步
 
-1. 配置发布器账号 Secret、启用 GitHub Pages，并完成首个真实 Feed 发布。
+1. 确认是否使用现有 X 账号作为长期后台发布器；配置变量与 Cookie Secret 后完成首次 X Feed 发布。
 2. 增加模型 Planner，并与确定性 Planner 使用同一 Tool Contract 对照评测。
 3. 把 X 的来源检查点扩展为通用 Resume，并增加预算、重试与幂等。
 4. 扩展官方网页采集器，再接入 Reddit OAuth 与 X 官方 API 适配器。
