@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.4.0] - 2026-07-27
+
+- 新增 OpenAI Codex 与 Anthropic Claude Code GitHub Release Atom 真实采集器。
+- 新增 48 小时时效过滤，排除旧信号和未来时间信号；原失败案例提升为通过。
+- 新增 RunState、Tool Registry、确定性 Planner、最小 Agent Loop、停止条件与 JSONL Trace。
+- 新增来源失败处理：全部来源失败时 Run 失败，部分失败时保留 Trace 并继续。
+- 趋势判断改为至少两个独立公司/来源组合，避免同仓库连续 Release 被误判为行业趋势。
+- 评测基线提升为 3/3 通过、平均 2.0/2，CI 启用 `--strict` 发布门禁。
+- 新增真实运行样例：20 条官方 Release 中保留 2 条 48 小时内信号，0 个工具错误。
+- 测试扩展到 20 项，覆盖时效、Atom 解析、Loop、Trace、来源失败和趋势独立性。
+
 ## [0.3.0] - 2026-07-22
 
 - 新增评估优先的产品升级路径：先建立当前确定性管道基线，再引入 Agent Loop。

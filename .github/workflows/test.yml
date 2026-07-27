@@ -19,6 +19,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
       - name: Run tests
         run: python -m unittest discover -s tests -v
       - name: Run demo
@@ -28,4 +30,4 @@ jobs:
       - name: Build sample knowledge base
         run: python build_knowledge_base.py --input examples/intelligence_signals.json --output /tmp/ai-radar --date 2026-07-22
       - name: Run evaluation baseline
-        run: python evaluate_radar.py --cases evals/cases.jsonl --output /tmp/evaluation-report.md
+        run: python evaluate_radar.py --cases evals/cases.jsonl --output /tmp/evaluation-report.md --strict

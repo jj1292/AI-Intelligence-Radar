@@ -1,6 +1,6 @@
 # GitHub AI Pulse 项目运营
 
-- 当前状态：GitHub 账号 `jj1292` 有 2 个公开仓库；主运营目标确定为 `jj1292/ai-pulse-briefing-generator`，`AiLearning` 为上游 Fork，不作为主要获 Star 项目。`v0.1.0` 已通过 PR #1 合并到 `main`。
+- 当前状态：主运营仓库已重命名为 `jj1292/AI-Intelligence-Radar`，`AiLearning` 为上游 Fork，不作为主要获 Star 项目。v0.1–v0.3 已合并到 `main`。
 - 关键目标：通过真实可运行产品、持续内容产出和公开传播，提高仓库自然 Star 与可信活跃度；不采用刷 Star、互赞机器人或虚假提交。
 - 2026-07-22 诊断：主仓库当前 1 Star、16 次提交，提交集中在 2025-12-22；代码可运行，但新闻检索、过滤和摘要均为固定模拟数据。仓库缺少标准 `README.md`、License、测试、Release 和自动运行机制。
 - 2026-07-22 v0.1.0：新增 README、MIT License、Changelog、Dify 工作流升级蓝图、JSON 输入示例、单元测试和 GitHub Actions；筛选与排序已改为基于真实输入执行，默认演示数据明确标注为非实时搜索。4 项单元测试、Python 编译、示例生成和 `git diff --check` 均通过。
@@ -17,8 +17,9 @@
 - 2026-07-22 v0.3 合并：PR #4 先以 squash 方式合并，提交 `d70fb7`；随后 PR #5 重定向到 `main`。因 squash 导致堆叠分支历史分叉，已仅重建 v0.3 分支提交到最新 `main`，最终 head `c6d3a4a`，Actions run #12 成功。PR #5 已 squash 合并，`main` 提交 `6f82dc6`。
 - 独立目录决策：项目源码、架构、评测、项目状态和后续产物统一放在 `/Users/wingsjing/Documents/Codex/ai-intelligence-radar`；原 `Obsidian Vault/01_Projects/AI行业情报与知识库` 已移除，Obsidian 只保留一个位置索引，不再承载项目正文。
 - Obsidian 项目首页：`01_Projects/AI行业情报与知识库/00-项目首页.md`。未把示例假数据写入真实知识库。
-- 待跟进：GitHub 设置页的仓库重命名提交因页面连接持续超时未成功，仍需在 Settings → General 将 `ai-pulse-briefing-generator` 改为 `ai-intelligence-radar`。下一步按评测暴露的缺口实现 48 小时时效过滤并让风险案例从 `1.67` 提升到通过，再进入最小 Agent Loop。之后再配置 X Developer Project / `X_BEARER_TOKEN`、Reddit OAuth、导入脱敏 Dify DSL，并实现官方采集器、事件级去重、失败重试和可配置知识库写入。
-- 相关链接：https://github.com/jj1292/ai-pulse-briefing-generator
+- 2026-07-27 v0.4 本地完成：分支 `agent/v0.4-minimal-loop` 新增 GitHub Atom 真实采集、48 小时时效、RunState、Tool Registry、确定性 Planner、最小 Loop、停止条件和 JSONL Trace；趋势证据改按独立公司/来源计算。20 项测试通过，评测提升为 3/3、2.0/2；真实运行读取 20 条官方 Release，保留 2 条 48 小时内信号，0 个工具错误。待通过 Codex GitHub 连接器发布草稿 PR。
+- 待跟进：v0.5 增加模型 Planner、Checkpoint/Resume、重试与幂等，接入官方网页采集器，再配置 X Developer Project / `X_BEARER_TOKEN`、Reddit OAuth 和脱敏 Dify DSL。评测集从 3 个扩展到 12 个，并增加真实 Feed 回放。
+- 相关链接：https://github.com/jj1292/AI-Intelligence-Radar
 - 草稿 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/1
 - v0.2 草稿 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/2
 - README 视觉 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/3

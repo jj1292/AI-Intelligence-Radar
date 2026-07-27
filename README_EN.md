@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.3.0-7C3AED?style=for-the-badge" alt="Version v0.3.0" />
+  <img src="https://img.shields.io/badge/version-v0.4.0-7C3AED?style=for-the-badge" alt="Version v0.4.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -50,7 +50,7 @@ There is no shortage of daily information, but only a small number of signals ca
 > **The goal is not to read the entire internet for you. It is to preserve a small set of verifiable insights that remain useful over time.**
 
 > [!NOTE]
-> **Starting with v0.3, the project is evaluation-first: fixed cases expose what works and what fails before an Agent Loop is added.**
+> **v0.4 adds an observable minimal Agent Harness: live collection, a state-driven tool loop, a strict freshness gate, and JSONL traces. The first planner is deterministic and replaceable by a model planner.**
 
 ## 🌈 Current Capabilities
 
@@ -75,6 +75,16 @@ There is no shortage of daily information, but only a small number of signals ca
       <p>Require at least two independent signals before creating a trend candidate, then track changes across companies and sources.</p>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚙️ Observable Loop</h3>
+      <p>RunState controls collection, filtering, writing, and stopping; every decision and tool call is recorded in JSONL.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⏱️ 48h Freshness Gate</h3>
+      <p>Exclude stale and future-dated signals while separating repeated releases from independent trend evidence.</p>
+    </td>
+  </tr>
 </table>
 
 ## 🧩 Source Matrix
@@ -85,7 +95,7 @@ There is no shortage of daily information, but only a small number of signals ca
 | 🔵 **T2** | Official and core-team X accounts | First-hand context and distribution signals | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
 | 🟠 **T3** | Reddit AI communities | Problems, use cases, sentiment, and weak signals | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
 
-The registry contains **10 source entry points**: 8 can be monitored directly, while X and Reddit await compliant authorization. See [`config/sources.json`](config/sources.json) for details.
+The registry contains **10 source entry points**: 2 GitHub Atom sources have live collectors, 6 official web sources await adapters, and X plus Reddit await compliant authorization. See [`config/sources.json`](config/sources.json).
 
 ## 🔄 How It Works
 
@@ -125,44 +135,30 @@ See [`docs/dify-workflow.md`](docs/dify-workflow.md) for the complete design.
 
 ## ⚡ 30-Second Quick Start
 
-### 1. Validate the source registry
+### 1. Install dependencies
 
 ```bash
-python3 source_registry.py --config config/sources.json
+python3 -m pip install -r requirements.txt
 ```
 
-Expected output:
-
-```text
-sources=10 ready=8 requires_auth=2 tier1=8 tier2=1 tier3=1
-```
-
-### 2. Generate knowledge cards and the trend radar
+### 2. Run the live Radar Agent
 
 ```bash
-python3 build_knowledge_base.py \
-  --input examples/intelligence_signals.json \
-  --output /tmp/ai-intelligence-radar \
-  --date 2026-07-22
+python3 -m agent.runner --output outputs/latest-radar --hours 48
 ```
 
-### 3. Run the tests
+The run reads official OpenAI Codex and Anthropic Claude Code releases and writes cards, a trend radar, and a complete tool trace.
+
+### 3. Run tests and the strict evaluation gate
 
 ```bash
 python3 -m unittest discover -s tests -v
+python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-11%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-20%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
-### 4. Run the product evaluation
-
-```bash
-python3 evaluate_radar.py \
-  --cases evals/cases.jsonl \
-  --output evals/baseline-report.md
-```
-
-Current baseline: **3 cases, 2 passed, 1 failed, average score 1.89/2**. The known gap is that signals older than the 48-hour window are not filtered yet. See [`evals/baseline-report.md`](evals/baseline-report.md).
+Current baseline: **all 3 cases pass with an average score of 2.0/2**. The live example reads 20 official releases, keeps 2 signals inside the 48-hour window, and correctly reports that one repository alone does not establish an industry trend. See the [`trend report`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md) and [`Agent trace`](examples/output/v0.4-live-final/agent-trace-4ebf6eabfa694ed8a9ff6a246b3cd4a1.jsonl).
 
 ## 🧪 Evaluation First
 
@@ -218,9 +214,9 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 | :---: | --- | :---: |
 | `v0.1` | Runnable briefing, input contract, tests, and CI | ✅ Done |
 | `v0.2` | Source registry, intelligence schema, Obsidian cards, and trend radar | ✅ Done |
-| `v0.3` | Eval Contract, 3 baseline cases, scorer, and reproducible report | 🚧 Current |
-| `v0.4` | Fix the 48-hour freshness gap and add a controlled minimal Agent Loop | 🧭 Next |
-| `v0.5` | Official collectors, X API, Reddit OAuth, state, and checkpoint recovery | 🧭 Planned |
+| `v0.3` | Eval Contract, 3 baseline cases, scorer, and reproducible report | ✅ Done |
+| `v0.4` | GitHub Atom, 48-hour gate, RunState, minimal Loop, and Trace | 🚧 Current |
+| `v0.5` | Model planner, checkpoint/resume, official web, X, and Reddit | 🧭 Next |
 | `v1.0` | Memory, replay evaluation, periodic reviews, subscriptions, and source-quality scoring | 🌟 Vision |
 
 ## 📚 Documentation
@@ -234,6 +230,7 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 - 📡 [`Source registry`](config/sources.json)
 - 🧪 [`Evaluation rubric`](evals/rubric.md)
 - 📊 [`v0.3 baseline report`](evals/baseline-report.md)
+- 🧾 [`v0.4 live Agent trace`](examples/output/v0.4-live-final/agent-trace-4ebf6eabfa694ed8a9ff6a246b3cd4a1.jsonl)
 - 📝 [`Changelog`](CHANGELOG.md)
 
 ---

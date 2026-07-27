@@ -19,7 +19,7 @@ REQUIRED_FIELDS = {
     "status",
     "topics",
 }
-ALLOWED_STATUSES = {"ready", "requires_auth", "disabled"}
+ALLOWED_STATUSES = {"ready", "adapter_required", "requires_auth", "disabled"}
 
 
 def load_source_registry(path: Path) -> list[dict[str, Any]]:
@@ -51,10 +51,11 @@ def validate_sources(sources: list[dict[str, Any]]) -> None:
 
 def summarize_sources(sources: list[dict[str, Any]]) -> str:
     ready = sum(source["status"] == "ready" for source in sources)
+    adapter_required = sum(source["status"] == "adapter_required" for source in sources)
     gated = sum(source["status"] == "requires_auth" for source in sources)
     tiers = {tier: sum(source["source_tier"] == tier for source in sources) for tier in (1, 2, 3)}
     return (
-        f"sources={len(sources)} ready={ready} requires_auth={gated} "
+        f"sources={len(sources)} ready={ready} adapter_required={adapter_required} requires_auth={gated} "
         f"tier1={tiers[1]} tier2={tiers[2]} tier3={tiers[3]}"
     )
 

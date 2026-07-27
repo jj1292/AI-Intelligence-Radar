@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.3.0-7C3AED?style=for-the-badge" alt="Version v0.3.0" />
+  <img src="https://img.shields.io/badge/version-v0.4.0-7C3AED?style=for-the-badge" alt="Version v0.4.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -50,7 +50,7 @@
 > **目标不是替你读完互联网，而是每天留下少量、可复核、以后还能用的知识。**
 
 > [!NOTE]
-> **v0.3 开始采用评估先行：先用固定案例证明当前系统哪里可靠、哪里失败，再逐步加入 Agent Loop。**
+> **v0.4 已加入可观察的最小 Agent Harness：真实采集、状态驱动工具循环、严格时效门和 JSONL Trace。第一版使用确定性 Planner，下一阶段再接模型 Planner。**
 
 ## 🌈 当前能力
 
@@ -75,6 +75,16 @@
       <p>至少两条独立信号才进入趋势候选，并持续观察跨公司、跨来源的变化。</p>
     </td>
   </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>⚙️ Observable Loop</h3>
+      <p>RunState 驱动采集、过滤、写入和停止；每次规划与工具调用均写入 JSONL Trace。</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⏱️ 48h Freshness Gate</h3>
+      <p>默认排除 48 小时以外及未来时间信号，并将同一来源连续发布与独立趋势证据区分开。</p>
+    </td>
+  </tr>
 </table>
 
 ## 🧩 来源矩阵
@@ -85,30 +95,29 @@
 | 🔵 **T2** | 官方与核心团队 X 账号 | 一手补充、扩散信号 | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
 | 🟠 **T3** | Reddit AI 社区 | 问题、用例、情绪和弱信号 | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
 
-已注册 **10 个来源入口**：8 个可直接监控，X 和 Reddit 2 个等待合规授权。详见 [`config/sources.json`](config/sources.json)。
+已注册 **10 个来源入口**：2 个 GitHub Atom 源已实现真实采集，6 个官方网页源等待采集适配器，X 和 Reddit 2 个等待合规授权。详见 [`config/sources.json`](config/sources.json)。
 
 ## 🔄 系统如何工作
 
 ```mermaid
 flowchart LR
-    A["🏢 官方发布"] --> E["🧹 规范化与去重"]
-    B["💻 GitHub Releases"] --> E
-    C["𝕏 一手账号"] --> E
-    D["🟠 Reddit 社区"] --> E
-    E --> F["🧭 来源分级"]
-    F --> G["🧠 影响判断"]
+    A["💻 GitHub Releases"] --> E["⚙️ Agent Loop"]
+    B["🏢 官方发布"] --> E
+    C["𝕏 / Reddit"] --> E
+    E --> F["⏱️ 48h + 去重"]
+    F --> G["🧭 证据与来源门"]
     G --> H["🗂️ 情报卡片"]
     H --> I["📡 趋势雷达"]
-    I --> J["💜 Obsidian"]
+    E --> T["🧾 JSONL Trace"]
 
     classDef source fill:#EEF2FF,stroke:#6366F1,color:#312E81,stroke-width:2px;
     classDef process fill:#ECFEFF,stroke:#06B6D4,color:#164E63,stroke-width:2px;
     classDef insight fill:#F5F3FF,stroke:#8B5CF6,color:#4C1D95,stroke-width:2px;
     classDef output fill:#FAE8FF,stroke:#C026D3,color:#701A75,stroke-width:2px;
-    class A,B,C,D source;
+    class A,B,C source;
     class E,F process;
     class G,H,I insight;
-    class J output;
+    class T output;
 ```
 
 <details>
@@ -125,44 +134,30 @@ flowchart LR
 
 ## ⚡ 30 秒体验
 
-### 1. 验证来源注册表
+### 1. 安装依赖
 
 ```bash
-python3 source_registry.py --config config/sources.json
+python3 -m pip install -r requirements.txt
 ```
 
-预期输出：
-
-```text
-sources=10 ready=8 requires_auth=2 tier1=8 tier2=1 tier3=1
-```
-
-### 2. 生成知识卡片和趋势雷达
+### 2. 运行真实 Radar Agent
 
 ```bash
-python3 build_knowledge_base.py \
-  --input examples/intelligence_signals.json \
-  --output /tmp/ai-intelligence-radar \
-  --date 2026-07-22
+python3 -m agent.runner --output outputs/latest-radar --hours 48
 ```
 
-### 3. 运行测试
+运行时会读取 OpenAI Codex 与 Anthropic Claude Code 官方 Release，输出知识卡片、趋势雷达和完整工具 Trace。
+
+### 3. 运行测试与严格评测
 
 ```bash
 python3 -m unittest discover -s tests -v
+python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-11%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-20%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
-### 4. 运行产品评测
-
-```bash
-python3 evaluate_radar.py \
-  --cases evals/cases.jsonl \
-  --output evals/baseline-report.md
-```
-
-当前基线：**3 个案例，2 个通过，1 个未通过，平均分 1.89/2**。已知缺口是系统尚未过滤 48 小时窗口之外的旧信号。详见 [`evals/baseline-report.md`](evals/baseline-report.md)。
+当前基线：**3 个案例全部通过，平均分 2.0/2**。真实运行样例读取 20 条官方 Release，保留 2 条 48 小时内信号，并诚实判定“尚无两个独立来源构成趋势”。查看 [`趋势报告`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md) 与 [`Agent Trace`](examples/output/v0.4-live-final/agent-trace-4ebf6eabfa694ed8a9ff6a246b3cd4a1.jsonl)。
 
 ## 🧪 评估先行
 
@@ -218,9 +213,9 @@ ai-intelligence-radar/
 | :---: | --- | :---: |
 | `v0.1` | 可运行简报、输入契约、测试与 CI | ✅ Done |
 | `v0.2` | 来源注册表、情报 Schema、Obsidian 卡片、趋势雷达 | ✅ Done |
-| `v0.3` | Eval Contract、3 个基线案例、评分器与可复现报告 | 🚧 Current |
-| `v0.4` | 修复 48 小时时效缺口，加入受控的最小 Agent Loop | 🧭 Next |
-| `v0.5` | 官方采集器、X API、Reddit OAuth、状态与断点恢复 | 🧭 Planned |
+| `v0.3` | Eval Contract、3 个基线案例、评分器与可复现报告 | ✅ Done |
+| `v0.4` | GitHub Atom、48 小时时效、RunState、最小 Loop、Trace | 🚧 Current |
+| `v0.5` | 模型 Planner、Checkpoint/Resume、官方网页、X、Reddit | 🧭 Next |
 | `v1.0` | 记忆、回放评测、周/月复盘、主题订阅与来源质量评分 | 🌟 Vision |
 
 ## 📚 文档
@@ -234,6 +229,7 @@ ai-intelligence-radar/
 - 📡 [`来源注册表`](config/sources.json)
 - 🧪 [`评测规则`](evals/rubric.md)
 - 📊 [`v0.3 基线报告`](evals/baseline-report.md)
+- 🧾 [`v0.4 真实运行 Trace`](examples/output/v0.4-live-final/agent-trace-4ebf6eabfa694ed8a9ff6a246b3cd4a1.jsonl)
 - 📝 [`Changelog`](CHANGELOG.md)
 
 ---

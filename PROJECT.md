@@ -2,8 +2,8 @@
 type: project-home
 status: active
 project: AI Intelligence Radar
-version: 0.3.0
-updated: 2026-07-22
+version: 0.4.0
+updated: 2026-07-27
 ---
 
 # AI 行业情报与知识库
@@ -64,7 +64,7 @@ ai-intelligence-radar/
 - 至少两条独立信号才进入趋势候选；
 - X 和 Reddit 处于待合规授权状态，不绕过平台限制抓取；
 - 示例数据只用于代码验证，不写入本知识库。
-- GitHub 项目 README 已完成彩色视觉升级；完整中英文双语版本已进入 PR #4，待确认合并。
+- GitHub 项目 README 已完成彩色视觉与中英文双语升级。
 
 ### v0.3.0（评测基线）
 
@@ -73,6 +73,16 @@ ai-intelligence-radar/
 - 当前基线为 2/3 案例通过，平均 1.89/2；
 - 已明确暴露“48 小时外旧信号仍被输出”的产品缺口；
 - PR #4 与 PR #5 已依次 squash 合并；v0.3 已进入 `main`，合并提交为 `6f82dc6`，最终 Actions run #12 成功。
+
+### v0.4.0（最小 Agent Harness）
+
+- 已实现 OpenAI Codex 与 Anthropic Claude Code GitHub Atom 真实采集；
+- 已实现 48 小时时效过滤和未来时间保护；
+- 已建立 RunState、Tool Registry、确定性 Planner、停止条件和 JSONL Trace；
+- 所有来源失败时 Run 明确失败，单个来源失败时保留错误并继续；
+- 趋势门槛改为至少两个独立的公司/来源组合，避免同仓库连续发版制造虚假趋势；
+- 评测基线已提升为 3/3 通过，平均 2.0/2；
+- 真实样例读取 20 条官方 Release，保留 2 条 48 小时内信号，0 个工具错误。
 
 ## Agent 化升级构思
 
@@ -84,13 +94,13 @@ ai-intelligence-radar/
 
 ## 下一步
 
-1. 实现 48 小时时效过滤，让当前风险案例达到通过门槛。
-2. 实现可观察、可停止、可恢复的最小 Agent Loop。
-3. 接入官方 Atom 和 Release Notes 采集器，再配置 X Developer Project 和 Reddit OAuth。
-4. 导入并脱敏原 Dify DSL，完成自动调度、可配置知识库写入及周/月复盘。
-5. 把 3 个最小评测案例逐步扩展到 12 个真实案例。
+1. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
+2. 增加 Checkpoint/Resume、运行预算、重试和幂等。
+3. 接入官方 Release Notes 网页采集器，再配置 X Developer Project 和 Reddit OAuth。
+4. 导入并脱敏原 Dify DSL，完成自动调度和可配置知识库写入。
+5. 把 3 个最小评测案例扩展到 12 个，并增加真实 Feed 回放集。
 
 ## 相关项目
 
-- GitHub：https://github.com/jj1292/ai-pulse-briefing-generator
+- GitHub：https://github.com/jj1292/AI-Intelligence-Radar
 - 本地目录：`/Users/wingsjing/Documents/Codex/ai-intelligence-radar`

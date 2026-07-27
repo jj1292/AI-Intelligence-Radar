@@ -7,7 +7,7 @@ import hashlib
 import json
 import re
 from collections import Counter
-from datetime import date
+from datetime import date, datetime, time, timedelta, timezone
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -56,6 +56,41 @@ def deduplicate_signals(signals: Iterable[dict[str, Any]]) -> list[dict[str, Any
         seen_titles.add(title_key)
         unique.append(signal)
     return unique
+
+
+def parse_published_at(value: str) -> datetime:
+    normalized = value.replace("Z", "+00:00")
+    published_at = datetime.fromisoformat(normalized)
+    if published_at.tzinfo is None:
+        raise ValueError("published_at must include a timezone offset.")
+    return published_at
+
+
+def filter_signals_by_freshness(
+    signals: Iterable[dict[str, Any]],
+    as_of: datetime,
+    max_age_hours: float = 48,
+) -> list[dict[str, Any]]:
+    if as_of.tzinfo is None:
+        raise ValueError("as_of must include a timezone offset.")
+    if max_age_hours <= 0:
+        raise ValueError("max_age_hours must be greater than zero.")
+
+    cutoff = as_of.astimezone(timezone.utc) - timedelta(hours=max_age_hours)
+    upper_bound = as_of.astimezone(timezone.utc)
+    fresh: list[dict[str, Any]] = []
+    for signal in signals:
+        published_at = parse_published_at(signal["published_at"]).astimezone(timezone.utc)
+        if cutoff <= published_at <= upper_bound:
+            fresh.append(signal)
+    return fresh
+
+
+def _default_as_of(signals: list[dict[str, Any]], report_date: date) -> datetime:
+    tz = timezone.utc
+    if signals:
+        tz = parse_published_at(signals[0]["published_at"]).tzinfo or timezone.utc
+    return datetime.combine(report_date, time.max, tzinfo=tz)
 
 
 def _yaml_text(value: str) -> str:
@@ -116,9 +151,16 @@ def render_knowledge_card(signal: dict[str, Any], card_date: date) -> str:
 
 
 def render_trend_report(signals: list[dict[str, Any]], report_date: date) -> str:
-    topic_counts = Counter(topic for signal in signals for topic in signal["topics"])
     company_counts = Counter(signal["company"] for signal in signals)
-    trend_topics = [(topic, count) for topic, count in topic_counts.most_common() if count >= 2]
+    topic_sources: dict[str, set[tuple[str, str]]] = {}
+    for signal in signals:
+        source_key = (signal["company"], signal["source_name"])
+        for topic in signal["topics"]:
+            topic_sources.setdefault(topic, set()).add(source_key)
+    trend_topics = sorted(
+        ((topic, len(sources)) for topic, sources in topic_sources.items() if len(sources) >= 2),
+        key=lambda item: (-item[1], item[0]),
+    )
 
     lines = [
         "---",
@@ -134,7 +176,7 @@ def render_trend_report(signals: list[dict[str, Any]], report_date: date) -> str
     ]
     if trend_topics:
         for topic, count in trend_topics:
-            lines.append(f"- **{topic}**：出现 {count} 条独立信号，进入持续观察列表。")
+            lines.append(f"- **{topic}**：出现 {count} 个独立来源，进入持续观察列表。")
     else:
         lines.append("- 暂无达到两条独立信号的趋势候选，避免把单条新闻误判成趋势。")
 
@@ -161,8 +203,17 @@ def render_trend_report(signals: list[dict[str, Any]], report_date: date) -> str
     return "\n".join(lines)
 
 
-def build_knowledge_base(signals: list[dict[str, Any]], output_dir: Path, report_date: date) -> dict[str, Any]:
-    unique = deduplicate_signals(signals)
+def build_knowledge_base(
+    signals: list[dict[str, Any]],
+    output_dir: Path,
+    report_date: date,
+    *,
+    as_of: datetime | None = None,
+    max_age_hours: float = 48,
+) -> dict[str, Any]:
+    effective_as_of = as_of or _default_as_of(signals, report_date)
+    fresh = filter_signals_by_freshness(signals, effective_as_of, max_age_hours)
+    unique = deduplicate_signals(fresh)
     cards_dir = output_dir / "signals" / report_date.isoformat()
     trends_dir = output_dir / "trends"
     cards_dir.mkdir(parents=True, exist_ok=True)
@@ -176,7 +227,14 @@ def build_knowledge_base(signals: list[dict[str, Any]], output_dir: Path, report
 
     trend_path = trends_dir / f"{report_date.isoformat()}-trend-radar.md"
     trend_path.write_text(render_trend_report(unique, report_date), encoding="utf-8")
-    return {"received": len(signals), "written": len(card_paths), "cards": card_paths, "trend": trend_path}
+    return {
+        "received": len(signals),
+        "fresh": len(fresh),
+        "freshness_excluded": len(signals) - len(fresh),
+        "written": len(card_paths),
+        "cards": card_paths,
+        "trend": trend_path,
+    }
 
 
 def main() -> None:
@@ -184,9 +242,20 @@ def main() -> None:
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--date", default=date.today().isoformat(), help="YYYY-MM-DD")
+    parser.add_argument("--as-of", help="ISO 8601 timestamp with timezone; defaults to end of --date")
+    parser.add_argument("--max-age-hours", type=float, default=48)
     args = parser.parse_args()
-    result = build_knowledge_base(load_signals(args.input), args.output, date.fromisoformat(args.date))
-    print(f"received={result['received']} written={result['written']}")
+    result = build_knowledge_base(
+        load_signals(args.input),
+        args.output,
+        date.fromisoformat(args.date),
+        as_of=datetime.fromisoformat(args.as_of.replace("Z", "+00:00")) if args.as_of else None,
+        max_age_hours=args.max_age_hours,
+    )
+    print(
+        f"received={result['received']} fresh={result['fresh']} "
+        f"excluded={result['freshness_excluded']} written={result['written']}"
+    )
     print(f"trend={result['trend']}")
 
 

@@ -75,7 +75,13 @@ def evaluate_case(case: dict[str, Any], workspace: Path) -> dict[str, Any]:
     expectations = case.get("expectations", {})
     evaluation_time = datetime.fromisoformat(case["evaluation_time"])
     output_dir = workspace / case["id"]
-    result = build_knowledge_base(case["signals"], output_dir, evaluation_time.date())
+    result = build_knowledge_base(
+        case["signals"],
+        output_dir,
+        evaluation_time.date(),
+        as_of=evaluation_time,
+        max_age_hours=expectations.get("max_age_hours", 48),
+    )
     card_texts = [path.read_text(encoding="utf-8") for path in result["cards"]]
     trend_text = result["trend"].read_text(encoding="utf-8")
     actual_trends = _detected_trends(trend_text)
