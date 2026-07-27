@@ -194,6 +194,56 @@ class AgentRunnerTests(unittest.TestCase):
         self.assertEqual(state.stop_reason, "tool_failure")
         self.assertEqual(committed, [])
 
+    def test_loop_publishes_feed_before_committing_checkpoint(self):
+        committed = []
+
+        def collector(_source):
+            return CollectionBatch(
+                [make_signal("https://example.com/fresh", "2026-07-27T08:00:00+08:00")],
+                lambda: committed.append("done"),
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            state = run_radar_agent(
+                [make_source()],
+                root / "run",
+                as_of=datetime.fromisoformat("2026-07-27T12:00:00+08:00"),
+                collector=collector,
+                feed_output_dir=root / "public",
+            )
+
+            self.assertTrue(Path(state.result["feed"]["rss"]).exists())
+            self.assertTrue(Path(state.result["feed"]["json"]).exists())
+        self.assertEqual(state.status, "completed")
+        self.assertEqual(committed, ["done"])
+
+    def test_loop_does_not_commit_checkpoint_when_feed_publish_fails(self):
+        committed = []
+
+        def collector(_source):
+            return CollectionBatch(
+                [make_signal("https://example.com/fresh", "2026-07-27T08:00:00+08:00")],
+                lambda: committed.append("done"),
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            with patch(
+                "agent.runner.write_subscription_feeds",
+                side_effect=OSError("feed unavailable"),
+            ):
+                state = run_radar_agent(
+                    [make_source()],
+                    Path(directory) / "run",
+                    as_of=datetime.fromisoformat("2026-07-27T12:00:00+08:00"),
+                    collector=collector,
+                    feed_output_dir=Path(directory) / "public",
+                )
+
+        self.assertEqual(state.status, "failed")
+        self.assertEqual(state.stop_reason, "tool_failure")
+        self.assertEqual(committed, [])
+
 
 if __name__ == "__main__":
     unittest.main()

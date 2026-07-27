@@ -1,6 +1,8 @@
-# X 本地订阅适配器
+# X 后台采集适配器
 
-`v0.5` 使用 [`twscrape`](https://github.com/vladkens/twscrape) 在本机读取 X 搜索结果。这是一条免费的实验路线，不是 X 官方 API。它适合个人学习和低频验证，不适合作为需要稳定 SLA 的生产采集服务。
+`v0.5` 使用 [`twscrape`](https://github.com/vladkens/twscrape) 在采集端读取 X 搜索结果。这是一条免费的实验路线，不是 X 官方 API。它适合个人学习和低频验证，不适合作为需要稳定 SLA 的生产采集服务。
+
+该账号只服务后台发布器。普通订阅者直接读取公开 RSS/JSON，不需要执行本页的任何账号设置。托管发布方式见 [`公开订阅发布器`](../deployment/subscription-publisher.md)。
 
 ## 它订阅什么
 

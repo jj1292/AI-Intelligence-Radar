@@ -97,6 +97,11 @@
     "url": "https://x.com/search",
     "status": "requires_auth",
     "auth_env": ["X_TWSCRAPE_DB"],
+    "publisher_auth_env": [
+      "X_ACCOUNT_USERNAME",
+      "X_COOKIE_AUTH_TOKEN",
+      "X_COOKIE_CT0"
+    ],
     "query": "(from:OpenAI OR from:OpenAIDevs OR from:AnthropicAI OR from:GoogleDeepMind OR from:GoogleAI) -is:retweet -is:reply has:links",
     "max_results": 100,
     "author_companies": {
@@ -109,7 +114,7 @@
     "official_api_url": "https://api.x.com/2/tweets/search/recent",
     "official_auth_env": ["X_BEARER_TOKEN"],
     "topics": ["models", "agents", "research", "products"],
-    "notes": "Experimental local adapter. Use a dedicated X account; keep cookies outside Git and fall back to the official API for production stability."
+    "notes": "Experimental backend publisher adapter. One maintainer account collects for the public RSS/JSON feeds; subscribers never provide credentials. Use a dedicated account and the official API for production stability."
   },
   {
     "id": "reddit_ai_communities",

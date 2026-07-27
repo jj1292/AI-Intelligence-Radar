@@ -16,6 +16,7 @@ from build_knowledge_base import (
     filter_signals_by_freshness,
 )
 from reporters.daily_briefing import write_daily_briefing
+from reporters.subscription_feed import write_subscription_feeds
 from runtime.event_log import JsonlTracer
 from source_registry import load_source_registry
 from tools.collection import CollectionBatch
@@ -73,6 +74,8 @@ def run_radar_agent(
     objective: str = "Collect recent AI signals and build a traceable radar report.",
     collector: Collector | None = None,
     source_dispatcher: SourceDispatcher | None = None,
+    feed_output_dir: Path | None = None,
+    feed_max_items: int = 200,
     trace_path: Path | None = None,
     max_steps: int = 20,
 ) -> RunState:
@@ -129,6 +132,15 @@ def run_radar_agent(
             state.as_of.date(),
         ),
     )
+    if feed_output_dir is not None:
+        registry.register(
+            "write_feed",
+            lambda: write_subscription_feeds(
+                state.filtered_signals,
+                feed_output_dir,
+                max_items=feed_max_items,
+            ),
+        )
     registry.register("commit_checkpoints", commit_checkpoints)
 
     state.status = "running"
@@ -202,11 +214,20 @@ def run_radar_agent(
             observation_summary = state.result
         elif action.name == "write_briefing":
             state.result["briefing"] = str(observation)
-            state.phase = "checkpoint"
+            state.phase = "feed" if feed_output_dir is not None else "checkpoint"
             observation_summary = {
                 "briefing": str(observation),
                 "signals": len(state.filtered_signals),
             }
+        elif action.name == "write_feed":
+            state.result["feed"] = {
+                "rss": str(observation["rss"]),
+                "json": str(observation["json"]),
+                "items": observation["items"],
+                "added": observation["added"],
+            }
+            state.phase = "checkpoint"
+            observation_summary = state.result["feed"]
         elif action.name == "commit_checkpoints":
             state.result["checkpoints_committed"] = observation
             state.phase = "stop"
@@ -238,6 +259,8 @@ def main() -> None:
     parser.add_argument("--config", type=Path, default=Path("config/sources.json"))
     parser.add_argument("--output", type=Path, default=Path("outputs/latest-radar"))
     parser.add_argument("--trace", type=Path)
+    parser.add_argument("--feed-output", type=Path)
+    parser.add_argument("--feed-max-items", type=int, default=200)
     parser.add_argument("--source", action="append", dest="source_ids")
     parser.add_argument("--hours", type=float, default=48)
     parser.add_argument("--as-of", default=datetime.now().astimezone().isoformat(timespec="seconds"))
@@ -259,6 +282,8 @@ def main() -> None:
         as_of=datetime.fromisoformat(args.as_of.replace("Z", "+00:00")),
         max_age_hours=args.hours,
         source_dispatcher=dispatcher,
+        feed_output_dir=args.feed_output,
+        feed_max_items=args.feed_max_items,
         trace_path=args.trace,
         max_steps=args.max_steps,
     )
@@ -271,6 +296,8 @@ def main() -> None:
         print(f"trend={state.result['trend']}")
     if state.result.get("briefing"):
         print(f"briefing={state.result['briefing']}")
+    if state.result.get("feed"):
+        print(f"feed={state.result['feed']['rss']}")
     for error in state.errors:
         print(f"error={error}")
     if state.status != "completed":

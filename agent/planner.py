@@ -26,6 +26,8 @@ class DeterministicPlanner:
             return Action("write_report")
         if state.phase == "briefing":
             return Action("write_briefing")
+        if state.phase == "feed":
+            return Action("write_feed")
         if state.phase == "checkpoint":
             return Action("commit_checkpoints")
         return Action("stop", {"reason": state.stop_reason or "pipeline_complete"})

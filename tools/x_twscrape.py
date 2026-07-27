@@ -18,6 +18,9 @@ from tools.collection import CollectionBatch
 
 STATE_DIR_ENV = "RADAR_STATE_DIR"
 ACCOUNT_DB_ENV = "X_TWSCRAPE_DB"
+ACCOUNT_USERNAME_ENV = "X_ACCOUNT_USERNAME"
+AUTH_TOKEN_ENV = "X_COOKIE_AUTH_TOKEN"
+CSRF_TOKEN_ENV = "X_COOKIE_CT0"
 DEFAULT_STATE_DIR = Path.home() / ".ai-intelligence-radar"
 AsyncTweetFetcher = Callable[[str, Path, int], Awaitable[list[Any]]]
 
@@ -38,6 +41,25 @@ def resolve_checkpoint_path(
     environ: Mapping[str, str] | None = None,
 ) -> Path:
     return resolve_state_dir(environ) / "checkpoints" / f"{source_id}.json"
+
+
+def setup_values_from_env(environ: Mapping[str, str] | None = None) -> tuple[str, str]:
+    env = os.environ if environ is None else environ
+    username = env.get(ACCOUNT_USERNAME_ENV, "").strip().lstrip("@")
+    auth_token = env.get(AUTH_TOKEN_ENV, "").strip()
+    csrf_token = env.get(CSRF_TOKEN_ENV, "").strip()
+    missing = [
+        name
+        for name, value in (
+            (ACCOUNT_USERNAME_ENV, username),
+            (AUTH_TOKEN_ENV, auth_token),
+            (CSRF_TOKEN_ENV, csrf_token),
+        )
+        if not value
+    ]
+    if missing:
+        raise ValueError(f"Missing X publisher settings: {', '.join(missing)}")
+    return username, f"auth_token={auth_token}; ct0={csrf_token}"
 
 
 def load_since_id(path: Path) -> int | None:
@@ -264,6 +286,10 @@ def main() -> None:
         action="store_true",
         help="Replace cookies for an account that is already configured",
     )
+    subparsers.add_parser(
+        "setup-env",
+        help="Configure the publisher account from CI environment variables",
+    )
     subparsers.add_parser("status", help="Show account status without exposing cookies")
     subparsers.add_parser("paths", help="Show local state paths")
     args = parser.parse_args()
@@ -286,6 +312,17 @@ def main() -> None:
             f"X account @{args.username} is stored and enabled in {account_db}. "
             "Run an X collection to verify the cookies online."
         )
+        return
+
+    if args.command == "setup-env":
+        try:
+            username, cookies = setup_values_from_env()
+        except ValueError as exc:
+            raise SystemExit(str(exc)) from exc
+        active = asyncio.run(_setup_account(username, account_db, cookies, replace=True))
+        if not active:
+            raise SystemExit("The X publisher account was stored but is not enabled.")
+        print(f"X publisher account @{username} is stored and enabled in {account_db}.")
         return
 
     accounts = asyncio.run(_account_status(account_db))

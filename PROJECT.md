@@ -2,7 +2,7 @@
 type: project-home
 status: active
 project: AI Intelligence Radar
-version: 0.5.0
+version: 0.6.0
 updated: 2026-07-27
 ---
 
@@ -27,7 +27,7 @@ updated: 2026-07-27
               ↓
 Agent Loop：采集 → 时效/去重 → 证据门 → 输出 → 停止
               ↓
- 情报卡片 + 趋势雷达 + AI Pulse 日报 + JSONL Trace
+ 情报卡片 + 趋势雷达 + AI Pulse 日报 + RSS/JSON + JSONL Trace
 ```
 
 ## 来源等级
@@ -88,7 +88,7 @@ ai-intelligence-radar/
 - 评测基线已提升为 3/3 通过，平均 2.0/2；
 - 真实样例读取 20 条官方 Release，保留 2 条 48 小时内信号，0 个工具错误。
 
-### v0.5.0（本地 X 订阅）
+### v0.5.0（X 后台采集）
 
 - 已实现按 `collection_mode` 分发 GitHub Atom 与 X 采集器；
 - 已接入 `twscrape` 本地 Cookie 授权，凭证默认保存在用户主目录，不进入项目仓库；
@@ -96,6 +96,15 @@ ai-intelligence-radar/
 - 已实现 `since_id` 增量检查点，且只在卡片、趋势和日报成功生成后提交；
 - 已支持账号状态检查和 Cookie 过期后的显式重新授权；
 - 免费路线用于个人低频实验，生产稳定性仍以 X 官方 API 为准。
+
+### v0.6.0（公开订阅发布器）
+
+- 将 X 账号认证从订阅者入口移到后台采集层；
+- 已实现滚动 RSS 2.0 和 JSON Feed 1.1，最多保留 200 条并按链接去重；
+- Feed 发布已纳入 Agent Loop，成功后才提交来源检查点；
+- 已增加 GitHub Actions 定时发布器，维护者配置一次，普通用户直接订阅公开 URL；
+- 后台缺少 Secret 时安全跳过，不打印或提交 Cookie；
+- 公开 Feed 数据由 GitHub Pages `/docs` 目录提供。
 
 ## Agent 化升级构思
 
@@ -107,11 +116,12 @@ ai-intelligence-radar/
 
 ## 下一步
 
-1. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
-2. 将 X 的来源检查点扩展为通用 Checkpoint/Resume，并增加运行预算、重试和幂等。
-3. 接入官方 Release Notes 网页采集器和 Reddit OAuth；生产 X 采集保留官方 API 适配位。
-4. 导入并脱敏原 Dify DSL，作为可视化编排与框架对照适配器。
-5. 把 3 个最小评测案例扩展到 12 个，并增加真实 Feed 回放集。
+1. 完成发布器账号 Secret 和 GitHub Pages 的一次性仓库配置，跑通首个真实公开 Feed。
+2. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
+3. 将 X 的来源检查点扩展为通用 Checkpoint/Resume，并增加运行预算、重试和幂等。
+4. 接入官方 Release Notes 网页采集器和 Reddit OAuth；生产 X 采集保留官方 API 适配位。
+5. 导入并脱敏原 Dify DSL，作为可视化编排与框架对照适配器。
+6. 把 3 个最小评测案例扩展到 12 个，并增加真实 Feed 回放集。
 
 ## 相关项目
 

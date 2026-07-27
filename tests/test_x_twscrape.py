@@ -10,6 +10,7 @@ from tools.x_twscrape import (
     collect_x_posts_async,
     load_since_id,
     normalize_x_tweet,
+    setup_values_from_env,
 )
 
 
@@ -131,6 +132,26 @@ class XTwscrapeTests(unittest.IsolatedAsyncioTestCase):
             checkpoint.write_text(json.dumps({"since_id": "not-a-number"}), encoding="utf-8")
             with self.assertRaisesRegex(ValueError, "Invalid X checkpoint"):
                 load_since_id(checkpoint)
+
+    def test_reads_publisher_setup_from_environment_without_exposing_values(self):
+        username, cookies = setup_values_from_env(
+            {
+                "X_ACCOUNT_USERNAME": "@radar-publisher",
+                "X_COOKIE_AUTH_TOKEN": "secret-auth",
+                "X_COOKIE_CT0": "secret-csrf",
+            }
+        )
+        self.assertEqual(username, "radar-publisher")
+        self.assertEqual(cookies, "auth_token=secret-auth; ct0=secret-csrf")
+
+    def test_requires_all_publisher_environment_values(self):
+        with self.assertRaisesRegex(ValueError, "X_COOKIE_CT0"):
+            setup_values_from_env(
+                {
+                    "X_ACCOUNT_USERNAME": "publisher",
+                    "X_COOKIE_AUTH_TOKEN": "secret-auth",
+                }
+            )
 
 
 if __name__ == "__main__":
