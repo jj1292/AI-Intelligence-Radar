@@ -10,7 +10,7 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 
 ## v0.4 当前进展
 
-- 分支：`agent/v0.4-minimal-loop`；
+- 分支：`main`，v0.4 已合并并完成 GitHub Actions 验证；
 - 真实来源：OpenAI Codex、Anthropic Claude Code GitHub Release Atom；
 - Agent 核心：RunState、确定性 Planner、Tool Registry、停止条件；
 - 工具步骤：`collect_source`、`filter_signals`、`write_report`、`write_briefing`；
@@ -29,11 +29,10 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 
 ## 下一步
 
-1. 将 v0.4 通过 PR 合并到 `main`，让默认首页与当前 Agent 实现一致。
-2. 增加模型 Planner，并与确定性 Planner 使用同一 Tool Contract 对照评测。
-3. 增加 Checkpoint/Resume、预算、重试与幂等。
-4. 扩展官方网页采集器，再接入 X 和 Reddit。
-5. 将评测集扩展到 12 个案例并加入固定 Feed 回放。
+1. 增加模型 Planner，并与确定性 Planner 使用同一 Tool Contract 对照评测。
+2. 增加 Checkpoint/Resume、预算、重试与幂等。
+3. 扩展官方网页采集器，再接入 X 和 Reddit。
+4. 将评测集扩展到 12 个案例并加入固定 Feed 回放。
 
 ## 项目边界
 
