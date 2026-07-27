@@ -9,6 +9,9 @@
 - 趋势判断改为至少两个独立公司/来源组合，避免同仓库连续 Release 被误判为行业趋势。
 - 评测基线提升为 3/3 通过、平均 2.0/2，CI 启用 `--strict` 发布门禁。
 - 新增真实运行样例：20 条官方 Release 中保留 2 条 48 小时内信号，0 个工具错误。
+- 将 AI Pulse 从独立 Demo 迁移为 Agent Loop 的 `write_briefing` 输出工具，直接消费统一 Intelligence Signal。
+- 清理根目录旧 AI Pulse 材料与旧新闻数据结构，新增项目演进史；Dify 调整为可选适配器。
+- Markdown 成为默认可移植输出，Obsidian 调整为可选阅读端，不再与项目代码目录绑定。
 - 测试扩展到 20 项，覆盖时效、Atom 解析、Loop、Trace、来源失败和趋势独立性。
 
 ## [0.3.0] - 2026-07-22

@@ -25,14 +25,14 @@
   <img src="https://img.shields.io/badge/Google-Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini" />
   <img src="https://img.shields.io/badge/X-Signals-111827?style=flat-square&logo=x&logoColor=white" alt="X Signals" />
   <img src="https://img.shields.io/badge/Reddit-Community-FF4500?style=flat-square&logo=reddit&logoColor=white" alt="Reddit Community" />
-  <img src="https://img.shields.io/badge/Obsidian-Knowledge-7C3AED?style=flat-square&logo=obsidian&logoColor=white" alt="Obsidian Knowledge Base" />
+  <img src="https://img.shields.io/badge/Markdown-Knowledge-0F766E?style=flat-square&logo=markdown&logoColor=white" alt="Markdown Knowledge Base" />
 </p>
 
 <p align="center">
   <a href="#-为什么做这个项目">为什么</a> ·
   <a href="#-系统如何工作">工作流</a> ·
   <a href="#-30-秒体验">快速开始</a> ·
-  <a href="#-知识库输出">知识库</a> ·
+  <a href="#-输出目录">输出</a> ·
   <a href="#%EF%B8%8F-roadmap">Roadmap</a>
 </p>
 
@@ -68,7 +68,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3>🗂️ Knowledge Cards</h3>
-      <p>自动输出 Obsidian Markdown，保留时间、公司、主题、短证据和影响判断。</p>
+      <p>输出可移植 Markdown，保留时间、公司、主题、短证据和影响判断，可选用 Obsidian 阅读。</p>
     </td>
     <td width="50%" valign="top">
       <h3>📡 Trend Detection</h3>
@@ -78,7 +78,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3>⚙️ Observable Loop</h3>
-      <p>RunState 驱动采集、过滤、写入和停止；每次规划与工具调用均写入 JSONL Trace。</p>
+      <p>RunState 驱动采集、过滤、报告、日报和停止；每次规划与工具调用均写入 JSONL Trace。</p>
     </td>
     <td width="50%" valign="top">
       <h3>⏱️ 48h Freshness Gate</h3>
@@ -107,7 +107,8 @@ flowchart LR
     E --> F["⏱️ 48h + 去重"]
     F --> G["🧭 证据与来源门"]
     G --> H["🗂️ 情报卡片"]
-    H --> I["📡 趋势雷达"]
+    G --> I["📡 趋势雷达"]
+    G --> J["📰 AI Pulse 日报"]
     E --> T["🧾 JSONL Trace"]
 
     classDef source fill:#EEF2FF,stroke:#6366F1,color:#312E81,stroke-width:2px;
@@ -116,21 +117,11 @@ flowchart LR
     classDef output fill:#FAE8FF,stroke:#C026D3,color:#701A75,stroke-width:2px;
     class A,B,C source;
     class E,F process;
-    class G,H,I insight;
-    class T output;
+    class G insight;
+    class H,I,J,T output;
 ```
 
-<details>
-<summary><strong>查看 Dify 节点设计</strong></summary>
-
-```text
-定时触发 → 来源路由 → 多平台采集 → 规范化 → 事件去重
-         → LLM 重要性判断 → 证据门 → 知识导出 → 每日简报
-```
-
-完整设计见 [`docs/dify-workflow.md`](docs/dify-workflow.md)。
-
-</details>
+**AI Pulse 是 Radar Agent 生成的日报格式，不是第二个项目。** Dify 可用于可视化编排和框架对照，详见 [`Dify 可选适配器`](docs/adapters/dify.md)。
 
 ## ⚡ 30 秒体验
 
@@ -146,7 +137,7 @@ python3 -m pip install -r requirements.txt
 python3 -m agent.runner --output outputs/latest-radar --hours 48
 ```
 
-运行时会读取 OpenAI Codex 与 Anthropic Claude Code 官方 Release，输出知识卡片、趋势雷达和完整工具 Trace。
+运行时会读取 OpenAI Codex 与 Anthropic Claude Code 官方 Release，输出知识卡片、趋势雷达、AI Pulse 日报和完整工具 Trace。
 
 ### 3. 运行测试与严格评测
 
@@ -157,7 +148,7 @@ python3 evaluate_radar.py --strict
 
 ![tests](https://img.shields.io/badge/tests-20%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
-当前基线：**3 个案例全部通过，平均分 2.0/2**。真实运行样例读取 20 条官方 Release，保留 2 条 48 小时内信号，并诚实判定“尚无两个独立来源构成趋势”。查看 [`趋势报告`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md) 与 [`Agent Trace`](examples/output/v0.4-live-final/agent-trace-4ebf6eabfa694ed8a9ff6a246b3cd4a1.jsonl)。
+当前基线：**3 个案例全部通过，平均分 2.0/2**。真实运行样例读取 20 条官方 Release，保留 2 条 48 小时内信号，并诚实判定“尚无两个独立来源构成趋势”。查看 [`趋势报告`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md)、[`AI Pulse 日报`](examples/output/v0.4-live-final/briefings/2026-07-27-ai-pulse.md) 与 [`Agent Trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl)。
 
 ## 🧪 评估先行
 
@@ -174,7 +165,7 @@ AI 产品不能只看一次输出是否“像样”。本项目从六个维度�
 
 每项使用 `0 / 1 / 2` 三档评分，并设置来源混淆、链接缺失、编造证据、凭证泄露和越权操作等一票否决项。完整规则见 [`evals/rubric.md`](evals/rubric.md)。
 
-## 💜 知识库输出
+## 💜 输出目录
 
 ```text
 ai-intelligence-radar/
@@ -183,9 +174,14 @@ ai-intelligence-radar/
 │       ├── openai-xxxxxxxxxx.md
 │       ├── anthropic-xxxxxxxxxx.md
 │       └── community-xxxxxxxxxx.md
-└── trends/
-    └── 2026-07-22-trend-radar.md
+├── trends/
+│   └── 2026-07-22-trend-radar.md
+├── briefings/
+│   └── 2026-07-22-ai-pulse.md
+└── agent-trace-xxxxxxxx.jsonl
 ```
+
+Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是可选阅读端，不是项目代码存放位置。
 
 每张卡片固定包含：
 
@@ -211,10 +207,10 @@ ai-intelligence-radar/
 
 | 版本 | 主题 | 状态 |
 | :---: | --- | :---: |
-| `v0.1` | 可运行简报、输入契约、测试与 CI | ✅ Done |
-| `v0.2` | 来源注册表、情报 Schema、Obsidian 卡片、趋势雷达 | ✅ Done |
+| `v0.1` | AI Pulse 简报原型、输入契约、测试与 CI | ✅ Done |
+| `v0.2` | 来源注册表、情报 Schema、Markdown 卡片、趋势雷达 | ✅ Done |
 | `v0.3` | Eval Contract、3 个基线案例、评分器与可复现报告 | ✅ Done |
-| `v0.4` | GitHub Atom、48 小时时效、RunState、最小 Loop、Trace | 🚧 Current |
+| `v0.4` | GitHub Atom、48 小时时效、RunState、最小 Loop、AI Pulse 输出、Trace | 🚧 Current |
 | `v0.5` | 模型 Planner、Checkpoint/Resume、官方网页、X、Reddit | 🧭 Next |
 | `v1.0` | 记忆、回放评测、周/月复盘、主题订阅与来源质量评分 | 🌟 Vision |
 
@@ -224,12 +220,13 @@ ai-intelligence-radar/
 - 📘 [`v0.2 PRD`](docs/PRD-AI-Intelligence-Radar-v0.2.md)
 - 🧠 [`Agent Harness 架构构思`](docs/agent-harness-architecture.md)
 - 🎯 [`AI 产品评估与 Agent 评测指南`](docs/ai-product-evaluation-guide.md)
-- 🔄 [`Dify 工作流蓝图`](docs/dify-workflow.md)
+- 🔌 [`Dify 可选适配器`](docs/adapters/dify.md)
+- 🧭 [`从 AI Pulse 到 Radar`](docs/history/from-ai-pulse-to-radar.md)
 - 🧩 [`情报信号 Schema`](schemas/intelligence-signal.schema.json)
 - 📡 [`来源注册表`](config/sources.json)
 - 🧪 [`评测规则`](evals/rubric.md)
 - 📊 [`v0.3 基线报告`](evals/baseline-report.md)
-- 🧾 [`v0.4 真实运行 Trace`](examples/output/v0.4-live-final/agent-trace-4ebf6eabfa694ed8a9ff6a246b3cd4a1.jsonl)
+- 🧾 [`v0.4 真实运行 Trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl)
 - 📝 [`Changelog`](CHANGELOG.md)
 
 ---
@@ -239,7 +236,7 @@ ai-intelligence-radar/
 </p>
 
 <p align="center">
-  Built with <strong>Dify</strong> · <strong>Python</strong> · <strong>Obsidian</strong>
+  Built with <strong>Python</strong> · <strong>Agent Loop</strong> · <strong>JSONL</strong> · <strong>Markdown</strong>
 </p>
 
 <p align="center">

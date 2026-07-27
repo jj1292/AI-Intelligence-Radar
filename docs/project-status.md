@@ -1,27 +1,45 @@
-# GitHub AI Pulse 项目运营
+# AI Intelligence Radar 项目状态
 
-- 当前状态：主运营仓库已重命名为 `jj1292/AI-Intelligence-Radar`，`AiLearning` 为上游 Fork，不作为主要获 Star 项目。v0.1–v0.3 已合并到 `main`。
-- 关键目标：通过真实可运行产品、持续内容产出和公开传播，提高仓库自然 Star 与可信活跃度；不采用刷 Star、互赞机器人或虚假提交。
-- 2026-07-22 诊断：主仓库当前 1 Star、16 次提交，提交集中在 2025-12-22；代码可运行，但新闻检索、过滤和摘要均为固定模拟数据。仓库缺少标准 `README.md`、License、测试、Release 和自动运行机制。
-- 2026-07-22 v0.1.0：新增 README、MIT License、Changelog、Dify 工作流升级蓝图、JSON 输入示例、单元测试和 GitHub Actions；筛选与排序已改为基于真实输入执行，默认演示数据明确标注为非实时搜索。4 项单元测试、Python 编译、示例生成和 `git diff --check` 均通过。
-- 2026-07-22 发布：用户完成 ChatGPT Codex Connector 安装并仅授权目标仓库；通过连接器创建远端分支和单一提交 `8f98b7b`，创建草稿 PR #1（9 个文件，479 additions / 143 deletions）。GitHub Actions `test` run #1 已完成且成功，PR 当前可合并。
-- 2026-07-22 合并：JOJO 确认后，将 PR #1 标记为 ready 并 squash 合并；合并提交 `4fddc48`。远端复核确认 PR 已 merged，`main` 分支新版 README 已生效。
-- 2026-07-22 v0.2 升级：项目定位升级为 AI Intelligence Radar，从每日简报扩展为“一手来源—情报信号—知识卡片—趋势雷达—Obsidian”的个人认知系统。新增 10 个来源入口（8 ready、X/Reddit 2 requires_auth）、T1/T2/T3 来源分级、Intelligence Signal Schema、Obsidian 卡片与趋势生成器、PRD 和 Dify 蓝图；本地 8 项测试通过，官方 Codex/Claude Code Atom 源返回 HTTP 200。
-- 草稿 PR #2：`https://github.com/jj1292/ai-pulse-briefing-generator/pull/2`，分支 `agent/ai-intelligence-radar-v0.2`，提交 `7cbf212`，12 个文件；GitHub Actions run #3 成功，PR 可合并，等待 JOJO 确认。
-- 2026-07-22 v0.2 合并：JOJO 确认后将 PR #2 squash 合并到 `main`，合并提交 `67a0d79`。
-- 2026-07-22 README 视觉合并：PR #3 已 squash 合并到 `main`，合并提交 `e53f951`；新增紫—蓝—青 Hero SVG、彩色状态徽章、Codex/Claude/Gemini/X/Reddit/Obsidian 图标标签、彩色 Mermaid 流程、来源矩阵和 Roadmap。
-- README 双语与命名统一：`README.md` 保持完整简体中文版，新增完整英文版 `README_EN.md`，两份文件顶部可互相切换且视觉结构一致；产品显示名统一为 `AI Intelligence Radar`，仓库目标名称为 `ai-intelligence-radar`，README 徽章链接已预先更新。草稿 PR #4：`https://github.com/jj1292/ai-pulse-briefing-generator/pull/4`，最新提交 `a3878ad`；仅涉及两份 README，本地 8 项测试与远端 Actions run #8 均成功，PR 可合并。
-- Agent Harness 新目标：JOJO 希望将项目升级为 AI Loop Agent，并通过真实工程掌握任务编排、四层记忆、工具调用、状态管理、Checkpoint/Resume、Guardrail、Tracing 与 Eval，同时形成对自研 Loop、OpenAI Agents SDK、LangGraph、AutoGen 和 Dify 的架构判断力。初步建议采用“外层确定性状态机 + 内层模型决策循环”，先单 Agent 后多 Agent，并用同一任务跨框架对照。构思文档：`01_Projects/AI行业情报与知识库/Agent Harness架构构思-v0.1.md`。
-- 评估能力前置：JOJO 当前希望先从 AI 产品角度建立评估思维。已形成 `01_Projects/AI行业情报与知识库/AI产品评估入门与Agent评测框架-v0.1.md`，将评估定义为“真实场景 × 明确意图 × 可观察行为 × 判定标准 × 改进决策”；第一阶段先建立 12 个 Eval Case、0–2 分 Rubric、一票否决规则和当前管道 baseline，再实现 Agent Harness。
-- 2026-07-22 v0.3 评测基线：已从 PR #4 最新提交 `a3878ad` 建立独立分支 `agent/eval-baseline-v0.3`。新增 3 个可复现 Eval Case、六维 0–2 分评分器、一票否决规则、`--strict` 门禁模式、基线报告、3 项评测测试及中英文 README/CI 更新。当前结果为 3 个案例中 2 个通过、1 个未通过，平均 `1.89/2`；明确发现当前管道没有排除 48 小时窗口外的旧信号。远端提交 `b217c32`，Actions run #9 成功。
-- 2026-07-22 v0.3 合并：PR #4 先以 squash 方式合并，提交 `d70fb7`；随后 PR #5 重定向到 `main`。因 squash 导致堆叠分支历史分叉，已仅重建 v0.3 分支提交到最新 `main`，最终 head `c6d3a4a`，Actions run #12 成功。PR #5 已 squash 合并，`main` 提交 `6f82dc6`。
-- 独立目录决策：项目源码、架构、评测、项目状态和后续产物统一放在 `/Users/wingsjing/Documents/Codex/ai-intelligence-radar`；原 `Obsidian Vault/01_Projects/AI行业情报与知识库` 已移除，Obsidian 只保留一个位置索引，不再承载项目正文。
-- Obsidian 项目首页：`01_Projects/AI行业情报与知识库/00-项目首页.md`。未把示例假数据写入真实知识库。
-- 2026-07-27 v0.4 本地完成：分支 `agent/v0.4-minimal-loop` 新增 GitHub Atom 真实采集、48 小时时效、RunState、Tool Registry、确定性 Planner、最小 Loop、停止条件和 JSONL Trace；趋势证据改按独立公司/来源计算。20 项测试通过，评测提升为 3/3、2.0/2；真实运行读取 20 条官方 Release，保留 2 条 48 小时内信号，0 个工具错误。待通过 Codex GitHub 连接器发布草稿 PR。
-- 待跟进：v0.5 增加模型 Planner、Checkpoint/Resume、重试与幂等，接入官方网页采集器，再配置 X Developer Project / `X_BEARER_TOKEN`、Reddit OAuth 和脱敏 Dify DSL。评测集从 3 个扩展到 12 个，并增加真实 Feed 回放。
-- 相关链接：https://github.com/jj1292/AI-Intelligence-Radar
-- 草稿 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/1
-- v0.2 草稿 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/2
-- README 视觉 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/3
-- README 双语 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/4
-- v0.3 评测基线 PR：https://github.com/jj1292/ai-pulse-briefing-generator/pull/5
+更新日期：2026-07-27
+
+## 当前定位
+
+AI Intelligence Radar 是一个可观察、可评测的 AI 行业情报 Agent 与 Agent Harness 学习工程。它把官方发布和社区信号转化为可追溯的知识卡片、趋势判断和 AI Pulse 日报。
+
+AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可选适配器，不再代表核心架构。
+
+## v0.4 当前进展
+
+- 分支：`agent/v0.4-minimal-loop`；
+- 真实来源：OpenAI Codex、Anthropic Claude Code GitHub Release Atom；
+- Agent 核心：RunState、确定性 Planner、Tool Registry、停止条件；
+- 工具步骤：`collect_source`、`filter_signals`、`write_report`、`write_briefing`；
+- 可靠性：48 小时时效门、未来时间保护、独立来源趋势门；
+- 可观察性：每次 Planner 决策与工具调用写入 JSONL Trace；
+- 输出：Markdown 知识卡片、趋势雷达、AI Pulse 日报；
+- 评测：3/3 案例通过，平均 2.0/2。
+
+## 当前限制
+
+- Planner 仍是确定性基线，还没有接入模型决策；
+- 尚未实现 Checkpoint/Resume、幂等和自动重试；
+- 6 个官方网页来源等待采集适配器；
+- X 和 Reddit 等待合规 OAuth/API 授权；
+- 评测集只有 3 个案例，尚不足以覆盖长期运行风险。
+
+## 下一步
+
+1. 将 v0.4 通过 PR 合并到 `main`，让默认首页与当前 Agent 实现一致。
+2. 增加模型 Planner，并与确定性 Planner 使用同一 Tool Contract 对照评测。
+3. 增加 Checkpoint/Resume、预算、重试与幂等。
+4. 扩展官方网页采集器，再接入 X 和 Reddit。
+5. 将评测集扩展到 12 个案例并加入固定 Feed 回放。
+
+## 项目边界
+
+- 源码、架构、评测和运行产物只放在独立项目目录；
+- Markdown 可输出到任意目录，Obsidian 只是可选阅读端；
+- 不提交密钥、Token、OAuth 凭证或未脱敏的 Dify DSL；
+- 不通过刷 Star、虚假提交或机器人互赞制造活跃度。
+
+项目地址：https://github.com/jj1292/AI-Intelligence-Radar

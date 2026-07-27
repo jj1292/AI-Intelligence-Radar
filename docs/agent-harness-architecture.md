@@ -27,7 +27,7 @@ updated: 2026-07-22
 - 有明确目标：持续发现 Codex、Claude、Gemini 等产品和公司的重要变化；
 - 有工具入口：官方发布、GitHub、X、Reddit、网页采集；
 - 有结构化状态：来源注册表、Intelligence Signal Schema；
-- 有长期记忆：Obsidian 情报卡片与趋势雷达；
+- 有长期记忆：可移植 Markdown 情报卡片与趋势雷达，可选用 Obsidian 阅读；
 - 有可验证结果：来源链接、去重率、证据等级、知识卡片和趋势判断。
 
 当前实现仍是确定性管道：
@@ -98,7 +98,7 @@ flowchart TD
     K -->|继续| C
     K -->|重规划| D
     K -->|等待| H
-    K -->|完成| L["知识卡片 / 趋势雷达 / Obsidian"]
+    K -->|完成| L["知识卡片 / 趋势雷达 / Markdown"]
     K -->|失败| M["可恢复失败报告"]
 ```
 
@@ -117,7 +117,7 @@ flowchart TD
 5. **Update State**：保存新信号、证据缺口、失败记录和预算消耗。
 6. **Evaluate**：检查新颖性、可信度、冲突、重复与趋势门槛。
 7. **Replan or Stop**：继续搜索、换来源、等待人工确认或结束。
-8. **Commit Memory**：写入 Obsidian 卡片、趋势报告和本次 Run Trace。
+8. **Commit Memory**：写入 Markdown 卡片、趋势报告和本次 Run Trace。
 
 伪代码：
 
@@ -183,7 +183,7 @@ return output_builder.build(state)
 
 保存已经确认的情报卡片、主题关系、公司演化和趋势结论。
 
-本项目继续使用 Obsidian 作为可阅读的长期知识库；以后可增加全文检索或向量索引，但不把向量数据库误当成全部记忆。
+本项目使用可移植 Markdown 作为可阅读的长期知识输出，Obsidian 是可选阅读端；以后可增加全文检索或向量索引，但不把向量数据库误当成全部记忆。
 
 ### 6.4 Procedural Memory：程序记忆
 
@@ -242,7 +242,7 @@ CREATED
 | 来源等级与平台权限 | 确定性 Policy | 不能交给模型自由解释 |
 | 重要性与影响分析 | Agent + Evaluator | 需要推理，但必须保留证据 |
 | 趋势是否正式成立 | 规则门槛 + Agent 解释 | 计数由代码完成，意义由模型解释 |
-| 写入 Obsidian | 确定性工具 | 输出路径和格式必须稳定 |
+| 写入 Markdown 知识目录 | 确定性工具 | 输出路径和格式必须稳定 |
 | GitHub 发布、外部写操作 | Human-in-the-loop | 防止 Agent 自动扩大影响范围 |
 
 真正值得学习的不是“全部 Agent 化”，而是设计清楚模型决策与确定性代码的边界。
@@ -333,9 +333,9 @@ CREATED
 
 一句话：明确区分本次状态、历史运行、长期知识和运行规则。
 
-选择原因：记忆管理是用户的核心学习目标，也能直接复用现有 Obsidian 能力。
+选择原因：记忆管理是用户的核心学习目标，也能直接复用现有 Markdown 阅读工具。
 
-关键假设：SQLite/JSONL + Obsidian 可以满足第一阶段，不必立即引入向量数据库。
+关键假设：SQLite/JSONL + Markdown 可以满足第一阶段，不必立即引入向量数据库。
 
 ### P4. Eval 与 Replay Lab
 
@@ -369,7 +369,7 @@ CREATED
 - `normalize_signal`：生成严格 Signal Schema；
 - `check_duplicates`：执行确定性事件去重；
 - `save_checkpoint`：保存状态；
-- `write_knowledge_card`：写入 Obsidian；
+- `write_knowledge_card`：写入配置的 Markdown 知识目录；
 - `write_trend_report`：生成趋势报告。
 
 ### 第一版不做
@@ -439,7 +439,7 @@ ai-intelligence-radar/
 
 ### 阶段 B：掌握状态与记忆
 
-增加 Checkpoint/Resume、四层记忆、Context Builder 和 Obsidian 写入。
+增加 Checkpoint/Resume、四层记忆、Context Builder 和可配置 Markdown 写入。
 
 ### 阶段 C：掌握可靠性
 

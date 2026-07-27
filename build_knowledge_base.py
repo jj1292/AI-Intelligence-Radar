@@ -1,4 +1,4 @@
-"""Convert normalized AI signals into Obsidian-friendly knowledge cards."""
+"""Convert normalized AI signals into portable Markdown knowledge cards."""
 
 from __future__ import annotations
 
@@ -238,7 +238,7 @@ def build_knowledge_base(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build an Obsidian-friendly AI intelligence knowledge base.")
+    parser = argparse.ArgumentParser(description="Build a portable Markdown AI intelligence knowledge base.")
     parser.add_argument("--input", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--date", default=date.today().isoformat(), help="YYYY-MM-DD")

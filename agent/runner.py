@@ -15,6 +15,7 @@ from build_knowledge_base import (
     deduplicate_signals,
     filter_signals_by_freshness,
 )
+from reporters.daily_briefing import write_daily_briefing
 from runtime.event_log import JsonlTracer
 from source_registry import load_source_registry
 from tools.github_releases import collect_github_releases
@@ -79,6 +80,14 @@ def run_radar_agent(
             state.as_of.date(),
             as_of=state.as_of,
             max_age_hours=state.max_age_hours,
+        ),
+    )
+    registry.register(
+        "write_briefing",
+        lambda: write_daily_briefing(
+            state.filtered_signals,
+            output_dir,
+            state.as_of.date(),
         ),
     )
 
@@ -147,9 +156,16 @@ def run_radar_agent(
                 "trend": str(observation["trend"]),
                 "cards": [str(path) for path in observation["cards"]],
             }
+            state.phase = "briefing"
+            observation_summary = state.result
+        elif action.name == "write_briefing":
+            state.result["briefing"] = str(observation)
             state.phase = "stop"
             state.stop_reason = "pipeline_complete"
-            observation_summary = state.result
+            observation_summary = {
+                "briefing": str(observation),
+                "signals": len(state.filtered_signals),
+            }
         else:
             observation_summary = {"type": type(observation).__name__}
 
@@ -201,6 +217,8 @@ def main() -> None:
     )
     if state.result.get("trend"):
         print(f"trend={state.result['trend']}")
+    if state.result.get("briefing"):
+        print(f"briefing={state.result['briefing']}")
     if state.status != "completed":
         raise SystemExit(1)
 

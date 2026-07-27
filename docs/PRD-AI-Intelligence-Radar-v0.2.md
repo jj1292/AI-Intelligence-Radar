@@ -1,5 +1,7 @@
 # PRD：AI Intelligence Radar v0.2
 
+> 历史版本说明：本文记录 v0.2 的产品假设。自 v0.4 起，项目以自研 Agent Harness 为核心，Markdown 为默认可移植输出；Dify 与 Obsidian 分别是可选适配器和阅读端。当前口径见 `PROJECT.md` 与 `docs/project-status.md`。
+
 ## 1. Summary
 
 AI Intelligence Radar 将原来的“每日 AI 新闻摘要”升级为个人 AI 行业情报与知识系统。它持续收集官方发布、官方代码仓库、X 一手账号和 Reddit 社区信号，经过分级、去重、判断和趋势聚合后，写入可长期复用的 Obsidian 知识库。

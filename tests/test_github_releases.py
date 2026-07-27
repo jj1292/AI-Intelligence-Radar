@@ -49,7 +49,7 @@ class GithubReleasesTests(unittest.TestCase):
         self.assertEqual(signals[0]["title"], "Example AI · v1.2.3")
 
     def test_rejects_non_atom_source(self):
-        source = make_source() | {"collection_mode": "dify_web"}
+        source = make_source() | {"collection_mode": "official_web"}
         with self.assertRaises(ValueError):
             collect_github_releases(source, fetcher=lambda _: ATOM_FIXTURE)
 

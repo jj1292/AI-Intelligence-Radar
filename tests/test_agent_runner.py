@@ -66,10 +66,17 @@ class AgentRunnerTests(unittest.TestCase):
             self.assertEqual(len(state.filtered_signals), 1)
             self.assertEqual(state.result["written"], 1)
             self.assertTrue(Path(state.result["trend"]).exists())
+            self.assertTrue(Path(state.result["briefing"]).exists())
             self.assertEqual(records[0]["event"], "run_started")
             self.assertEqual(records[-1]["event"], "run_finished")
             self.assertIn("planner_decision", {record["event"] for record in records})
             self.assertIn("tool_succeeded", {record["event"] for record in records})
+            actions = {
+                record["data"].get("action")
+                for record in records
+                if record["event"] == "planner_decision"
+            }
+            self.assertIn("write_briefing", actions)
 
     def test_loop_records_source_failure_and_continues(self):
         sources = [make_source("broken"), make_source("working")]

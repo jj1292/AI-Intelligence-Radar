@@ -24,4 +24,6 @@ class DeterministicPlanner:
             return Action("filter_signals")
         if state.phase == "write":
             return Action("write_report")
+        if state.phase == "briefing":
+            return Action("write_briefing")
         return Action("stop", {"reason": state.stop_reason or "pipeline_complete"})

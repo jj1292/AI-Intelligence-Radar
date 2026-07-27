@@ -6,7 +6,7 @@ version: 0.4.0
 updated: 2026-07-27
 ---
 
-# AI 行业情报与知识库
+# AI Intelligence Radar：行业情报 Agent 与 Harness 学习工程
 
 ## 目标
 
@@ -25,9 +25,9 @@ updated: 2026-07-27
 ```text
 官方发布 / GitHub / X / Reddit
               ↓
-来源分级 → 规范化 → 去重 → 影响判断
+Agent Loop：采集 → 时效/去重 → 证据门 → 输出 → 停止
               ↓
-      情报卡片 → 趋势雷达 → 周/月复盘
+ 情报卡片 + 趋势雷达 + AI Pulse 日报 + JSONL Trace
 ```
 
 ## 来源等级
@@ -43,16 +43,19 @@ updated: 2026-07-27
 ```text
 ai-intelligence-radar/
 ├── PROJECT.md                       # 项目总览
-├── docs/                            # 架构、PRD 与工作流
+├── agent/                           # Planner、RunState 与 Loop
+├── tools/                           # 采集与领域工具
+├── reporters/                       # AI Pulse 等输出适配器
+├── runtime/                         # Trace 与后续 Checkpoint
+├── docs/                            # 架构、PRD、适配器与演进历史
 ├── evals/                           # 案例、规则与基线报告
 ├── config/                          # 来源配置
 ├── schemas/                         # 情报信号契约
 ├── examples/                        # 脱敏演示数据
-├── tests/                           # 自动化测试
-└── build_knowledge_base.py          # 可配置输出位置的知识库生成器
+└── tests/                           # 自动化测试
 ```
 
-生成的知识卡片通过 `--output` 显式指定位置，不默认写入 Obsidian。每张情报卡片必须保留原始链接、发布时间、公司、来源等级、主题、摘要、为什么重要和证据边界；默认不复制整篇平台内容。
+所有 Markdown 输出通过 `--output` 显式指定位置，不默认写入 Obsidian。Obsidian 是可选阅读端，不是项目代码目录。每张情报卡片必须保留原始链接、发布时间、公司、来源等级、主题、摘要、为什么重要和证据边界；默认不复制整篇平台内容。
 
 ## 当前版本
 
@@ -60,7 +63,7 @@ ai-intelligence-radar/
 
 - 已建立 10 个来源入口注册表；
 - 已定义 Intelligence Signal Schema；
-- 已实现 Obsidian 情报卡片和趋势雷达生成器；
+- 已实现可移植 Markdown 情报卡片和趋势雷达生成器；
 - 至少两条独立信号才进入趋势候选；
 - X 和 Reddit 处于待合规授权状态，不绕过平台限制抓取；
 - 示例数据只用于代码验证，不写入本知识库。
@@ -79,6 +82,7 @@ ai-intelligence-radar/
 - 已实现 OpenAI Codex 与 Anthropic Claude Code GitHub Atom 真实采集；
 - 已实现 48 小时时效过滤和未来时间保护；
 - 已建立 RunState、Tool Registry、确定性 Planner、停止条件和 JSONL Trace；
+- 已将 AI Pulse 从旧项目名迁移为 Agent Loop 的 `write_briefing` 日报输出工具；
 - 所有来源失败时 Run 明确失败，单个来源失败时保留错误并继续；
 - 趋势门槛改为至少两个独立的公司/来源组合，避免同仓库连续发版制造虚假趋势；
 - 评测基线已提升为 3/3 通过，平均 2.0/2；
@@ -97,7 +101,7 @@ ai-intelligence-radar/
 1. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
 2. 增加 Checkpoint/Resume、运行预算、重试和幂等。
 3. 接入官方 Release Notes 网页采集器，再配置 X Developer Project 和 Reddit OAuth。
-4. 导入并脱敏原 Dify DSL，完成自动调度和可配置知识库写入。
+4. 导入并脱敏原 Dify DSL，作为可视化编排与框架对照适配器。
 5. 把 3 个最小评测案例扩展到 12 个，并增加真实 Feed 回放集。
 
 ## 相关项目
