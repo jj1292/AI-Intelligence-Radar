@@ -6,7 +6,7 @@
 - 新增滚动 RSS 2.0 和 JSON Feed 1.1 输出，支持跨运行合并、链接去重、时间排序和 200 条上限。
 - 将 `write_feed` 纳入 Agent Loop；Feed 发布失败时不提交来源 Checkpoint。
 - 新增 GitHub Actions 定时发布器，每日两次采集并提交公开 Feed 与非敏感 `since_id`。
-- 新增 CI 环境变量授权入口，Cookie 只从 GitHub Secret 读取，缺少配置时安全跳过。
+- 新增 CI 环境变量授权入口，Cookie 只从 GitHub Secret 读取；缺少配置时只跳过 X 并继续发布公开来源。
 - 新增公开订阅部署文档，中英文 README 以零认证 Feed URL 为首要入口。
 - 测试扩展到 42 项，覆盖 Feed 格式、滚动合并、去重和发布失败时的 Checkpoint 保护。
 

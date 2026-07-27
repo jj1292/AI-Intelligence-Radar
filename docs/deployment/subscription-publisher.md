@@ -55,7 +55,7 @@ Cookie 只保存在 GitHub Actions Secret 中。不要写入 Issue、README、�
 4. 将最多 200 条滚动 Feed 条目与公开 `since_id` 检查点提交到仓库；
 5. 只有 Feed 成功写入后才推进检查点。
 
-缺少变量或 Secret 时，工作流会安全跳过，不会尝试采集或输出凭证。
+缺少变量或 Secret 时，工作流只跳过 X，仍会持续发布无需认证的 GitHub 官方 Release；同时不会尝试输出凭证。
 
 ## 自托管与生产替代
 

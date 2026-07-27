@@ -103,7 +103,7 @@ ai-intelligence-radar/
 - 已实现滚动 RSS 2.0 和 JSON Feed 1.1，最多保留 200 条并按链接去重；
 - Feed 发布已纳入 Agent Loop，成功后才提交来源检查点；
 - 已增加 GitHub Actions 定时发布器，维护者配置一次，普通用户直接订阅公开 URL；
-- 后台缺少 Secret 时安全跳过，不打印或提交 Cookie；
+- 后台缺少 Secret 时只跳过 X 并继续发布公开来源，不打印或提交 Cookie；
 - 公开 Feed 数据由 GitHub Pages `/docs` 目录提供。
 
 ## Agent 化升级构思
