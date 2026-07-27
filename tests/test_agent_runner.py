@@ -3,8 +3,10 @@ import tempfile
 import unittest
 from datetime import datetime
 from pathlib import Path
+from unittest.mock import patch
 
-from agent.runner import run_radar_agent
+from agent.runner import _select_sources, run_radar_agent
+from tools.collection import CollectionBatch
 
 
 def make_source(source_id="example_releases"):
@@ -40,6 +42,41 @@ def make_signal(url, published_at):
 
 
 class AgentRunnerTests(unittest.TestCase):
+    def test_default_source_selection_excludes_requires_auth(self):
+        ready = make_source("ready")
+        gated = make_source("x")
+        gated.update({"collection_mode": "x_twscrape", "status": "requires_auth"})
+
+        selected = _select_sources(
+            [ready, gated],
+            supported_modes={"atom", "x_twscrape"},
+        )
+
+        self.assertEqual([source["id"] for source in selected], ["ready"])
+
+    def test_explicit_source_selection_allows_requires_auth(self):
+        gated = make_source("x")
+        gated.update({"collection_mode": "x_twscrape", "status": "requires_auth"})
+
+        selected = _select_sources(
+            [gated],
+            {"x"},
+            supported_modes={"atom", "x_twscrape"},
+        )
+
+        self.assertEqual(selected, [gated])
+
+    def test_explicit_source_selection_rejects_unsupported_source(self):
+        unsupported = make_source("reddit")
+        unsupported.update({"collection_mode": "reddit_oauth", "status": "requires_auth"})
+
+        with self.assertRaisesRegex(ValueError, "Unknown or unavailable sources"):
+            _select_sources(
+                [unsupported],
+                {"reddit"},
+                supported_modes={"atom", "x_twscrape"},
+            )
+
     def test_loop_collects_filters_writes_and_traces(self):
         sources = [make_source("one"), make_source("two")]
 
@@ -113,6 +150,49 @@ class AgentRunnerTests(unittest.TestCase):
         self.assertEqual(state.status, "failed")
         self.assertEqual(state.stop_reason, "all_sources_failed")
         self.assertEqual(state.result, {})
+
+    def test_loop_commits_checkpoint_only_after_outputs_succeed(self):
+        committed = []
+
+        def collector(_source):
+            return CollectionBatch(
+                [make_signal("https://example.com/fresh", "2026-07-27T08:00:00+08:00")],
+                lambda: committed.append("done"),
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            state = run_radar_agent(
+                [make_source()],
+                Path(directory),
+                as_of=datetime.fromisoformat("2026-07-27T12:00:00+08:00"),
+                collector=collector,
+            )
+
+        self.assertEqual(state.status, "completed")
+        self.assertEqual(committed, ["done"])
+        self.assertEqual(state.result["checkpoints_committed"], 1)
+
+    def test_loop_does_not_commit_checkpoint_when_report_fails(self):
+        committed = []
+
+        def collector(_source):
+            return CollectionBatch(
+                [make_signal("https://example.com/fresh", "2026-07-27T08:00:00+08:00")],
+                lambda: committed.append("done"),
+            )
+
+        with tempfile.TemporaryDirectory() as directory:
+            with patch("agent.runner.build_knowledge_base", side_effect=OSError("disk full")):
+                state = run_radar_agent(
+                    [make_source()],
+                    Path(directory),
+                    as_of=datetime.fromisoformat("2026-07-27T12:00:00+08:00"),
+                    collector=collector,
+                )
+
+        self.assertEqual(state.status, "failed")
+        self.assertEqual(state.stop_reason, "tool_failure")
+        self.assertEqual(committed, [])
 
 
 if __name__ == "__main__":

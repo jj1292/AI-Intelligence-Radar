@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.4.0-7C3AED?style=for-the-badge" alt="Version v0.4.0" />
+  <img src="https://img.shields.io/badge/version-v0.5.0-7C3AED?style=for-the-badge" alt="Version v0.5.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -50,7 +50,7 @@ There is no shortage of daily information, but only a small number of signals ca
 > **The goal is not to read the entire internet for you. It is to preserve a small set of verifiable insights that remain useful over time.**
 
 > [!NOTE]
-> **v0.4 adds an observable minimal Agent Harness: live collection, a state-driven tool loop, a strict freshness gate, and JSONL traces. The first planner is deterministic and replaceable by a model planner.**
+> **v0.5 adds an experimental local X subscription: credentials remain on your machine, and the incremental checkpoint advances only after cards and the daily brief are written successfully. The planner remains deterministic and replaceable.**
 
 ## 🌈 Current Capabilities
 
@@ -92,10 +92,10 @@ There is no shortage of daily information, but only a small number of signals ca
 | Tier | Sources | Role | Status |
 | :---: | --- | --- | :---: |
 | 🟣 **T1** | Official release notes, newsrooms, and GitHub repositories | Factual foundation | ![ready](https://img.shields.io/badge/READY-22C55E?style=flat-square) |
-| 🔵 **T2** | Official and core-team X accounts | First-hand context and distribution signals | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
+| 🔵 **T2** | Official and core-team X accounts | First-hand context and distribution signals | ![experimental](https://img.shields.io/badge/LOCAL_AUTH-F59E0B?style=flat-square) |
 | 🟠 **T3** | Reddit AI communities | Problems, use cases, sentiment, and weak signals | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
 
-The registry contains **10 source entry points**: 2 GitHub Atom sources have live collectors, 6 official web sources await adapters, and X plus Reddit await compliant authorization. See [`config/sources.json`](config/sources.json).
+The registry contains **10 source entry points**: 2 GitHub Atom feeds run directly, X can run after explicit local authorization, and 6 official web sources plus Reddit still await adapters. See [`config/sources.json`](config/sources.json).
 
 ## 🔄 How It Works
 
@@ -139,14 +139,26 @@ python3 -m agent.runner --output outputs/latest-radar --hours 48
 
 The run reads official OpenAI Codex and Anthropic Claude Code releases and writes cards, a trend radar, an AI Pulse daily brief, and a complete tool trace.
 
-### 3. Run tests and the strict evaluation gate
+### 3. Optional: subscribe to official X accounts
+
+Use a dedicated X account. After signing in through your browser, obtain the `auth_token` and `ct0` values from the X cookies, then run:
+
+```bash
+python3 -m tools.x_twscrape setup <your-x-username>
+python3 -m tools.x_twscrape status
+python3 -m agent.runner --source x_frontier_ai_accounts --output outputs/x-radar --hours 48
+```
+
+The terminal reads cookies through hidden input. Never paste them into chat, an issue, or Git. The first run follows the configured OpenAI, Anthropic, Google DeepMind, and Google AI accounts; later runs process only new posts. See the [`local X adapter guide`](docs/adapters/x-twscrape.md).
+
+### 4. Run tests and the strict evaluation gate
 
 ```bash
 python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-20%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-35%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
 Current baseline: **all 3 cases pass with an average score of 2.0/2**. The live example reads 20 official releases, keeps 2 signals inside the 48-hour window, and correctly reports that one repository alone does not establish an industry trend. See the [`trend report`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md), [`AI Pulse brief`](examples/output/v0.4-live-final/briefings/2026-07-27-ai-pulse.md), and [`Agent trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl).
 
@@ -197,7 +209,8 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 ## 🔐 Platform and Data Boundaries
 
 > [!IMPORTANT]
-> - X Recent Search requires a developer project and `X_BEARER_TOKEN`.
+> - The current X adapter uses the unofficial `twscrape` project. It is free but may break when X changes its internals and may expose the account to platform risk; use a dedicated account.
+> - Prefer the official X API in production. Local experimental credentials stay in `~/.ai-intelligence-radar/twscrape.db`.
 > - Reddit uses OAuth and must comply with the platform's data-use and retention requirements.
 > - API keys, tokens, and OAuth credentials must stay in local environment variables or GitHub Secrets.
 > - The knowledge base stores links, necessary metadata, short evidence, and derived analysis rather than bulk copies of full platform content.
@@ -210,8 +223,9 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 | `v0.1` | AI Pulse briefing prototype, input contract, tests, and CI | ✅ Done |
 | `v0.2` | Source registry, intelligence schema, Markdown cards, and trend radar | ✅ Done |
 | `v0.3` | Eval Contract, 3 baseline cases, scorer, and reproducible report | ✅ Done |
-| `v0.4` | GitHub Atom, 48-hour gate, RunState, minimal Loop, AI Pulse output, and Trace | 🚧 Current |
-| `v0.5` | Model planner, checkpoint/resume, official web, X, and Reddit | 🧭 Next |
+| `v0.4` | GitHub Atom, 48-hour gate, RunState, minimal Loop, AI Pulse output, and Trace | ✅ Done |
+| `v0.5` | Local X subscription, source dispatch, post-success checkpoint, and account boundaries | 🚧 Current |
+| `v0.6` | Model planner, general resume, official web adapters, and Reddit OAuth | 🧭 Next |
 | `v1.0` | Memory, replay evaluation, periodic reviews, subscriptions, and source-quality scoring | 🌟 Vision |
 
 ## 📚 Documentation
@@ -221,6 +235,7 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 - 🧠 [`Agent Harness architecture`](docs/agent-harness-architecture.md)
 - 🎯 [`AI product and agent evaluation guide`](docs/ai-product-evaluation-guide.md)
 - 🔌 [`Optional Dify adapter`](docs/adapters/dify.md)
+- 𝕏 [`Local X adapter`](docs/adapters/x-twscrape.md)
 - 🧭 [`From AI Pulse to Radar`](docs/history/from-ai-pulse-to-radar.md)
 - 🧩 [`Intelligence signal schema`](schemas/intelligence-signal.schema.json)
 - 📡 [`Source registry`](config/sources.json)

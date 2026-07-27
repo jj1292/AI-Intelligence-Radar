@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.5.0] - 2026-07-27
+
+- 新增实验性 `twscrape` X 采集器，支持本地 Cookie 授权、状态检查和显式重新授权。
+- 新增按 `collection_mode` 分发的 Source Dispatcher，统一 GitHub Atom 与 X 采集契约。
+- 新增 X Tweet 到 Intelligence Signal 的标准化、官方账号公司映射和 T2 证据边界。
+- 新增 `since_id` 增量检查点；只有知识卡片、趋势雷达和 AI Pulse 日报成功写入后才提交。
+- 默认运行继续只选择无需授权的来源，X 必须通过 `--source x_frontier_ai_accounts` 显式启用。
+- 本地账号数据库默认保存在 `~/.ai-intelligence-radar/`，并补充 Git 忽略与文件权限保护。
+- 测试扩展到 35 项，覆盖来源分发、账号来源选择、X 标准化、重新授权、增量过滤和检查点失败保护。
+
 ## [0.4.0] - 2026-07-27
 
 - 新增 OpenAI Codex 与 Anthropic Claude Code GitHub Release Atom 真实采集器。

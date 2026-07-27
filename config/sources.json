@@ -93,13 +93,23 @@
     "company": "Multiple",
     "source_tier": 2,
     "channel": "x",
-    "collection_mode": "x_recent_search",
-    "url": "https://api.x.com/2/tweets/search/recent",
+    "collection_mode": "x_twscrape",
+    "url": "https://x.com/search",
     "status": "requires_auth",
-    "auth_env": ["X_BEARER_TOKEN"],
-    "query": "(from:OpenAI OR from:OpenAIDevs OR from:AnthropicAI OR from:GoogleDeepMind OR from:GoogleAI) -is:retweet has:links",
+    "auth_env": ["X_TWSCRAPE_DB"],
+    "query": "(from:OpenAI OR from:OpenAIDevs OR from:AnthropicAI OR from:GoogleDeepMind OR from:GoogleAI) -is:retweet -is:reply has:links",
+    "max_results": 100,
+    "author_companies": {
+      "OpenAI": "OpenAI",
+      "OpenAIDevs": "OpenAI",
+      "AnthropicAI": "Anthropic",
+      "GoogleDeepMind": "Google DeepMind",
+      "GoogleAI": "Google"
+    },
+    "official_api_url": "https://api.x.com/2/tweets/search/recent",
+    "official_auth_env": ["X_BEARER_TOKEN"],
     "topics": ["models", "agents", "research", "products"],
-    "notes": "Enable only after verifying account handles and X developer access."
+    "notes": "Experimental local adapter. Use a dedicated X account; keep cookies outside Git and fall back to the official API for production stability."
   },
   {
     "id": "reddit_ai_communities",

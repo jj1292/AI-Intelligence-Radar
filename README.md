@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.4.0-7C3AED?style=for-the-badge" alt="Version v0.4.0" />
+  <img src="https://img.shields.io/badge/version-v0.5.0-7C3AED?style=for-the-badge" alt="Version v0.5.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -50,7 +50,7 @@
 > **目标不是替你读完互联网，而是每天留下少量、可复核、以后还能用的知识。**
 
 > [!NOTE]
-> **v0.4 已加入可观察的最小 Agent Harness：真实采集、状态驱动工具循环、严格时效门和 JSONL Trace。第一版使用确定性 Planner，下一阶段再接模型 Planner。**
+> **v0.5 已接入实验性的本地 X 订阅：登录凭证留在本机，Agent 成功生成卡片和日报后才推进增量检查点。第一版仍使用确定性 Planner，下一阶段再接模型 Planner。**
 
 ## 🌈 当前能力
 
@@ -92,10 +92,10 @@
 | 等级 | 来源 | 角色 | 当前状态 |
 | :---: | --- | --- | :---: |
 | 🟣 **T1** | 官方 Release Notes、Newsroom、官方 GitHub | 事实底座 | ![ready](https://img.shields.io/badge/READY-22C55E?style=flat-square) |
-| 🔵 **T2** | 官方与核心团队 X 账号 | 一手补充、扩散信号 | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
+| 🔵 **T2** | 官方与核心团队 X 账号 | 一手补充、扩散信号 | ![experimental](https://img.shields.io/badge/LOCAL_AUTH-F59E0B?style=flat-square) |
 | 🟠 **T3** | Reddit AI 社区 | 问题、用例、情绪和弱信号 | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
 
-已注册 **10 个来源入口**：2 个 GitHub Atom 源已实现真实采集，6 个官方网页源等待采集适配器，X 和 Reddit 2 个等待合规授权。详见 [`config/sources.json`](config/sources.json)。
+已注册 **10 个来源入口**：2 个 GitHub Atom 源可直接采集，X 来源可在本机授权后显式运行，6 个官方网页源与 Reddit 仍等待适配。详见 [`config/sources.json`](config/sources.json)。
 
 ## 🔄 系统如何工作
 
@@ -139,14 +139,26 @@ python3 -m agent.runner --output outputs/latest-radar --hours 48
 
 运行时会读取 OpenAI Codex 与 Anthropic Claude Code 官方 Release，输出知识卡片、趋势雷达、AI Pulse 日报和完整工具 Trace。
 
-### 3. 运行测试与严格评测
+### 3. 可选：订阅 X 官方账号
+
+建议使用专用 X 账号。在浏览器登录后，从 X 的 Cookie 中取得 `auth_token` 和 `ct0`，然后运行：
+
+```bash
+python3 -m tools.x_twscrape setup <你的X用户名>
+python3 -m tools.x_twscrape status
+python3 -m agent.runner --source x_frontier_ai_accounts --output outputs/x-radar --hours 48
+```
+
+Cookie 通过终端隐藏输入，不会显示在屏幕上；不要把它发到聊天、Issue 或提交到 Git。首次运行会采集配置中的 OpenAI、Anthropic、Google DeepMind 和 Google AI 官方账号，后续只处理新增内容。完整说明见 [`X 本地订阅适配器`](docs/adapters/x-twscrape.md)。
+
+### 4. 运行测试与严格评测
 
 ```bash
 python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-20%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-35%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
 当前基线：**3 个案例全部通过，平均分 2.0/2**。真实运行样例读取 20 条官方 Release，保留 2 条 48 小时内信号，并诚实判定“尚无两个独立来源构成趋势”。查看 [`趋势报告`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md)、[`AI Pulse 日报`](examples/output/v0.4-live-final/briefings/2026-07-27-ai-pulse.md) 与 [`Agent Trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl)。
 
@@ -197,7 +209,8 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 ## 🔐 平台与数据边界
 
 > [!IMPORTANT]
-> - X Recent Search 需要开发者项目和 `X_BEARER_TOKEN`。
+> - 当前 X 适配器基于非官方 `twscrape`，免费但可能因 X 接口变化失效，也有账号风控风险；建议使用专用账号。
+> - 生产环境优先使用 X 官方 API；本地实验凭证只保存在 `~/.ai-intelligence-radar/twscrape.db`。
 > - Reddit 使用 OAuth，并遵守平台的数据使用与留存要求。
 > - API Key、Token 和 OAuth 凭证只能进入本地环境变量或 GitHub Secret。
 > - 知识库保存链接、必要元数据、短证据和衍生判断，不批量复制完整平台内容。
@@ -210,8 +223,9 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 | `v0.1` | AI Pulse 简报原型、输入契约、测试与 CI | ✅ Done |
 | `v0.2` | 来源注册表、情报 Schema、Markdown 卡片、趋势雷达 | ✅ Done |
 | `v0.3` | Eval Contract、3 个基线案例、评分器与可复现报告 | ✅ Done |
-| `v0.4` | GitHub Atom、48 小时时效、RunState、最小 Loop、AI Pulse 输出、Trace | 🚧 Current |
-| `v0.5` | 模型 Planner、Checkpoint/Resume、官方网页、X、Reddit | 🧭 Next |
+| `v0.4` | GitHub Atom、48 小时时效、RunState、最小 Loop、AI Pulse 输出、Trace | ✅ Done |
+| `v0.5` | 本地 X 订阅、来源分发、成功后增量 Checkpoint、账号安全边界 | 🚧 Current |
+| `v0.6` | 模型 Planner、通用 Resume、官方网页、Reddit OAuth | 🧭 Next |
 | `v1.0` | 记忆、回放评测、周/月复盘、主题订阅与来源质量评分 | 🌟 Vision |
 
 ## 📚 文档
@@ -221,6 +235,7 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 - 🧠 [`Agent Harness 架构构思`](docs/agent-harness-architecture.md)
 - 🎯 [`AI 产品评估与 Agent 评测指南`](docs/ai-product-evaluation-guide.md)
 - 🔌 [`Dify 可选适配器`](docs/adapters/dify.md)
+- 𝕏 [`X 本地订阅适配器`](docs/adapters/x-twscrape.md)
 - 🧭 [`从 AI Pulse 到 Radar`](docs/history/from-ai-pulse-to-radar.md)
 - 🧩 [`情报信号 Schema`](schemas/intelligence-signal.schema.json)
 - 📡 [`来源注册表`](config/sources.json)

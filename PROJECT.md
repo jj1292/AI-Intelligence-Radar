@@ -2,7 +2,7 @@
 type: project-home
 status: active
 project: AI Intelligence Radar
-version: 0.4.0
+version: 0.5.0
 updated: 2026-07-27
 ---
 
@@ -88,6 +88,15 @@ ai-intelligence-radar/
 - 评测基线已提升为 3/3 通过，平均 2.0/2；
 - 真实样例读取 20 条官方 Release，保留 2 条 48 小时内信号，0 个工具错误。
 
+### v0.5.0（本地 X 订阅）
+
+- 已实现按 `collection_mode` 分发 GitHub Atom 与 X 采集器；
+- 已接入 `twscrape` 本地 Cookie 授权，凭证默认保存在用户主目录，不进入项目仓库；
+- 已将官方与核心团队 X 内容标准化为 T2 信号，并保留公司映射和原帖链接；
+- 已实现 `since_id` 增量检查点，且只在卡片、趋势和日报成功生成后提交；
+- 已支持账号状态检查和 Cookie 过期后的显式重新授权；
+- 免费路线用于个人低频实验，生产稳定性仍以 X 官方 API 为准。
+
 ## Agent 化升级构思
 
 项目下一阶段拟从确定性情报管道升级为可观察、可恢复、可评测的 Loop Agent，同时作为 Agent Harness 架构实验室。推荐采用“外层确定性状态机 + 内层模型决策循环”，先实现单 Agent 的自研最小 Harness，再分别用 OpenAI Agents SDK、LangGraph 与 Dify 复刻同一任务并进行对照评测。
@@ -99,8 +108,8 @@ ai-intelligence-radar/
 ## 下一步
 
 1. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
-2. 增加 Checkpoint/Resume、运行预算、重试和幂等。
-3. 接入官方 Release Notes 网页采集器，再配置 X Developer Project 和 Reddit OAuth。
+2. 将 X 的来源检查点扩展为通用 Checkpoint/Resume，并增加运行预算、重试和幂等。
+3. 接入官方 Release Notes 网页采集器和 Reddit OAuth；生产 X 采集保留官方 API 适配位。
 4. 导入并脱敏原 Dify DSL，作为可视化编排与框架对照适配器。
 5. 把 3 个最小评测案例扩展到 12 个，并增加真实 Feed 回放集。
 

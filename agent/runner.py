@@ -18,27 +18,50 @@ from build_knowledge_base import (
 from reporters.daily_briefing import write_daily_briefing
 from runtime.event_log import JsonlTracer
 from source_registry import load_source_registry
+from tools.collection import CollectionBatch
 from tools.github_releases import collect_github_releases
 from tools.registry import ToolRegistry
+from tools.source_dispatch import SourceDispatcher
+from tools.x_twscrape import collect_x_posts
 
 
-Collector = Callable[[dict[str, Any]], list[dict[str, Any]]]
+Collector = Callable[
+    [dict[str, Any]],
+    CollectionBatch | list[dict[str, Any]],
+]
 
 
-def _select_atom_sources(
-    sources: list[dict[str, Any]], source_ids: set[str] | None = None
+def build_source_dispatcher() -> SourceDispatcher:
+    dispatcher = SourceDispatcher()
+    dispatcher.register("atom", collect_github_releases)
+    dispatcher.register("x_twscrape", collect_x_posts)
+    return dispatcher
+
+
+def _select_sources(
+    sources: list[dict[str, Any]],
+    source_ids: set[str] | None = None,
+    *,
+    supported_modes: set[str] | None = None,
 ) -> list[dict[str, Any]]:
-    selected = [
-        source
-        for source in sources
-        if source["status"] == "ready" and source["collection_mode"] == "atom"
-    ]
+    modes = supported_modes or set(build_source_dispatcher().modes())
     if source_ids:
-        selected = [source for source in selected if source["id"] in source_ids]
+        selected = [
+            source
+            for source in sources
+            if source["id"] in source_ids
+            and source["collection_mode"] in modes
+            and source["status"] in {"ready", "requires_auth"}
+        ]
         missing = source_ids - {source["id"] for source in selected}
         if missing:
-            raise ValueError(f"Unknown or unavailable Atom sources: {sorted(missing)}")
-    return selected
+            raise ValueError(f"Unknown or unavailable sources: {sorted(missing)}")
+        return selected
+    return [
+        source
+        for source in sources
+        if source["status"] == "ready" and source["collection_mode"] in modes
+    ]
 
 
 def run_radar_agent(
@@ -47,8 +70,9 @@ def run_radar_agent(
     *,
     as_of: datetime,
     max_age_hours: float = 48,
-    objective: str = "Collect recent official AI releases and build a traceable radar report.",
-    collector: Collector = collect_github_releases,
+    objective: str = "Collect recent AI signals and build a traceable radar report.",
+    collector: Collector | None = None,
+    source_dispatcher: SourceDispatcher | None = None,
     trace_path: Path | None = None,
     max_steps: int = 20,
 ) -> RunState:
@@ -64,8 +88,23 @@ def run_radar_agent(
     )
     tracer = JsonlTracer(trace_path or output_dir / f"agent-trace-{state.run_id}.jsonl")
     planner = DeterministicPlanner()
+    dispatcher = source_dispatcher or build_source_dispatcher()
+    checkpoint_commits: list[Callable[[], None]] = []
+
+    def collect_source(source_id: str) -> CollectionBatch:
+        source = source_map[source_id]
+        if collector is not None:
+            result = collector(source)
+            return result if isinstance(result, CollectionBatch) else CollectionBatch(result)
+        return dispatcher.collect(source)
+
+    def commit_checkpoints() -> int:
+        for commit in checkpoint_commits:
+            commit()
+        return len(checkpoint_commits)
+
     registry = ToolRegistry()
-    registry.register("collect_source", lambda source_id: collector(source_map[source_id]))
+    registry.register("collect_source", collect_source)
     registry.register(
         "filter_signals",
         lambda: deduplicate_signals(
@@ -90,6 +129,7 @@ def run_radar_agent(
             state.as_of.date(),
         ),
     )
+    registry.register("commit_checkpoints", commit_checkpoints)
 
     state.status = "running"
     tracer.emit(state.run_id, "run_started", objective=objective, state=state.snapshot())
@@ -137,8 +177,10 @@ def run_radar_agent(
         if action.name == "collect_source":
             source_id = state.pending_source_ids.pop(0)
             state.successful_sources += 1
-            state.raw_signals.extend(observation)
-            observation_summary = {"source_id": source_id, "signals": len(observation)}
+            state.raw_signals.extend(observation.signals)
+            if observation.commit_checkpoint is not None:
+                checkpoint_commits.append(observation.commit_checkpoint)
+            observation_summary = {"source_id": source_id, "signals": len(observation.signals)}
         elif action.name == "filter_signals":
             state.filtered_signals = observation
             state.phase = "write"
@@ -160,12 +202,16 @@ def run_radar_agent(
             observation_summary = state.result
         elif action.name == "write_briefing":
             state.result["briefing"] = str(observation)
-            state.phase = "stop"
-            state.stop_reason = "pipeline_complete"
+            state.phase = "checkpoint"
             observation_summary = {
                 "briefing": str(observation),
                 "signals": len(state.filtered_signals),
             }
+        elif action.name == "commit_checkpoints":
+            state.result["checkpoints_committed"] = observation
+            state.phase = "stop"
+            state.stop_reason = "pipeline_complete"
+            observation_summary = {"committed": observation}
         else:
             observation_summary = {"type": type(observation).__name__}
 
@@ -199,14 +245,20 @@ def main() -> None:
     args = parser.parse_args()
 
     all_sources = load_source_registry(args.config)
-    sources = _select_atom_sources(all_sources, set(args.source_ids) if args.source_ids else None)
+    dispatcher = build_source_dispatcher()
+    sources = _select_sources(
+        all_sources,
+        set(args.source_ids) if args.source_ids else None,
+        supported_modes=set(dispatcher.modes()),
+    )
     if not sources:
-        raise SystemExit("No ready Atom sources selected.")
+        raise SystemExit("No runnable sources selected.")
     state = run_radar_agent(
         sources,
         args.output,
         as_of=datetime.fromisoformat(args.as_of.replace("Z", "+00:00")),
         max_age_hours=args.hours,
+        source_dispatcher=dispatcher,
         trace_path=args.trace,
         max_steps=args.max_steps,
     )
@@ -219,6 +271,8 @@ def main() -> None:
         print(f"trend={state.result['trend']}")
     if state.result.get("briefing"):
         print(f"briefing={state.result['briefing']}")
+    for error in state.errors:
+        print(f"error={error}")
     if state.status != "completed":
         raise SystemExit(1)
 
