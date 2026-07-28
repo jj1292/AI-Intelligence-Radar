@@ -122,7 +122,8 @@ ai-intelligence-radar/
 - Anthropic Newsroom 未提供官方 RSS/Atom，因此新增官方网页采集器，不使用第三方镜像；
 - 默认订阅 `https://www.anthropic.com/news`，输出保留 Anthropic 官方原文链接并标记为 T1；
 - 真实网页识别 13 篇文章，168 小时时效窗口筛选 5 篇，Agent 链路 0 错误；
-- 测试增至 59 项。
+- 测试增至 59 项；功能提交 `a1d8990`、Feed 提交 `9021be8` 已上线；
+- 公开 Feed 当前 75 条，其中 2 条为最近 72 小时的 Anthropic Newsroom 官方文章。
 
 ## Agent 化升级构思
 
