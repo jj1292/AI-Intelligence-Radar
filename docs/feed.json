@@ -7,6 +7,131 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1v913z7/gpt_56_sol_downgraded_already/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1v913z7/gpt_56_sol_downgraded_already/",
+      "title": "Selected Reddit communities · GPT 5.6 Sol Downgraded Already",
+      "content_text": "i know, these posts suck, but downgrades happen and i'm pretty certain it's true this time. GPT 5.6 Sol in chatgpt already got downgraded for me. it was really great for the first few weeks but for a few days now it's noticeably hallucinating, using less thinking effort and less search sources. is it just me? submitted by /u/SteveEricJordan to r/OpenAI [link] [comments]\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T15:04:35+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1v9131l/agent_mini_a_minimal_localfirst_ai_agent_you_can/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1v9131l/agent_mini_a_minimal_localfirst_ai_agent_you_can/",
+      "title": "Selected Reddit communities · Agent Mini: a minimal, local-first AI agent you can actually read, understand, and extend. [P]",
+      "content_text": "It is about ~3k lines of Python, uses Ollama by default, and ships with practical tools for shell, files, web search, memory, and vision. No LangChain. No LiteLLM. No big framework stack. Just asyncio , httpx , and a small ReAct loop tuned for local/smaller models. An agent that feels useful without becoming a black box. Didn't wanted to dig through framework abstractions to figure out how agents\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T15:03:38+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v911as/gemini_distillation_service/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v911as/gemini_distillation_service/",
+      "title": "Selected Reddit communities · Gemini Distillation Service",
+      "content_text": "So looks like Google is now going to offer distilling as a service. submitted by /u/giveen to r/LocalLLaMA [link] [comments]\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T15:02:02+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v9100b/deepseek_v4_flash_up_to_32_toks_on_amd_ryzen_ai/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v9100b/deepseek_v4_flash_up_to_32_toks_on_amd_ryzen_ai/",
+      "title": "Selected Reddit communities · DeepSeek V4 Flash, up to 32 tok/s on AMD Ryzen AI MAX+ 395",
+      "content_text": "Hey fellow llamas. we have something new for Strix Halo owners we thought would be useful to share. i'll keep it short: We were able to fit DeepSeek V4 Flash plus its speculative draft on a single Ryzen AI MAX+ 395 with 128 GB of unified memory, and got it to a usable decode rate. Blog post with all details here: https://www.lucebox.com/blog/deepseek-v4-strix-halo (code is open-source, Apache-2.0)\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T15:00:46+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v90yrw/perfect_sql_false_conclusion_my_local_model_told/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v90yrw/perfect_sql_false_conclusion_my_local_model_told/",
+      "title": "Selected Reddit communities · Perfect SQL, false conclusion: my local model told me a flat business \"grew 48%\". I open-sourced a benchmark for that gap, and it's already caught two of my own claims.",
+      "content_text": "I asked a local model \"is my business viable over time?\" on 136 months of sales. The SQL it wrote was correct. The sentence it wrote about that result said \"+48% growth\". The business had been flat for ten years. Disclosure up front: this came out of a local-first BI tool I sell. The benchmark is standalone and MIT. The pipeline row on the leaderboard is the one thing you can't reproduce without m\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T14:59:33+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/MachineLearning/comments/1v90r9r/neurips_2026_reviewer_aigenerated_rebuttals_and/",
       "url": "https://www.reddit.com/r/MachineLearning/comments/1v90r9r/neurips_2026_reviewer_aigenerated_rebuttals_and/",
       "title": "Selected Reddit communities · NeurIPS 2026 Reviewer: AI-Generated Rebuttals (and Paper) [D]",

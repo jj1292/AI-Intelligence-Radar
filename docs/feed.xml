@@ -6,7 +6,87 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 28 Jul 2026 14:52:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 15:04:35 +0000</lastBuildDate>
+    <item>
+      <title>Selected Reddit communities · GPT 5.6 Sol Downgraded Already</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1v913z7/gpt_56_sol_downgraded_already/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1v913z7/gpt_56_sol_downgraded_already/</guid>
+      <pubDate>Tue, 28 Jul 2026 15:04:35 +0000</pubDate>
+      <description>i know, these posts suck, but downgrades happen and i'm pretty certain it's true this time. GPT 5.6 Sol in chatgpt already got downgraded for me. it was really great for the first few weeks but for a few days now it's noticeably hallucinating, using less thinking effort and less search sources. is it just me? submitted by /u/SteveEricJordan to r/OpenAI [link] [comments]
+
+Why it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。
+
+Source: Selected Reddit communities (T3)</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Agent Mini: a minimal, local-first AI agent you can actually read, understand, and extend. [P]</title>
+      <link>https://www.reddit.com/r/MachineLearning/comments/1v9131l/agent_mini_a_minimal_localfirst_ai_agent_you_can/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1v9131l/agent_mini_a_minimal_localfirst_ai_agent_you_can/</guid>
+      <pubDate>Tue, 28 Jul 2026 15:03:38 +0000</pubDate>
+      <description>It is about ~3k lines of Python, uses Ollama by default, and ships with practical tools for shell, files, web search, memory, and vision. No LangChain. No LiteLLM. No big framework stack. Just asyncio , httpx , and a small ReAct loop tuned for local/smaller models. An agent that feels useful without becoming a black box. Didn't wanted to dig through framework abstractions to figure out how agents
+
+Why it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。
+
+Source: Selected Reddit communities (T3)</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Gemini Distillation Service</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1v911as/gemini_distillation_service/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1v911as/gemini_distillation_service/</guid>
+      <pubDate>Tue, 28 Jul 2026 15:02:02 +0000</pubDate>
+      <description>So looks like Google is now going to offer distilling as a service. submitted by /u/giveen to r/LocalLLaMA [link] [comments]
+
+Why it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。
+
+Source: Selected Reddit communities (T3)</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · DeepSeek V4 Flash, up to 32 tok/s on AMD Ryzen AI MAX+ 395</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1v9100b/deepseek_v4_flash_up_to_32_toks_on_amd_ryzen_ai/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1v9100b/deepseek_v4_flash_up_to_32_toks_on_amd_ryzen_ai/</guid>
+      <pubDate>Tue, 28 Jul 2026 15:00:46 +0000</pubDate>
+      <description>Hey fellow llamas. we have something new for Strix Halo owners we thought would be useful to share. i'll keep it short: We were able to fit DeepSeek V4 Flash plus its speculative draft on a single Ryzen AI MAX+ 395 with 128 GB of unified memory, and got it to a usable decode rate. Blog post with all details here: https://www.lucebox.com/blog/deepseek-v4-strix-halo (code is open-source, Apache-2.0)
+
+Why it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。
+
+Source: Selected Reddit communities (T3)</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Perfect SQL, false conclusion: my local model told me a flat business "grew 48%". I open-sourced a benchmark for that gap, and it's already caught two of my own claims.</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1v90yrw/perfect_sql_false_conclusion_my_local_model_told/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1v90yrw/perfect_sql_false_conclusion_my_local_model_told/</guid>
+      <pubDate>Tue, 28 Jul 2026 14:59:33 +0000</pubDate>
+      <description>I asked a local model "is my business viable over time?" on 136 months of sales. The SQL it wrote was correct. The sentence it wrote about that result said "+48% growth". The business had been flat for ten years. Disclosure up front: this came out of a local-first BI tool I sell. The benchmark is standalone and MIT. The pipeline row on the leaderboard is the one thing you can't reproduce without m
+
+Why it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。
+
+Source: Selected Reddit communities (T3)</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
     <item>
       <title>Selected Reddit communities · NeurIPS 2026 Reviewer: AI-Generated Rebuttals (and Paper) [D]</title>
       <link>https://www.reddit.com/r/MachineLearning/comments/1v90r9r/neurips_2026_reviewer_aigenerated_rebuttals_and/</link>
