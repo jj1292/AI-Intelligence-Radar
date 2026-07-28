@@ -10,7 +10,7 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 
 ## v0.7 当前进展
 
-- 分支：`main`，v0.7 可编辑订阅源正在发布；
+- 分支：`main`，v0.7 功能提交 `3cb5195`、首个动态 Feed 提交 `8c93dd4` 已发布；
 - 日常入口：`config/subscriptions.json`，支持 GitHub Release、RSS/Atom、Reddit 社区与 X 账号；
 - 默认真实来源：OpenAI Codex、Anthropic Claude Code、Google Gemini CLI Release，以及 LocalLLaMA、MachineLearning、OpenAI Reddit 社区；
 - Agent 核心：RunState、确定性 Planner、Tool Registry、停止条件；
@@ -20,9 +20,9 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 - 可观察性：每次 Planner 决策与工具调用写入 JSONL Trace；
 - 输出：Markdown 知识卡片、趋势雷达、AI Pulse 日报；
 - 订阅输出：滚动 RSS 2.0 与 JSON Feed 1.1，最多保留 200 条；
-- 公开地址：RSS 与 JSON Feed 已由 GitHub Pages 匿名提供；
+- 公开地址：RSS 与 JSON Feed 已由 GitHub Pages 匿名提供，当前 38 条，包含 Reddit 25 条、Gemini CLI 3 条、OpenAI 8 条、Anthropic 2 条；
 - 可修改性：清单提交会立即触发发布，定时任务也动态读取同一文件，不再写死来源；
-- 评测：53 项测试、3/3 严格评测通过；无 X 凭证真实链路读取 55 条、筛选 46 条、0 个工具错误。
+- 评测：53 项测试、3/3 严格评测通过；无 X 凭证真实链路读取 55 条、筛选 46 条、0 个工具错误；Actions test run `30323752745`、publisher run `30323752780` 与最终 Pages run `30323767399` 均成功。
 - X 可靠性：`since_id` 增量读取，Feed 成功发布后才提交检查点；账号数据库与 Cookie 不进入 Git。
 
 ## 当前限制
@@ -37,7 +37,7 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 
 ## 下一步
 
-1. 运行并观察 v0.7 线上动态发布，确认 Gemini 与 Reddit 进入公共 Feed。
+1. 根据实际阅读体验调整订阅清单，重点观察 Reddit 25 条是否占比过高。
 2. 确认专用 X 后台发布账号；配置变量与 Cookie Secret 后完成首次 X Feed 发布。
 3. 增加模型 Planner，并与确定性 Planner 使用同一 Tool Contract 对照评测。
 4. 把 X 的来源检查点扩展为通用 Resume，并增加重试与幂等。

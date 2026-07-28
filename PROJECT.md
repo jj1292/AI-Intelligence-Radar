@@ -114,7 +114,8 @@ ai-intelligence-radar/
 - 自动发布器不再写死来源：订阅清单提交后立即触发更新，定时任务也读取同一清单；
 - X 凭证缺失时只跳过 X，GitHub、RSS 和 Reddit 继续发布；
 - Agent 步数预算根据来源数量自动扩展，允许维护者持续增加来源；
-- 53 项测试通过；无 X 凭证真实运行读取 55 条、筛选 46 条、0 个工具错误。
+- 53 项测试通过；无 X 凭证真实运行读取 55 条、筛选 46 条、0 个工具错误；
+- 功能提交 `3cb5195`、首个动态 Feed 提交 `8c93dd4` 已上线，公开 Feed 当前含 38 条，其中 Reddit 25 条、Gemini CLI 3 条。
 
 ## Agent 化升级构思
 
@@ -126,7 +127,7 @@ ai-intelligence-radar/
 
 ## 下一步
 
-1. 在 GitHub Actions 首次运行 v0.7 动态发布器，确认线上 Feed 出现 Gemini 与 Reddit 内容。
+1. 根据实际阅读体验调整 `config/subscriptions.json`，控制 Reddit 比例并增加需要跟踪的官方 RSS。
 2. 确认专用 X 后台发布账号并完成首次 X Feed 发布。
 3. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
 4. 将 X 的来源检查点扩展为通用 Checkpoint/Resume，并增加重试与幂等。
