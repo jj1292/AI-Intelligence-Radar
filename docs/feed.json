@@ -7,6 +7,256 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v8nj6o/i_built_a_tool_to_actually_test_which_weights/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8nj6o/i_built_a_tool_to_actually_test_which_weights/",
+      "title": "Selected Reddit communities · I built a tool to actually test which weights matter before quantizing, instead of guessing (Qwen3.6-27B, 3 builds: Bedrock/Tightrope/Gambit)",
+      "content_text": "Most quantization works like this: pick a bit depth, apply it everywhere, maybe let imatrix take a rough guess at what matters, ship it. Most don't check which specific weight groups can take a hit and which ones can't. It's convention and vibes. So I built a harness that quantizes one weight group at a time and measures exactly how much it diverges from the full precision model, using KL divergen\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T04:19:24+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v8ncmr/microsoftvibevoiceasrbitnet/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8ncmr/microsoftvibevoiceasrbitnet/",
+      "title": "Selected Reddit communities · microsoft/VibeVoice-ASR-BitNet",
+      "content_text": "VibeVoice-ASR-BitNet is a compressed variant of VibeVoice-ASR optimized for real-time inference on edge CPUs — no GPU required. Through heterogeneous quantization, the model is compressed from 4.62 GB to 1.58 GB while achieving 1.6–2.3× faster inference than Whisper.cpp with real-time capability (RTF < 1) on as few as 3 CPU threads. submitted by /u/Balance- to r/LocalLLaMA [link] [comments]\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T04:10:23+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1v8n83d/stats_for_aiml_2/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1v8n83d/stats_for_aiml_2/",
+      "title": "Selected Reddit communities · Stats for AI/ML 2",
+      "content_text": "Hello Folks, The next content on Machine Learning is out. We continue with Statistics for AI/ML. We, ->Understand and derive the detailed derivation of Maximum likelihood estimation(MLE) for Univariate and Multivariate Gaussian. While doing the derivation for multivariate case, we understand visually, Scatter Matrix, Centering matrix. ->Derive MLE for Linear Regression, and understand Residual Sum\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T04:04:23+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v8n56y/me_running_llama_2_on_my_gpu_me_trying_to_run/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8n56y/me_running_llama_2_on_my_gpu_me_trying_to_run/",
+      "title": "Selected Reddit communities · Me running Llama 2 on my GPU Me trying to run Kimi K3 on my GPU",
+      "content_text": "submitted by /u/Framebanger-Nsukula to r/LocalLLaMA [link] [comments]\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T04:00:51+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1v8n1q7/chatgpt_vs_gemini/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1v8n1q7/chatgpt_vs_gemini/",
+      "title": "Selected Reddit communities · ChatGPT vs Gemini",
+      "content_text": "Anyone else notice that Gemini covers up things like racist scandals of artists (especially kpop artists) while ChatGPT fully dives in? Does this mean that ChatGPT is the better ai for research? submitted by /u/Partygoer69420 to r/OpenAI [link] [comments]\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T03:56:35+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.146.0-alpha.14",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.146.0-alpha.14",
+      "title": "OpenAI · rust-v0.146.0-alpha.14",
+      "content_text": "Release 0.146.0-alpha.14\n\nWhy it matters: 这是官方代码仓库发布信号，可用于观察产品迭代速度、能力变化和可靠性改进。\n\nSource: openai/codex releases (T1)",
+      "date_published": "2026-07-28T03:37:17+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1v8lwsk/apparently_matrix_multiplication_is_dangerous/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1v8lwsk/apparently_matrix_multiplication_is_dangerous/",
+      "title": "Selected Reddit communities · Apparently matrix multiplication is dangerous stuff...",
+      "content_text": "https://preview.redd.it/50kmbsa5zvfh1.png?width=1432&format=png&auto=webp&s=cc79fa566cdf5a06787fb2565512b39ffca994ab Was learning linear algebra. How could this conversation be even remotely flaggable??? submitted by /u/Careless_Love_3213 to r/OpenAI [link] [comments]\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T03:03:20+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v8ltax/this_came_to_mind_about_the_current_situation_no/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8ltax/this_came_to_mind_about_the_current_situation_no/",
+      "title": "Selected Reddit communities · This came to mind about the current situation. No local models mean no middle-men who re-sell re-branded models, which means lower hardware demand.",
+      "content_text": "submitted by /u/HugoCortell to r/LocalLLaMA [link] [comments]\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T02:59:16+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v8lnz6/thinkingcapqwen3627b_warrants_a_look/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8lnz6/thinkingcapqwen3627b_warrants_a_look/",
+      "title": "Selected Reddit communities · ThinkingCap-Qwen3.6-27B warrants a look",
+      "content_text": "It has only been two days since I move 100% from Qwen3.5-27B F16 to ThinkingCap-Qwen3.6-27B F16. Where I was getting tps in 30-40 range (depending on the size of the context), I am definitely getting 35-45 range. Not much of a bump you may say but I have not noticed any loss in quality. They claimed to have reduced token usage. Maybe that is what is translating into the higher tps. Key is that the\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T02:52:22+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1v8legd/oss_harness/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1v8legd/oss_harness/",
+      "title": "Selected Reddit communities · oss harness",
+      "content_text": "im part of a startup doing something in the ai space, but our official product launch is a little far away (waiting for some results/hardware). in the mean time we're building a harness (that will be free and open source) and was wondering what you guys want most from a harness. obviously there are tons out there but i feel like it wouldnt hurt for another startup to throw their hat in the ring, t\n\nWhy it matters: 这是社区早期信号，只用于发现问题、用例和情绪；重要事实需要回到 T1 官方来源核验。\n\nSource: Selected Reddit communities (T3)",
+      "date_published": "2026-07-28T02:40:06+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit"
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/OpenAI/comments/1v8labs/i_had_a_scientific_discussion_with_ai/",
       "url": "https://www.reddit.com/r/OpenAI/comments/1v8labs/i_had_a_scientific_discussion_with_ai/",
       "title": "Selected Reddit communities · I had a scientific discussion with ai",
