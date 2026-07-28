@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.6.0-7C3AED?style=for-the-badge" alt="Version v0.6.0" />
+  <img src="https://img.shields.io/badge/version-v0.7.0-7C3AED?style=for-the-badge" alt="Version v0.7.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -51,7 +51,7 @@ There is no shortage of daily information, but only a small number of signals ca
 > **The goal is not to read the entire internet for you. It is to preserve a small set of verifiable insights that remain useful over time.**
 
 > [!NOTE]
-> **v0.6 keeps authentication at the collection layer: the maintainer configures one publisher account, while the Agent publishes public RSS/JSON feeds for subscribers who need no X account, cookies, or local environment.**
+> **v0.7 turns sources into one editable subscription list: maintainers add or remove sources on GitHub, the Agent republishes automatically, and subscribers only read public RSS/JSON feeds.**
 
 ## 🌈 Current Capabilities
 
@@ -94,9 +94,9 @@ There is no shortage of daily information, but only a small number of signals ca
 | :---: | --- | --- | :---: |
 | 🟣 **T1** | Official release notes, newsrooms, and GitHub repositories | Factual foundation | ![ready](https://img.shields.io/badge/READY-22C55E?style=flat-square) |
 | 🔵 **T2** | Official and core-team X accounts | First-hand context and distribution signals | ![publisher](https://img.shields.io/badge/PUBLISHER-F59E0B?style=flat-square) |
-| 🟠 **T3** | Reddit AI communities | Problems, use cases, sentiment, and weak signals | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
+| 🟠 **T3** | Reddit AI communities | Problems, use cases, sentiment, and weak signals | ![ready](https://img.shields.io/badge/PUBLIC_RSS-22C55E?style=flat-square) |
 
-The registry contains **10 source entry points**: 2 GitHub Atom feeds run directly, X is collected once by the hosted publisher, and 6 official web sources plus Reddit still await adapters. See [`config/sources.json`](config/sources.json).
+The default list contains **3 GitHub Release repositories, 3 Reddit communities, and 5 first-hand X accounts**. GitHub and Reddit run without authentication; X is enabled only after the maintainer configures a backend account. Day-to-day changes belong in [`config/subscriptions.json`](config/subscriptions.json); the advanced registry remains in [`config/sources.json`](config/sources.json).
 
 ## 🔄 How It Works
 
@@ -137,6 +137,19 @@ Maintainer account (one-time auth) → scheduled Agent → RSS / JSON → every 
 
 Subscribers only read public signals and never touch the publisher account or cookies. See [`public feed publisher`](docs/deployment/subscription-publisher.md) for deployment and security boundaries.
 
+## ✏️ Customize Your Sources
+
+No Python changes are required. Open [`config/subscriptions.json`](config/subscriptions.json), click the pencil icon, edit the list, and commit. A subscription-list change automatically triggers a new publication:
+
+| What to follow | Section | Example |
+| --- | --- | --- |
+| GitHub Releases | `github_releases` | `"repo": "openai/codex"` |
+| Any RSS / Atom feed | `rss_feeds` | `"url": "https://example.com/feed.xml"` |
+| Reddit communities | `reddit.communities` | `"LocalLLaMA"` |
+| X accounts | `x.accounts` | `"username": "OpenAI"` |
+
+Set `"enabled"` to `false` to pause an entry without deleting it. The file must only contain public source settings; cookies, tokens, and API keys still belong in GitHub Secrets. See the [`source customization guide`](docs/customize-subscriptions.md) for complete examples and validation errors.
+
 ## ⚡ 30-Second Quick Start
 
 ### 1. Install dependencies
@@ -148,10 +161,13 @@ python3 -m pip install -r requirements.txt
 ### 2. Run the live Radar Agent
 
 ```bash
-python3 -m agent.runner --output outputs/latest-radar --hours 48
+python3 -m agent.runner \
+  --config config/subscriptions.json \
+  --output outputs/latest-radar \
+  --hours 48
 ```
 
-The run reads official OpenAI Codex and Anthropic Claude Code releases and writes cards, a trend radar, an AI Pulse daily brief, and a complete tool trace.
+By default, the run reads OpenAI Codex, Anthropic Claude Code, Gemini CLI Releases, and a combined public Reddit feed. It writes cards, a trend radar, an AI Pulse daily brief, and a complete tool trace. X is skipped automatically when no backend account is configured.
 
 ### 3. Run tests and the strict evaluation gate
 
@@ -160,9 +176,9 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-42%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-53%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
-Current baseline: **all 3 cases pass with an average score of 2.0/2**. The live example reads 20 official releases, keeps 2 signals inside the 48-hour window, and correctly reports that one repository alone does not establish an industry trend. See the [`trend report`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md), [`AI Pulse brief`](examples/output/v0.4-live-final/briefings/2026-07-27-ai-pulse.md), and [`Agent trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl).
+Current baseline: **all 3 cases pass with an average score of 2.0/2**. The v0.7 live path, without X credentials, read 55 GitHub/Reddit items, selected 46 for the feed, and completed with zero tool errors.
 
 ## 🧪 Evaluation First
 
@@ -214,7 +230,7 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 > - Subscribers provide no credentials; only the maintainer operating the hosted publisher configures a collection account.
 > - The backend X adapter uses the unofficial `twscrape` project. It is free but may break when X changes its internals and may expose the account to platform risk; use a dedicated publisher account.
 > - Cookies stay in a local database or GitHub Actions Secrets. Prefer the official X API in production.
-> - Reddit uses OAuth and must comply with the platform's data-use and retention requirements.
+> - Reddit currently uses public RSS and stores only links, necessary metadata, and short summaries. OAuth will be added separately if the project moves to the Data API.
 > - API keys, tokens, and OAuth credentials must stay in local environment variables or GitHub Secrets.
 > - The knowledge base stores links, necessary metadata, short evidence, and derived analysis rather than bulk copies of full platform content.
 > - T3 community interest must be cross-checked against a T1 official source or a reproducible experiment.
@@ -228,8 +244,9 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 | `v0.3` | Eval Contract, 3 baseline cases, scorer, and reproducible report | ✅ Done |
 | `v0.4` | GitHub Atom, 48-hour gate, RunState, minimal Loop, AI Pulse output, and Trace | ✅ Done |
 | `v0.5` | Backend X collection, source dispatch, post-success checkpoint, and account boundaries | ✅ Done |
-| `v0.6` | Public RSS/JSON feeds, scheduled publisher, one authentication for all subscribers | 🚧 Current |
-| `v0.7` | Model planner, general resume, official web adapters, and Reddit OAuth | 🧭 Next |
+| `v0.6` | Public RSS/JSON feeds, scheduled publisher, one authentication for all subscribers | ✅ Done |
+| `v0.7` | Editable subscription list, dynamic publishing, generic RSS/Atom, public Reddit feed | 🚧 Current |
+| `v0.8` | Model planner, general resume, and official web adapters | 🧭 Next |
 | `v1.0` | Memory, replay evaluation, periodic reviews, subscriptions, and source-quality scoring | 🌟 Vision |
 
 ## 📚 Documentation
@@ -240,10 +257,12 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 - 🎯 [`AI product and agent evaluation guide`](docs/ai-product-evaluation-guide.md)
 - 🔌 [`Optional Dify adapter`](docs/adapters/dify.md)
 - 🔔 [`Public feed publisher`](docs/deployment/subscription-publisher.md)
+- ✏️ [`Source customization guide`](docs/customize-subscriptions.md)
 - 𝕏 [`Backend X adapter`](docs/adapters/x-twscrape.md)
 - 🧭 [`From AI Pulse to Radar`](docs/history/from-ai-pulse-to-radar.md)
 - 🧩 [`Intelligence signal schema`](schemas/intelligence-signal.schema.json)
-- 📡 [`Source registry`](config/sources.json)
+- 📡 [`My subscription list`](config/subscriptions.json)
+- 🧰 [`Advanced source registry`](config/sources.json)
 - 🧪 [`Evaluation rubric`](evals/rubric.md)
 - 📊 [`v0.3 baseline report`](evals/baseline-report.md)
 - 🧾 [`v0.4 live Agent trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl)

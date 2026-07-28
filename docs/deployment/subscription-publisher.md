@@ -3,7 +3,7 @@
 AI Intelligence Radar 采用“采集端一次认证，订阅端零认证”的发布模式。普通用户只需要 RSS 或 JSON Feed URL；X 账号和 Cookie 仅属于后台发布器。
 
 ```text
-X / GitHub / 官方网页
+X / GitHub / RSS / Reddit
           ↓
    定时 Agent 采集
           ↓
@@ -22,6 +22,10 @@ X / GitHub / 官方网页
 - JSON Feed：`https://jj1292.github.io/AI-Intelligence-Radar/feed.json`
 
 ## 仓库维护者的一次性配置
+
+### 0. 修改订阅清单
+
+日常只编辑 `config/subscriptions.json`。它支持 GitHub Release、任意 RSS/Atom、Reddit 社区和 X 账号。提交清单后会立即触发发布；详细格式见 [`订阅源修改指南`](../customize-subscriptions.md)。
 
 ### 1. 配置后台采集账号
 
@@ -50,12 +54,12 @@ Cookie 只保存在 GitHub Actions Secret 中。不要写入 Issue、README、�
 后台执行顺序为：
 
 1. 从 GitHub Secret 临时建立 `twscrape` 账号数据库；
-2. 抓取 OpenAI Codex、Anthropic Claude Code 官方 Release，以及配置中的 OpenAI、Anthropic、Google DeepMind 和 Google AI 官方 X 账号；
+2. 动态读取 `config/subscriptions.json`，抓取启用的 GitHub Release、RSS/Atom、Reddit 社区，以及后台已授权时的 X 账号；
 3. 通过 72 小时时效门并生成卡片、趋势、AI Pulse 和公开 Feed；
 4. 将最多 200 条滚动 Feed 条目与公开 `since_id` 检查点提交到仓库；
 5. 只有 Feed 成功写入后才推进检查点。
 
-缺少变量或 Secret 时，工作流只跳过 X，仍会持续发布无需认证的 GitHub 官方 Release；同时不会尝试输出凭证。
+缺少变量或 Secret 时，工作流只跳过 X，仍会持续发布无需认证的 GitHub、RSS/Atom 和 Reddit 来源；同时不会尝试输出凭证。
 
 ## 自托管与生产替代
 

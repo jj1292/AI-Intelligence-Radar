@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI Intelligence Radar subscriptions",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "github_releases", "rss_feeds", "reddit", "x"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "version": {"const": 1},
+    "github_releases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["repo"],
+        "properties": {
+          "repo": {"type": "string", "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"},
+          "name": {"type": "string", "minLength": 1},
+          "company": {"type": "string", "minLength": 1},
+          "topics": {"$ref": "#/$defs/topics"},
+          "enabled": {"type": "boolean"}
+        }
+      }
+    },
+    "rss_feeds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "url"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "name": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "pattern": "^https?://"},
+          "company": {"type": "string", "minLength": 1},
+          "source_tier": {"type": "integer", "minimum": 1, "maximum": 3},
+          "channel": {"type": "string", "minLength": 1},
+          "topics": {"$ref": "#/$defs/topics"},
+          "enabled": {"type": "boolean"}
+        }
+      }
+    },
+    "reddit": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["communities"],
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "max_results": {"type": "integer", "minimum": 1, "maximum": 100},
+        "topics": {"$ref": "#/$defs/topics"},
+        "communities": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^(?:r/)?[A-Za-z0-9_]{2,21}$"}
+        }
+      }
+    },
+    "x": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["accounts"],
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "max_results": {"type": "integer", "minimum": 1, "maximum": 500},
+        "include_replies": {"type": "boolean"},
+        "include_retweets": {"type": "boolean"},
+        "require_links": {"type": "boolean"},
+        "topics": {"$ref": "#/$defs/topics"},
+        "accounts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["username"],
+            "properties": {
+              "username": {"type": "string", "pattern": "^@?[A-Za-z0-9_]{1,15}$"},
+              "company": {"type": "string", "minLength": 1},
+              "enabled": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "topics": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    }
+  }
+}

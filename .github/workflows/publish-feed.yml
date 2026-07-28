@@ -2,6 +2,9 @@ name: publish-subscription-feeds
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - "config/subscriptions.json"
   schedule:
     - cron: "17 1,13 * * *"
 
@@ -56,12 +59,13 @@ jobs:
           RADAR_STATE_DIR: data/subscriptions/state
         shell: bash
         run: |
-          sources=(--source openai_codex_releases --source claude_code_releases)
+          publisher_args=()
           if [[ "$X_PUBLISHER_CONFIGURED" == "true" ]]; then
-            sources+=(--source x_frontier_ai_accounts)
+            publisher_args+=(--include-auth)
           fi
           python -m agent.runner \
-            "${sources[@]}" \
+            --config config/subscriptions.json \
+            "${publisher_args[@]}" \
             --output outputs/publisher-run \
             --feed-output docs \
             --feed-max-items 200 \

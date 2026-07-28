@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.6.0-7C3AED?style=for-the-badge" alt="Version v0.6.0" />
+  <img src="https://img.shields.io/badge/version-v0.7.0-7C3AED?style=for-the-badge" alt="Version v0.7.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -51,7 +51,7 @@
 > **目标不是替你读完互联网，而是每天留下少量、可复核、以后还能用的知识。**
 
 > [!NOTE]
-> **v0.6 将认证留在采集端：维护者配置一次后台账号，Agent 定时抓取并发布公开 RSS/JSON；普通订阅者不需要 X 账号、Cookie 或本地环境。**
+> **v0.7 把订阅源变成一份可直接编辑的清单：维护者在 GitHub 网页增删来源，Agent 自动重新发布；普通订阅者只读公开 RSS/JSON。**
 
 ## 🌈 当前能力
 
@@ -94,9 +94,9 @@
 | :---: | --- | --- | :---: |
 | 🟣 **T1** | 官方 Release Notes、Newsroom、官方 GitHub | 事实底座 | ![ready](https://img.shields.io/badge/READY-22C55E?style=flat-square) |
 | 🔵 **T2** | 官方与核心团队 X 账号 | 一手补充、扩散信号 | ![publisher](https://img.shields.io/badge/PUBLISHER-F59E0B?style=flat-square) |
-| 🟠 **T3** | Reddit AI 社区 | 问题、用例、情绪和弱信号 | ![auth](https://img.shields.io/badge/AUTH_REQUIRED-F59E0B?style=flat-square) |
+| 🟠 **T3** | Reddit AI 社区 | 问题、用例、情绪和弱信号 | ![ready](https://img.shields.io/badge/PUBLIC_RSS-22C55E?style=flat-square) |
 
-已注册 **10 个来源入口**：2 个 GitHub Atom 源可直接采集，X 由后台发布器统一采集，6 个官方网页源与 Reddit 仍等待适配。详见 [`config/sources.json`](config/sources.json)。
+默认清单包含 **3 个 GitHub Release 仓库、3 个 Reddit 社区和 5 个 X 一手账号**。GitHub 与 Reddit 无需认证即可运行；X 只在维护者配置后台账号后启用。日常只需修改 [`config/subscriptions.json`](config/subscriptions.json)，高级来源注册表保留在 [`config/sources.json`](config/sources.json)。
 
 ## 🔄 系统如何工作
 
@@ -137,6 +137,19 @@ flowchart LR
 
 订阅端只读取公开信号，不接触维护者账号或 Cookie。部署方式与安全边界见 [`公开订阅发布器`](docs/deployment/subscription-publisher.md)。
 
+## ✏️ 修改自己的订阅源
+
+无需改 Python。打开 [`config/subscriptions.json`](config/subscriptions.json)，点击右上角铅笔，修改后提交即可。订阅清单变化会自动触发一次发布：
+
+| 想订阅什么 | 修改位置 | 示例 |
+| --- | --- | --- |
+| GitHub Release | `github_releases` | `"repo": "openai/codex"` |
+| 任意 RSS / Atom | `rss_feeds` | `"url": "https://example.com/feed.xml"` |
+| Reddit 社区 | `reddit.communities` | `"LocalLLaMA"` |
+| X 账号 | `x.accounts` | `"username": "OpenAI"` |
+
+把某项的 `"enabled"` 改为 `false` 即可暂停，不必删除。配置文件只能放公开来源；Cookie、Token、API Key 仍然只能放 GitHub Secrets。完整示例与常见错误见 [`订阅源修改指南`](docs/customize-subscriptions.md)。
+
 ## ⚡ 30 秒体验
 
 ### 1. 安装依赖
@@ -148,10 +161,13 @@ python3 -m pip install -r requirements.txt
 ### 2. 运行真实 Radar Agent
 
 ```bash
-python3 -m agent.runner --output outputs/latest-radar --hours 48
+python3 -m agent.runner \
+  --config config/subscriptions.json \
+  --output outputs/latest-radar \
+  --hours 48
 ```
 
-运行时会读取 OpenAI Codex 与 Anthropic Claude Code 官方 Release，输出知识卡片、趋势雷达、AI Pulse 日报和完整工具 Trace。
+默认会读取 OpenAI Codex、Anthropic Claude Code、Gemini CLI Release 和合并后的 Reddit 公共 RSS，输出知识卡片、趋势雷达、AI Pulse 日报和完整工具 Trace。未配置后台账号时会自动跳过 X。
 
 ### 3. 运行测试与严格评测
 
@@ -160,9 +176,9 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-42%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-53%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
-当前基线：**3 个案例全部通过，平均分 2.0/2**。真实运行样例读取 20 条官方 Release，保留 2 条 48 小时内信号，并诚实判定“尚无两个独立来源构成趋势”。查看 [`趋势报告`](examples/output/v0.4-live-final/trends/2026-07-27-trend-radar.md)、[`AI Pulse 日报`](examples/output/v0.4-live-final/briefings/2026-07-27-ai-pulse.md) 与 [`Agent Trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl)。
+当前基线：**3 个案例全部通过，平均分 2.0/2**。v0.7 真实链路在无 X 凭证条件下读取 55 条 GitHub/Reddit 内容，筛选 46 条写入 Feed，0 个工具错误。
 
 ## 🧪 评估先行
 
@@ -214,7 +230,7 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 > - 普通订阅者不需要提供任何凭证；只有托管发布器的维护者需要配置采集账号。
 > - 当前后台 X 适配器基于非官方 `twscrape`，免费但可能因接口变化失效，也有账号风控风险；发布器应使用专用账号。
 > - Cookie 只进入本机数据库或 GitHub Actions Secret；生产环境优先使用 X 官方 API。
-> - Reddit 使用 OAuth，并遵守平台的数据使用与留存要求。
+> - Reddit 当前读取公开 RSS，只保存链接、必要元数据和短摘要；如未来改用 Data API，再单独接入 OAuth。
 > - API Key、Token 和 OAuth 凭证只能进入本地环境变量或 GitHub Secret。
 > - 知识库保存链接、必要元数据、短证据和衍生判断，不批量复制完整平台内容。
 > - T3 社区热度必须经过 T1 官方来源或复现实验交叉验证。
@@ -228,8 +244,9 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 | `v0.3` | Eval Contract、3 个基线案例、评分器与可复现报告 | ✅ Done |
 | `v0.4` | GitHub Atom、48 小时时效、RunState、最小 Loop、AI Pulse 输出、Trace | ✅ Done |
 | `v0.5` | X 后台采集、来源分发、成功后增量 Checkpoint、账号安全边界 | ✅ Done |
-| `v0.6` | 公开 RSS/JSON、定时发布器、一次认证/多人订阅 | 🚧 Current |
-| `v0.7` | 模型 Planner、通用 Resume、官方网页、Reddit OAuth | 🧭 Next |
+| `v0.6` | 公开 RSS/JSON、定时发布器、一次认证/多人订阅 | ✅ Done |
+| `v0.7` | 可编辑订阅清单、动态发布、通用 RSS/Atom、Reddit 公共源 | 🚧 Current |
+| `v0.8` | 模型 Planner、通用 Resume、官方网页适配器 | 🧭 Next |
 | `v1.0` | 记忆、回放评测、周/月复盘、主题订阅与来源质量评分 | 🌟 Vision |
 
 ## 📚 文档
@@ -240,10 +257,12 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 - 🎯 [`AI 产品评估与 Agent 评测指南`](docs/ai-product-evaluation-guide.md)
 - 🔌 [`Dify 可选适配器`](docs/adapters/dify.md)
 - 🔔 [`公开订阅发布器`](docs/deployment/subscription-publisher.md)
+- ✏️ [`订阅源修改指南`](docs/customize-subscriptions.md)
 - 𝕏 [`X 后台采集适配器`](docs/adapters/x-twscrape.md)
 - 🧭 [`从 AI Pulse 到 Radar`](docs/history/from-ai-pulse-to-radar.md)
 - 🧩 [`情报信号 Schema`](schemas/intelligence-signal.schema.json)
-- 📡 [`来源注册表`](config/sources.json)
+- 📡 [`我的订阅清单`](config/subscriptions.json)
+- 🧰 [`高级来源注册表`](config/sources.json)
 - 🧪 [`评测规则`](evals/rubric.md)
 - 📊 [`v0.3 基线报告`](evals/baseline-report.md)
 - 🧾 [`v0.4 真实运行 Trace`](examples/output/v0.4-live-final/agent-trace-v0.4-unified.jsonl)

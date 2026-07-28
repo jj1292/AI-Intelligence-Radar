@@ -21,6 +21,7 @@ from runtime.event_log import JsonlTracer
 from source_registry import load_source_registry
 from tools.collection import CollectionBatch
 from tools.github_releases import collect_github_releases
+from tools.public_feeds import collect_public_feed
 from tools.registry import ToolRegistry
 from tools.source_dispatch import SourceDispatcher
 from tools.x_twscrape import collect_x_posts
@@ -35,6 +36,7 @@ Collector = Callable[
 def build_source_dispatcher() -> SourceDispatcher:
     dispatcher = SourceDispatcher()
     dispatcher.register("atom", collect_github_releases)
+    dispatcher.register("rss", collect_public_feed)
     dispatcher.register("x_twscrape", collect_x_posts)
     return dispatcher
 
@@ -44,6 +46,7 @@ def _select_sources(
     source_ids: set[str] | None = None,
     *,
     supported_modes: set[str] | None = None,
+    include_requires_auth: bool = False,
 ) -> list[dict[str, Any]]:
     modes = supported_modes or set(build_source_dispatcher().modes())
     if source_ids:
@@ -61,7 +64,10 @@ def _select_sources(
     return [
         source
         for source in sources
-        if source["status"] == "ready" and source["collection_mode"] in modes
+        if source["status"] in (
+            {"ready", "requires_auth"} if include_requires_auth else {"ready"}
+        )
+        and source["collection_mode"] in modes
     ]
 
 
@@ -256,15 +262,24 @@ def run_radar_agent(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Run the minimal AI Intelligence Radar Agent Harness.")
-    parser.add_argument("--config", type=Path, default=Path("config/sources.json"))
+    parser.add_argument("--config", type=Path, default=Path("config/subscriptions.json"))
     parser.add_argument("--output", type=Path, default=Path("outputs/latest-radar"))
     parser.add_argument("--trace", type=Path)
     parser.add_argument("--feed-output", type=Path)
     parser.add_argument("--feed-max-items", type=int, default=200)
     parser.add_argument("--source", action="append", dest="source_ids")
+    parser.add_argument(
+        "--include-auth",
+        action="store_true",
+        help="Also run enabled sources that require publisher authentication.",
+    )
     parser.add_argument("--hours", type=float, default=48)
     parser.add_argument("--as-of", default=datetime.now().astimezone().isoformat(timespec="seconds"))
-    parser.add_argument("--max-steps", type=int, default=20)
+    parser.add_argument(
+        "--max-steps",
+        type=int,
+        help="Maximum Agent steps; defaults to the selected source count plus 8.",
+    )
     args = parser.parse_args()
 
     all_sources = load_source_registry(args.config)
@@ -273,9 +288,13 @@ def main() -> None:
         all_sources,
         set(args.source_ids) if args.source_ids else None,
         supported_modes=set(dispatcher.modes()),
+        include_requires_auth=args.include_auth,
     )
     if not sources:
         raise SystemExit("No runnable sources selected.")
+    max_steps = args.max_steps if args.max_steps is not None else len(sources) + 8
+    if max_steps <= 0:
+        raise SystemExit("--max-steps must be greater than zero.")
     state = run_radar_agent(
         sources,
         args.output,
@@ -285,7 +304,7 @@ def main() -> None:
         feed_output_dir=args.feed_output,
         feed_max_items=args.feed_max_items,
         trace_path=args.trace,
-        max_steps=args.max_steps,
+        max_steps=max_steps,
     )
     print(
         f"run_id={state.run_id} status={state.status} "

@@ -2,8 +2,8 @@
 type: project-home
 status: active
 project: AI Intelligence Radar
-version: 0.6.0
-updated: 2026-07-27
+version: 0.7.0
+updated: 2026-07-28
 ---
 
 # AI Intelligence Radar：行业情报 Agent 与 Harness 学习工程
@@ -106,6 +106,16 @@ ai-intelligence-radar/
 - 后台缺少 Secret 时只跳过 X 并继续发布公开来源，不打印或提交 Cookie；
 - 公开 Feed 数据由 GitHub Pages `/docs` 目录提供。
 
+### v0.7.0（可编辑订阅源）
+
+- 新增面向维护者的 `config/subscriptions.json`，日常无需修改 Python；
+- 支持直接增删 GitHub Release、任意 RSS/Atom、Reddit 社区和 X 账号；
+- 多个 Reddit 社区合并为一次公开 RSS 请求，无需 OAuth，并降低连续请求限速；
+- 自动发布器不再写死来源：订阅清单提交后立即触发更新，定时任务也读取同一清单；
+- X 凭证缺失时只跳过 X，GitHub、RSS 和 Reddit 继续发布；
+- Agent 步数预算根据来源数量自动扩展，允许维护者持续增加来源；
+- 53 项测试通过；无 X 凭证真实运行读取 55 条、筛选 46 条、0 个工具错误。
+
 ## Agent 化升级构思
 
 项目下一阶段拟从确定性情报管道升级为可观察、可恢复、可评测的 Loop Agent，同时作为 Agent Harness 架构实验室。推荐采用“外层确定性状态机 + 内层模型决策循环”，先实现单 Agent 的自研最小 Harness，再分别用 OpenAI Agents SDK、LangGraph 与 Dify 复刻同一任务并进行对照评测。
@@ -116,11 +126,11 @@ ai-intelligence-radar/
 
 ## 下一步
 
-1. 完成发布器账号 Secret 和 GitHub Pages 的一次性仓库配置，跑通首个真实公开 Feed。
-2. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
-3. 将 X 的来源检查点扩展为通用 Checkpoint/Resume，并增加运行预算、重试和幂等。
-4. 接入官方 Release Notes 网页采集器和 Reddit OAuth；生产 X 采集保留官方 API 适配位。
-5. 导入并脱敏原 Dify DSL，作为可视化编排与框架对照适配器。
+1. 在 GitHub Actions 首次运行 v0.7 动态发布器，确认线上 Feed 出现 Gemini 与 Reddit 内容。
+2. 确认专用 X 后台发布账号并完成首次 X Feed 发布。
+3. 将确定性 Planner 替换为可选模型 Planner，并保持同一 Tool Contract。
+4. 将 X 的来源检查点扩展为通用 Checkpoint/Resume，并增加重试与幂等。
+5. 接入仍未提供 RSS 的官方 Release Notes 网页采集器；生产 X 采集保留官方 API 适配位。
 6. 把 3 个最小评测案例扩展到 12 个，并增加真实 Feed 回放集。
 
 ## 相关项目

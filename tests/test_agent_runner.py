@@ -54,6 +54,19 @@ class AgentRunnerTests(unittest.TestCase):
 
         self.assertEqual([source["id"] for source in selected], ["ready"])
 
+    def test_default_source_selection_can_include_requires_auth(self):
+        ready = make_source("ready")
+        gated = make_source("x")
+        gated.update({"collection_mode": "x_twscrape", "status": "requires_auth"})
+
+        selected = _select_sources(
+            [ready, gated],
+            supported_modes={"atom", "x_twscrape"},
+            include_requires_auth=True,
+        )
+
+        self.assertEqual([source["id"] for source in selected], ["ready", "x"])
+
     def test_explicit_source_selection_allows_requires_auth(self):
         gated = make_source("x")
         gated.update({"collection_mode": "x_twscrape", "status": "requires_auth"})

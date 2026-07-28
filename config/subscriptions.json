@@ -1,0 +1,46 @@
+{
+  "$schema": "./subscriptions.schema.json",
+  "version": 1,
+  "github_releases": [
+    {
+      "repo": "openai/codex",
+      "company": "OpenAI",
+      "topics": ["codex", "coding-agents", "developer-tools"],
+      "enabled": true
+    },
+    {
+      "repo": "anthropics/claude-code",
+      "company": "Anthropic",
+      "topics": ["claude-code", "coding-agents", "developer-tools"],
+      "enabled": true
+    },
+    {
+      "repo": "google-gemini/gemini-cli",
+      "company": "Google",
+      "topics": ["gemini", "coding-agents", "developer-tools"],
+      "enabled": true
+    }
+  ],
+  "rss_feeds": [],
+  "reddit": {
+    "enabled": true,
+    "max_results": 25,
+    "topics": ["community-feedback", "use-cases", "emerging-signals"],
+    "communities": ["LocalLLaMA", "MachineLearning", "OpenAI"]
+  },
+  "x": {
+    "enabled": true,
+    "max_results": 100,
+    "include_replies": false,
+    "include_retweets": false,
+    "require_links": true,
+    "topics": ["models", "agents", "research", "products"],
+    "accounts": [
+      {"username": "OpenAI", "company": "OpenAI", "enabled": true},
+      {"username": "OpenAIDevs", "company": "OpenAI", "enabled": true},
+      {"username": "AnthropicAI", "company": "Anthropic", "enabled": true},
+      {"username": "GoogleDeepMind", "company": "Google DeepMind", "enabled": true},
+      {"username": "GoogleAI", "company": "Google", "enabled": true}
+    ]
+  }
+}
