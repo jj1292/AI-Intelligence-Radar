@@ -3,7 +3,7 @@
   "title": "AI Intelligence Radar subscriptions",
   "type": "object",
   "additionalProperties": false,
-  "required": ["version", "github_releases", "rss_feeds", "reddit", "x"],
+  "required": ["version", "github_releases", "official_web", "rss_feeds", "reddit", "x"],
   "properties": {
     "$schema": {"type": "string"},
     "version": {"const": 1},
@@ -18,6 +18,24 @@
           "name": {"type": "string", "minLength": 1},
           "company": {"type": "string", "minLength": 1},
           "topics": {"$ref": "#/$defs/topics"},
+          "enabled": {"type": "boolean"}
+        }
+      }
+    },
+    "official_web": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["adapter", "name", "url"],
+        "properties": {
+          "id": {"type": "string", "minLength": 1},
+          "adapter": {"enum": ["anthropic_news"]},
+          "name": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "pattern": "^https://"},
+          "company": {"type": "string", "minLength": 1},
+          "topics": {"$ref": "#/$defs/topics"},
+          "max_results": {"type": "integer", "minimum": 1, "maximum": 100},
           "enabled": {"type": "boolean"}
         }
       }

@@ -25,6 +25,7 @@ SUBSCRIPTION_KEYS = {
     "$schema",
     "version",
     "github_releases",
+    "official_web",
     "rss_feeds",
     "reddit",
     "x",
@@ -112,6 +113,34 @@ def expand_subscriptions(config: dict[str, Any]) -> list[dict[str, Any]]:
                 "url": f"https://github.com/{repository}/releases.atom",
                 "status": "ready",
                 "topics": _topics(item, ["releases"]),
+            }
+        )
+
+    for item in _require_list(config, "official_web"):
+        if not _enabled(item):
+            continue
+        adapter = _required_text(item, "adapter", "Official web subscription")
+        if adapter not in {"anthropic_news"}:
+            raise ValueError(f"Unsupported official web adapter: {adapter}")
+        name = _required_text(item, "name", "Official web subscription")
+        url = _required_text(item, "url", "Official web subscription")
+        if not url.startswith("https://"):
+            raise ValueError(f"Official web URL must start with https://: {url}")
+        max_results = item.get("max_results", 30)
+        if not isinstance(max_results, int) or not 1 <= max_results <= 100:
+            raise ValueError(f"Official web max_results must be between 1 and 100: {name}")
+        sources.append(
+            {
+                "id": str(item.get("id") or f"web_{_slug(name)}").strip(),
+                "name": name,
+                "company": str(item.get("company") or name).strip(),
+                "source_tier": 1,
+                "channel": "official_newsroom",
+                "collection_mode": adapter,
+                "url": url,
+                "status": "ready",
+                "max_results": max_results,
+                "topics": _topics(item, ["products", "research", "company"]),
             }
         )
 

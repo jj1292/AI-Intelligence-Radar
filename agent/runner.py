@@ -20,6 +20,7 @@ from reporters.subscription_feed import write_subscription_feeds
 from runtime.event_log import JsonlTracer
 from source_registry import load_source_registry
 from tools.collection import CollectionBatch
+from tools.anthropic_news import collect_anthropic_news
 from tools.github_releases import collect_github_releases
 from tools.public_feeds import collect_public_feed
 from tools.registry import ToolRegistry
@@ -35,6 +36,7 @@ Collector = Callable[
 
 def build_source_dispatcher() -> SourceDispatcher:
     dispatcher = SourceDispatcher()
+    dispatcher.register("anthropic_news", collect_anthropic_news)
     dispatcher.register("atom", collect_github_releases)
     dispatcher.register("rss", collect_public_feed)
     dispatcher.register("x_twscrape", collect_x_posts)

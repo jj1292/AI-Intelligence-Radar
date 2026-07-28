@@ -21,6 +21,18 @@
       "enabled": true
     }
   ],
+  "official_web": [
+    {
+      "id": "anthropic_newsroom",
+      "adapter": "anthropic_news",
+      "name": "Anthropic Newsroom",
+      "url": "https://www.anthropic.com/news",
+      "company": "Anthropic",
+      "topics": ["claude", "products", "research", "safety", "company"],
+      "max_results": 30,
+      "enabled": true
+    }
+  ],
   "rss_feeds": [],
   "reddit": {
     "enabled": true,

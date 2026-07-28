@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1] - 2026-07-28
+
+- 新增 Anthropic Newsroom 官方网页采集器；官网没有可用 RSS/Atom，因此直接读取官方页面，不接第三方镜像。
+- 将 `https://www.anthropic.com/news` 加入默认可编辑订阅清单并标记为 T1 官方来源。
+- 真实页面识别 13 篇，168 小时时效窗口筛选 5 篇，完整 Agent/Feed 链路 0 错误。
+- 测试增至 59 项。
+
 ## [0.7.0] - 2026-07-28
 
 - 新增 `config/subscriptions.json` 和 JSON Schema，维护者可直接修改 GitHub、RSS/Atom、Reddit 与 X 来源。

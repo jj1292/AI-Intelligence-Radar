@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.7.0-7C3AED?style=for-the-badge" alt="Version v0.7.0" />
+  <img src="https://img.shields.io/badge/version-v0.7.1-7C3AED?style=for-the-badge" alt="Version v0.7.1" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -96,7 +96,7 @@
 | 🔵 **T2** | 官方与核心团队 X 账号 | 一手补充、扩散信号 | ![publisher](https://img.shields.io/badge/PUBLISHER-F59E0B?style=flat-square) |
 | 🟠 **T3** | Reddit AI 社区 | 问题、用例、情绪和弱信号 | ![ready](https://img.shields.io/badge/PUBLIC_RSS-22C55E?style=flat-square) |
 
-默认清单包含 **3 个 GitHub Release 仓库、3 个 Reddit 社区和 5 个 X 一手账号**。GitHub 与 Reddit 无需认证即可运行；X 只在维护者配置后台账号后启用。日常只需修改 [`config/subscriptions.json`](config/subscriptions.json)，高级来源注册表保留在 [`config/sources.json`](config/sources.json)。
+默认清单包含 **Anthropic 官方 Newsroom、3 个 GitHub Release 仓库、3 个 Reddit 社区和 5 个 X 一手账号**。官方博客、GitHub 与 Reddit 无需认证即可运行；X 只在维护者配置后台账号后启用。日常只需修改 [`config/subscriptions.json`](config/subscriptions.json)，高级来源注册表保留在 [`config/sources.json`](config/sources.json)。
 
 ## 🔄 系统如何工作
 
@@ -143,6 +143,7 @@ flowchart LR
 
 | 想订阅什么 | 修改位置 | 示例 |
 | --- | --- | --- |
+| Claude / Anthropic 官方博客 | `official_web` | `"url": "https://www.anthropic.com/news"` |
 | GitHub Release | `github_releases` | `"repo": "openai/codex"` |
 | 任意 RSS / Atom | `rss_feeds` | `"url": "https://example.com/feed.xml"` |
 | Reddit 社区 | `reddit.communities` | `"LocalLLaMA"` |
@@ -176,7 +177,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-53%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-59%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
 当前基线：**3 个案例全部通过，平均分 2.0/2**。v0.7 真实链路在无 X 凭证条件下读取 55 条 GitHub/Reddit 内容，筛选 46 条写入 Feed，0 个工具错误。
 

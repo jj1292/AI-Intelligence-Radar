@@ -2,7 +2,7 @@
 type: project-home
 status: active
 project: AI Intelligence Radar
-version: 0.7.0
+version: 0.7.1
 updated: 2026-07-28
 ---
 
@@ -116,6 +116,13 @@ ai-intelligence-radar/
 - Agent 步数预算根据来源数量自动扩展，允许维护者持续增加来源；
 - 53 项测试通过；无 X 凭证真实运行读取 55 条、筛选 46 条、0 个工具错误；
 - 功能提交 `3cb5195`、首个动态 Feed 提交 `8c93dd4` 已上线，公开 Feed 当前含 38 条，其中 Reddit 25 条、Gemini CLI 3 条。
+
+### v0.7.1（Claude 官方博客）
+
+- Anthropic Newsroom 未提供官方 RSS/Atom，因此新增官方网页采集器，不使用第三方镜像；
+- 默认订阅 `https://www.anthropic.com/news`，输出保留 Anthropic 官方原文链接并标记为 T1；
+- 真实网页识别 13 篇文章，168 小时时效窗口筛选 5 篇，Agent 链路 0 错误；
+- 测试增至 59 项。
 
 ## Agent 化升级构思
 

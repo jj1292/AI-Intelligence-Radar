@@ -8,11 +8,11 @@ AI Intelligence Radar 是一个可观察、可评测的 AI 行业情报 Agent �
 
 AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可选适配器，不再代表核心架构。
 
-## v0.7 当前进展
+## v0.7.1 当前进展
 
 - 分支：`main`，v0.7 功能提交 `3cb5195`、首个动态 Feed 提交 `8c93dd4` 已发布；
 - 日常入口：`config/subscriptions.json`，支持 GitHub Release、RSS/Atom、Reddit 社区与 X 账号；
-- 默认真实来源：OpenAI Codex、Anthropic Claude Code、Google Gemini CLI Release，以及 LocalLLaMA、MachineLearning、OpenAI Reddit 社区；
+- 默认真实来源：Anthropic 官方 Newsroom，OpenAI Codex、Anthropic Claude Code、Google Gemini CLI Release，以及 LocalLLaMA、MachineLearning、OpenAI Reddit 社区；
 - Agent 核心：RunState、确定性 Planner、Tool Registry、停止条件；
 - 来源分发：GitHub Atom、通用 RSS/Atom 与 Reddit 公共 RSS 可直接运行；X 由维护者授权的后台发布器统一运行；
 - 工具步骤：`collect_source`、`filter_signals`、`write_report`、`write_briefing`、`write_feed`、`commit_checkpoints`；
@@ -22,7 +22,7 @@ AI Pulse 已从独立项目名调整为日报输出格式；Dify 已调整为可
 - 订阅输出：滚动 RSS 2.0 与 JSON Feed 1.1，最多保留 200 条；
 - 公开地址：RSS 与 JSON Feed 已由 GitHub Pages 匿名提供，当前 38 条，包含 Reddit 25 条、Gemini CLI 3 条、OpenAI 8 条、Anthropic 2 条；
 - 可修改性：清单提交会立即触发发布，定时任务也动态读取同一文件，不再写死来源；
-- 评测：53 项测试、3/3 严格评测通过；无 X 凭证真实链路读取 55 条、筛选 46 条、0 个工具错误；Actions test run `30323752745`、publisher run `30323752780` 与最终 Pages run `30323767399` 均成功。
+- 评测：59 项测试、3/3 严格评测通过；Anthropic Newsroom 真实页面识别 13 篇、168 小时窗口筛选 5 篇、0 个工具错误。
 - X 可靠性：`since_id` 增量读取，Feed 成功发布后才提交检查点；账号数据库与 Cookie 不进入 Git。
 
 ## 当前限制

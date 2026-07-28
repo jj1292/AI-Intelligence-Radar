@@ -96,10 +96,31 @@ class SourceRegistryTests(unittest.TestCase):
         path = Path(__file__).parents[1] / "config" / "subscriptions.json"
         sources = load_source_registry(path)
 
-        self.assertGreaterEqual(len(sources), 5)
+        self.assertGreaterEqual(len(sources), 6)
         self.assertIn("github_openai_codex_releases", {source["id"] for source in sources})
+        self.assertIn("anthropic_newsroom", {source["id"] for source in sources})
         self.assertIn("reddit_selected_communities", {source["id"] for source in sources})
         self.assertIn("x_selected_accounts", {source["id"] for source in sources})
+
+    def test_expands_supported_official_web_adapter(self):
+        config = make_config()
+        config["official_web"] = [
+            {
+                "id": "anthropic_newsroom",
+                "adapter": "anthropic_news",
+                "name": "Anthropic Newsroom",
+                "url": "https://www.anthropic.com/news",
+                "company": "Anthropic",
+                "topics": ["claude"],
+            }
+        ]
+
+        source = next(
+            item for item in expand_subscriptions(config) if item["id"] == "anthropic_newsroom"
+        )
+
+        self.assertEqual(source["collection_mode"], "anthropic_news")
+        self.assertEqual(source["source_tier"], 1)
 
     def test_loads_subscription_object_from_disk(self):
         with tempfile.TemporaryDirectory() as directory:

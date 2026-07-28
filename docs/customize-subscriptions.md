@@ -26,6 +26,24 @@
 
 `repo` 必须是 GitHub URL 中的 `owner/repository`。项目会自动转换为 `https://github.com/owner/repository/releases.atom`。
 
+## Claude / Anthropic 官方博客
+
+`official_web` 已默认启用 Anthropic Newsroom：
+
+```json
+{
+  "id": "anthropic_newsroom",
+  "adapter": "anthropic_news",
+  "name": "Anthropic Newsroom",
+  "url": "https://www.anthropic.com/news",
+  "company": "Anthropic",
+  "topics": ["claude", "products", "research", "safety", "company"],
+  "enabled": true
+}
+```
+
+Anthropic 官网当前没有可用的官方 RSS/Atom，因此项目直接读取官方 Newsroom 页面。该适配器只支持 Anthropic 官方页面；其他没有 Feed 的网页需要单独增加适配器。
+
 ## 任意 RSS 或 Atom
 
 在 `rss_feeds` 中增加一个对象：
