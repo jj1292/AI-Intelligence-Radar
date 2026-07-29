@@ -276,17 +276,13 @@ function SourceManager({ onClose, onCopied }) {
       >
         <header>
           <div>
-            <span className="eyebrow">OWNER ONLY / 第一期</span>
+            <span className="eyebrow">SOURCE MANAGER</span>
             <h2 id="source-manager-title">添加订阅来源</h2>
           </div>
           <button className="icon-button" type="button" onClick={onClose} aria-label="关闭">
             <X size={24} weight="bold" />
           </button>
         </header>
-        <p className="manager-note">
-          当前公开网站不会保存密钥。这里先帮你生成安全配置；最终的对话 Agent
-          会把这一步自动完成。
-        </p>
         <form onSubmit={generateSnippet}>
           <label>
             来源类型
@@ -432,7 +428,7 @@ export function App() {
   function previewAgent(event) {
     event.preventDefault();
     if (!agentPrompt.trim()) return;
-    notify("订阅 Agent 正在规划中；当前请先用“管理来源”添加");
+    setManagerOpen(true);
   }
 
   return (
@@ -509,7 +505,7 @@ export function App() {
           </nav>
           <form className="agent-preview" onSubmit={previewAgent}>
             <span className="preview-badge">
-              <Sparkle size={18} weight="fill" /> 订阅 Agent 预览
+              <Sparkle size={18} weight="fill" /> 智能订阅
             </span>
             <input
               value={agentPrompt}
@@ -527,10 +523,9 @@ export function App() {
           <section className="important-column">
             <div className="section-heading">
               <div>
-                <span className="section-kicker">CURATED / 持续下拉</span>
+                <span className="section-kicker">CURATED SIGNALS</span>
                 <h2>今日重要信号</h2>
               </div>
-              <p>不固定三条。官方优先、影响优先；每条都能展开查看判断、证据与边界。</p>
             </div>
             {status === "loading" && <div className="state-box">正在接收信号…</div>}
             {status === "error" && (
@@ -539,7 +534,7 @@ export function App() {
               </div>
             )}
             {status === "ready" && importantItems.length === 0 && (
-              <div className="state-box">当前筛选下暂无通过重要度门槛的信号。</div>
+              <div className="state-box">暂无重要信号。</div>
             )}
             <div className="important-list">
               {importantItems.slice(0, importantLimit).map((item, index) => (
@@ -566,10 +561,9 @@ export function App() {
           <aside className="live-column">
             <div className="section-heading compact-heading">
               <div>
-                <span className="section-kicker">CHRONOLOGICAL / 原始流</span>
+                <span className="section-kicker">LATEST UPDATES</span>
                 <h2>实时情报</h2>
               </div>
-              <p>按时间展示全部新内容，不把每条更新都包装成“重要”。</p>
             </div>
             <div className="live-list">
               {filteredItems.slice(0, liveLimit).map((item) => (
@@ -610,7 +604,7 @@ export function App() {
           <button className="manage-button" type="button" onClick={() => setManagerOpen(true)}>
             <SlidersHorizontal size={28} weight="bold" />
             <span>
-              <small>仅维护者</small>管理来源
+              <small>来源设置</small>管理来源
             </span>
             <ArrowRight size={22} weight="bold" />
           </button>
