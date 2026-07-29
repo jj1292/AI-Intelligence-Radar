@@ -37,6 +37,16 @@
   <a href="#%EF%B8%8F-roadmap">Roadmap</a>
 </p>
 
+<p align="center">
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/">
+    <img src="assets/product-homepage.png" width="100%" alt="AI Intelligence Radar public website homepage" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/"><strong>🌐 Explore the public website</strong></a>
+</p>
+
 ---
 
 ## ✨ Why This Project
