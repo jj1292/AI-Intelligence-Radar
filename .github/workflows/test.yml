@@ -31,3 +31,22 @@ jobs:
         run: python build_knowledge_base.py --input examples/intelligence_signals.json --output /tmp/ai-radar --date 2026-07-22
       - name: Run evaluation baseline
         run: python evaluate_radar.py --cases evals/cases.jsonl --output /tmp/evaluation-report.md --strict
+
+  web-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - name: Install web dependencies
+        working-directory: web
+        run: npm ci
+      - name: Build public website
+        working-directory: web
+        run: npm run build
+      - name: Test static hosting worker
+        working-directory: web
+        run: npm run test:sites

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import os
 from collections.abc import Callable
 from datetime import datetime
 from pathlib import Path
@@ -21,6 +22,7 @@ from runtime.event_log import JsonlTracer
 from source_registry import load_source_registry
 from tools.collection import CollectionBatch
 from tools.anthropic_news import collect_anthropic_news
+from tools.firecrawl_web import collect_firecrawl_web
 from tools.github_releases import collect_github_releases
 from tools.public_feeds import collect_public_feed
 from tools.registry import ToolRegistry
@@ -37,6 +39,7 @@ Collector = Callable[
 def build_source_dispatcher() -> SourceDispatcher:
     dispatcher = SourceDispatcher()
     dispatcher.register("anthropic_news", collect_anthropic_news)
+    dispatcher.register("firecrawl", collect_firecrawl_web)
     dispatcher.register("atom", collect_github_releases)
     dispatcher.register("rss", collect_public_feed)
     dispatcher.register("x_twscrape", collect_x_posts)
@@ -49,6 +52,7 @@ def _select_sources(
     *,
     supported_modes: set[str] | None = None,
     include_requires_auth: bool = False,
+    environment: dict[str, str] | None = None,
 ) -> list[dict[str, Any]]:
     modes = supported_modes or set(build_source_dispatcher().modes())
     if source_ids:
@@ -63,14 +67,22 @@ def _select_sources(
         if missing:
             raise ValueError(f"Unknown or unavailable sources: {sorted(missing)}")
         return selected
-    return [
-        source
-        for source in sources
-        if source["status"] in (
-            {"ready", "requires_auth"} if include_requires_auth else {"ready"}
-        )
-        and source["collection_mode"] in modes
-    ]
+    selected: list[dict[str, Any]] = []
+    for source in sources:
+        if source["collection_mode"] not in modes:
+            continue
+        if source["status"] == "ready":
+            selected.append(source)
+            continue
+        if source["status"] != "requires_auth" or not include_requires_auth:
+            continue
+        if environment is not None:
+            names = source.get("selection_auth_env") or source.get("auth_env") or []
+            values = [environment.get(str(name), "").strip() for name in names]
+            if not values or any(value.lower() in {"", "0", "false", "no"} for value in values):
+                continue
+        selected.append(source)
+    return selected
 
 
 def run_radar_agent(
@@ -291,6 +303,7 @@ def main() -> None:
         set(args.source_ids) if args.source_ids else None,
         supported_modes=set(dispatcher.modes()),
         include_requires_auth=args.include_auth,
+        environment=dict(os.environ),
     )
     if not sources:
         raise SystemExit("No runnable sources selected.")

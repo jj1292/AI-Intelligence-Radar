@@ -122,6 +122,27 @@ class SourceRegistryTests(unittest.TestCase):
         self.assertEqual(source["collection_mode"], "anthropic_news")
         self.assertEqual(source["source_tier"], 1)
 
+    def test_expands_firecrawl_as_optional_authenticated_adapter(self):
+        config = make_config()
+        config["official_web"] = [
+            {
+                "id": "example_news",
+                "adapter": "firecrawl",
+                "name": "Example News",
+                "url": "https://example.com/news",
+                "company": "Example AI",
+                "topics": ["agents"],
+            }
+        ]
+
+        source = next(
+            item for item in expand_subscriptions(config) if item["id"] == "example_news"
+        )
+
+        self.assertEqual(source["collection_mode"], "firecrawl")
+        self.assertEqual(source["status"], "requires_auth")
+        self.assertEqual(source["auth_env"], ["FIRECRAWL_API_KEY"])
+
     def test_loads_subscription_object_from_disk(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory) / "subscriptions.json"

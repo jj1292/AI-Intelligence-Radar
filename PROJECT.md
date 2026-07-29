@@ -2,8 +2,8 @@
 type: project-home
 status: active
 project: AI Intelligence Radar
-version: 0.7.1
-updated: 2026-07-28
+version: 0.8.0
+updated: 2026-07-29
 ---
 
 # AI Intelligence Radar：行业情报 Agent 与 Harness 学习工程
@@ -124,6 +124,16 @@ ai-intelligence-radar/
 - 真实网页识别 13 篇文章，168 小时时效窗口筛选 5 篇，Agent 链路 0 错误；
 - 测试增至 59 项；功能提交 `a1d8990`、Feed 提交 `9021be8` 已上线；
 - 公开 Feed 当前 75 条，其中 2 条为最近 72 小时的 Anthropic Newsroom 官方文章。
+
+### v0.8.0（公开浏览网站与通用网页源）
+
+- 新增公开 React 网站：任何人都能浏览重要信号、实时情报并复制 RSS/JSON 地址；
+- 重要信号不再固定三条，支持持续加载和展开“发生了什么、为什么重要、证据与边界”；
+- Alpha、Nightly、Beta、RC 等早期版本保留在实时流，但不再冒充重要信号；
+- 新增 Firecrawl v2 可选通用网页适配器，适合没有 RSS 的博客和新闻站；
+- 新增维护者来源管理预览，可生成安全配置片段；公开页面不存储 API Key；
+- Agent 对话框当前为诚实预览，后续再接入“自然语言 → 订阅计划 → 审批 → 写入配置”的执行闭环；
+- 测试增至 66 项，网站构建与静态托管测试纳入 CI。
 
 ## Agent 化升级构思
 

@@ -41,6 +41,12 @@ class SubscriptionFeedTests(unittest.TestCase):
         self.assertEqual(result["items"], 1)
         self.assertEqual(result["added"], 1)
         self.assertEqual(payload["items"][0]["id"], "https://x.com/OpenAI/status/100")
+        self.assertEqual(payload["items"][0]["_radar"]["impact_score"], 3)
+        self.assertEqual(payload["items"][0]["_radar"]["confidence"], 0.85)
+        self.assertEqual(
+            payload["items"][0]["_radar"]["evidence"],
+            ["Source evidence."],
+        )
         self.assertEqual(root.tag, "rss")
         self.assertEqual(root.findtext("channel/item/title"), "OpenAI model update")
 

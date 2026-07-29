@@ -27,7 +27,7 @@ X / GitHub / RSS / Reddit
 
 日常只编辑 `config/subscriptions.json`。它支持 GitHub Release、任意 RSS/Atom、Reddit 社区和 X 账号。提交清单后会立即触发发布；详细格式见 [`订阅源修改指南`](../customize-subscriptions.md)。
 
-### 1. 配置后台采集账号
+### 1. 配置后台采集账号（可选）
 
 建议使用专用 X 账号。在 GitHub 仓库进入 `Settings → Secrets and variables → Actions`：
 
@@ -36,6 +36,12 @@ X / GitHub / RSS / Reddit
 - Repository secret：`X_COOKIE_CT0`
 
 Cookie 只保存在 GitHub Actions Secret 中。不要写入 Issue、README、工作流参数、日志或 Git 提交。
+
+如果启用了 `"adapter": "firecrawl"` 的通用网页来源，再增加：
+
+- Repository secret：`FIRECRAWL_API_KEY`
+
+没有配置 Firecrawl Key 时只跳过这类通用网页；Anthropic 专用适配器、GitHub、RSS/Atom 和 Reddit 仍继续运行。
 
 ### 2. 启用 GitHub Pages
 
@@ -54,7 +60,7 @@ Cookie 只保存在 GitHub Actions Secret 中。不要写入 Issue、README、�
 后台执行顺序为：
 
 1. 从 GitHub Secret 临时建立 `twscrape` 账号数据库；
-2. 动态读取 `config/subscriptions.json`，抓取启用的 GitHub Release、RSS/Atom、Reddit 社区，以及后台已授权时的 X 账号；
+2. 动态读取 `config/subscriptions.json`，抓取启用的 GitHub Release、RSS/Atom、Reddit 社区、可选 Firecrawl 网页，以及后台已授权时的 X 账号；
 3. 通过 72 小时时效门并生成卡片、趋势、AI Pulse 和公开 Feed；
 4. 将最多 200 条滚动 Feed 条目与公开 `since_id` 检查点提交到仓库；
 5. 只有 Feed 成功写入后才推进检查点。

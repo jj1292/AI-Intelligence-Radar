@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.7.1-7C3AED?style=for-the-badge" alt="Version v0.7.1" />
+  <img src="https://img.shields.io/badge/version-v0.8.0-7C3AED?style=for-the-badge" alt="Version v0.8.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -128,6 +128,7 @@ flowchart LR
 
 Subscribers need no X account and do not need to install or run this project. Add either URL to Feedly, Inoreader, FreshRSS, NetNewsWire, or another feed reader:
 
+- **Public website**: [`https://jj1292.github.io/AI-Intelligence-Radar/`](https://jj1292.github.io/AI-Intelligence-Radar/)
 - **RSS 2.0**: [`https://jj1292.github.io/AI-Intelligence-Radar/feed.xml`](https://jj1292.github.io/AI-Intelligence-Radar/feed.xml)
 - **JSON Feed 1.1**: [`https://jj1292.github.io/AI-Intelligence-Radar/feed.json`](https://jj1292.github.io/AI-Intelligence-Radar/feed.json)
 
@@ -144,6 +145,7 @@ No Python changes are required. Open [`config/subscriptions.json`](config/subscr
 | What to follow | Section | Example |
 | --- | --- | --- |
 | Official Claude / Anthropic blog | `official_web` | `"url": "https://www.anthropic.com/news"` |
+| Blog/news site without RSS | `official_web` | `"adapter": "firecrawl"` |
 | GitHub Releases | `github_releases` | `"repo": "openai/codex"` |
 | Any RSS / Atom feed | `rss_feeds` | `"url": "https://example.com/feed.xml"` |
 | Reddit communities | `reddit.communities` | `"LocalLLaMA"` |
@@ -177,7 +179,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-59%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-66%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
 Current baseline: **all 3 cases pass with an average score of 2.0/2**. The v0.7 live path, without X credentials, read 55 GitHub/Reddit items, selected 46 for the feed, and completed with zero tool errors.
 

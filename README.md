@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.7.1-7C3AED?style=for-the-badge" alt="Version v0.7.1" />
+  <img src="https://img.shields.io/badge/version-v0.8.0-7C3AED?style=for-the-badge" alt="Version v0.8.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -128,6 +128,7 @@ flowchart LR
 
 普通订阅者无需 X 账号，也不用安装或运行本项目。把下面任一地址添加到 Feedly、Inoreader、FreshRSS、NetNewsWire 或其他阅读器即可：
 
+- **公开网站**：[`https://jj1292.github.io/AI-Intelligence-Radar/`](https://jj1292.github.io/AI-Intelligence-Radar/)
 - **RSS 2.0**：[`https://jj1292.github.io/AI-Intelligence-Radar/feed.xml`](https://jj1292.github.io/AI-Intelligence-Radar/feed.xml)
 - **JSON Feed 1.1**：[`https://jj1292.github.io/AI-Intelligence-Radar/feed.json`](https://jj1292.github.io/AI-Intelligence-Radar/feed.json)
 
@@ -144,6 +145,7 @@ flowchart LR
 | 想订阅什么 | 修改位置 | 示例 |
 | --- | --- | --- |
 | Claude / Anthropic 官方博客 | `official_web` | `"url": "https://www.anthropic.com/news"` |
+| 没有 RSS 的博客 / 新闻站 | `official_web` | `"adapter": "firecrawl"` |
 | GitHub Release | `github_releases` | `"repo": "openai/codex"` |
 | 任意 RSS / Atom | `rss_feeds` | `"url": "https://example.com/feed.xml"` |
 | Reddit 社区 | `reddit.communities` | `"LocalLLaMA"` |
@@ -177,7 +179,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-59%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-66%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
 当前基线：**3 个案例全部通过，平均分 2.0/2**。v0.7 真实链路在无 X 凭证条件下读取 55 条 GitHub/Reddit 内容，筛选 46 条写入 Feed，0 个工具错误。
 
@@ -246,8 +248,8 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 | `v0.4` | GitHub Atom、48 小时时效、RunState、最小 Loop、AI Pulse 输出、Trace | ✅ Done |
 | `v0.5` | X 后台采集、来源分发、成功后增量 Checkpoint、账号安全边界 | ✅ Done |
 | `v0.6` | 公开 RSS/JSON、定时发布器、一次认证/多人订阅 | ✅ Done |
-| `v0.7` | 可编辑订阅清单、动态发布、通用 RSS/Atom、Reddit 公共源 | 🚧 Current |
-| `v0.8` | 模型 Planner、通用 Resume、官方网页适配器 | 🧭 Next |
+| `v0.7` | 可编辑订阅清单、动态发布、通用 RSS/Atom、Reddit 公共源 | ✅ Done |
+| `v0.8` | 公开浏览网站、持续重要信号、展开解读、Firecrawl 通用网页适配器 | 🚧 Current |
 | `v1.0` | 记忆、回放评测、周/月复盘、主题订阅与来源质量评分 | 🌟 Vision |
 
 ## 📚 文档
@@ -257,6 +259,7 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 - 🧠 [`Agent Harness 架构构思`](docs/agent-harness-architecture.md)
 - 🎯 [`AI 产品评估与 Agent 评测指南`](docs/ai-product-evaluation-guide.md)
 - 🔌 [`Dify 可选适配器`](docs/adapters/dify.md)
+- 🔥 [`Firecrawl 可选网页适配器`](docs/adapters/firecrawl.md)
 - 🔔 [`公开订阅发布器`](docs/deployment/subscription-publisher.md)
 - ✏️ [`订阅源修改指南`](docs/customize-subscriptions.md)
 - 𝕏 [`X 后台采集适配器`](docs/adapters/x-twscrape.md)

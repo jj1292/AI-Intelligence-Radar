@@ -16,6 +16,23 @@ ATOM_FIXTURE = """<?xml version="1.0" encoding="UTF-8"?>
 </feed>
 """
 
+EARLY_RELEASE_FIXTURE = """<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <entry>
+    <updated>2026-07-27T08:00:00Z</updated>
+    <link rel="alternate" href="https://github.com/example/agent/releases/tag/v2.0.0-alpha.4"/>
+    <title>v2.0.0-alpha.4</title>
+    <content type="html">Experimental build.</content>
+  </entry>
+  <entry>
+    <updated>2026-07-26T08:00:00Z</updated>
+    <link rel="alternate" href="https://github.com/example/agent/releases/tag/v1.3.0"/>
+    <title>v1.3.0</title>
+    <content type="html">Stable release.</content>
+  </entry>
+</feed>
+"""
+
 
 def make_source():
     return {
@@ -47,6 +64,14 @@ class GithubReleasesTests(unittest.TestCase):
     def test_collector_accepts_injected_fetcher(self):
         signals = collect_github_releases(make_source(), fetcher=lambda _: ATOM_FIXTURE)
         self.assertEqual(signals[0]["title"], "Example AI · v1.2.3")
+
+    def test_keeps_early_builds_out_of_important_signal_tier(self):
+        signals = parse_github_releases_atom(EARLY_RELEASE_FIXTURE, make_source())
+
+        self.assertEqual(signals[0]["impact_score"], 1)
+        self.assertIn("早期构建", signals[0]["why_it_matters"])
+        self.assertEqual(signals[1]["impact_score"], 3)
+        self.assertIn("稳定发布", signals[1]["why_it_matters"])
 
     def test_rejects_non_atom_source(self):
         source = make_source() | {"collection_mode": "official_web"}

@@ -23,6 +23,7 @@ jobs:
       X_ACCOUNT_USERNAME: ${{ vars.X_ACCOUNT_USERNAME }}
       X_COOKIE_AUTH_TOKEN: ${{ secrets.X_COOKIE_AUTH_TOKEN }}
       X_COOKIE_CT0: ${{ secrets.X_COOKIE_CT0 }}
+      FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
       TWS_TELEMETRY: "0"
 
     steps:
@@ -35,6 +36,11 @@ jobs:
           else
             echo "configured=false" >> "$GITHUB_OUTPUT"
             echo "::notice::X publisher settings are not configured; publishing public sources only."
+          fi
+          if [[ -n "$FIRECRAWL_API_KEY" ]]; then
+            echo "firecrawl-configured=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "firecrawl-configured=false" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/checkout@v4
@@ -60,7 +66,7 @@ jobs:
         shell: bash
         run: |
           publisher_args=()
-          if [[ "$X_PUBLISHER_CONFIGURED" == "true" ]]; then
+          if [[ "$X_PUBLISHER_CONFIGURED" == "true" || "${{ steps.publisher-settings.outputs.firecrawl-configured }}" == "true" ]]; then
             publisher_args+=(--include-auth)
           fi
           python -m agent.runner \

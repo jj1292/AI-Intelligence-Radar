@@ -42,7 +42,26 @@
 }
 ```
 
-Anthropic 官网当前没有可用的官方 RSS/Atom，因此项目直接读取官方 Newsroom 页面。该适配器只支持 Anthropic 官方页面；其他没有 Feed 的网页需要单独增加适配器。
+Anthropic 官网当前没有可用的官方 RSS/Atom，因此项目直接读取官方 Newsroom 页面。该专用适配器不需要 API Key。
+
+## 没有 RSS 的博客 / 新闻网站（Firecrawl）
+
+通用网页可以在 `official_web` 中使用可选的 Firecrawl 适配器：
+
+```json
+{
+  "id": "example_newsroom",
+  "adapter": "firecrawl",
+  "name": "Example Newsroom",
+  "url": "https://example.com/news",
+  "company": "Example AI",
+  "topics": ["agents", "products", "research"],
+  "max_results": 30,
+  "enabled": true
+}
+```
+
+维护者需要将 `FIRECRAWL_API_KEY` 放入 GitHub Actions Secret；不要写进这个 JSON。没有 Key 或单个网页抓取失败时，其他公开来源仍继续发布。详细边界见 [`Firecrawl 适配器`](adapters/firecrawl.md)。
 
 ## 任意 RSS 或 Atom
 
@@ -119,6 +138,6 @@ python3 -m unittest discover -s tests -v
 
 ## English Quick Guide
 
-Edit only [`config/subscriptions.json`](../config/subscriptions.json) for day-to-day source changes. Add GitHub repositories under `github_releases`, generic feeds under `rss_feeds`, subreddit names under `reddit.communities`, and X usernames under `x.accounts`.
+Edit only [`config/subscriptions.json`](../config/subscriptions.json) for day-to-day source changes. Add GitHub repositories under `github_releases`, generic feeds under `rss_feeds`, Firecrawl-backed websites under `official_web`, subreddit names under `reddit.communities`, and X usernames under `x.accounts`.
 
 Commit the file on GitHub to trigger `publish-subscription-feeds` automatically. Existing public RSS/JSON URLs remain unchanged. Set `"enabled": false` to pause a source. Never place cookies, tokens, passwords, or API keys in this file; maintainer-only credentials belong in GitHub Secrets.

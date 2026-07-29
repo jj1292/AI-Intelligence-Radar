@@ -30,7 +30,7 @@
         "required": ["adapter", "name", "url"],
         "properties": {
           "id": {"type": "string", "minLength": 1},
-          "adapter": {"enum": ["anthropic_news"]},
+          "adapter": {"enum": ["anthropic_news", "firecrawl"]},
           "name": {"type": "string", "minLength": 1},
           "url": {"type": "string", "pattern": "^https://"},
           "company": {"type": "string", "minLength": 1},

@@ -120,7 +120,7 @@ def expand_subscriptions(config: dict[str, Any]) -> list[dict[str, Any]]:
         if not _enabled(item):
             continue
         adapter = _required_text(item, "adapter", "Official web subscription")
-        if adapter not in {"anthropic_news"}:
+        if adapter not in {"anthropic_news", "firecrawl"}:
             raise ValueError(f"Unsupported official web adapter: {adapter}")
         name = _required_text(item, "name", "Official web subscription")
         url = _required_text(item, "url", "Official web subscription")
@@ -129,8 +129,7 @@ def expand_subscriptions(config: dict[str, Any]) -> list[dict[str, Any]]:
         max_results = item.get("max_results", 30)
         if not isinstance(max_results, int) or not 1 <= max_results <= 100:
             raise ValueError(f"Official web max_results must be between 1 and 100: {name}")
-        sources.append(
-            {
+        source = {
                 "id": str(item.get("id") or f"web_{_slug(name)}").strip(),
                 "name": name,
                 "company": str(item.get("company") or name).strip(),
@@ -138,11 +137,14 @@ def expand_subscriptions(config: dict[str, Any]) -> list[dict[str, Any]]:
                 "channel": "official_newsroom",
                 "collection_mode": adapter,
                 "url": url,
-                "status": "ready",
+                "status": "requires_auth" if adapter == "firecrawl" else "ready",
                 "max_results": max_results,
                 "topics": _topics(item, ["products", "research", "company"]),
             }
-        )
+        if adapter == "firecrawl":
+            source["auth_env"] = ["FIRECRAWL_API_KEY"]
+            source["selection_auth_env"] = ["FIRECRAWL_API_KEY"]
+        sources.append(source)
 
     for item in _require_list(config, "rss_feeds"):
         if not _enabled(item):
@@ -248,6 +250,7 @@ def expand_subscriptions(config: dict[str, Any]) -> list[dict[str, Any]]:
                     "url": "https://x.com/search",
                     "status": "requires_auth",
                     "auth_env": ["X_TWSCRAPE_DB"],
+                    "selection_auth_env": ["X_PUBLISHER_CONFIGURED"],
                     "publisher_auth_env": [
                         "X_ACCOUNT_USERNAME",
                         "X_COOKIE_AUTH_TOKEN",

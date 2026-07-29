@@ -14,6 +14,14 @@ import certifi
 
 
 ATOM = "{http://www.w3.org/2005/Atom}"
+EARLY_RELEASE_PATTERN = re.compile(
+    r"(?:^|[\s._-])(?:nightly|alpha|dev|canary|snapshot)(?:[\s._-]|$)",
+    re.IGNORECASE,
+)
+PREVIEW_RELEASE_PATTERN = re.compile(
+    r"(?:^|[\s._-])(?:beta|preview|pre|rc\d*)(?:[\s._-]|$)",
+    re.IGNORECASE,
+)
 
 
 class _HTMLTextExtractor(HTMLParser):
@@ -32,6 +40,25 @@ def _plain_text(value: str, limit: int = 400) -> str:
     extractor.feed(html.unescape(value))
     text = re.sub(r"\s+", " ", " ".join(extractor.parts)).strip()
     return text[:limit].rstrip()
+
+
+def _release_assessment(title: str) -> tuple[int, str]:
+    """Keep noisy pre-releases visible without promoting them as major signals."""
+
+    if EARLY_RELEASE_PATTERN.search(title):
+        return (
+            1,
+            "这是官方早期构建或夜间版本，适合观察迭代方向，但不应等同于稳定产品发布。",
+        )
+    if PREVIEW_RELEASE_PATTERN.search(title):
+        return (
+            2,
+            "这是官方预览版本，说明能力正在接近可用阶段；实际影响仍需等待稳定版与验证结果。",
+        )
+    return (
+        3,
+        "这是官方稳定发布信号，可用于跟踪可用能力、兼容性与工程可靠性的实质变化。",
+    )
 
 
 def parse_github_releases_atom(xml_text: str, source: dict[str, Any]) -> list[dict[str, Any]]:
@@ -56,6 +83,7 @@ def parse_github_releases_atom(xml_text: str, source: dict[str, Any]) -> list[di
         summary = _plain_text(content) or f"{source['name']} 发布 {title}。"
         if not link or not published_at:
             continue
+        impact_score, why_it_matters = _release_assessment(title)
         signals.append(
             {
                 "title": f"{source['company']} · {title}",
@@ -66,12 +94,10 @@ def parse_github_releases_atom(xml_text: str, source: dict[str, Any]) -> list[di
                 "company": source["company"],
                 "published_at": published_at,
                 "summary": summary,
-                "why_it_matters": (
-                    "这是官方代码仓库发布信号，可用于观察产品迭代速度、能力变化和可靠性改进。"
-                ),
+                "why_it_matters": why_it_matters,
                 "evidence": [summary[:240]],
                 "topics": list(source["topics"]),
-                "impact_score": 3,
+                "impact_score": impact_score,
                 "confidence": 0.98,
             }
         )

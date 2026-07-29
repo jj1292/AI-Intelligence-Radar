@@ -48,6 +48,9 @@ def _signal_to_item(signal: dict[str, Any]) -> dict[str, Any]:
             "source_name": signal["source_name"],
             "source_tier": signal["source_tier"],
             "platform": signal["platform"],
+            "impact_score": signal["impact_score"],
+            "confidence": signal["confidence"],
+            "evidence": list(signal.get("evidence", [])),
         },
     }
 

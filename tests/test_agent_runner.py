@@ -67,6 +67,37 @@ class AgentRunnerTests(unittest.TestCase):
 
         self.assertEqual([source["id"] for source in selected], ["ready", "x"])
 
+    def test_authenticated_selection_skips_sources_without_their_own_credentials(self):
+        ready = make_source("ready")
+        x_source = make_source("x")
+        x_source.update(
+            {
+                "collection_mode": "x_twscrape",
+                "status": "requires_auth",
+                "selection_auth_env": ["X_PUBLISHER_CONFIGURED"],
+            }
+        )
+        firecrawl = make_source("web")
+        firecrawl.update(
+            {
+                "collection_mode": "firecrawl",
+                "status": "requires_auth",
+                "selection_auth_env": ["FIRECRAWL_API_KEY"],
+            }
+        )
+
+        selected = _select_sources(
+            [ready, x_source, firecrawl],
+            supported_modes={"atom", "x_twscrape", "firecrawl"},
+            include_requires_auth=True,
+            environment={
+                "X_PUBLISHER_CONFIGURED": "false",
+                "FIRECRAWL_API_KEY": "configured",
+            },
+        )
+
+        self.assertEqual([source["id"] for source in selected], ["ready", "web"])
+
     def test_explicit_source_selection_allows_requires_auth(self):
         gated = make_source("x")
         gated.update({"collection_mode": "x_twscrape", "status": "requires_auth"})
