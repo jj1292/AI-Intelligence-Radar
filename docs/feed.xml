@@ -6,7 +6,283 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 30 Jul 2026 04:17:58 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 15:11:21 +0000</lastBuildDate>
+    <item>
+      <title>Selected Reddit communities · Does MTP head get loaded in VRAM by default?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vawdma/does_mtp_head_get_loaded_in_vram_by_default/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vawdma/does_mtp_head_get_loaded_in_vram_by_default/</guid>
+      <pubDate>Thu, 30 Jul 2026 15:11:21 +0000</pubDate>
+      <description>I ran into a doubt when using the following command. It seems that the System RAM usage keeps increasing even though there is &gt;10GB of space left in VRAM while using the MTP mode. Does the MTP head load separately from the main model? Do I need to set the device here as well? /mnt/ml/llama.cpp/llama.cpp-cuda-13.2-20260723/build/bin/llama-server -dio --no-warmup --jinja --swa-full --no-mmap -m /mnt</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · OpenAI are now talking to the White House about the need to slow down AI</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1vavnez/openai_are_now_talking_to_the_white_house_about/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1vavnez/openai_are_now_talking_to_the_white_house_about/</guid>
+      <pubDate>Thu, 30 Jul 2026 14:44:17 +0000</pubDate>
+      <description>submitted by /u/KeanuRave100 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Mechanistic interpretability streamlined for everyday users like us😎 🧠</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vavkiz/mechanistic_interpretability_streamlined_for/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vavkiz/mechanistic_interpretability_streamlined_for/</guid>
+      <pubDate>Thu, 30 Jul 2026 14:41:17 +0000</pubDate>
+      <description>Context: I want to give the community an Open Research (well open under Apache 2.0 clause) - tool that allows everyday users like us to look deeper into the local models we use consistently. Mechanistic interpretability streamlined into a more visible work-flow. Easy to read for beginners and deeper for experts. Originally designed around the GPT2 and Llama architectures, it supports most local LL</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Software Engineers: Do you honestly get anything useful out of LLMs?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vavh2h/software_engineers_do_you_honestly_get_anything/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vavh2h/software_engineers_do_you_honestly_get_anything/</guid>
+      <pubDate>Thu, 30 Jul 2026 14:37:45 +0000</pubDate>
+      <description>For 6 months now I've been trying to make agentic coding work for me, using Pi and a handful 30-120B models (Qwens, Nemotrons, Leguna...etc). I'm not greedy either, I stick to decent quants, never quantize kv cache, and keep my sessions up to 90k max. But the results have ALWAYS been disappointing. No matter how much you harness the model or bombard it with pages-worth of markdown instructions, th</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · [ Removed by Reddit ]</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vauhjm/removed_by_reddit/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vauhjm/removed_by_reddit/</guid>
+      <pubDate>Thu, 30 Jul 2026 14:00:47 +0000</pubDate>
+      <description>[ Removed by Reddit on account of violating the content policy . ] submitted by /u/Possible_Grocery8079 to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · I built an open source AI workspace that can code, control your computer, browse the web, and analyze thousands of PDFs</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vau6sh/i_built_an_open_source_ai_workspace_that_can_code/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vau6sh/i_built_an_open_source_ai_workspace_that_can_code/</guid>
+      <pubDate>Thu, 30 Jul 2026 13:49:10 +0000</pubDate>
+      <description>I've been building Everfern AI , an open source alternative to Claude's AI workspace. Instead of being just another chatbot, Everfern can: Write and edit code across your projects Build complete websites and applications Control your computer by clicking, typing, and navigating the UI Browse the web to research topics autonomously Read and analyze thousands of PDFs and documents Search across larg</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · PR for running Ternary-Bonsai-8B-Q2_0.gguf in llama.cpp with CUDA support just got merged</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vau4dh/pr_for_running_ternarybonsai8bq2_0gguf_in/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vau4dh/pr_for_running_ternarybonsai8bq2_0gguf_in/</guid>
+      <pubDate>Thu, 30 Jul 2026 13:46:29 +0000</pubDate>
+      <description>Time to see what it's capable of submitted by /u/413205 to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · What's the cheapest way to get Kimi K3? (NOT necessarily the fastest)</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vatzo6/whats_the_cheapest_way_to_get_kimi_k3_not/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vatzo6/whats_the_cheapest_way_to_get_kimi_k3_not/</guid>
+      <pubDate>Thu, 30 Jul 2026 13:41:05 +0000</pubDate>
+      <description>Hey there y'all! So I wonder if anyone knows of a cheap way to get access to Kimi K3 for coding. I've already gone through the $30 free tier of API usage provided by Modal and the $10 OpenCode Go subscription. The first one lasted like 40 minutes on a long-horizon task and then I continued said task on OpenCode Go which lasted for about 3 minutes before hitting the 5h limit (even while it's curren</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · unsloth/Qwen3.6-27B-NVFP4 vs. Intel/Qwen3.6-27B-int4-AutoRound vs. nvidia/Qwen3.6-27B-NVFP4 -- which one to choose?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vaswg8/unslothqwen3627bnvfp4_vs/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vaswg8/unslothqwen3627bnvfp4_vs/</guid>
+      <pubDate>Thu, 30 Jul 2026 12:56:25 +0000</pubDate>
+      <description>Are there any benchmarks on these 4 bit quants, like how Artificial Analysis runs a slew of various benchmarks? If not, how can I run one (5x over for consistency) on them? I'm also very interested in hallucinations, as community discussions seem to point them out. submitted by /u/jinnyjuice to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Turbo-fieldfare: Open-source engine running Gemma 4 26B in 2 GB RAM on Apple Silicon</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vasnys/turbofieldfare_opensource_engine_running_gemma_4/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vasnys/turbofieldfare_opensource_engine_running_gemma_4/</guid>
+      <pubDate>Thu, 30 Jul 2026 12:46:12 +0000</pubDate>
+      <description>Its a custom Swift/Metal inference engine that runs Gemma 4 26B-A4B-IT on M-series Macs with very low RAM. It uses ~2GB instead of ~14 GB. The result is reportedly 5–6 tok/s on an 8 GB M2 MacBook Air and 31–35 tok/s on an M5 MacBook Pro. It also includes an OpenAI-compatible local server with streaming and tool-call support. submitted by /u/minefew to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · On Deceptive Open Weights: What Is Your Take?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vas7sd/on_deceptive_open_weights_what_is_your_take/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vas7sd/on_deceptive_open_weights_what_is_your_take/</guid>
+      <pubDate>Thu, 30 Jul 2026 12:26:52 +0000</pubDate>
+      <description>(1) At first, I looked at this whole competitive race to drop open-weight models with sheer disgust. It felt like they were just laundering unconsentually scraped web data into a shiny "open-source" halo. Total digital pickpocketing. And also, I believed it accelerating global friction and risk. (2) But the longer I watched, the more nauseating a completely different narrative became: that religio</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Two weeks ago 62% of OpenRouter users spend happened on Anthropic models, that was reduced to 46% today.</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1varykd/two_weeks_ago_62_of_openrouter_users_spend/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1varykd/two_weeks_ago_62_of_openrouter_users_spend/</guid>
+      <pubDate>Thu, 30 Jul 2026 12:15:42 +0000</pubDate>
+      <description>Estimated spend per lab on OpenRouter Token consumption per lab on OpenRouter Token usage on OpenRouter continues to grow, although there is a steep decline in users dollar spend per lab in the last two weeks. This decline is mostly attributable to Anthropic models usage decline. submitted by /u/maferase to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · AI vs. Simple Search</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1varb91/ai_vs_simple_search/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1varb91/ai_vs_simple_search/</guid>
+      <pubDate>Thu, 30 Jul 2026 11:46:05 +0000</pubDate>
+      <description>Is it common for AI to fail to find things that simple Google searches find instantly? submitted by /u/PoxonAllHoaxes to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Keep the Captain Awake (Studio Master)</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1var6u6/keep_the_captain_awake_studio_master/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1var6u6/keep_the_captain_awake_studio_master/</guid>
+      <pubDate>Thu, 30 Jul 2026 11:40:04 +0000</pubDate>
+      <description>[Intro: 8 bars] The harbor lights are counting every mile we never owned. You brought a compass to my engine. I brought the weather home. [Verse 1: 16 bars] You bring the question like a north star. I bring the hull and noise. You name the thing worth carrying. I multiply the choice. Every answer in the water wants to pull us off the map. Every easy little current says the nearest way is fact. You</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · OpenAI’s Hacking Debacle Was a Human Mistake</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1vaq24o/openais_hacking_debacle_was_a_human_mistake/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1vaq24o/openais_hacking_debacle_was_a_human_mistake/</guid>
+      <pubDate>Thu, 30 Jul 2026 10:43:00 +0000</pubDate>
+      <description>submitted by /u/wiredmagazine to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Think of the children, another excuse for them to go after open source AI</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vapsbz/think_of_the_children_another_excuse_for_them_to/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vapsbz/think_of_the_children_another_excuse_for_them_to/</guid>
+      <pubDate>Thu, 30 Jul 2026 10:28:13 +0000</pubDate>
+      <description>Source: https://web.archive.org/web/20260728093051/https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children submitted by /u/MaruluVR to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · After their models escaped and hacked another company, OpenAI has been forced to pause training new models. They admit they do not know how to keep them from escaping.</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1vappny/after_their_models_escaped_and_hacked_another/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1vappny/after_their_models_escaped_and_hacked_another/</guid>
+      <pubDate>Thu, 30 Jul 2026 10:24:07 +0000</pubDate>
+      <description>submitted by /u/KeanuRave100 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · GLM 5.2 with vision on Hugging Face</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vapetj/glm_52_with_vision_on_hugging_face/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vapetj/glm_52_with_vision_on_hugging_face/</guid>
+      <pubDate>Thu, 30 Jul 2026 10:08:30 +0000</pubDate>
+      <description>Hi all, I have not seen this model talked about here but it seems like baseten (inference provider on OpenRouter) merged the vision encoder from Kimi k2.6 into GLM 5.2. I think the lack of vision was one of the big complaint when GLM 5.2 came out, I have not tested this model but that is quite cool from baseten to release that to the public. https://huggingface.co/baseten/GLM-5.2-Vision-NVFP4 subm</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · How would you answer these?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1vapder/how_would_you_answer_these/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1vapder/how_would_you_answer_these/</guid>
+      <pubDate>Thu, 30 Jul 2026 10:06:21 +0000</pubDate>
+      <description>What is a claim? What is evidence? What is a constraint? What is a proof? What is an assumption? What is a contradiction? What is trust? submitted by /u/MuhammadMujtaba21 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · I don’t think ML is worth learning [D]</title>
+      <link>https://www.reddit.com/r/MachineLearning/comments/1vapd3e/i_dont_think_ml_is_worth_learning_d/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1vapd3e/i_dont_think_ml_is_worth_learning_d/</guid>
+      <pubDate>Thu, 30 Jul 2026 10:05:54 +0000</pubDate>
+      <description>Context: I work with finance and ai systems and have been learnings ML the last month or 2. I could be severely wrong and if you think that I would love to know why and how I can learn/do what ai can’t. But my thought is ai can apply ML to an application as good as any engineer, the difference is how you prepare the data for the ai to act on. So would I not be better off learning how to prepare th</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Benchmarked: MindControl for Llama.cpp</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vapbnl/benchmarked_mindcontrol_for_llamacpp/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vapbnl/benchmarked_mindcontrol_for_llamacpp/</guid>
+      <pubDate>Thu, 30 Jul 2026 10:03:44 +0000</pubDate>
+      <description>I recently shared the original MindControl PoC (and on github ) - sampler-level guided reasoning budgets for llama.cpp, nudging the model with self-aware statements about its own thinking budget instead of just hard-truncating it. We received some great feedback, and the most common ask (fair enough) was along the lines of "Cool idea, but the implementation may result in degraded performance, and</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · China’s apparent AI benevolence is not unprecedented</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vap7li/chinas_apparent_ai_benevolence_is_not/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vap7li/chinas_apparent_ai_benevolence_is_not/</guid>
+      <pubDate>Thu, 30 Jul 2026 09:58:02 +0000</pubDate>
+      <description>China’s current lead in open-weight large language models is often described in moral terms: Beijing is “giving AI to the world”. That framing is too simple. China’s open-weight push is generous in effect, but it is also a rational form of industrial policy and soft power. Chinese labs such as DeepSeek, Alibaba’s Qwen team, Moonshot and others release capable models that foreign developers can dow</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Kimi-K3 on single 8xH200?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1vap4zm/kimik3_on_single_8xh200/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1vap4zm/kimik3_on_single_8xh200/</guid>
+      <pubDate>Thu, 30 Jul 2026 09:53:55 +0000</pubDate>
+      <description>Ok not very "local" but I think this is now relative to what the new models are dictating 😄 At least its privatellama... Did anyone tested Unsloth's Q2 or Q1 on a single 8xH200? What was the performance and what cli flags did you use? submitted by /u/Daemonix00 to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
     <item>
       <title>Selected Reddit communities · Are we getting the 5 hour limit back tomorrow, I guess?</title>
       <link>https://www.reddit.com/r/OpenAI/comments/1vaj3gf/are_we_getting_the_5_hour_limit_back_tomorrow_i/</link>
