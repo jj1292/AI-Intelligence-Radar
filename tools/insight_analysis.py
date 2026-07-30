@@ -224,10 +224,21 @@ def _load_existing_insights(path: Path | None) -> dict[str, dict[str, Any]]:
 
 
 def _eligible(signal: dict[str, Any]) -> bool:
+    preview_release = (
+        signal.get("platform") == "github"
+        and re.search(
+            r"(?:^|[\s._-])(nightly|alpha|dev|canary|snapshot|beta|preview|pre|rc\d*)"
+            r"(?:[\s._-]|$)",
+            str(signal.get("title") or ""),
+            flags=re.IGNORECASE,
+        )
+        is not None
+    )
     return (
         signal.get("source_tier") in {1, 2}
         and int(signal.get("impact_score", 0)) >= 3
         and signal.get("platform") != "reddit"
+        and not preview_release
     )
 
 
@@ -246,28 +257,46 @@ def analyze_signals(
     existing = _load_existing_insights(existing_feed_path)
     resolved_token = (token or os.environ.get("RADAR_ANALYSIS_TOKEN") or os.environ.get("GITHUB_TOKEN") or "").strip()
     resolved_model = (model or os.environ.get("RADAR_ANALYSIS_MODEL") or DEFAULT_MODEL).strip()
-    output: list[dict[str, Any]] = []
+    output = [dict(signal) for signal in signals]
     errors: list[str] = []
     analyzed = reused = skipped = 0
-    attempted = 0
 
-    for original in signals:
-        signal = dict(original)
+    for signal in output:
         url = str(signal.get("canonical_url") or "")
         if url in existing:
             signal["insight"] = existing[url]
             reused += 1
-            output.append(signal)
-            continue
-        if not _eligible(signal) or attempted >= max_new:
-            skipped += 1
-            output.append(signal)
-            continue
-        if model_client is None and not resolved_token:
-            skipped += 1
-            output.append(signal)
-            continue
 
+    candidate_indexes = [
+        index
+        for index, signal in enumerate(output)
+        if "insight" not in signal and _eligible(signal)
+    ]
+    candidate_indexes.sort(
+        key=lambda index: str(output[index].get("published_at") or ""),
+        reverse=True,
+    )
+    candidate_indexes.sort(
+        key=lambda index: (
+            0 if output[index].get("platform") == "official" else 1,
+            int(output[index].get("source_tier", 3)),
+            -int(output[index].get("impact_score", 0)),
+        )
+    )
+    selected_indexes = candidate_indexes[:max_new]
+    skipped = len(output) - reused - len(selected_indexes)
+    if model_client is None and not resolved_token:
+        return AnalysisBatch(
+            signals=output,
+            analyzed=0,
+            reused=reused,
+            skipped=skipped + len(selected_indexes),
+            errors=[],
+        )
+
+    for index in selected_indexes:
+        signal = output[index]
+        url = str(signal.get("canonical_url") or "")
         article_text = str(signal.get("summary") or "")
         if signal.get("platform") == "official":
             try:
@@ -277,9 +306,7 @@ def analyze_signals(
                 article_text = fetched
             except Exception as exc:  # Keep the feed alive; never invent a fallback analysis.
                 errors.append(f"{url}: article fetch failed ({exc})")
-                output.append(signal)
                 continue
-        attempted += 1
         try:
             insight = (
                 model_client(signal, article_text)
@@ -295,7 +322,6 @@ def analyze_signals(
             analyzed += 1
         except Exception as exc:  # A missing insight stays out of the important section.
             errors.append(f"{url}: analysis failed ({exc})")
-        output.append(signal)
 
     return AnalysisBatch(
         signals=output,

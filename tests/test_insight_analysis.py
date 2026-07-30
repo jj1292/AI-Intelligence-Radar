@@ -86,6 +86,41 @@ class InsightAnalysisTests(unittest.TestCase):
         self.assertEqual(result.analyzed, 0)
         self.assertEqual(result.signals[0]["insight"], insight())
 
+    def test_prioritizes_official_articles_and_skips_preview_releases(self):
+        preview = make_signal("https://github.com/example/releases/alpha")
+        preview.update(
+            {
+                "title": "Example · 2.0.0-alpha.1",
+                "platform": "github",
+                "published_at": "2026-07-30T09:00:00+00:00",
+            }
+        )
+        stable = make_signal("https://github.com/example/releases/stable")
+        stable.update(
+            {
+                "title": "Example · 1.9.0",
+                "platform": "github",
+                "published_at": "2026-07-30T08:00:00+00:00",
+            }
+        )
+        called = []
+
+        def model_client(signal, _article_text):
+            called.append(signal["canonical_url"])
+            return insight()
+
+        result = analyze_signals(
+            [preview, stable, make_signal()],
+            max_new=1,
+            article_fetcher=lambda _url: "Grounded article content. " * 30,
+            model_client=model_client,
+        )
+
+        self.assertEqual(called, [make_signal()["canonical_url"]])
+        self.assertNotIn("insight", result.signals[0])
+        self.assertNotIn("insight", result.signals[1])
+        self.assertIn("insight", result.signals[2])
+
     def test_does_not_fake_analysis_without_model_access(self):
         with patch.dict(
             "os.environ",
