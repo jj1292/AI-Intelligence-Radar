@@ -24,6 +24,7 @@ from tools.collection import CollectionBatch
 from tools.anthropic_news import collect_anthropic_news
 from tools.firecrawl_web import collect_firecrawl_web
 from tools.github_releases import collect_github_releases
+from tools.insight_analysis import analyze_signals
 from tools.public_feeds import collect_public_feed
 from tools.registry import ToolRegistry
 from tools.source_dispatch import SourceDispatcher
@@ -135,6 +136,15 @@ def run_radar_agent(
         ),
     )
     registry.register(
+        "analyze_signals",
+        lambda: analyze_signals(
+            state.filtered_signals,
+            existing_feed_path=(
+                feed_output_dir / "feed.json" if feed_output_dir is not None else None
+            ),
+        ),
+    )
+    registry.register(
         "write_report",
         lambda: build_knowledge_base(
             state.filtered_signals,
@@ -215,21 +225,32 @@ def run_radar_agent(
             observation_summary = {"source_id": source_id, "signals": len(observation.signals)}
         elif action.name == "filter_signals":
             state.filtered_signals = observation
-            state.phase = "write"
+            state.phase = "analyze"
             observation_summary = {
                 "received": len(state.raw_signals),
                 "selected": len(state.filtered_signals),
                 "excluded": len(state.raw_signals) - len(state.filtered_signals),
             }
+        elif action.name == "analyze_signals":
+            state.filtered_signals = observation.signals
+            state.result["analysis"] = {
+                "analyzed": observation.analyzed,
+                "reused": observation.reused,
+                "skipped": observation.skipped,
+                "errors": len(observation.errors),
+            }
+            state.errors.extend(observation.errors)
+            state.phase = "write"
+            observation_summary = state.result["analysis"]
         elif action.name == "write_report":
-            state.result = {
+            state.result.update({
                 "received": observation["received"],
                 "fresh": observation["fresh"],
                 "freshness_excluded": observation["freshness_excluded"],
                 "written": observation["written"],
                 "trend": str(observation["trend"]),
                 "cards": [str(path) for path in observation["cards"]],
-            }
+            })
             state.phase = "briefing"
             observation_summary = state.result
         elif action.name == "write_briefing":
@@ -292,7 +313,7 @@ def main() -> None:
     parser.add_argument(
         "--max-steps",
         type=int,
-        help="Maximum Agent steps; defaults to the selected source count plus 8.",
+        help="Maximum Agent steps; defaults to the selected source count plus 9.",
     )
     args = parser.parse_args()
 
@@ -307,7 +328,7 @@ def main() -> None:
     )
     if not sources:
         raise SystemExit("No runnable sources selected.")
-    max_steps = args.max_steps if args.max_steps is not None else len(sources) + 8
+    max_steps = args.max_steps if args.max_steps is not None else len(sources) + 9
     if max_steps <= 0:
         raise SystemExit("--max-steps must be greater than zero.")
     state = run_radar_agent(

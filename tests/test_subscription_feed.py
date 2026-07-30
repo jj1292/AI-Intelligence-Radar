@@ -28,6 +28,12 @@ def make_signal(
         "topics": ["models", "agents"],
         "impact_score": 3,
         "confidence": 0.85,
+        "insight": {
+            "core_idea": "The update changes the product decision.",
+            "key_points": ["A concrete mechanism.", "A measurable constraint."],
+            "analysis": "The implementation shifts the engineering tradeoff.",
+            "takeaway": "Re-evaluate the current roadmap.",
+        },
     }
 
 
@@ -47,6 +53,11 @@ class SubscriptionFeedTests(unittest.TestCase):
             payload["items"][0]["_radar"]["evidence"],
             ["Source evidence."],
         )
+        self.assertEqual(
+            payload["items"][0]["_radar"]["insight"]["takeaway"],
+            "Re-evaluate the current roadmap.",
+        )
+        self.assertIn("核心提炼", payload["items"][0]["content_text"])
         self.assertEqual(root.tag, "rss")
         self.assertEqual(root.findtext("channel/item/title"), "OpenAI model update")
 

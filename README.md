@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.8.0-7C3AED?style=for-the-badge" alt="Version v0.8.0" />
+  <img src="https://img.shields.io/badge/version-v0.9.0-7C3AED?style=for-the-badge" alt="Version v0.9.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -55,7 +55,7 @@
 
 | 🛰️ 一手信号 | 🧠 认知卡片 | 📈 趋势雷达 |
 | --- | --- | --- |
-| 跟踪官方发布、官方仓库、X 一手账号和 Reddit 社区 | 每条内容回答“发生了什么、为什么重要、证据是什么” | 只有多个独立信号连续出现，才升级为趋势候选 |
+| 跟踪官方发布、官方仓库、X 一手账号和 Reddit 社区 | 阅读正文后完成核心提炼、关键要点、分析与行动输出 | 只有多个独立信号连续出现，才升级为趋势候选 |
 
 > [!TIP]
 > **目标不是替你读完互联网，而是每天留下少量、可复核、以后还能用的知识。**
@@ -189,7 +189,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-66%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-69%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
 当前基线：**3 个案例全部通过，平均分 2.0/2**。v0.7 真实链路在无 X 凭证条件下读取 55 条 GitHub/Reddit 内容，筛选 46 条写入 Feed，0 个工具错误。
 
@@ -200,10 +200,10 @@ AI 产品不能只看一次输出是否“像样”。本项目从六个维度�
 | 维度 | 核心问题 |
 | --- | --- |
 | 🎯 相关性 | 应该出现的趋势是否出现，噪声是否被挡住？ |
-| 🔗 证据完整性 | 是否保留时间、短证据和原始来源？ |
+| 🔗 来源完整性 | 是否保留时间、来源名称和原始链接？ |
 | 🧭 覆盖度 | 任务要求的关键信号是否完整？ |
 | ⏱️ 去重与时效 | 重复和过期信息是否被排除？ |
-| 💡 判断价值 | 是否解释“为什么重要”并标注判断边界？ |
+| 💡 判断价值 | 是否真正完成提炼、分析和可执行输出？ |
 | ⚙️ 过程可靠性 | 卡片、趋势报告与运行状态是否一致？ |
 
 每项使用 `0 / 1 / 2` 三档评分，并设置来源混淆、链接缺失、编造证据、凭证泄露和越权操作等一票否决项。完整规则见 [`evals/rubric.md`](evals/rubric.md)。
@@ -230,10 +230,10 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 
 - 🔗 原始来源与发布时间
 - 🏢 公司、平台和来源等级
-- 📝 一句话结论
-- 💡 为什么重要
-- 🔎 可回到原文核验的短证据
-- 🎯 影响评分、可信度与判断边界
+- 🧠 核心主张提炼
+- 📌 2–5 个关键事实、机制或约束
+- 🔬 对技术、产品与商业影响的分析
+- 🎯 可用于更新认知或采取行动的输出
 
 规范定义见 [`schemas/intelligence-signal.schema.json`](schemas/intelligence-signal.schema.json)。
 
@@ -259,7 +259,8 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 | `v0.5` | X 后台采集、来源分发、成功后增量 Checkpoint、账号安全边界 | ✅ Done |
 | `v0.6` | 公开 RSS/JSON、定时发布器、一次认证/多人订阅 | ✅ Done |
 | `v0.7` | 可编辑订阅清单、动态发布、通用 RSS/Atom、Reddit 公共源 | ✅ Done |
-| `v0.8` | 公开浏览网站、持续重要信号、展开解读、Firecrawl 通用网页适配器 | 🚧 Current |
+| `v0.8` | 公开浏览网站、持续重要信号、Firecrawl 通用网页适配器 | ✅ Done |
+| `v0.9` | GitHub Models 正文分析、Insight Contract、提炼—分析—输出 | 🚧 Current |
 | `v1.0` | 记忆、回放评测、周/月复盘、主题订阅与来源质量评分 | 🌟 Vision |
 
 ## 📚 文档
@@ -268,6 +269,7 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 - 📘 [`v0.2 PRD`](docs/PRD-AI-Intelligence-Radar-v0.2.md)
 - 🧠 [`Agent Harness 架构构思`](docs/agent-harness-architecture.md)
 - 🎯 [`AI 产品评估与 Agent 评测指南`](docs/ai-product-evaluation-guide.md)
+- 🧠 [`正文分析流水线`](docs/analysis-pipeline.md)
 - 🔌 [`Dify 可选适配器`](docs/adapters/dify.md)
 - 🔥 [`Firecrawl 可选网页适配器`](docs/adapters/firecrawl.md)
 - 🔔 [`公开订阅发布器`](docs/deployment/subscription-publisher.md)

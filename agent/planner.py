@@ -22,6 +22,8 @@ class DeterministicPlanner:
             return Action("collect_source", {"source_id": state.pending_source_ids[0]})
         if state.phase == "collect":
             return Action("filter_signals")
+        if state.phase == "analyze":
+            return Action("analyze_signals")
         if state.phase == "write":
             return Action("write_report")
         if state.phase == "briefing":

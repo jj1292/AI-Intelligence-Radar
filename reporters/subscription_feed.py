@@ -32,14 +32,22 @@ def _load_existing_items(path: Path) -> list[dict[str, Any]]:
 def _signal_to_item(signal: dict[str, Any]) -> dict[str, Any]:
     published_at = parse_published_at(signal["published_at"])
     author = signal.get("author") or signal["company"]
+    insight = signal.get("insight")
+    if isinstance(insight, dict):
+        points = "\n".join(f"- {point}" for point in insight.get("key_points", []))
+        content_text = (
+            f"核心提炼：{insight.get('core_idea', '')}\n\n"
+            f"关键要点：\n{points}\n\n"
+            f"分析：{insight.get('analysis', '')}\n\n"
+            f"输出：{insight.get('takeaway', '')}"
+        )
+    else:
+        content_text = signal["summary"]
     return {
         "id": signal["canonical_url"],
         "url": signal["canonical_url"],
         "title": signal["title"],
-        "content_text": (
-            f"{signal['summary']}\n\nWhy it matters: {signal['why_it_matters']}\n\n"
-            f"Source: {signal['source_name']} (T{signal['source_tier']})"
-        ),
+        "content_text": content_text,
         "date_published": published_at.isoformat(),
         "authors": [{"name": str(author)}],
         "tags": [*signal["topics"], f"T{signal['source_tier']}", signal["platform"]],
@@ -51,6 +59,7 @@ def _signal_to_item(signal: dict[str, Any]) -> dict[str, Any]:
             "impact_score": signal["impact_score"],
             "confidence": signal["confidence"],
             "evidence": list(signal.get("evidence", [])),
+            **({"insight": insight} if isinstance(insight, dict) else {}),
         },
     }
 

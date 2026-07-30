@@ -24,7 +24,7 @@ DIMENSIONS = (
 
 DIMENSION_LABELS = {
     "relevance": "相关性",
-    "evidence": "证据完整性",
+    "evidence": "来源完整性",
     "coverage": "覆盖度",
     "dedup_newness": "去重与时效",
     "judgment_value": "判断价值",
@@ -70,13 +70,33 @@ def _published_at_from_card(card: str) -> datetime | None:
     return datetime.fromisoformat(match.group(1)) if match else None
 
 
+def _with_frozen_insight(signal: dict[str, Any]) -> dict[str, Any]:
+    """Keep evaluation deterministic while exercising the post-analysis contract."""
+    if isinstance(signal.get("insight"), dict):
+        return signal
+    evidence = list(signal.get("evidence") or [])
+    points = evidence[:2]
+    while len(points) < 2:
+        points.append(f"主题：{', '.join(signal.get('topics') or ['待分类'])}")
+    return {
+        **signal,
+        "insight": {
+            "core_idea": signal["summary"],
+            "key_points": points,
+            "analysis": signal["why_it_matters"],
+            "takeaway": f"后续判断应围绕：{signal['why_it_matters']}",
+        },
+    }
+
+
 def evaluate_case(case: dict[str, Any], workspace: Path) -> dict[str, Any]:
     """Execute one case and return product-level scores plus concrete gaps."""
     expectations = case.get("expectations", {})
     evaluation_time = datetime.fromisoformat(case["evaluation_time"])
     output_dir = workspace / case["id"]
+    evaluated_signals = [_with_frozen_insight(signal) for signal in case["signals"]]
     result = build_knowledge_base(
-        case["signals"],
+        evaluated_signals,
         output_dir,
         evaluation_time.date(),
         as_of=evaluation_time,
@@ -100,7 +120,7 @@ def evaluate_case(case: dict[str, Any], workspace: Path) -> dict[str, Any]:
     evidence_checks = [
         all(
             marker in card
-            for marker in ("published_at:", "## 一手证据", "[查看原始来源](")
+            for marker in ("published_at:", "source:", "[查看原始来源](")
         )
         for card in card_texts
     ]
@@ -129,12 +149,15 @@ def evaluate_case(case: dict[str, Any], workspace: Path) -> dict[str, Any]:
         gaps.append("去重后的信号数量不符合预期。")
 
     judgment_checks = [
-        all(marker in card for marker in ("## 为什么重要", "## 判断与边界", "影响评分：", "可信度："))
+        all(
+            marker in card
+            for marker in ("## 核心提炼", "## 关键要点", "## 分析", "## 输出")
+        )
         for card in card_texts
     ]
     judgment_value = _ratio_score(judgment_checks)
     if judgment_value < 2:
-        gaps.append("部分知识卡缺少影响判断、可信度或判断边界。")
+        gaps.append("部分知识卡没有完成提炼、关键要点、分析与输出。")
 
     process_checks = [
         result["trend"].exists(),
@@ -146,8 +169,8 @@ def evaluate_case(case: dict[str, Any], workspace: Path) -> dict[str, Any]:
         gaps.append("生成文件、计数或趋势报告之间存在状态不一致。")
 
     vetoes: list[str] = []
-    for signal, card in zip(deduplicate_signals(case["signals"]), card_texts):
-        if signal["source_tier"] == 3 and "来源等级：T3" not in card:
+    for signal, card in zip(deduplicate_signals(evaluated_signals), card_texts):
+        if signal["source_tier"] == 3 and "source_tier: 3" not in card:
             vetoes.append("T3 社区信号未明确标注为社区层级。")
         if signal["canonical_url"] not in card:
             vetoes.append("知识卡未保留原始来源 URL。")

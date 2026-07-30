@@ -28,6 +28,12 @@ def make_signal(url="https://example.com/one", title="Agent update", company="Op
         "topics": ["coding-agents"],
         "impact_score": 4,
         "confidence": 0.9,
+        "insight": {
+            "core_idea": "The update changes how agents are reviewed.",
+            "key_points": ["A concrete workflow changed.", "Review is now explicit."],
+            "analysis": "The delivery bottleneck shifts from generation to verification.",
+            "takeaway": "Measure review quality, not only completion speed.",
+        },
     }
 
 
@@ -66,7 +72,10 @@ class KnowledgeBaseTests(unittest.TestCase):
             self.assertIn("coding-agents", trend)
             self.assertIn("2 个独立来源", trend)
             card = result["cards"][0].read_text(encoding="utf-8")
-            self.assertIn("为什么重要", card)
+            self.assertIn("核心提炼", card)
+            self.assertIn("关键要点", card)
+            self.assertIn("分析", card)
+            self.assertIn("输出", card)
             self.assertIn("查看原始来源", card)
 
     def test_build_reports_freshness_exclusions(self):

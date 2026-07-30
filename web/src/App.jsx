@@ -59,6 +59,14 @@ function normalizeItem(item) {
   const confidence = Number(
     radar.confidence || (tier === 1 ? 0.98 : tier === 2 ? 0.85 : 0.65),
   );
+  const insight =
+    radar.insight &&
+    typeof radar.insight.core_idea === "string" &&
+    Array.isArray(radar.insight.key_points) &&
+    typeof radar.insight.analysis === "string" &&
+    typeof radar.insight.takeaway === "string"
+      ? radar.insight
+      : null;
 
   return {
     ...item,
@@ -73,6 +81,8 @@ function normalizeItem(item) {
     summary: parsed.summary,
     why: parsed.why,
     evidence: Array.isArray(radar.evidence) ? radar.evidence : [],
+    insight,
+    hasAnalysis: Boolean(insight),
   };
 }
 
@@ -103,7 +113,10 @@ function isPreviewRelease(item) {
 function selectImportantSignals(items) {
   const seenReleaseFamilies = new Set();
   return items
-    .filter((item) => item.tier <= 2 && item.impact >= 3 && !isPreviewRelease(item))
+    .filter(
+      (item) =>
+        item.hasAnalysis && item.tier <= 2 && item.impact >= 3 && !isPreviewRelease(item),
+    )
     .sort(
       (a, b) =>
         importanceScore(b) - importanceScore(a) || b.publishedAt - a.publishedAt,
@@ -141,24 +154,24 @@ function SignalInterpretation({ item }) {
   return (
     <div className="interpretation">
       <div>
-        <span className="interpretation-label">发生了什么</span>
-        <p>{item.summary}</p>
+        <span className="interpretation-label">核心提炼</span>
+        <p>{item.insight.core_idea}</p>
       </div>
       <div>
-        <span className="interpretation-label">为什么重要</span>
-        <p>{item.why}</p>
+        <span className="interpretation-label">关键要点</span>
+        <ul>
+          {item.insight.key_points.map((point) => (
+            <li key={point}>{point}</li>
+          ))}
+        </ul>
       </div>
       <div>
-        <span className="interpretation-label">证据与边界</span>
-        <p>
-          当前判断来自 {item.sourceName}，来源等级为 T{item.tier}。
-          {item.tier === 1
-            ? "这是官方一手信息，但产品影响仍需后续真实使用与独立证据验证。"
-            : "这不是最终事实，需要等待官方来源或多个独立来源交叉验证。"}
-        </p>
-        {item.evidence.length > 0 && (
-          <blockquote>原始依据：{item.evidence[0]}</blockquote>
-        )}
+        <span className="interpretation-label">分析</span>
+        <p>{item.insight.analysis}</p>
+      </div>
+      <div>
+        <span className="interpretation-label">输出</span>
+        <p>{item.insight.takeaway}</p>
       </div>
     </div>
   );
@@ -169,22 +182,18 @@ function ImportantSignal({ item, index, expanded, onToggle }) {
     <article className={`important-signal ${expanded ? "is-expanded" : ""}`}>
       <div className="signal-number">{String(index + 1).padStart(2, "0")}</div>
       <div className="signal-source">
-        <span className="source-tier">
-          T{item.tier} · {item.tier === 1 ? "官方一手" : "一手账号"}
-        </span>
         <span className="source-monogram">{sourceMark(item)}</span>
         <span>{item.company}</span>
       </div>
       <div className="signal-body">
         <div className="signal-meta">
           <span>{formatDate(item.publishedAt)}</span>
-          <span>可信度 {Math.round(item.confidence * 100)}%</span>
         </div>
         <h3>{item.title}</h3>
-        <p className="signal-summary">{item.summary}</p>
+        <p className="signal-summary">{item.insight.core_idea}</p>
         <div className="signal-actions">
           <button className="text-action" type="button" onClick={onToggle}>
-            {expanded ? "收起解读" : "展开解读"}
+            {expanded ? "收起分析" : "展开分析"}
             <CaretDown size={16} weight="bold" aria-hidden />
           </button>
           <a href={item.url} target="_blank" rel="noreferrer">

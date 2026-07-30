@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.8.0-7C3AED?style=for-the-badge" alt="Version v0.8.0" />
+  <img src="https://img.shields.io/badge/version-v0.9.0-7C3AED?style=for-the-badge" alt="Version v0.9.0" />
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -55,7 +55,7 @@ There is no shortage of daily information, but only a small number of signals ca
 
 | 🛰️ First-hand Signals | 🧠 Insight Cards | 📈 Trend Radar |
 | --- | --- | --- |
-| Track official announcements, repositories, first-hand X accounts, and Reddit communities | Every item answers what happened, why it matters, and what evidence supports it | A signal becomes a trend candidate only after it appears repeatedly across independent sources |
+| Track official announcements, repositories, first-hand X accounts, and Reddit communities | Read the source, extract its thesis and mechanisms, analyze the change, and produce a decision-ready takeaway | A signal becomes a trend candidate only after it appears repeatedly across independent sources |
 
 > [!TIP]
 > **The goal is not to read the entire internet for you. It is to preserve a small set of verifiable insights that remain useful over time.**
@@ -189,7 +189,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-66%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+![tests](https://img.shields.io/badge/tests-69%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
 
 Current baseline: **all 3 cases pass with an average score of 2.0/2**. The v0.7 live path, without X credentials, read 55 GitHub/Reddit items, selected 46 for the feed, and completed with zero tool errors.
 
@@ -200,10 +200,10 @@ An AI product cannot be judged by whether one output merely looks plausible. Thi
 | Dimension | Core question |
 | --- | --- |
 | 🎯 Relevance | Are expected trends surfaced while noise is blocked? |
-| 🔗 Evidence | Are time, short evidence, and original sources preserved? |
+| 🔗 Source integrity | Are publication time, source name, and the original link preserved? |
 | 🧭 Coverage | Are the task's required signals complete? |
 | ⏱️ Deduplication & freshness | Are duplicates and stale items excluded? |
-| 💡 Judgment value | Does the output explain why it matters and state its limits? |
+| 💡 Judgment value | Does the output contain real synthesis, analysis, and an actionable takeaway? |
 | ⚙️ Process reliability | Do cards, trend reports, and run state agree? |
 
 Each dimension uses a `0 / 1 / 2` scale. Source-tier confusion, missing source links, fabricated evidence, credential leaks, and unauthorized external actions are veto conditions. See [`evals/rubric.md`](evals/rubric.md) for the complete contract.
@@ -230,10 +230,10 @@ Each card consistently includes:
 
 - 🔗 Original source and publication time
 - 🏢 Company, platform, and source tier
-- 📝 One-sentence conclusion
-- 💡 Why it matters
-- 🔎 Short evidence that can be verified against the original source
-- 🎯 Impact score, confidence level, and judgment boundaries
+- 🧠 A distilled core thesis
+- 📌 Two to five concrete facts, mechanisms, or constraints
+- 🔬 Technical, product, and business analysis
+- 🎯 A takeaway that updates a decision or mental model
 
 The specification is defined in [`schemas/intelligence-signal.schema.json`](schemas/intelligence-signal.schema.json).
 
@@ -258,8 +258,9 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 | `v0.4` | GitHub Atom, 48-hour gate, RunState, minimal Loop, AI Pulse output, and Trace | ✅ Done |
 | `v0.5` | Backend X collection, source dispatch, post-success checkpoint, and account boundaries | ✅ Done |
 | `v0.6` | Public RSS/JSON feeds, scheduled publisher, one authentication for all subscribers | ✅ Done |
-| `v0.7` | Editable subscription list, dynamic publishing, generic RSS/Atom, public Reddit feed | 🚧 Current |
-| `v0.8` | Model planner, general resume, and official web adapters | 🧭 Next |
+| `v0.7` | Editable subscription list, dynamic publishing, generic RSS/Atom, public Reddit feed | ✅ Done |
+| `v0.8` | Public website, continuous important signals, and the Firecrawl web adapter | ✅ Done |
+| `v0.9` | GitHub Models article analysis and the synthesis-analysis-output contract | 🚧 Current |
 | `v1.0` | Memory, replay evaluation, periodic reviews, subscriptions, and source-quality scoring | 🌟 Vision |
 
 ## 📚 Documentation
@@ -268,6 +269,7 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 - 📘 [`v0.2 PRD`](docs/PRD-AI-Intelligence-Radar-v0.2.md)
 - 🧠 [`Agent Harness architecture`](docs/agent-harness-architecture.md)
 - 🎯 [`AI product and agent evaluation guide`](docs/ai-product-evaluation-guide.md)
+- 🧠 [`Article analysis pipeline`](docs/analysis-pipeline.md)
 - 🔌 [`Optional Dify adapter`](docs/adapters/dify.md)
 - 🔔 [`Public feed publisher`](docs/deployment/subscription-publisher.md)
 - ✏️ [`Source customization guide`](docs/customize-subscriptions.md)

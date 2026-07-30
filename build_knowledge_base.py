@@ -105,10 +105,7 @@ def _slug(signal: dict[str, Any]) -> str:
 
 def render_knowledge_card(signal: dict[str, Any], card_date: date) -> str:
     topics = ", ".join(_yaml_text(topic) for topic in signal["topics"])
-    evidence = signal.get("evidence") or []
-    evidence_lines = [f"- {item}" for item in evidence[:3]] or ["- 暂无可安全摘录的短证据，请回到原文核验。"]
-    impact = signal.get("impact_score", "待评估")
-    confidence = signal.get("confidence", "待评估")
+    insight = signal.get("insight")
 
     lines = [
         "---",
@@ -125,28 +122,31 @@ def render_knowledge_card(signal: dict[str, Any], card_date: date) -> str:
         "",
         f"# {signal['title']}",
         "",
-        "## 一句话结论",
-        "",
-        signal["summary"],
-        "",
-        "## 为什么重要",
-        "",
-        signal["why_it_matters"],
-        "",
-        "## 一手证据",
-        "",
-        *evidence_lines,
-        "",
-        "## 判断与边界",
-        "",
-        f"- 影响评分：{impact}/5" if isinstance(impact, int) else f"- 影响评分：{impact}",
-        f"- 可信度：{confidence}",
-        f"- 来源等级：T{signal['source_tier']}（T1 官方、T2 一手账号、T3 社区信号）",
-        "- 本卡片保存的是摘要和判断，不替代原文；重要结论需回到来源复核。",
-        "",
-        f"[查看原始来源]({signal['canonical_url']})",
-        "",
     ]
+    if isinstance(insight, dict):
+        lines.extend(
+            [
+                "## 核心提炼",
+                "",
+                str(insight["core_idea"]),
+                "",
+                "## 关键要点",
+                "",
+                *(f"- {point}" for point in insight["key_points"]),
+                "",
+                "## 分析",
+                "",
+                str(insight["analysis"]),
+                "",
+                "## 输出",
+                "",
+                str(insight["takeaway"]),
+                "",
+            ]
+        )
+    else:
+        lines.extend(["## 原始摘要", "", signal["summary"], ""])
+    lines.extend([f"[查看原始来源]({signal['canonical_url']})", ""])
     return "\n".join(lines)
 
 

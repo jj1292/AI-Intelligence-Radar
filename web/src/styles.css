@@ -403,13 +403,6 @@ a {
   font-weight: 800;
 }
 
-.source-tier {
-  padding: 4px 7px;
-  background: var(--ink);
-  color: var(--paper);
-  font-size: 10px;
-}
-
 .source-monogram,
 .live-monogram {
   display: grid;
@@ -496,20 +489,19 @@ a {
   font-weight: 900;
 }
 
-.interpretation p {
+.interpretation p,
+.interpretation ul {
   margin: 6px 0 0;
   font-size: 13px;
   line-height: 1.7;
 }
 
-.interpretation blockquote {
-  margin: 10px 0 0;
-  padding: 12px 14px;
-  border-left: 4px solid var(--blue);
-  background: rgba(255, 255, 255, 0.08);
-  color: #e9e6dc;
-  font-size: 12px;
-  line-height: 1.6;
+.interpretation ul {
+  padding-left: 20px;
+}
+
+.interpretation li + li {
+  margin-top: 5px;
 }
 
 .load-more,

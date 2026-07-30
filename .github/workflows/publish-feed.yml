@@ -5,11 +5,16 @@ on:
   push:
     paths:
       - "config/subscriptions.json"
+      - "agent/**"
+      - "tools/insight_analysis.py"
+      - "reporters/subscription_feed.py"
+      - ".github/workflows/publish-feed.yml"
   schedule:
     - cron: "17 1,13 * * *"
 
 permissions:
   contents: write
+  models: read
 
 concurrency:
   group: subscription-feed-publisher
@@ -24,6 +29,8 @@ jobs:
       X_COOKIE_AUTH_TOKEN: ${{ secrets.X_COOKIE_AUTH_TOKEN }}
       X_COOKIE_CT0: ${{ secrets.X_COOKIE_CT0 }}
       FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      RADAR_ANALYSIS_MODEL: openai/gpt-4.1
       TWS_TELEMETRY: "0"
 
     steps:
