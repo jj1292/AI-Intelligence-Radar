@@ -7,6 +7,816 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1vrpw7h/ive_tried_maybe_15_ai_deck_tools_this_year_they/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1vrpw7h/ive_tried_maybe_15_ai_deck_tools_this_year_they/",
+      "title": "Selected Reddit communities · I've tried maybe 15 AI deck tools this year. They fall into two camps and only one matters for real work",
+      "content_text": "I build decks for a living, mostly investor and board stuff, so I've been testing basically every AI presentation tool that shows up on my radar since last fall. After enough of these I noticed they split into two very different buckets, and almost everyone I talk to is evaluating the wrong one. Bucket one: full deck generators. You type a prompt, it spits out an entire 15 slide deck with its own",
+      "date_published": "2026-08-18T13:55:42+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I build decks for a living, mostly investor and board stuff, so I've been testing basically every AI presentation tool that shows up on my radar since last fall. After enough of these I noticed they split into two very different buckets, an"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrps78/what_sandbox_are_you_all_using_for_ai_agents/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrps78/what_sandbox_are_you_all_using_for_ai_agents/",
+      "title": "Selected Reddit communities · What sandbox are you all using for AI agents?",
+      "content_text": "Hi everyone, I use AI agents to code and manage my personal files heavily. However, I am worried that the agents may accidentally delete some important files on my machine, outside of the defined scope. I am wondering what sandboxes people are using. I am looking for a solution that is easy to use, perhaps just one line, e.g. `[sandbox] opencode --allowed_folder=[folder that the agent can work in]",
+      "date_published": "2026-08-18T13:51:22+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hi everyone, I use AI agents to code and manage my personal files heavily. However, I am worried that the agents may accidentally delete some important files on my machine, outside of the defined scope. I am wondering what sandboxes people "
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.22",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.22",
+      "title": "OpenAI · 0.148.0-alpha.22",
+      "content_text": "Release 0.148.0-alpha.22",
+      "date_published": "2026-08-18T13:40:10+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.148.0-alpha.22"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrojhv/agent_on_cpu_which_to_pick/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrojhv/agent_on_cpu_which_to_pick/",
+      "title": "Selected Reddit communities · Agent on CPU, which to pick?",
+      "content_text": "Hey everyone, After running firecrawl, I realized I need to run an agent as it was taking too much context. Finally get to put my 96GB DDR5 (dual 48GB DDR5-6000CL30) to good use! My 32GB VRAM is already permanently fully occupied and not available. It's likely I want to expand the agent use further for other tasks as well (like document parsing). So far I'm deciding between Gemma 4 26B-A4B (I real",
+      "date_published": "2026-08-18T13:01:38+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hey everyone, After running firecrawl, I realized I need to run an agent as it was taking too much context. Finally get to put my 96GB DDR5 (dual 48GB DDR5-6000CL30) to good use! My 32GB VRAM is already permanently fully occupied and not av"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vroao0/opencode_overrides_the_samplers_for_qwen_models/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vroao0/opencode_overrides_the_samplers_for_qwen_models/",
+      "title": "Selected Reddit communities · OpenCode overrides the samplers for Qwen models to the wrong values",
+      "content_text": "This is invisible with llama.cpp or derivatives, but ninfer helpfully logs the sampler settings on each request and auto-configures the correct ones for the model. Basically, OpenCode will always send top-p=1.0 (which means there is no filtering of low-probability tokens except with top-k) instead of the correct 0.95 (thinking) or 0.80 (no-thinking). The commit that added this is supposedly for an",
+      "date_published": "2026-08-18T12:51:35+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "This is invisible with llama.cpp or derivatives, but ninfer helpfully logs the sampler settings on each request and auto-configures the correct ones for the model. Basically, OpenCode will always send top-p=1.0 (which means there is no filt"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vro3y9/4b_model_can_vibecode_for_your_anything_for_free/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vro3y9/4b_model_can_vibecode_for_your_anything_for_free/",
+      "title": "Selected Reddit communities · 4b model can vibecode for your anything for FREE inside your browser",
+      "content_text": "I trained a model able to operate inside vibecoding scafold and produce good sites without leaving your PC, everything runs inside your browser (if it doesnt work it switches to HF zero gpu) https://preview.redd.it/eq818cmyp4kh1.png?width=2940&format=png&auto=webp&s=9d378f1289601308ff173d74e64b4f80a8c879cc https://huggingface.co/spaces/AlexWortega/my_pi_agent submitted by /u/Mysterious_Hearing14 t",
+      "date_published": "2026-08-18T12:43:33+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I trained a model able to operate inside vibecoding scafold and produce good sites without leaving your PC, everything runs inside your browser (if it doesnt work it switches to HF zero gpu) https://preview.redd.it/eq818cmyp4kh1.png?width=2"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vro3vf/linux_improves_vram_management_in_73_kernel/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vro3vf/linux_improves_vram_management_in_73_kernel/",
+      "title": "Selected Reddit communities · Linux Improves VRAM Management in 7.3 Kernel 🥳",
+      "content_text": "submitted by /u/johnnyApplePRNG to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T12:43:26+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/johnnyApplePRNG to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vro3hm/qwen38_q4_k_m_1m_context_strix_halo_3080_45_tps/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vro3hm/qwen38_q4_k_m_1m_context_strix_halo_3080_45_tps/",
+      "title": "Selected Reddit communities · Qwen3.8 Q4_k_m 1M context Strix Halo / 3080 -> 45 tps",
+      "content_text": "Been playing qwen3.8 for a couple of days, on a AMD 128GB strix machine, with oculink eGPU (3080ti) 12GB. Running Q6, 262K context 1. on just strix halo without MTP 10tps, with MTP with n=4 24 tps, with FastMTP offloaded to 3080 with n=4 about 28 tps Q4_k_m 262K context Splitting layers 5GB weights & FastMPT on 3080 and rest on iGPU~ 53 tps Q4_k_m, 1M context, k-q8, v-q4 Splitting layers 2GB weigh",
+      "date_published": "2026-08-18T12:42:59+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Been playing qwen3.8 for a couple of days, on a AMD 128GB strix machine, with oculink eGPU (3080ti) 12GB. Running Q6, 262K context 1. on just strix halo without MTP 10tps, with MTP with n=4 24 tps, with FastMTP offloaded to 3080 with n=4 ab"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1vro1o1/americas_largest_grid_wants_to_cut_power_to_new/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1vro1o1/americas_largest_grid_wants_to_cut_power_to_new/",
+      "title": "Selected Reddit communities · America's largest grid wants to cut power to new data centers first during shortages — 50MW-plus data centers must bring their own electricity generation to avoid shutoffs",
+      "content_text": "submitted by /u/KeanuRave100 to r/OpenAI [link] [comments]",
+      "date_published": "2026-08-18T12:40:52+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/KeanuRave100 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrny6s/open_models_like_qwen_and_deepseek_are_using/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrny6s/open_models_like_qwen_and_deepseek_are_using/",
+      "title": "Selected Reddit communities · Open Models like Qwen and DeepSeek are using Claude Code in their benchmarks",
+      "content_text": "Was considering relying less on Claude Code to write code and try using open models and so I was looking at the benchmarks for the new Qwen 3.8 and DeepSeek models, and for most of them, the models were tested using Claude Code as the harness. Which is weird because Qwen already has Qwen Code, DeepSeek recently released its own harness, and there are also open-source options like OpenCode, Hermes",
+      "date_published": "2026-08-18T12:36:36+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Was considering relying less on Claude Code to write code and try using open models and so I was looking at the benchmarks for the new Qwen 3.8 and DeepSeek models, and for most of them, the models were tested using Claude Code as the harne"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnvng/we_really_need_llamacpp_to_support_changing/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnvng/we_really_need_llamacpp_to_support_changing/",
+      "title": "Selected Reddit communities · We really need llama.cpp to support changing thinking amount",
+      "content_text": "With qwen 3.8 27b being the long thinker of the year, we could really use support for changing thinking modes on the fly. Last I saw it was being worked on but didn't make a ton of progress. It would be really nice to be able to use the drop downs to go to medium or low thinking for easier tasks. It would save so much time submitted by /u/TheWaffleKingg to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T12:33:33+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "With qwen 3.8 27b being the long thinker of the year, we could really use support for changing thinking modes on the fly. Last I saw it was being worked on but didn't make a ton of progress. It would be really nice to be able to use the dro"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnsmj/any_4b_models_with_decent_programming_knowledge/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnsmj/any_4b_models_with_decent_programming_knowledge/",
+      "title": "Selected Reddit communities · Any ~4B models with decent programming knowledge? NO VIBECODE/ONE SHOT",
+      "content_text": "Hello, hope this is an appropriate post for the sub, I'm usually a lurker Are there any ~4B models with enough programming knowledge to explain concepts and spot mistakes without constantly hallucinating? Thinking of using one offline while learning a new language and asking questions about code/tutorials, spot simple or stupid mistakes I make etc. I do not need the ability to oneshot or vibecode",
+      "date_published": "2026-08-18T12:29:52+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hello, hope this is an appropriate post for the sub, I'm usually a lurker Are there any ~4B models with enough programming knowledge to explain concepts and spot mistakes without constantly hallucinating? Thinking of using one offline while"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnsi7/how_come_people_dont_use_tabbyapi_and_exllama_v2/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnsi7/how_come_people_dont_use_tabbyapi_and_exllama_v2/",
+      "title": "Selected Reddit communities · How come people don't use TabbyAPI and ExLLama V2 on this sub?",
+      "content_text": "New local LLM afficionado here. I've got two cards, one is an old 3070 I never got around to selling after replacing it, and the other is a 5090 (the replacement). the 5090 I'm using with llama.cpp as I have a decent wedge of RAM to offload to, in case I need to. But the 3070, which is on a homelab... I was thinking if it made sense to go with TabbyAPI, as it's meant to be a faster format than GGU",
+      "date_published": "2026-08-18T12:29:43+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "New local LLM afficionado here. I've got two cards, one is an old 3070 I never got around to selling after replacing it, and the other is a 5090 (the replacement). the 5090 I'm using with llama.cpp as I have a decent wedge of RAM to offload"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnrny/local_claude_code_remote_with_telegram/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnrny/local_claude_code_remote_with_telegram/",
+      "title": "Selected Reddit communities · Local Claude Code Remote with Telegram",
+      "content_text": "I recently started using Qwen locally with Claude Code Router but I missed the remote control slash command in regular claude code, so I built one! The remote is built on top of Claude Code's hooks plus a Telegram bot. Turn it on in a session and my phone shows the answer as it's being written, what files it's reading and editing, and when it's done. From the chat I can send new prompts, stop a ru",
+      "date_published": "2026-08-18T12:28:38+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I recently started using Qwen locally with Claude Code Router but I missed the remote control slash command in regular claude code, so I built one! The remote is built on top of Claude Code's hooks plus a Telegram bot. Turn it on in a sessi"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnn4o/what_server_gpus_to_expect_in_neared_future/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnn4o/what_server_gpus_to_expect_in_neared_future/",
+      "title": "Selected Reddit communities · What server gpus to expect in neared future",
+      "content_text": "Considering current prices and shitty consumer gpus I have tiny hopes only on old GPUs which soonish should be replaced bu newer generation. Next a slop list carefully crafted by AI 😂 PCIe 2026 — AMD Instinct MI210 — 64 GB HBM2e, 1.64 TB/s, 104 CUs, 6,656 SPs, 22.6 TFLOPS FP32 2026–2027 — NVIDIA L40 — 48 GB GDDR6, 864 GB/s, 18,176 CUDA cores, ~90 TFLOPS FP32 2027 — NVIDIA L40S — 48 GB GDDR6, 864 G",
+      "date_published": "2026-08-18T12:23:13+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Considering current prices and shitty consumer gpus I have tiny hopes only on old GPUs which soonish should be replaced bu newer generation. Next a slop list carefully crafted by AI 😂 PCIe 2026 — AMD Instinct MI210 — 64 GB HBM2e, 1.64 TB/s,"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnkns/now_all_we_need_is_a_qwen_70b_dense_model/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnkns/now_all_we_need_is_a_qwen_70b_dense_model/",
+      "title": "Selected Reddit communities · Now all we need is a Qwen 70B dense model",
+      "content_text": "This is an excellent natural next step. We have seen just how capable dense models can be, and without investing too much, it would be really nice to see how such a model will perform. They already have the training recipe and the data; this would be an amazing model. submitted by /u/takuonline to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T12:20:07+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "This is an excellent natural next step. We have seen just how capable dense models can be, and without investing too much, it would be really nice to see how such a model will perform. They already have the training recipe and the data; thi"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnckt/hugging_face_just_surpassed_3_million_models_on/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnckt/hugging_face_just_surpassed_3_million_models_on/",
+      "title": "Selected Reddit communities · Hugging Face just surpassed 3 million models on the Hub",
+      "content_text": "From Hugging Face on 𝕏: https://x.com/huggingface/status/2089673018737869242?s=20 submitted by /u/Nunki08 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T12:09:54+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "From Hugging Face on 𝕏: https://x.com/huggingface/status/2089673018737869242?s=20 submitted by /u/Nunki08 to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrncdt/extending_qwen_38_27b_to_1m/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrncdt/extending_qwen_38_27b_to_1m/",
+      "title": "Selected Reddit communities · Extending Qwen 3.8 27B to 1M",
+      "content_text": "Has anyone used yarn to extend the ctx successfully up to 1M? If yes, how much VRAM did it take? submitted by /u/m31317015 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T12:09:37+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Has anyone used yarn to extend the ctx successfully up to 1M? If yes, how much VRAM did it take? submitted by /u/m31317015 to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnay3/what_would_make_an_uploaderrun_refusal_table/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrnay3/what_would_make_an_uploaderrun_refusal_table/",
+      "title": "Selected Reddit communities · What would make an uploader-run refusal table independently reproducible?",
+      "content_text": "A refusal range in a model card is only reproducible if another person can reconstruct how every prompt reached its label. OrcaRouter's Qwen3.8-27B FP8 card reports 0–6% refusal for the abliterated checkpoint with thinking off, versus 63.6–99% for the base across eight listed sets. The card also says this is an uploader-run, opening-phrase classifier rather than an independent evaluation. The supp",
+      "date_published": "2026-08-18T12:07:49+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "A refusal range in a model card is only reproducible if another person can reconstruct how every prompt reached its label. OrcaRouter's Qwen3.8-27B FP8 card reports 0–6% refusal for the abliterated checkpoint with thinking off, versus 63.6–"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1vrn6rt/chatgpt_is_getting_a_dedicated_mode_for_teens/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1vrn6rt/chatgpt_is_getting_a_dedicated_mode_for_teens/",
+      "title": "Selected Reddit communities · ChatGPT is getting a dedicated mode for teens",
+      "content_text": "OpenAI: Introducing ChatGPT for Teens: Built for learning, backed by protections: https://openai.com/index/chatgpt-for-teens/ submitted by /u/Nunki08 to r/OpenAI [link] [comments]",
+      "date_published": "2026-08-18T12:02:23+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "OpenAI: Introducing ChatGPT for Teens: Built for learning, backed by protections: https://openai.com/index/chatgpt-for-teens/ submitted by /u/Nunki08 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrn0mm/a_08b_got_noticeably_better_with_a_longer_prompt/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrn0mm/a_08b_got_noticeably_better_with_a_longer_prompt/",
+      "title": "Selected Reddit communities · A 0.8B got noticeably better with a longer prompt. Is that proof a fine-tune will work, or a trap?",
+      "content_text": "I made an open source dictation app called SpeakoFlow for Windows, Linux and Mac, and I've hit a wall I could use some outside opinions on. I dictate most of my day, so this is a problem I run into constantly. Transcription is the easy part now. Parakeet handles punctuation, capitalisation, numbers and most fillers by itself, and anything phonetic I can usually fix with a vocabulary list. I don't",
+      "date_published": "2026-08-18T11:55:05+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I made an open source dictation app called SpeakoFlow for Windows, Linux and Mac, and I've hit a wall I could use some outside opinions on. I dictate most of my day, so this is a problem I run into constantly. Transcription is the easy part"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrmufc/is_it_possible_to_spawn_subagents_with_a_prompt/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrmufc/is_it_possible_to_spawn_subagents_with_a_prompt/",
+      "title": "Selected Reddit communities · Is it possible to spawn subagents with a prompt in llama.cpp?",
+      "content_text": "This is a prompt OpenAI used to solve a math problem. It described a loop to ask GPT to spawn subagents to solve the problem while the root agent keeps checking the result and launching new subagents until problem is solved. Can I do similar stuff with llama-server running a local model? If not, how can do similar thing with a local model? Thanks a lot in advance. submitted by /u/Ok_Warning2146 to",
+      "date_published": "2026-08-18T11:46:25+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "This is a prompt OpenAI used to solve a math problem. It described a loop to ask GPT to spawn subagents to solve the problem while the root agent keeps checking the result and launching new subagents until problem is solved. Can I do simila"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrmotq/qwen3827b_is_down_on_all_openrouter_providers/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrmotq/qwen3827b_is_down_on_all_openrouter_providers/",
+      "title": "Selected Reddit communities · qwen-3.8-27b is down on all openrouter providers",
+      "content_text": "is it because it was so good they afraid to run it anymore? submitted by /u/Steus_au to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T11:38:44+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "is it because it was so good they afraid to run it anymore? submitted by /u/Steus_au to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrm27o/deepseek_v4_flash_0731_on_strix_halo_draft_model/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrm27o/deepseek_v4_flash_0731_on_strix_halo_draft_model/",
+      "title": "Selected Reddit communities · DeepSeek V4 Flash 0731 on Strix Halo: draft model, n_max sweep, and a launch line that actually helps",
+      "content_text": "I know the front page is all Qwen3.8 27B right now. Fine model. I just finished a week of numbers on DeepSeek-V4-Flash-0731 on a Strix Halo box and figured I'd dump them here before I forget what I actually measured. Hardware is a Strix Halo mini PC, Ubuntu, 128 GB unified memory. Target is Unsloth's UD-IQ3_XXS with Q6 attention (~96 GB). At 264k context, no context quantization, the process sits",
+      "date_published": "2026-08-18T11:07:12+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I know the front page is all Qwen3.8 27B right now. Fine model. I just finished a week of numbers on DeepSeek-V4-Flash-0731 on a Strix Halo box and figured I'd dump them here before I forget what I actually measured. Hardware is a Strix Hal"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1vrll7i/how_organizations_use_ai_evidence_from_chatgpt/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1vrll7i/how_organizations_use_ai_evidence_from_chatgpt/",
+      "title": "Selected Reddit communities · How Organizations Use AI: Evidence from ChatGPT | OpenAI",
+      "content_text": "submitted by /u/MatricesRL to r/OpenAI [link] [comments]",
+      "date_published": "2026-08-18T10:43:26+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/MatricesRL to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrljt8/looking_for_an_llm_that_ranks_in_the_top_10_it/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrljt8/looking_for_an_llm_that_ranks_in_the_top_10_it/",
+      "title": "Selected Reddit communities · Looking for an LLM that ranks in the top 10. It doesn’t need to be #1. I just want one that doesn’t constantly say, “No, I can’t fulfill your request.”",
+      "content_text": "It can be local, open-weight, closed-source, hosted, whatever. I’m just looking for a smart LLM that won’t constantly refuse requests submitted by /u/nobodyreadusernames to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T10:41:19+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "It can be local, open-weight, closed-source, hosted, whatever. I’m just looking for a smart LLM that won’t constantly refuse requests submitted by /u/nobodyreadusernames to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/python-v0.147.0",
+      "url": "https://github.com/openai/codex/releases/tag/python-v0.147.0",
+      "title": "OpenAI · python-v0.147.0",
+      "content_text": "Update Python SDK runtime to 0.147.0",
+      "date_published": "2026-08-18T06:08:40+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "Update Python SDK runtime to 0.147.0"
+        ]
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/OpenAI/comments/1vrc571/the_ai_review_that_said_looks_good_solid/",
       "url": "https://www.reddit.com/r/OpenAI/comments/1vrc571/the_ai_review_that_said_looks_good_solid/",
       "title": "Selected Reddit communities · The AI review that said \"looks good, solid implementation\" and approved a bug that took down production three days later",
@@ -5193,816 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "I'm always testing an image prompt with a picture of a historic place in my hometown – a small but well known 250,000 people town in Germany. I'll just ask the model, in which City this photo has been taken. With the 3.6 generation of both "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vokpnd/american_llms_have_chinese_censorship_too/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vokpnd/american_llms_have_chinese_censorship_too/",
-      "title": "Selected Reddit communities · American LLMs have Chinese censorship too.",
-      "content_text": "A paper came out in Nature yesterday. It describes how Chinese censorship also makes it's way into American AI models. \"We demonstrate that media scripted and curated by the Chinese state appears in LLM training datasets.\" https://www.nature.com/articles/s41586-026-10506-7 Meta reported on this about a month ago. \"Key Finding: LLMs Tested are More Than Twice as Likely to Refuse to Criticize Repres",
-      "date_published": "2026-08-14T21:52:38+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "A paper came out in Nature yesterday. It describes how Chinese censorship also makes it's way into American AI models. \"We demonstrate that media scripted and curated by the Chinese state appears in LLM training datasets.\" https://www.natur"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vokm69/38_27b_dual_3060s_recipe_50tks/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vokm69/38_27b_dual_3060s_recipe_50tks/",
-      "title": "Selected Reddit communities · 3.8 27b dual 3060s recipe 50tk/s",
-      "content_text": "GGML_CUDA_DISABLE_GRAPHS=1 ./llama.cpp/llama-server \\ --model ./models/Qwen3.8-27B-GGUF/Qwen3.8-27B-UD-Q4_K_XL.gguf \\ --alias qwen3.8-27b \\ --ctx-size 131072 \\ --parallel 1 \\ --batch-size 256 \\ --ubatch-size 64 \\ --n-gpu-layers all \\ --split-mode tensor \\ --tensor-split 1,1 \\ --flash-attn on \\ --cache-type-k q8_0 \\ --cache-type-v q8_0 \\ --spec-type draft-mtp \\ --spec-draft-n-max 2 \\ --spec-draft-n",
-      "date_published": "2026-08-14T21:48:39+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "GGML_CUDA_DISABLE_GRAPHS=1 ./llama.cpp/llama-server \\ --model ./models/Qwen3.8-27B-GGUF/Qwen3.8-27B-UD-Q4_K_XL.gguf \\ --alias qwen3.8-27b \\ --ctx-size 131072 \\ --parallel 1 \\ --batch-size 256 \\ --ubatch-size 64 \\ --n-gpu-layers all \\ --spli"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vokl82/llamacpp_reasoning_effort_not_forwarded_to_chat/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vokl82/llamacpp_reasoning_effort_not_forwarded_to_chat/",
-      "title": "Selected Reddit communities · llama.cpp: reasoning_effort not forwarded to chat template (Qwen3.8-27B)",
-      "content_text": "Problem llama-server only handles reasoning_effort: \"none\" (disables thinking). All other values ( xhigh , medium , low , high , etc.) are silently ignored and never reach the chat template. Qwen3.8-27B's Jinja template uses reasoning_effort to inject different reasoning instructions per level ( xhigh / medium / low ), but since the value is not forwarded, the template always falls back to its def",
-      "date_published": "2026-08-14T21:47:36+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Problem llama-server only handles reasoning_effort: \"none\" (disables thinking). All other values ( xhigh , medium , low , high , etc.) are silently ignored and never reach the chat template. Qwen3.8-27B's Jinja template uses reasoning_effor"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vojxtc/does_chatgpt_for_teachers_subscriptions_have/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vojxtc/does_chatgpt_for_teachers_subscriptions_have/",
-      "title": "Selected Reddit communities · Does ChatGPT for Teachers subscriptions have access to Pro?",
-      "content_text": "So I noticed that the model picker includes Pro, but it doesn't seem like it's available at all. This is an individual account so I am the Global Admin on the account. In workspace settings there are model options and it has Pro in it. So I'm just wondering if this whole ChatGPT for Teachers is just a restricted version of EDU since I know EDU accounts are managed by an admin. But then why not jus",
-      "date_published": "2026-08-14T21:21:29+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So I noticed that the model picker includes Pro, but it doesn't seem like it's available at all. This is an individual account so I am the Global Admin on the account. In workspace settings there are model options and it has Pro in it. So I"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vojwrm/qwen_endless_looping_issue_and_possible_fix/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vojwrm/qwen_endless_looping_issue_and_possible_fix/",
-      "title": "Selected Reddit communities · Qwen endless looping issue and possible fix",
-      "content_text": "Not sure if this is a known issue, but it was new to me: Full credit to u/ldn-ldn for finding this simple but unexpectedly evil prompt: Create a typescript function which accepts a number in 10 bit range and returns brightness in nits based on pq gamma curve. Just try it; it will likely trigger an endless thinking loop. I stopped it after it ran for >15 minutes and >20,000 tokens. It kept spitting",
-      "date_published": "2026-08-14T21:20:25+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Not sure if this is a known issue, but it was new to me: Full credit to u/ldn-ldn for finding this simple but unexpectedly evil prompt: Create a typescript function which accepts a number in 10 bit range and returns brightness in nits based"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vojr6m/qwen3827b_q6_k_at_128k_on_a_single_32gb_gpu/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vojr6m/qwen3827b_q6_k_at_128k_on_a_single_32gb_gpu/",
-      "title": "Selected Reddit communities · Qwen3.8-27B Q6_K at 128K on a single 32GB GPU",
-      "content_text": "Fresh download today. Really quick: my impression of Qwen3.8-27B: I ran the Q6_K GGUF locally on a 32GB R9700 through llama.cpp + OpenCode, with 128K context. Q8 would not fit with enough left over for context. I gave it my real, years-old swimming pool-controller repository and asked for a simple reliability audit. It spent about 21 minutes tracing the architecture, startup/cron behavior, serial",
-      "date_published": "2026-08-14T21:14:18+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Fresh download today. Really quick: my impression of Qwen3.8-27B: I ran the Q6_K GGUF locally on a 32GB R9700 through llama.cpp + OpenCode, with 128K context. Q8 would not fit with enough left over for context. I gave it my real, years-old "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vojjh3/ninfer3090/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vojjh3/ninfer3090/",
-      "title": "Selected Reddit communities · Ninfer-3090",
-      "content_text": "Hi all, Of course I had to jump on Qwen3.8-27B and get it running on the RTX 3090 port of NInfer . For anyone unfamiliar with it, NInfer is a small, dedicated C++/CUDA inference runtime built around fused kernels rather than a huge general-purpose serving stack. The 3090 fork specifically targets Ampere GPU's. And Qwen3.8-27B does pretty damn well on a single 24 GB 3090. As far as I know, this is",
-      "date_published": "2026-08-14T21:05:53+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hi all, Of course I had to jump on Qwen3.8-27B and get it running on the RTX 3090 port of NInfer . For anyone unfamiliar with it, NInfer is a small, dedicated C++/CUDA inference runtime built around fused kernels rather than a huge general-"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1voj585/magi2_preview_scaling_video_generation_models/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voj585/magi2_preview_scaling_video_generation_models/",
-      "title": "Selected Reddit communities · MAGI-2 Preview: Scaling Video Generation Models Efficiently (114B AV MoE)",
-      "content_text": "Huggingface: https://huggingface.co/sand-ai/MAGI-2-preview Github: https://github.com/SandAI-org/MAGI-2-preview Announcement post: https://x.com/SandAI_HQ/status/2088152335008571532 submitted by /u/Recoil42 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-08-14T20:50:41+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Huggingface: https://huggingface.co/sand-ai/MAGI-2-preview Github: https://github.com/SandAI-org/MAGI-2-preview Announcement post: https://x.com/SandAI_HQ/status/2088152335008571532 submitted by /u/Recoil42 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1voj571/retrocraft_qwen_38_27b_q8_one_shot_with_exact/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voj571/retrocraft_qwen_38_27b_q8_one_shot_with_exact/",
-      "title": "Selected Reddit communities · RetroCraft - Qwen 3.8 27B Q8, one shot with exact performance data on dual 3090s.",
-      "content_text": "The demo video above was created with a single prompt using Qwen 3.8 27B Q8_K_XL. Prompt: create me a single page, html/js/css GeoCities, Laser Wave, 80's retro, minecraft clone named RetroCraft. Embed it in a single go binary that serves the HTML page. It took Opencode only a few minutes to write the code and it worked without an adjustments. There's going to be lots of posts and demos today but",
-      "date_published": "2026-08-14T20:50:38+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "The demo video above was created with a single prompt using Qwen 3.8 27B Q8_K_XL. Prompt: create me a single page, html/js/css GeoCities, Laser Wave, 80's retro, minecraft clone named RetroCraft. Embed it in a single go binary that serves t"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1voj4pb/my_new_resident_models_qwen3827b_and_museglimmer/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voj4pb/my_new_resident_models_qwen3827b_and_museglimmer/",
-      "title": "Selected Reddit communities · My new \"resident\" models Qwen3.8:27b and Muse-Glimmer",
-      "content_text": "I've had Qwen3.6:27b (and Qwen 3 coder next before it) running along side gpt-oss:20b for a while now as my two main models (qwen for coding, gpt-oss for agentic stuff). Qwen is pretty self-explanatory, while I had been using gpt-oss because of how good it was at producing json and instruction following, despite the size and age. https://preview.redd.it/lr61tb02lejh1.png?width=1920&format=png&auto",
-      "date_published": "2026-08-14T20:50:06+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I've had Qwen3.6:27b (and Qwen 3 coder next before it) running along side gpt-oss:20b for a while now as my two main models (qwen for coding, gpt-oss for agentic stuff). Qwen is pretty self-explanatory, while I had been using gpt-oss becaus"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1voix4o/local_uncensored_opus_46_at_home_qwen38_27b/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1voix4o/local_uncensored_opus_46_at_home_qwen38_27b/",
-      "title": "Selected Reddit communities · Local uncensored Opus 4.6 at home - Qwen3.8 27B heretic",
-      "content_text": "Someone made a heretic version of Qwen 3.8 27B, giving us a local Opus 4.6 tier model but without any refusals or safeguards! Fuck Dario submitted by /u/Temporary_Idea8880 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-08-14T20:41:51+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Someone made a heretic version of Qwen 3.8 27B, giving us a local Opus 4.6 tier model but without any refusals or safeguards! Fuck Dario submitted by /u/Temporary_Idea8880 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1voijja/this_has_to_be_the_coolest_codex_wrapper_i_have/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1voijja/this_has_to_be_the_coolest_codex_wrapper_i_have/",
-      "title": "Selected Reddit communities · This has to be the coolest Codex wrapper I have seen and it’s open source",
-      "content_text": "I love codex, but I hate that it’s bound to a terminal. I wanted something cool, something that I can actually use. Something that can look fun as well as have a mode where I can focus. So I built Munder Difflin: an open source agent harness that wraps around your and codex and all other popular terminals to make them beautiful, functional and performant. It runs locally and it’s completely free a",
-      "date_published": "2026-08-14T20:27:05+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I love codex, but I hate that it’s bound to a terminal. I wanted something cool, something that I can actually use. Something that can look fun as well as have a mode where I can focus. So I built Munder Difflin: an open source agent harnes"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.17",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.17",
-      "title": "OpenAI · 0.148.0-alpha.17",
-      "content_text": "Release 0.148.0-alpha.17",
-      "date_published": "2026-08-14T19:29:29+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.148.0-alpha.17"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.16",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.16",
-      "title": "OpenAI · 0.148.0-alpha.16",
-      "content_text": "Release 0.148.0-alpha.16",
-      "date_published": "2026-08-14T17:21:18+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.148.0-alpha.16"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1vo80uj/neurips_workshop_advice_d/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1vo80uj/neurips_workshop_advice_d/",
-      "title": "Selected Reddit communities · Neurips Workshop Advice [D]",
-      "content_text": "I was plan to participate the neurips workshop. But this was my first time so I was confused how to select the workshop organization,paper idea I was totally confused. I have in-depth knowledge about the ml and deep learning . I was interested in every subject filed so I was wonder how to choose also confused about the workshop what they expect. Help me give me advice, suggestion 🙏 .. submitted by",
-      "date_published": "2026-08-14T13:58:01+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I was plan to participate the neurips workshop. But this was my first time so I was confused how to select the workshop organization,paper idea I was totally confused. I have in-depth knowledge about the ml and deep learning . I was interes"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo7ped/moved_to_codex_today/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo7ped/moved_to_codex_today/",
-      "title": "Selected Reddit communities · Moved to Codex today",
-      "content_text": "Hi, I moved to Codex today. Need some help in understanding the like to like, model comparison so that I can accurately map my projects. Can you guys suggest the OpenAi equivalents below: Fable Opus 5 Opus 4.8 Sonnet 5 Haiku If there is a solid resource with comparison links: model tokens vs cost vs speed, pls do share. Thank you! submitted by /u/Dense-Ship-2339 to r/OpenAI [link] [comments]",
-      "date_published": "2026-08-14T13:44:47+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hi, I moved to Codex today. Need some help in understanding the like to like, model comparison so that I can accurately map my projects. Can you guys suggest the OpenAi equivalents below: Fable Opus 5 Opus 4.8 Sonnet 5 Haiku If there is a s"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo7ngv/qwen_live_ep2_agent_first_multimodal_gets_to_work/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo7ngv/qwen_live_ep2_agent_first_multimodal_gets_to_work/",
-      "title": "Selected Reddit communities · Qwen Live EP2 - Agent First: Multimodal Gets to Work - Streamed live 11 hours ago",
-      "content_text": "Possibly best way to spend current hour before grabbing 27B model(Instead of opening duplicate repeated 27B posts here). I tried to grab summary(thought of including in this thread) of this video using online tools & all failed as there's no transcript & subtitles available. Maybe somebody could share the summary here using offline audio model locally. submitted by /u/pmttyji to r/LocalLLaMA [link",
-      "date_published": "2026-08-14T13:42:34+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Possibly best way to spend current hour before grabbing 27B model(Instead of opening duplicate repeated 27B posts here). I tried to grab summary(thought of including in this thread) of this video using online tools & all failed as there's n"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo73p8/estonia_wants_to_give_ai_agents_their_own_digital/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo73p8/estonia_wants_to_give_ai_agents_their_own_digital/",
-      "title": "Selected Reddit communities · Estonia wants to give AI agents their own digital IDs",
-      "content_text": "Estonia is working on official “AI ID codes” that would identify an agent separately from the person or company it represents. The interesting part is how permissions could work. Instead of giving an AI assistant full access to your accounts, you could allow it to view certain data, prepare a document, initiate a payment, or spend only within a fixed limit. Its actions would also be verifiable and",
-      "date_published": "2026-08-14T13:19:37+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Estonia is working on official “AI ID codes” that would identify an agent separately from the person or company it represents. The interesting part is how permissions could work. Instead of giving an AI assistant full access to your account"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo6vvs/bitsandbytes_creator_teasing_new_quantization/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo6vvs/bitsandbytes_creator_teasing_new_quantization/",
-      "title": "Selected Reddit communities · bitsandbytes creator teasing new quantization method: GLM 5.3 on a single DGX Spark at 7t/s",
-      "content_text": "Don't get too hyped + take with a grain of salt as there have been an endless amount of quantization schemes with big promises that never really became a thing. Tim Dettmers is a pretty well known researcher though, so maybe something will come of this. Time shall tell. Another tweet about the method, DS4 Pro on a single B300 (288 GB VRAM): https://xcancel.com/Tim_Dettmers/status/20876244913628203",
-      "date_published": "2026-08-14T13:10:39+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Don't get too hyped + take with a grain of salt as there have been an endless amount of quantization schemes with big promises that never really became a thing. Tim Dettmers is a pretty well known researcher though, so maybe something will "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo6vhk/whats_you_favorite_oddball_model/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo6vhk/whats_you_favorite_oddball_model/",
-      "title": "Selected Reddit communities · What’s you favorite oddball model?",
-      "content_text": "Nambeige is my current favorite strange little model. It’s a 3B model that i think punches well above its weight. In think the tech behind it is cool and if they release a larger model they will cause shockwaves submitted by /u/Ecstatic-Wash-7667 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-08-14T13:10:12+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Nambeige is my current favorite strange little model. It’s a 3B model that i think punches well above its weight. In think the tech behind it is cool and if they release a larger model they will cause shockwaves submitted by /u/Ecstatic-Was"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo6fra/fantastic_latest_llamacpp_server_webui_can_now/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo6fra/fantastic_latest_llamacpp_server_webui_can_now/",
-      "title": "Selected Reddit communities · fantastic: latest llama.cpp server webui can now run commands for tools into rootless sandboxed containers",
-      "content_text": "while having much fun testing LLMs Houdini-like attitudes and abilities to evade, excalate and escape from carefully reciprocally arranged security enhancing sandboxing VMs, containers, namespaces and jails, I've discovered a new revolutionary option to let llama-server (build 10423) to launch guest containers (running for ex. bare bones linux distros like Alpine) as sandboxes for securely (rootle",
-      "date_published": "2026-08-14T12:51:34+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "while having much fun testing LLMs Houdini-like attitudes and abilities to evade, excalate and escape from carefully reciprocally arranged security enhancing sandboxing VMs, containers, namespaces and jails, I've discovered a new revolution"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo63d4/are_we_getting_qwen_38_35a3b/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo63d4/are_we_getting_qwen_38_35a3b/",
-      "title": "Selected Reddit communities · Are we getting Qwen 3.8 35-A3B?",
-      "content_text": "So far, it seems like Qwen 3.8 might drop today as a 27B dense model. If that’s the case, no MoE offloading this time , I used to run Qwen 3.6 35B-A3B at around 70 tok/s on an RTX 3060, but offloading a dense model is a completely different story it can be 100× slower or Even slower submitted by /u/zyxciss to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-08-14T12:36:25+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So far, it seems like Qwen 3.8 might drop today as a 27B dense model. If that’s the case, no MoE offloading this time , I used to run Qwen 3.6 35B-A3B at around 70 tok/s on an RTX 3060, but offloading a dense model is a completely different"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo5zbf/openai_academy/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo5zbf/openai_academy/",
-      "title": "Selected Reddit communities · OPENAI Academy",
-      "content_text": "So I discovered this free resources on their websites. Is it worth your time to study it. Since it's free course and actually kind of cool submitted by /u/Choice-Round-3125 to r/OpenAI [link] [comments]",
-      "date_published": "2026-08-14T12:31:25+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So I discovered this free resources on their websites. Is it worth your time to study it. Since it's free course and actually kind of cool submitted by /u/Choice-Round-3125 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1vo5vdm/for_the_people_who_got_reviews_back_from_neurips/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1vo5vdm/for_the_people_who_got_reviews_back_from_neurips/",
-      "title": "Selected Reddit communities · For the people who got reviews back from neurips, cvpr, eccv, etc and also tested their paper through an agentic reviewer like the stanford one, how different were the reviews? [D]",
-      "content_text": "Hello, I was curious about the differences you can get from the human reviewers and the llms. Any insight is welcome, thank you! submitted by /u/obliviousphoenix2003 to r/MachineLearning [link] [comments]",
-      "date_published": "2026-08-14T12:26:29+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hello, I was curious about the differences you can get from the human reviewers and the llms. Any insight is welcome, thank you! submitted by /u/obliviousphoenix2003 to r/MachineLearning [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo5im4/what_kv_cache_tricks_do_you_guys_do_with_your/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo5im4/what_kv_cache_tricks_do_you_guys_do_with_your/",
-      "title": "Selected Reddit communities · What KV cache tricks do you guys do with your agents?",
-      "content_text": "(Typing on my phone, apologies in advance for my “shorthand”.) I recently learned about prompt caching in llama.cpp. Basically, it’s a setting where your kv cache is stored in RAM as a copy and ejected on system prompt delta via idle slot setting to make room for KV cache swap. I use it for running subagents (or sequential agents) when I can only fit one large model on the gpu , and it only takes",
-      "date_published": "2026-08-14T12:10:22+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "(Typing on my phone, apologies in advance for my “shorthand”.) I recently learned about prompt caching in llama.cpp. Basically, it’s a setting where your kv cache is stored in RAM as a copy and ejected on system prompt delta via idle slot s"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo59wp/built_a_local_harness_to_execute_shell_commands/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo59wp/built_a_local_harness_to_execute_shell_commands/",
-      "title": "Selected Reddit communities · Built a local harness to execute shell commands with built-in risk classification and permissions",
-      "content_text": "Pictured above: Muse Glimmer via Llama.cpp on RTX 5080 Saw the fine-tuned 1.5B shell model here and loved the idea, but many users correctly pointed out that generating and executing commands with zero guardrails is asking for a bad day. So I want to share a project that I built a few months ago that fixed this exact issue. Nitro is a tiny CLI agent that takes natural-language requests and transla",
-      "date_published": "2026-08-14T12:00:03+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Pictured above: Muse Glimmer via Llama.cpp on RTX 5080 Saw the fine-tuned 1.5B shell model here and loved the idea, but many users correctly pointed out that generating and executing commands with zero guardrails is asking for a bad day. So"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo546w/i_need_your_opinion_for_a_purchase_decision/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo546w/i_need_your_opinion_for_a_purchase_decision/",
-      "title": "Selected Reddit communities · I Need your Opinion for a purchase decision",
-      "content_text": "i have allocated around 10K for a Hardware purchase to host local models fo those who have experience, please give me your opinion what is the best purchase i can make with this money? of course the goal is to run the biggest models i can with reasonable speed which also allows parallel sub agetns because i use those alot. what's the best hardware that a 10K buys me? i know the prices are high but",
-      "date_published": "2026-08-14T11:52:24+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "i have allocated around 10K for a Hardware purchase to host local models fo those who have experience, please give me your opinion what is the best purchase i can make with this money? of course the goal is to run the biggest models i can w"
         ]
       }
     }
