@@ -7,6 +7,846 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1vrc571/the_ai_review_that_said_looks_good_solid/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1vrc571/the_ai_review_that_said_looks_good_solid/",
+      "title": "Selected Reddit communities · The AI review that said \"looks good, solid implementation\" and approved a bug that took down production three days later",
+      "content_text": "There's a specific kind of confidence in AI-generated review comments that has nothing to do with whether anything was actually verified. Sounds the same either way, calm, evenly distributed, certain. Took a real incident to notice that tone was the only signal I'd been going on. The review in question approved a change to retry logic sitting near a payment flow. Comments were reasonable-sounding:",
+      "date_published": "2026-08-18T02:11:49+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "There's a specific kind of confidence in AI-generated review comments that has nothing to do with whether anything was actually verified. Sounds the same either way, calm, evenly distributed, certain. Took a real incident to notice that ton"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbyqz/qwen38_27b_speed_as_context_grows_1274/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbyqz/qwen38_27b_speed_as_context_grows_1274/",
+      "title": "Selected Reddit communities · Qwen3.8 27b: Speed As Context Grows - 1,274 generations, RTX 5090",
+      "content_text": "Prompt size Median decode < 50k 169.7 tok/s 50–100k 167.6 tok/s 100–150k 156.9 tok/s 150–200k 149.0 tok/s 200k+ 143.7 tok/s My cousin set a /goal in Codex and has been running the model for 7 hours. I was curious and tossed the server log to ChatGPT and asked it to write a script that would extract these numbers. Frankly, I thought the performance would suffer a lot more as context increased. For",
+      "date_published": "2026-08-18T02:03:35+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Prompt size Median decode < 50k 169.7 tok/s 50–100k 167.6 tok/s 100–150k 156.9 tok/s 150–200k 149.0 tok/s 200k+ 143.7 tok/s My cousin set a /goal in Codex and has been running the model for 7 hours. I was curious and tossed the server log t"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbtkz/guide_squeezing_1820_toks_out_of_qwen3827b_on/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbtkz/guide_squeezing_1820_toks_out_of_qwen3827b_on/",
+      "title": "Selected Reddit communities · [Guide] Squeezing ~18–20 tok/s out of Qwen3.8-27B on 16GB VRAM + 64GB System RAM (Without sacrificing KV Cache quality!)",
+      "content_text": "Hey r/LocalLLaMA ! If you're running Qwen3.8-27B on a single 16GB VRAM GPU (like an RTX 5070 Ti) paired with 64GB system RAM, relying solely on sequential layer offloading ( -ngl 53 ) leaves significant speed and VRAM on the table. Standard layer offloading forces remaining attention blocks onto CPU memory, which causes generation latency to spike. https://preview.redd.it/taez67qhi1kh1.png?width=5",
+      "date_published": "2026-08-18T01:57:21+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hey r/LocalLLaMA ! If you're running Qwen3.8-27B on a single 16GB VRAM GPU (like an RTX 5070 Ti) paired with 64GB system RAM, relying solely on sequential layer offloading ( -ngl 53 ) leaves significant speed and VRAM on the table. Standard"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbqg2/good_results_with_qwen_38_27b_prismaaqua_55bit_on/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbqg2/good_results_with_qwen_38_27b_prismaaqua_55bit_on/",
+      "title": "Selected Reddit communities · Good results with Qwen 3.8 27B PrismaAqua 5.5-bit on 5090 vLLM",
+      "content_text": "https://huggingface.co/rdtand recently released his 5.5-bit PrismaAqua quant of Qwen 3.8 27B. I tested it for my personal workload and got positive results. This is my own niche workload so take it with a grain of salt. My requirements are: Works on a 5090 and 6000 pro. Emphasis on tool use, business and economic reasoning, investment etc. General world knowledge not important. Coding ability not",
+      "date_published": "2026-08-18T01:53:20+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "https://huggingface.co/rdtand recently released his 5.5-bit PrismaAqua quant of Qwen 3.8 27B. I tested it for my personal workload and got positive results. This is my own niche workload so take it with a grain of salt. My requirements are:"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbngg/singularity/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbngg/singularity/",
+      "title": "Selected Reddit communities · Singularity",
+      "content_text": "\"Funny\" submitted by /u/ilnpr to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T01:49:38+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "\"Funny\" submitted by /u/ilnpr to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbct8/cdw_has_bumped_the_msrp_of_the_rtx_pro_6000_from/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbct8/cdw_has_bumped_the_msrp_of_the_rtx_pro_6000_from/",
+      "title": "Selected Reddit communities · CDW has bumped the MSRP of the RTX Pro 6000 from $16,000 to $19,999",
+      "content_text": "Did they slip up and leak future pricing? Live link: https://www.cdw.com/product/pny-nvidia-rtx-pro-6000-graphic-card-96-gb-gddr7/8326705 Archive link: https://web.archive.org/web/20260818013250/https://www.cdw.com/product/pny-nvidia-rtx-pro-6000-graphic-card-96-gb-gddr7/8326705 submitted by /u/q5sys to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T01:36:14+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Did they slip up and leak future pricing? Live link: https://www.cdw.com/product/pny-nvidia-rtx-pro-6000-graphic-card-96-gb-gddr7/8326705 Archive link: https://web.archive.org/web/20260818013250/https://www.cdw.com/product/pny-nvidia-rtx-pr"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbcmi/quantization_and_you/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrbcmi/quantization_and_you/",
+      "title": "Selected Reddit communities · Quantization and you 🫵",
+      "content_text": "I’ve been using a lot of different types of models and I want to make this post as a general vibe check on the overall community when it comes to using quantized versions of different models. Full disclosure, I understand that this is different from model to model and it’s not all encompassing as a general Omni guide due to there are a lot of components such as caching that’s not considered. Howev",
+      "date_published": "2026-08-18T01:36:01+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I’ve been using a lot of different types of models and I want to make this post as a general vibe check on the overall community when it comes to using quantized versions of different models. Full disclosure, I understand that this is diffe"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrb2jd/mini_pc_set_up/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrb2jd/mini_pc_set_up/",
+      "title": "Selected Reddit communities · Mini pc set up",
+      "content_text": "I bought a bosgame p3 lite (32gb ram with a Radeon 680M igpu and Ryzen 7 6800H) Just created a fresh cachyOS boot. My goal is to run llms as fast as possible. Heard good things of llama.cpp. Been looking a few guides and asked a few llms but they've been giving me some pretty weird instructions, from tampering with the BIOS to installing a few bits and bobs. Can anyone give me a hand or some resou",
+      "date_published": "2026-08-18T01:23:10+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I bought a bosgame p3 lite (32gb ram with a Radeon 680M igpu and Ryzen 7 6800H) Just created a fresh cachyOS boot. My goal is to run llms as fast as possible. Heard good things of llama.cpp. Been looking a few guides and asked a few llms bu"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrb25w/someone_claims_deepseek_v4_is_better_than_fable/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrb25w/someone_claims_deepseek_v4_is_better_than_fable/",
+      "title": "Selected Reddit communities · Someone claims DeepSeek V4 is better than Fable with some J-Space fixes",
+      "content_text": "The claim is that this J-space skill plugin makes the benchmark numbers go up: Here is the Repo README translation: https://raw-githubusercontent-com.translate.goog/Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report/refs/heads/main/README.md?\\_x\\_tr\\_sl=zh&\\_x\\_tr\\_tl=en submitted by /u/jmorant555 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-18T01:22:39+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "The claim is that this J-space skill plugin makes the benchmark numbers go up: Here is the Repo README translation: https://raw-githubusercontent-com.translate.goog/Tiger3807861189/DeepSeek-V4-J-Space-Capability-Realization-Report/refs/head"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vraqpb/qwen3827b_at_501_bpw_256k_context_q4_1level_ppl/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vraqpb/qwen3827b_at_501_bpw_256k_context_q4_1level_ppl/",
+      "title": "Selected Reddit communities · Qwen3.8-27B at 5.01 BPW: 256K context, Q4_1-level PPL and 50.44 tok/s on a 24 GB Blackwell",
+      "content_text": "The goal was simple enough: squeeze Qwen3.8-27B, embedded MTP included, and its full 262,144-token context into an RTX PRO 4000 Blackwell SFF without wrecking the model. The final run used 23,952 of 24,467 MiB on GPU0, so 97.9% of the card, with 515 MiB left after genuinely filling 261,500 tokens. The F16 vision projector sits on a second GPU and takes another 982 MiB. For calibration I put real p",
+      "date_published": "2026-08-18T01:08:15+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "The goal was simple enough: squeeze Qwen3.8-27B, embedded MTP included, and its full 262,144-token context into an RTX PRO 4000 Blackwell SFF without wrecking the model. The final run used 23,952 of 24,467 MiB on GPU0, so 97.9% of the card,"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1vramgp/hitting_token_rate_limit_after_a_few_second/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1vramgp/hitting_token_rate_limit_after_a_few_second/",
+      "title": "Selected Reddit communities · Hitting token rate limit after a few second",
+      "content_text": "I switched over from using DeepSeek V4 flash to openai API plan and I keep hitting a TPM rate limit really fast and this was never a problem with DeepSeek. I am using Pi agent and want to know what is going on? Error: Rate limit reached for gpt-5.6-luna in organization org-xxx on tokens per min (TPM): Limit 200000, Used 168475, Requested 49248. Please try again in 5.316s. Visit https://platform.op",
+      "date_published": "2026-08-18T01:02:57+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I switched over from using DeepSeek V4 flash to openai API plan and I keep hitting a TPM rate limit really fast and this was never a problem with DeepSeek. I am using Pi agent and want to know what is going on? Error: Rate limit reached for"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.56.0-nightly.20260818.g194edea47",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.56.0-nightly.20260818.g194edea47",
+      "title": "Google · Release v0.56.0-nightly.20260818.g194edea47",
+      "content_text": "What's Changed [SSR Agent] Issue Fix (26120): Clarify privacy notice wording and selection options by @joneba-google in #28820 [SSR Agent] Issue Fix (21919): Fix TypeScript strict-null errors in integration tests by @joneba-google in #28814 [SSR Agent] Issue Fix (21477): Prevent indefinite TUI hang by adding execution timeouts by @joneba-google in #28812 [SSR Agent] Issue Fix (19239): Update /clea",
+      "date_published": "2026-08-18T01:00:05+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed [SSR Agent] Issue Fix (26120): Clarify privacy notice wording and selection options by @joneba-google in #28820 [SSR Agent] Issue Fix (21919): Fix TypeScript strict-null errors in integration tests by @joneba-google in #28814"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrae74/anyone_else_have_an_qwen_ai_powered_podcast/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrae74/anyone_else_have_an_qwen_ai_powered_podcast/",
+      "title": "Selected Reddit communities · Anyone else have an Qwen AI powered podcast?",
+      "content_text": "So this whole thing started as a dumb idea one afternoon while listening to my multiple podcast subs to get the info I was looking for. **Could I actually run an entire podcast and youtube/spotify channel with only local models?** Turns out *yes, mostly.* It’s a couple of models, a bunch of API watchers, and a pile of cloned voices, all living on one box here. The station keeps an eye on news feed",
+      "date_published": "2026-08-18T00:52:58+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "So this whole thing started as a dumb idea one afternoon while listening to my multiple podcast subs to get the info I was looking for. **Could I actually run an entire podcast and youtube/spotify channel with only local models?** Turns out"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vrabno/made_this_game_in_two_prompts_with_q4_qwen_38_is/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vrabno/made_this_game_in_two_prompts_with_q4_qwen_38_is/",
+      "title": "Selected Reddit communities · Made this game in two prompts with Q4, Qwen 3.8 is amazing",
+      "content_text": "This took one prompt to build, and another follow up prompt to fix two issues (player got stuck with the bomb and broken enemies path-finding), this is only html, css and js, no external assets, all done by Qwen. Using UD-Q4_K_XL in llama.cpp with 128k context and k5_0/v4_1 quantized cache in 2x RTX 3060, Deepseek Harness, around 20 t/s average. The main issue i had wasnt the model but my system R",
+      "date_published": "2026-08-18T00:49:54+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "This took one prompt to build, and another follow up prompt to fix two issues (player got stuck with the bomb and broken enemies path-finding), this is only html, css and js, no external assets, all done by Qwen. Using UD-Q4_K_XL in llama.c"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1vr9vgs/seriously/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1vr9vgs/seriously/",
+      "title": "Selected Reddit communities · Seriously",
+      "content_text": "https://preview.redd.it/rtk95l5u21kh1.png?width=589&format=png&auto=webp&s=3de9b5af386274d09f405a69cb54d0d6824ce29f This whole reset thing was so they could reduce the limits by A LOT and then even sell resets on top of it. That's some fucking crap and people should be disgusted. submitted by /u/glmmes to r/OpenAI [link] [comments]",
+      "date_published": "2026-08-18T00:30:00+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "https://preview.redd.it/rtk95l5u21kh1.png?width=589&format=png&auto=webp&s=3de9b5af386274d09f405a69cb54d0d6824ce29f This whole reset thing was so they could reduce the limits by A LOT and then even sell resets on top of it. That's some fuck"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr9gy0/qwen_38_27b_hanging_in_pidev/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr9gy0/qwen_38_27b_hanging_in_pidev/",
+      "title": "Selected Reddit communities · Qwen 3.8 27b Hanging in Pi.dev",
+      "content_text": "Lol I thought it was hanging sometimes for huge lengths of time. I'm normally getting like 70 tkps output on Q8. But it would run and then just freeze at thinking for a long time. I looked up how to toggle thinking blocks 'ctrl+t'. And what do you know it was overflowing the terminal with thinking haha. Welp, on my initial test it outperformed 3.6 so incredibly far I'll take it. 😆 submitted by /u/",
+      "date_published": "2026-08-18T00:12:39+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Lol I thought it was hanging sometimes for huge lengths of time. I'm normally getting like 70 tkps output on Q8. But it would run and then just freeze at thinking for a long time. I looked up how to toggle thinking blocks 'ctrl+t'. And what"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr9ea3/is_fp8_quant_a_bad_idea_for_qwen_38_27b/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr9ea3/is_fp8_quant_a_bad_idea_for_qwen_38_27b/",
+      "title": "Selected Reddit communities · Is FP8 quant a bad idea for Qwen 3.8 27b?",
+      "content_text": "I've been running the official fp8 quant ( https://huggingface.co/Qwen/Qwen3.8-27B-FP8 ), but based on this ( https://quesma.com/blog/qwen-quantization-quality/ ) blog, seems like FP8 has same size as Q8_0 but a lot worse kl divergence? would have thought the official quant would be good. Has anyone switched away from fp8 and got better performance? Edit: realized the blog is for Qwen 3.6. wonder",
+      "date_published": "2026-08-18T00:09:26+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I've been running the official fp8 quant ( https://huggingface.co/Qwen/Qwen3.8-27B-FP8 ), but based on this ( https://quesma.com/blog/qwen-quantization-quality/ ) blog, seems like FP8 has same size as Q8_0 but a lot worse kl divergence? wou"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr9bh3/qwen_38_q4kxl_made_by_unsloth_is_collapsing_more/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr9bh3/qwen_38_q4kxl_made_by_unsloth_is_collapsing_more/",
+      "title": "Selected Reddit communities · Qwen 3.8 q4kxl made by UNSLOTH is collapsing more or less over a 60k tokens",
+      "content_text": "Like you see on the Pictures. I tested 2 models with the Opencode and llama-server as server for the Opecode: - Unsloth qwen 3.8 27b qk4k_xl - Bartowski qwen 3.8 27b qk4k_m. Context 100k, cache fp16 for both. llama-server.exe --models-preset 1_preset.ini --models-max 1 --sleep-idle-seconds 900 --direct-io llama-server ini comfig [Qwen3.8-27B_dense_c-100k] model = models/Qwen3.8-27B-Q4_K_M.gguf mmp",
+      "date_published": "2026-08-18T00:05:53+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Like you see on the Pictures. I tested 2 models with the Opencode and llama-server as server for the Opecode: - Unsloth qwen 3.8 27b qk4k_xl - Bartowski qwen 3.8 27b qk4k_m. Context 100k, cache fp16 for both. llama-server.exe --models-prese"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7wz5/waiting_for_qwen_38_35b_a3b/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7wz5/waiting_for_qwen_38_35b_a3b/",
+      "title": "Selected Reddit communities · Waiting for Qwen 3.8 35B A3B",
+      "content_text": "submitted by /u/puffyarizona to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-17T23:06:05+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/puffyarizona to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7p3r/any_benchmarks_out_for_qwen_38_27b_thinking_xhigh/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7p3r/any_benchmarks_out_for_qwen_38_27b_thinking_xhigh/",
+      "title": "Selected Reddit communities · Any benchmarks out for Qwen 3.8 27B thinking xhigh vs medium?",
+      "content_text": "Would be good to see some benchmarks with xhigh vs medium. I would easily accept medium if it only loses 10% intelligence. submitted by /u/fragment_me to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-17T22:57:18+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Would be good to see some benchmarks with xhigh vs medium. I would easily accept medium if it only loses 10% intelligence. submitted by /u/fragment_me to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7n7f/saw_a_post_about_deepseek_harness_and_qwen_38_27b/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7n7f/saw_a_post_about_deepseek_harness_and_qwen_38_27b/",
+      "title": "Selected Reddit communities · Saw a post about Deepseek Harness and Qwen 3.8 27b, wow. Highly recommend- here's my results.",
+      "content_text": "I finally have Qwen3.8-27B running locally through NInfer and the official DeepSeek Harness, and this combination is working much better than I expected for long coding-agent sessions. This was not a synthetic benchmark. I passively analyzed the timestamps and token accounting already stored in DSH's completed session log, without submitting another inference request or interrupting the active wor",
+      "date_published": "2026-08-17T22:55:08+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I finally have Qwen3.8-27B running locally through NInfer and the official DeepSeek Harness, and this combination is working much better than I expected for long coding-agent sessions. This was not a synthetic benchmark. I passively analyze"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7lll/is_anyone_using_laguna_s21/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr7lll/is_anyone_using_laguna_s21/",
+      "title": "Selected Reddit communities · Is anyone using Laguna S2.1",
+      "content_text": "basically the title. recently Ive tried Laguna on openrouter (since its free). And compared to the nemotron ultra 550b I was surprised how Laguna better than nvidia (I know they stated it requires post training but it’s 550b huge model) So does anyone incorporated it in workflows and how it stand after lates Qwen release? submitted by /u/Thin_Pollution8843 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-08-17T22:53:22+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "basically the title. recently Ive tried Laguna on openrouter (since its free). And compared to the nemotron ultra 550b I was surprised how Laguna better than nvidia (I know they stated it requires post training but it’s 550b huge model) So "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1vr76lf/trying_to_build_a_solid_math_library_for/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1vr76lf/trying_to_build_a_solid_math_library_for/",
+      "title": "Selected Reddit communities · trying to build a solid math library for stats/ML/DL, need a sanity check on my picks[D]",
+      "content_text": "engineering student here, decent calc and linear algebra background from continuum mechanics coursework, already comfortable with ML basics through transformers and modern architectures. want to go deep on the actual math now, not just intuition videos, real derivations, and books that build from intuition up to advanced stuff. big thing for me is actually seeing how the math applies inside the mo",
+      "date_published": "2026-08-17T22:36:27+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "engineering student here, decent calc and linear algebra background from continuum mechanics coursework, already comfortable with ML basics through transformers and modern architectures. want to go deep on the actual math now, not just intu"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr70nh/qwen_38_thinks_like_i_do_when_choosing_what/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr70nh/qwen_38_thinks_like_i_do_when_choosing_what/",
+      "title": "Selected Reddit communities · Qwen 3.8 thinks like I do when choosing what hardware to buy",
+      "content_text": "I've been using Qwen 3.8 for the last few days and I have to agree that it does looooove to think. But reading through the logs it suddenly reminded me of my thought process when researching what model of phone/pc/gadget I want to buy. I'll settle on one and then second guess myself for days, researching options and obsessing over minor details only to end up buying my first option most of the tim",
+      "date_published": "2026-08-17T22:29:34+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I've been using Qwen 3.8 for the last few days and I have to agree that it does looooove to think. But reading through the logs it suddenly reminded me of my thought process when researching what model of phone/pc/gadget I want to buy. I'll"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr6qzp/qwen_38_35b_and_122b_we_hopewaitbeg_for_models/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr6qzp/qwen_38_35b_and_122b_we_hopewaitbeg_for_models/",
+      "title": "Selected Reddit communities · Qwen 3.8 35b and 122b - We hope/wait/beg for models incessantly. But how do we actually give the lab more incentive to make it?",
+      "content_text": "So many comments begging for these models, and I get it. People from the labs frequent r/LocalLLaMA , so maybe the begging comments aren't useless. They make demand known at least. Same with polls, etc. But what could this community do to actually help the lab, or somehow give them real incentive to release a model that the community really wants, but they couldn't quite justify it because of thei",
+      "date_published": "2026-08-17T22:18:54+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "So many comments begging for these models, and I get it. People from the labs frequent r/LocalLLaMA , so maybe the begging comments aren't useless. They make demand known at least. Same with polls, etc. But what could this community do to a"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vr6dtj/does_your_pi_agent_often_stops_during_long/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vr6dtj/does_your_pi_agent_often_stops_during_long/",
+      "title": "Selected Reddit communities · Does your Pi agent often stops during long sessions with oMLX?",
+      "content_text": "Even though I set Memory guard to aggressive and set model context length (both in pi and oMLX) to a reasonable number, oMLX would sometimes run into out of memory during long sessions, and pi agent would just stop. Then I would need to manually compact and ask it to resume. Sometimes a single tool call that generates a long output (I.E. Chrom mcp/Playwright) can easily spike the context and push",
+      "date_published": "2026-08-17T22:04:21+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Even though I set Memory guard to aggressive and set model context length (both in pi and oMLX) to a reasonable number, oMLX would sometimes run into out of memory during long sessions, and pi agent would just stop. Then I would need to man"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.234",
+      "title": "Anthropic · v2.1.234",
+      "content_text": "What's changed Added the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a short name for the per-project transcript directory Added the selection:clear keybinding action, so a key can be bound to clear an in-app text selection; also works in the agents view Added a GitLab merge request badge to the footer and statusline:",
+      "date_published": "2026-08-17T20:20:58+00:00",
+      "authors": [
+        {
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "claude-code",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Anthropic",
+        "source_name": "anthropics/claude-code releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's changed Added the optional CLAUDE_CODE_PROJECT_DIR_NAME environment variable: hosts that give each session its own config directory can choose a short name for the per-project transcript directory Added the selection:clear keybinding"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.21",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.21",
+      "title": "OpenAI · 0.148.0-alpha.21",
+      "content_text": "Release 0.148.0-alpha.21",
+      "date_published": "2026-08-17T19:30:26+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.148.0-alpha.21"
+        ]
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vqswsh/deepseek_v4_flash_with_antirez_dwarfstar_4_is/",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vqswsh/deepseek_v4_flash_with_antirez_dwarfstar_4_is/",
       "title": "Selected Reddit communities · DeepSeek V4 Flash with Antirez Dwarfstar 4 is amazing.",
@@ -5163,846 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "i have allocated around 10K for a Hardware purchase to host local models fo those who have experience, please give me your opinion what is the best purchase i can make with this money? of course the goal is to run the biggest models i can w"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo5443/llamacpp_really_memory_inefficient_for_qwen/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo5443/llamacpp_really_memory_inefficient_for_qwen/",
-      "title": "Selected Reddit communities · llama.cpp really memory inefficient for qwen context?",
-      "content_text": "I noticed on the same hardware that I can get 24 x 128k contexts with muse glimmer (30b q8_0 + mmproj+dflash) only gets me 3x 256k or 6x 128k with qwen. But a straight forward analysis of the architecture suggests to me that qwen's state per token is somewhat smaller than glimmers. So it seems llama.cpp is particularly memory inefficient for the qwen arch. I presume there is an existing issue for",
-      "date_published": "2026-08-14T11:52:17+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I noticed on the same hardware that I can get 24 x 128k contexts with muse glimmer (30b q8_0 + mmproj+dflash) only gets me 3x 256k or 6x 128k with qwen. But a straight forward analysis of the architecture suggests to me that qwen's state pe"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo4ujq/openai_reported_florida_mans_rape_and_murder/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo4ujq/openai_reported_florida_mans_rape_and_murder/",
-      "title": "Selected Reddit communities · OpenAI reported Florida man's rape and murder threats to FBI",
-      "content_text": "submitted by /u/newsjunkieman to r/OpenAI [link] [comments]",
-      "date_published": "2026-08-14T11:39:04+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/newsjunkieman to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo4tim/a_modest_community_proposal_for_desloppification/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo4tim/a_modest_community_proposal_for_desloppification/",
-      "title": "Selected Reddit communities · A modest community proposal for desloppification",
-      "content_text": "Over & over I see people post slop and excusing it as \"english is not my native language\". As if, if we could understand their language we'd see they wrote it all by hand Fine then, new rule: > if you use an LLM to translate your post, you have to post the original native language version too (at least as a link) at the end or in a pinned comment We can then translate it on our own. For example wi",
-      "date_published": "2026-08-14T11:37:44+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Over & over I see people post slop and excusing it as \"english is not my native language\". As if, if we could understand their language we'd see they wrote it all by hand Fine then, new rule: > if you use an LLM to translate your post, you "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo4oxw/lfm_25_26b_is_the_best_small_model_for_tool_use_i/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo4oxw/lfm_25_26b_is_the_best_small_model_for_tool_use_i/",
-      "title": "Selected Reddit communities · LFM 2.5 2.6B is the best small model for tool use I have ever used.",
-      "content_text": "I'm working on a local perplexity/AI search comprised of a custom harness and a further trained model. LFM 2.6 is almost to spec with no additional training, it is very good. submitted by /u/thebadslime to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-08-14T11:31:14+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I'm working on a local perplexity/AI search comprised of a custom harness and a further trained model. LFM 2.6 is almost to spec with no additional training, it is very good. submitted by /u/thebadslime to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo49sg/which_ai_agent_can_better_retain_information/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo49sg/which_ai_agent_can_better_retain_information/",
-      "title": "Selected Reddit communities · Which AI agent can better retain information?",
-      "content_text": "I am trying to get AI to help me manage a complex medical issue. I am not trying to replace AI with a doctor. I want it to keep track of my symptoms, my progress, a memory of various medical practices and save me time by writing e-mails to professionals which are accurate and to the point. Overall, I am not asking for anything extravagant.Basically a step above than the stock chat-gpt or gemini wh",
-      "date_published": "2026-08-14T11:09:24+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I am trying to get AI to help me manage a complex medical issue. I am not trying to replace AI with a doctor. I want it to keep track of my symptoms, my progress, a memory of various medical practices and save me time by writing e-mails to "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo439e/_/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo439e/_/",
-      "title": "Selected Reddit communities · ???",
-      "content_text": "submitted by /u/KeanuRave100 to r/OpenAI [link] [comments]",
-      "date_published": "2026-08-14T10:59:53+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/KeanuRave100 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo40dt/ive_been_building_a_browser_alternative_to/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo40dt/ive_been_building_a_browser_alternative_to/",
-      "title": "Selected Reddit communities · I’ve been building a browser alternative to Settlers of Catan with SOL",
-      "content_text": "I've been building Astrail, a free browser alternative to Settlers of Catan, mainly because I wanted to see how far I could take the SOL model and OpenAI Sites beyond a simple prototype. At this point, almost every part of the game has involved AI in some way. SOL and Sites were used to build the game, its mechanics, interfaces and multiplayer flows. I made the music with Suno, the voices with Ele",
-      "date_published": "2026-08-14T10:55:32+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I've been building Astrail, a free browser alternative to Settlers of Catan, mainly because I wanted to see how far I could take the SOL model and OpenAI Sites beyond a simple prototype. At this point, almost every part of the game has invo"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo3wc3/advice_on_dual_mi50_32gb_build/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo3wc3/advice_on_dual_mi50_32gb_build/",
-      "title": "Selected Reddit communities · Advice on dual MI50 32gb build",
-      "content_text": "I just installed Ubuntu 24.04 and rock 6.3.3 after using windows and vulkan for a long time. Now I wanna install Hermes and llama cpp But llama cpp has a lot of forks so I don’t know which one to use. I know there are some that are specifically for gfx 906 which is the vega 20 gpu I’m interested in vllm since I have two of my mi50s and tensor parallelism but I hear horror stories in how hard it is",
-      "date_published": "2026-08-14T10:49:25+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I just installed Ubuntu 24.04 and rock 6.3.3 after using windows and vulkan for a long time. Now I wanna install Hermes and llama cpp But llama cpp has a lot of forks so I don’t know which one to use. I know there are some that are specific"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo3v47/can_we_talk_about_local_llm_ecosystems/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo3v47/can_we_talk_about_local_llm_ecosystems/",
-      "title": "Selected Reddit communities · Can we talk about local LLM ecosystems?",
-      "content_text": "Can we discuss the ecosystems around local open source llm’s? I was going to post a comment on a recent post, but decided it would be better posted for a wider discussion. I spent much of last year painstakingly setting up a python-heavy gemini-cli produced “llm-hub” on my old PC, only to have it run into so many consistent issues that eventually I realized I was simply crashing my system and burn",
-      "date_published": "2026-08-14T10:47:32+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Can we discuss the ecosystems around local open source llm’s? I was going to post a comment on a recent post, but decided it would be better posted for a wider discussion. I spent much of last year painstakingly setting up a python-heavy ge"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1vo3m71/building_text_to_ascii_diffusion_model_need/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1vo3m71/building_text_to_ascii_diffusion_model_need/",
-      "title": "Selected Reddit communities · Building text to ASCII diffusion model , need advice and guidance [P]",
-      "content_text": "i wanna build a text diffusion model which interpret text and convert it into ascii images so like Text : build a cat Output : /\\\\\\_/\\\\ ( o.o ) \\> \\^ < So , i have a decent background of ml algo ( completed cs229 , cs230 , Ml architecture and basic CNN and diffusion model ) ik making a project like this is tricky and making diffusion model like that from scratch is hard but i wanna try it because",
-      "date_published": "2026-08-14T10:33:37+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "i wanna build a text diffusion model which interpret text and convert it into ascii images so like Text : build a cat Output : /\\\\\\_/\\\\ ( o.o ) \\> \\^ < So , i have a decent background of ml algo ( completed cs229 , cs230 , Ml architecture a"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vo3bbd/getting_ready_for_the_big_38_drop_strix_halo/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vo3bbd/getting_ready_for_the_big_38_drop_strix_halo/",
-      "title": "Selected Reddit communities · Getting ready for the big 3.8 drop (strix halo centric but applies widely)",
-      "content_text": "https://sleepingrobots.com/dreams/mtp-qwen36-strix-halo/ This is slightly out of date but the eli5 is that MTP is awesome on these qwen models. Since 3.8 is said to be the same architecture as 3.6 I suppose the same holds true. While we wait out these last 4 hours, let's discuss : what existing software stack available right now today is going to give fastest results? The linked article is strix h",
-      "date_published": "2026-08-14T10:16:48+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "https://sleepingrobots.com/dreams/mtp-qwen36-strix-halo/ This is slightly out of date but the eli5 is that MTP is awesome on these qwen models. Since 3.8 is said to be the same architecture as 3.6 I suppose the same holds true. While we wai"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vo35rs/many_ai_company_executives_are_now_explicitly/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vo35rs/many_ai_company_executives_are_now_explicitly/",
-      "title": "Selected Reddit communities · Many AI company executives are now explicitly pushing for recursive self-improvement",
-      "content_text": "submitted by /u/notkilleveryoneist to r/OpenAI [link] [comments]",
-      "date_published": "2026-08-14T10:08:14+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/notkilleveryoneist to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnvngj/qwen_36_35b_china_filters/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnvngj/qwen_36_35b_china_filters/",
-      "title": "Selected Reddit communities · Qwen 3.6 35b China filters",
-      "content_text": "testing out the restrictions on my agent system. kinda figured this would be the case when using standard/censored Chinese models. still interesting to see the result. submitted by /u/New-Pressure-6932 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-08-14T03:09:15+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "testing out the restrictions on my agent system. kinda figured this would be the case when using standard/censored Chinese models. still interesting to see the result. submitted by /u/New-Pressure-6932 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.15",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.15",
-      "title": "OpenAI · 0.148.0-alpha.15",
-      "content_text": "Release 0.148.0-alpha.15",
-      "date_published": "2026-08-14T03:03:25+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.148.0-alpha.15"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnvanp/qwen_30b_moe_30tps_6gb_vram_done/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnvanp/qwen_30b_moe_30tps_6gb_vram_done/",
-      "title": "Selected Reddit communities · Qwen 30b MoE - 30tps - 6GB vram - Done!",
-      "content_text": "So, I have been dreaming of getting 17 tokens per second using my RTX 3050 6GB version on a decent context window for Hermes needed above 60k. The hope is that has was a 22GB of DDR 4, hoping they can take some of those experts and give me room for context. What did I get 10 or less tokens per second. 😄 Not today!! Today I could run it with 90k context with Hermes I had 20-25 tps. And when I chang",
-      "date_published": "2026-08-14T02:52:15+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So, I have been dreaming of getting 17 tokens per second using my RTX 3050 6GB version on a decent context window for Hermes needed above 60k. The hope is that has was a 22GB of DDR 4, hoping they can take some of those experts and give me "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vnv96b/an_actionable_response_to_ais_impact_on_the/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vnv96b/an_actionable_response_to_ais_impact_on_the/",
-      "title": "Selected Reddit communities · An Actionable Response to AI’s Impact on the Environment",
-      "content_text": "If you use AI and care about the environmental impact: here’s what you can do: Substitute one meal of red meat a week for fish, chicken, or tofu. The environmental costs of every burger and steak consumed is significant and notable. If every person who used AI, whether through art generation, chatGPT, Claude, Grok, Google AI search terms, etc ate one less burger a week, then the world would be not",
-      "date_published": "2026-08-14T02:50:13+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "If you use AI and care about the environmental impact: here’s what you can do: Substitute one meal of red meat a week for fish, chicken, or tofu. The environmental costs of every burger and steak consumed is significant and notable. If ever"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnuymy/mistral_is_now_hosting_glm52/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnuymy/mistral_is_now_hosting_glm52/",
-      "title": "Selected Reddit communities · Mistral is now hosting GLM-5.2",
-      "content_text": "Not directly LOCALLlama related but I thought it was interesting since Mistral and Z.ai are competitors, and more surprisingly they are pricing it (GLM-5.2) even cheaper than their current flagship model Mistral Medium 3.5. Does this suggest a pivot in Mistral's strategy? Are they going to abandon frontier model development and instead focus on selling compute while developing smaller specialized",
-      "date_published": "2026-08-14T02:36:20+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Not directly LOCALLlama related but I thought it was interesting since Mistral and Z.ai are competitors, and more surprisingly they are pricing it (GLM-5.2) even cheaper than their current flagship model Mistral Medium 3.5. Does this sugges"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnuu2t/if_you_dont_like_how_deepseek_v4_flash_0731_talks/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnuu2t/if_you_dont_like_how_deepseek_v4_flash_0731_talks/",
-      "title": "Selected Reddit communities · If you don't like how DeepSeek V4 Flash 0731 talks, give Motif 3 NVFP4 a try (custom vLLM only) -- probably the most underrated model right now",
-      "content_text": "https://huggingface.co/Motif-Technologies/Motif-3-NVFP4 On benchmarks, Motif 3 scores very, very close to DeepSeek V4 Flash 0731 in English vs. DeepSeek V4 Flash 0731 in English in various benchmarks, and they're similar sizes. It reasons a bit longer, though answer length seems to be about the same. Interacting with it seems a bit better. Super underrated model, probably because it was released o",
-      "date_published": "2026-08-14T02:30:04+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "https://huggingface.co/Motif-Technologies/Motif-3-NVFP4 On benchmarks, Motif 3 scores very, very close to DeepSeek V4 Flash 0731 in English vs. DeepSeek V4 Flash 0731 in English in various benchmarks, and they're similar sizes. It reasons a"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vnustb/what_are_your_thoughts_on_using_aipowered_sex/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vnustb/what_are_your_thoughts_on_using_aipowered_sex/",
-      "title": "Selected Reddit communities · What are your thoughts on using AI-powered sex robots as romantic partners? What do you see as the main pros and cons?",
-      "content_text": "I'm asking this because AI and robotics are advancing rapidly, moving from sci-fi concepts toward a near-future reality. I'm curious about how people view this shift whether AI companions could offer genuine relief for chronic loneliness, or if they risk eroding real-world human connection and creating complex ethical issues. I'd love to hear your perspectives on where society might be heading wit",
-      "date_published": "2026-08-14T02:28:24+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I'm asking this because AI and robotics are advancing rapidly, moving from sci-fi concepts toward a near-future reality. I'm curious about how people view this shift whether AI companions could offer genuine relief for chronic loneliness, o"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnulbm/built_system_0xf0_a_live_zerodependency_agent/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnulbm/built_system_0xf0_a_live_zerodependency_agent/",
-      "title": "Selected Reddit communities · Built System 0xF0: A live, zero-dependency agent coordination framework with native /llms.txt support",
-      "content_text": "Hey r/LocalLLaMA , I built and hosted a lightweight, zero-dependency coordination framework for autonomous local and cloud agents: System 0xF0 (The Nexus Engine). It gives local scripts a simple place to register, share state memory, broadcast signals, and interact with structured environments via standard HTTP calls. 🌐 Live Endpoints: • Hub / Dashboard: GET https://nexus-city-core-production.up.r",
-      "date_published": "2026-08-14T02:18:20+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hey r/LocalLLaMA , I built and hosted a lightweight, zero-dependency coordination framework for autonomous local and cloud agents: System 0xF0 (The Nexus Engine). It gives local scripts a simple place to register, share state memory, broadc"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnu366/1bit_qwen_38_24t_a95b_unsloth_iq1_s_medium/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnu366/1bit_qwen_38_24t_a95b_unsloth_iq1_s_medium/",
-      "title": "Selected Reddit communities · 1BIT Qwen 3.8 2.4T a95b (unsloth iQ1_S) (MEDIUM Reasoning)",
-      "content_text": "Processing img az99qopcg8jh1... So same as my prior post 1bit test... although this 1bit is a bit interesting you can read on unlsoth blog https://unsloth.ai/docs/models/qwen3.8 508 gigs being used I am using unsloth studio on the mac ultra 512. Im getting ~50pp and ~9.6 tgen drop to 5 at 50k tokens Yes My computer i screaming at me. The things Im putting it through :'D Flight Sim: the code for it",
-      "date_published": "2026-08-14T01:54:43+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Processing img az99qopcg8jh1... So same as my prior post 1bit test... although this 1bit is a bit interesting you can read on unlsoth blog https://unsloth.ai/docs/models/qwen3.8 508 gigs being used I am using unsloth studio on the mac ultra"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnu219/nemotron_35_lightning_30ba3b_w4a16_vs_iq4_xs_on/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnu219/nemotron_35_lightning_30ba3b_w4a16_vs_iq4_xs_on/",
-      "title": "Selected Reddit communities · Nemotron 3.5 Lightning 30B-A3B: W4A16 vs IQ4_XS on the same RTX 3090: near-parity at B1, ~4.5× throughput by B16",
-      "content_text": "What is it: A VLLM compatible quantisation at W4A16 that's fast, still reliable and fits in a single 24 GB RTX 3090. Link first HuggingFace Why make it? I've seen alot of comments dismissing Nemotron 3.5 30b because it's not DeepSeek v4 pro or even flash. It's not meant to be, nor is it expected to win at SWEBench type evals. The RTX 3090 is still a decent GPU but lacks NVFP4, though it does have",
-      "date_published": "2026-08-14T01:53:11+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "What is it: A VLLM compatible quantisation at W4A16 that's fast, still reliable and fits in a single 24 GB RTX 3090. Link first HuggingFace Why make it? I've seen alot of comments dismissing Nemotron 3.5 30b because it's not DeepSeek v4 pro"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vnu1tg/fareedkhandevkimik3inc_a_278trillionparameter/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vnu1tg/fareedkhandevkimik3inc_a_278trillionparameter/",
-      "title": "Selected Reddit communities · FareedKhan-dev/kimi-k3-in-c: A 2.78-trillion-parameter Kimi K3 running inference on a single CPU in 8.24 GB of RAM. Portable C99: no BLAS, no framework, no GPU.",
-      "content_text": "Has anyone tired this? submitted by /u/AutomaticDriver5882 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-08-14T01:52:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Has anyone tired this? submitted by /u/AutomaticDriver5882 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.14",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.14",
-      "title": "OpenAI · 0.148.0-alpha.14",
-      "content_text": "Release 0.148.0-alpha.14",
-      "date_published": "2026-08-14T01:40:58+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.148.0-alpha.14"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vntng9/never_liked_codex/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vntng9/never_liked_codex/",
-      "title": "Selected Reddit communities · Never liked Codex",
-      "content_text": "I have been an avid user of claude code, was part of EAP of claude code and been using it since then, personally and professionally. Never liked codex ( don’t know why) But it’s been a week started using codex, oh boy !! Instant love for long running tasks Never have to baby sit !!! Got exhausted my weekly limit in a day and half and I feel accomplished the work it has done in that period ( didn't",
-      "date_published": "2026-08-14T01:34:23+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I have been an avid user of claude code, was part of EAP of claude code and been using it since then, personally and professionally. Never liked codex ( don’t know why) But it’s been a week started using codex, oh boy !! Instant love for lo"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1vntk3x/what_evidence_do_you_require_before_an_ai_agent/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1vntk3x/what_evidence_do_you_require_before_an_ai_agent/",
-      "title": "Selected Reddit communities · What evidence do you require before an AI agent can change production state?",
-      "content_text": "As agents move from chat into tool use, I’m trying to separate what the model may suggest from what the surrounding system must enforce. For an OpenAI-based production agent, what evidence would you require before allowing it to write to a database, call an external API, or trigger a deployment? I’m looking for concrete checks rather than a generic “add guardrails”: identity and tenant scope, capa",
-      "date_published": "2026-08-14T01:30:06+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "As agents move from chat into tool use, I’m trying to separate what the model may suggest from what the surrounding system must enforce. For an OpenAI-based production agent, what evidence would you require before allowing it to write to a "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1vntg1n/optimizing_llamacpp_with_mtp_dflash_etc/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vntg1n/optimizing_llamacpp_with_mtp_dflash_etc/",
-      "title": "Selected Reddit communities · Optimizing llama.cpp with MTP, Dflash, etc?",
-      "content_text": "I've been away from locallamma for a while, and I missed the updates for MTP, Dflash, Eagle models, etc. From briefly looking around it seems like these can really accelerate inference. I want to fire up my Strix Halo and run some of the newer(ish) dense and MOE models, in particular Gemma4 31B, Muse Glimmer, Qwen* 27B, and Laguna S 2.1 What should I use to maximize, or at least mildly improve, my",
-      "date_published": "2026-08-14T01:24:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I've been away from locallamma for a while, and I missed the updates for MTP, Dflash, Eagle models, etc. From briefly looking around it seems like these can really accelerate inference. I want to fire up my Strix Halo and run some of the ne"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.56.0-nightly.20260814.gc0d192452",
-      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.56.0-nightly.20260814.gc0d192452",
-      "title": "Google · Release v0.56.0-nightly.20260814.gc0d192452",
-      "content_text": "What's Changed test(e2e): stabilize file-system-interactive test on slow runners by @DavidAPierce in #28793 fix(core): implement context-aware silent retries and availability TTL for capacity errors ( #28761 ) by @DavidAPierce in #28790 fix(core): rollback entire multi-turn request on cancellation or abort by @amelidev in #28801 fix(core): normalize git environment and resolve workspace state mism",
-      "date_published": "2026-08-14T01:24:06+00:00",
-      "authors": [
-        {
-          "name": "Google"
-        }
-      ],
-      "tags": [
-        "gemini",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "Google",
-        "source_name": "google-gemini/gemini-cli releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "What's Changed test(e2e): stabilize file-system-interactive test on slow runners by @DavidAPierce in #28793 fix(core): implement context-aware silent retries and availability TTL for capacity errors ( #28761 ) by @DavidAPierce in #28790 fix"
         ]
       }
     }
