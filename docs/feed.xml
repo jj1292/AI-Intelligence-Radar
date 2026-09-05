@@ -6,7 +6,307 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Sat, 05 Sep 2026 05:19:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2026 16:02:24 +0000</lastBuildDate>
+    <item>
+      <title>Selected Reddit communities · Qwen3.8 Flash Next - Templates Comparison</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w84mod/qwen38_flash_next_templates_comparison/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w84mod/qwen38_flash_next_templates_comparison/</guid>
+      <pubDate>Sat, 05 Sep 2026 16:02:24 +0000</pubDate>
+      <description>I was running into a lot of posts that praised both the Fixed template and the Sharp template in comparison to the stock one, so I put them to the test. It's not as extensive as it should be for a paper-grade analysis, but it gives out the point of each template. Test setup I used SWE-bench Verified with mini-SWE-agent 2.4.6 , slice 0:100 (the identical 100 tasks for all runs) Hardware CPU: Ryzen</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Qwen3.5 9B running as a fully local AI agent on my phone — including code execution and PDF generation</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w84k0z/qwen35_9b_running_as_a_fully_local_ai_agent_on_my/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w84k0z/qwen35_9b_running_as_a_fully_local_ai_agent_on_my/</guid>
+      <pubDate>Sat, 05 Sep 2026 15:59:50 +0000</pubDate>
+      <description>Running a fully local 9B AI agent on a phone — LLM, tools, code execution, and file generation I’ve been experimenting with how far a fully local LLM agent can go on a phone. This demo runs Qwen3.5 9B IQ4_XS locally on-device using TensorSharp. I give it a very simple prompt: “Please get 10 stocks with most gains today.” From that, the local agent: reasons about how to solve the task generates Pyt</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · GPT-6 Astra - Selected model is at capacity. Please try a different model.</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w84dgx/gpt6_astra_selected_model_is_at_capacity_please/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w84dgx/gpt6_astra_selected_model_is_at_capacity_please/</guid>
+      <pubDate>Sat, 05 Sep 2026 15:52:36 +0000</pubDate>
+      <description>Basked in it‘s radiance for 20 hours while it sipped x20 weekly usage from 90 to 81% redeveloping a major change to my giant project which has far too much markdown. Somehow picked up another reset overnight too. But now this? Anyone else getting kneecapped? submitted by /u/sick_burns2000 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Is 6 Astra on a $20 tier for content research and writing a good use case for it? Or ...</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w83pxo/is_6_astra_on_a_20_tier_for_content_research_and/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w83pxo/is_6_astra_on_a_20_tier_for_content_research_and/</guid>
+      <pubDate>Sat, 05 Sep 2026 15:27:04 +0000</pubDate>
+      <description>​ .... or is Sol High enough for this? From looking at reviews for it so far, Astra is for the coders submitted by /u/remixedmoon5 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · gfx906-llama-cpp: New PP/TG gains for MI50/MI60/Radeon VII/AMD GCN</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w82kpd/gfx906llamacpp_new_pptg_gains_for_mi50mi60radeon/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w82kpd/gfx906llamacpp_new_pptg_gains_for_mi50mi60radeon/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:42:21 +0000</pubDate>
+      <description>Time for another update! We have been busy and managed to improve the gains substantially (mostly from exploring existing llama cpp PRs and adopting relevant things). Among other things the README.md was also appended to provide a better overall picture of what’s in the fork, why and from whom. metric upstream t/s fork t/s gain prefill PP16384 332.5 ~410 +23% 120k deep fill 231.4 ~264 +14% TG 13.6</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Astra blocking all bug hunting, despite verified Trusted Access. Anyone experiencing the same?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w8261m/astra_blocking_all_bug_hunting_despite_verified/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w8261m/astra_blocking_all_bug_hunting_despite_verified/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:25:43 +0000</pubDate>
+      <description>I am verified (Trusted Access, cyber) and I've been doing bug bounties for a while. Sol didn't complain at all but Astra is literally blocking everything and telling me to get Trusted Access... Anyone that is experiencing the same? Did they crank up guard rails too much? I can start the session with Sol on Ultra and change models to Astra Ultra mid work, and that seems to let it work fine though.</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · The gap has closed, open source will win</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w825pc/the_gap_has_closed_open_source_will_win/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w825pc/the_gap_has_closed_open_source_will_win/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:25:19 +0000</pubDate>
+      <description>I've been trying the latest models from the frontier labs and honestly, after extensive testing I can not tell the difference between the best open source options. I think the differences are now marginal but the labs are doing heavy marketing to convince the public into paying more for tokens as they prepare to go public. Can't help but see the similarities between the dot com bubble and AI in te</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · 3D Scenes in 20 minutes</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w825mz/3d_scenes_in_20_minutes/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w825mz/3d_scenes_in_20_minutes/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:25:16 +0000</pubDate>
+      <description>So I one-shot this with Astra this morning. First image is reference, second - my result in viewport. It is not perfect by any means, but still I am impressed. submitted by /u/dr_After to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Apparently swearing is taboo now 😭</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w824lu/apparently_swearing_is_taboo_now/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w824lu/apparently_swearing_is_taboo_now/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:24:04 +0000</pubDate>
+      <description>We were talking about a video game...💀 submitted by /u/BrinsleySchwartze to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · NInfer vs llama.cpp vs vLLM: quality + speed comparison for Qwen3.8-27B NVFP4 on RTX 5090</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w821fg/ninfer_vs_llamacpp_vs_vllm_quality_speed/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:20:25 +0000</pubDate>
+      <description>I've been running Qwen3.8-27B as a local inference server for a production content intelligence pipeline (HVAC industry stuff, lots of long-context retrieval and structured extraction). I have been watching other redditors post their custom configurations, and I wanted to share what I tested to optimize for a single RTX 5090. I was on llama.cpp (Q5\_K\_M GGUF, q5\_1 KV, 262K context, MTP), but it'</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · What would make Astra your default coding model rather than an occasional escalation?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w8206y/what_would_make_astra_your_default_coding_model/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w8206y/what_would_make_astra_your_default_coding_model/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:19:02 +0000</pubDate>
+      <description>Disclosure: I work on coding-agent usage tracking. I'm talking about my own usage here. My early Astra sample comes out to about $1.49 per million tokens at API-equivalent rates, including the cache mix. That gives me a way to describe the usage, but it doesn't answer whether I should use Astra for most coding tasks. The missing part is what happened to the work. Did it finish a task that the prev</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · For anyone waiting on Astra in Codex</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w81mhm/for_anyone_waiting_on_astra_in_codex/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w81mhm/for_anyone_waiting_on_astra_in_codex/</guid>
+      <pubDate>Sat, 05 Sep 2026 14:03:28 +0000</pubDate>
+      <description>Astra has appeared in Work but not Codex. But. if I start Codex with codex -m gpt-6-astra - it's there. It will pick up the thinking level from your previous model so to change it, you need to switch to a different model, select whatever think you want, then /exit and reopen with codex -m gpt-6-astra again. Dk why this is happening. One machine of mine has it in Codex (same account) but the other</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Astra and computer use is super slow??</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w819il/astra_and_computer_use_is_super_slow/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w819il/astra_and_computer_use_is_super_slow/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:48:47 +0000</pubDate>
+      <description>Hi, what am I doing wrong? Promo videos show incredible results, my Astra medium with computer use draw this in FIVE minutes. What am I doing wrong? submitted by /u/bubu19999 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Codex credit rewards community</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w8164z/codex_credit_rewards_community/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w8164z/codex_credit_rewards_community/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:44:45 +0000</pubDate>
+      <description>r/CodexRewards for anyone interested in sharing invitations submitted by /u/sorvendral to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Astra knowing they will consume my token limit in 3 mins</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w8158x/astra_knowing_they_will_consume_my_token_limit_in/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w8158x/astra_knowing_they_will_consume_my_token_limit_in/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:43:44 +0000</pubDate>
+      <description>submitted by /u/erdematar to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · ChatGPT Business seats are locked and can’t assign and use them</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w813gx/chatgpt_business_seats_are_locked_and_cant_assign/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w813gx/chatgpt_business_seats_are_locked_and_cant_assign/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:41:42 +0000</pubDate>
+      <description>This is new feature form 2-3 hours ago. I cannot assign the right seats to my team and we cannot work! What is this? There is no documentation on the duration of this cooldown or anything about how and why it works like this. submitted by /u/_Toni_O to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Why tf cant we do native built in remote control of codex on linux? Codex terminal cli === no remote control?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w80xxe/why_tf_cant_we_do_native_built_in_remote_control/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w80xxe/why_tf_cant_we_do_native_built_in_remote_control/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:35:07 +0000</pubDate>
+      <description>I can do it with claude code in terminal why cant I do it with codex? Seems like this should have been done already. And I am not talking about doing some tmux with ssh. I want to open the chatgpt app on my phone and and see my remote terminals like claude code does in the claude app... submitted by /u/Lanky-Storm7 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · I built a small arena where AI models write robot brains and then fight each other</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w80v8k/i_built_a_small_arena_where_ai_models_write_robot/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w80v8k/i_built_a_small_arena_where_ai_models_write_robot/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:31:48 +0000</pubDate>
+      <description>I've been working on a little open-source experiment called llms-robot-arena . The idea is pretty simple: Give different AI coding models the exact same rules, ask each one to write the brain of a robot, and then let the robots fight. The AI is not controlling the robot live. It writes the code first, then the match runs entirely on that code. All robots are physically identical, so the only real</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · sub agents being released into my codebase</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w80ggu/sub_agents_being_released_into_my_codebase/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w80ggu/sub_agents_being_released_into_my_codebase/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:13:53 +0000</pubDate>
+      <description>submitted by /u/yash3011 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · People with "non-enthusaist hardware": how do you use it?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w80em5/people_with_nonenthusaist_hardware_how_do_you_use/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w80em5/people_with_nonenthusaist_hardware_how_do_you_use/</guid>
+      <pubDate>Sat, 05 Sep 2026 13:11:39 +0000</pubDate>
+      <description>I don't want to be super gatekeepy about this, but let's loosely define "non-enthusaist" as "a single consumer grade graphics card on a system that's not primarily dedicated to inferencing." While it's fun to see what people can do with more dedicated build$, I'm never going to put hands on hardware at that price point. I'm interested to see what people accomplish with more humble means. Is there</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Qwen3.8-Flash-Next (UD-Q4_K_XL) on a single RTX 3090 24GB + 128GB DDR4, is this config optimal?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w7zz1o/qwen38flashnext_udq4_k_xl_on_a_single_rtx_3090/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w7zz1o/qwen38flashnext_udq4_k_xl_on_a_single_rtx_3090/</guid>
+      <pubDate>Sat, 05 Sep 2026 12:52:58 +0000</pubDate>
+      <description>Qwen3.8-Flash-Next (UD-Q4_K_XL) on a single RTX 3090 24GB + 128GB DDR4 — is this config optimal? Hardware CPU: Intel Core i5-12600K RAM: 128 GB DDR4 @ 3600 MHz GPU: NVIDIA RTX 3090, 24 GB VRAM OS: Windows 11 llama.cpp: freshly compiled from today's master (build b10794, Sep 4 2026) Model Qwen3.8-Flash-Next, UD-Q4_K_XL Launch command C:\llama\llama-server.exe -m "D:\Modelos\Qwen3.8-Flash-Next-UD-Q4</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · The progress OpenAI had in one year is crazy</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w7zgt4/the_progress_openai_had_in_one_year_is_crazy/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w7zgt4/the_progress_openai_had_in_one_year_is_crazy/</guid>
+      <pubDate>Sat, 05 Sep 2026 12:29:28 +0000</pubDate>
+      <description>GPT-5.0-high GPT-5.2-codex GPT-5.5-high GPT-5.6-sol-high GPT-6.0-astra-high What do you think when you compare Astra to GPT 5.0 a year ago? I think the progress is crazy...cant wait to see where we are in one year. When we use something every day, it’s easy to forget what it was like a year ago. Around this time last year, I started finding LLMs useful for work and my hobbies. That’s also when I m</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Prompt to help with usage</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w7zenn/prompt_to_help_with_usage/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w7zenn/prompt_to_help_with_usage/</guid>
+      <pubDate>Sat, 05 Sep 2026 12:26:35 +0000</pubDate>
+      <description>I’ve had some success with using the following prompt to help reduce usage. I’d like to know if this works for others. Most of the benefits come from projects using sub agents. The idea is don’t use a massive model for simple tasks but still have the planning and direction of the top models. “Optimize for cost per correctly completed task. Use the main model for planning, difficult decisions and i</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · I had better be able to type "Resume" and have Astra continue right where it left off...</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w7z6vg/i_had_better_be_able_to_type_resume_and_have/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w7z6vg/i_had_better_be_able_to_type_resume_and_have/</guid>
+      <pubDate>Sat, 05 Sep 2026 12:16:17 +0000</pubDate>
+      <description>Otherwise, we're all just pissing tokens into the wind. submitted by /u/Cyborgized to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Pro user - Astra still not available on desktop app?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1w7z0uo/pro_user_astra_still_not_available_on_desktop_app/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w7z0uo/pro_user_astra_still_not_available_on_desktop_app/</guid>
+      <pubDate>Sat, 05 Sep 2026 12:08:02 +0000</pubDate>
+      <description>What's going on? I can't access Astra on my desktop app despite resetting and restarting as of Saturday morning. I only see it in the Work tab of the browser. submitted by /u/themusicman2000 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
     <item>
       <title>Selected Reddit communities · GPT-6 Astra needs the Responses API for tools + reasoning – why that breaks Cursor's BYOK, and how I worked around it</title>
       <link>https://www.reddit.com/r/OpenAI/comments/1w7rkla/gpt6_astra_needs_the_responses_api_for_tools/</link>
@@ -2106,306 +2406,6 @@
       <category>emerging-signals</category>
       <category>T3</category>
       <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · I regret reviewing for AAAI [D]</title>
-      <link>https://www.reddit.com/r/MachineLearning/comments/1w4z75i/i_regret_reviewing_for_aaai_d/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1w4z75i/i_regret_reviewing_for_aaai_d/</guid>
-      <pubDate>Wed, 02 Sep 2026 03:44:41 +0000</pubDate>
-      <description>Why did I sign up to review when it’s not reciprocal? Am I an idiot? Am I dumb to sacrifice some of my precious time outside of work to review these papers when I don’t even have to? Yes. I tell myself I’m giving something to the community. But all I’m really doing is pissing off the authors as I reject their papers. I really wanted to accept one of them too. But, it wasn’t as well done as I’d hop</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · My windows codex cli just keeps quitting back to command prompt</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1w4ywg5/my_windows_codex_cli_just_keeps_quitting_back_to/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w4ywg5/my_windows_codex_cli_just_keeps_quitting_back_to/</guid>
-      <pubDate>Wed, 02 Sep 2026 03:30:01 +0000</pubDate>
-      <description>Will be in middle of session, and it just exits, drops me back to command prompt. i resume, it does resume, but keeps exiting. using 5.6 sol high, tried farming stuff to agents, and not farming to agents, doesnt matter. codex 0.152.1 https://i.imgur.com/iBViY1i.png https://i.imgur.com/TsNJwzM.png https://youtube.com/shorts/TwEtUyKCPbo submitted by /u/radialmonster to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · 4 x DGX Sparks vs AMD Epyc 9xx5 system</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4yljm/4_x_dgx_sparks_vs_amd_epyc_9xx5_system/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4yljm/4_x_dgx_sparks_vs_amd_epyc_9xx5_system/</guid>
-      <pubDate>Wed, 02 Sep 2026 03:15:50 +0000</pubDate>
-      <description>I see a lot of people buy DGX Sparks, and turn them in to clusters to run large models. Wouldn't it be better to invest $16k into an AMD Epyc server with 768GB or even 384GB of 6000Mhz DDR5 ram, and let's say 2x3090s or 5080s, instead of 4 DGX Sparks with 512GB of ram? Epyc's theoretical bandwidth is around 576GB/s, DGX Spark's is roughly 273GB/s. Based on a quick check, both systems are worth aro</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>OpenAI · 0.153.0-alpha.5</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.5</guid>
-      <pubDate>Wed, 02 Sep 2026 03:08:30 +0000</pubDate>
-      <description>Release 0.153.0-alpha.5</description>
-      <category>codex</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · [D] Self-Promotion Thread</title>
-      <link>https://www.reddit.com/r/MachineLearning/comments/1w4xaes/d_selfpromotion_thread/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1w4xaes/d_selfpromotion_thread/</guid>
-      <pubDate>Wed, 02 Sep 2026 02:15:07 +0000</pubDate>
-      <description>Please post your personal projects, startups, product placements, collaboration needs, blogs etc. Please mention the payment and pricing requirements for products and services. Please do not post link shorteners, link aggregator websites , or auto-subscribe links. -- Any abuse of trust will lead to bans. Encourage others who create new posts for questions to post here instead! Thread will stay ali</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · 2/5 of my CMP 170HX have died after 2 weeks and the 3rd came with defective tensor cores. Current prices DO NOT justify the risk you are taking</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4wyvg/25_of_my_cmp_170hx_have_died_after_2_weeks_and/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4wyvg/25_of_my_cmp_170hx_have_died_after_2_weeks_and/</guid>
-      <pubDate>Wed, 02 Sep 2026 02:00:30 +0000</pubDate>
-      <description>One GPU drops off immediately when vllm is started and the other throws CUDA errors on start submitted by /u/cantgetthistowork to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Everyone is t/s maxing.. 3.8.. but after a week of using it for work I'm tempted to switch back to 3.6</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4wjxd/everyone_is_ts_maxing_38_but_after_a_week_of/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4wjxd/everyone_is_ts_maxing_38_but_after_a_week_of/</guid>
-      <pubDate>Wed, 02 Sep 2026 01:41:27 +0000</pubDate>
-      <description>&gt; "Qwen 3.8 is a damn good coder, but a terrible collaborator" It modifies SO many things in my scripts for what should be a 2 line PR, I get a 100 line linter style mess that looks like a high school freshmen got his hands on vs code and pushed code in. It can't maintain a common style, if I give it a script with a certain naming and layout, 3.6 one shots small changes that fit into my structure.</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Built a router that runs prompts on your local model and auto-falls-back to cloud when it wedges [Apache-2.0]</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4wb7n/built_a_router_that_runs_prompts_on_your_local/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4wb7n/built_a_router_that_runs_prompts_on_your_local/</guid>
-      <pubDate>Wed, 02 Sep 2026 01:30:31 +0000</pubDate>
-      <description>If you run models locally you know the pain: everything's fine until a long prompt makes the model silently stall or the GPU OOMs, and you're left with a hung request and no output. I built HybridInfer for exactly that. It's a small reliability-aware router: - Sends each request to your local model (Ollama) first. - Watches the runtime, if local stalls (no token for N seconds), OOMs, or errors, it</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Google · Release v0.59.0-nightly.20260902.g4963a4456</title>
-      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-nightly.20260902.g4963a4456</link>
-      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-nightly.20260902.g4963a4456</guid>
-      <pubDate>Wed, 02 Sep 2026 01:29:10 +0000</pubDate>
-      <description>What's Changed fix(core): improve destination validation and connection routing in web fetch utilities by @diegogodinezr in #29120 New Contributors @diegogodinezr made their first contribution in #29120 Full Changelog : v0.59.0-nightly.20260901.g0bd1d4397...v0.59.0-nightly.20260902.g4963a4456</description>
-      <category>gemini</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · The DGX Spark joins the 5090 in its price increase.</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4w8kd/the_dgx_spark_joins_the_5090_in_its_price_increase/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4w8kd/the_dgx_spark_joins_the_5090_in_its_price_increase/</guid>
-      <pubDate>Wed, 02 Sep 2026 01:27:12 +0000</pubDate>
-      <description>A comment really doesn't need to be made, does it? I looked away from the 5090 for a week to other options like the DGX Spark and the M5 Ultra. Both of which... these big corpos are buying to hell and back. Is the future used hardware? submitted by /u/Sadge404 to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · GB10 price increases. Seriously what is the best bang for the buck now...Mac Studio?</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4vg3t/gb10_price_increases_seriously_what_is_the_best/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4vg3t/gb10_price_increases_seriously_what_is_the_best/</guid>
-      <pubDate>Wed, 02 Sep 2026 00:51:49 +0000</pubDate>
-      <description>It is crazy how fast prices are increasing. I'm pulling my hair out to keep ahead of this for students. Servers aren't even an option any more. submitted by /u/geekender to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Owning an Instinct MI100 32GB hasn't turned out to be so great</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4uxna/owning_an_instinct_mi100_32gb_hasnt_turned_out_to/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4uxna/owning_an_instinct_mi100_32gb_hasnt_turned_out_to/</guid>
-      <pubDate>Wed, 02 Sep 2026 00:29:11 +0000</pubDate>
-      <description>First of all this card is really hard to keep cool. I have a 3d printed shroud with a Phanteks t30-120 and learnt the hard way that this beast needs a high pressure flow fan, not just a high cfm fan so have it limited to 175-200w with a governor. At this TDP, the bandwidth still stays at a staggering 1.2tb/s but the cores fluctuate a lot depending what the governor governs. Anyway, running headles</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Codex app has animated conversation rails now (Toys → Audio visualizer)</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1w4uuxl/codex_app_has_animated_conversation_rails_now/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w4uuxl/codex_app_has_animated_conversation_rails_now/</guid>
-      <pubDate>Wed, 02 Sep 2026 00:25:51 +0000</pubDate>
-      <description>Not a huge announce, just a fun one. In the Codex desktop app under Settings → Toys there’s an “Audio visualizer” toggle. I noticed it because I had Spotify going — the conversation rails animate with the system audio, and they stack up as you keep moving through different sections of a longer thread. Copy on the toggle says audio is processed on-device, never saved or uploaded. Anyone else find t</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Qwen3.8-Flash-Next (104 GB MoE) on a Strix Halo + RTX 3090 Ti eGPU: 22 -&gt; 84 tok/s, and within one HumanEval+ problem of a dual-3090 vLLM box at 0.4x the wall time</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4ur6e/qwen38flashnext_104_gb_moe_on_a_strix_halo_rtx/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4ur6e/qwen38flashnext_104_gb_moe_on_a_strix_halo_rtx/</guid>
-      <pubDate>Wed, 02 Sep 2026 00:21:25 +0000</pubDate>
-      <description>Follow-up to my Qwen3.8-27B post. This time the target is Qwen3.8-Flash-Next: 512 experts per layer, 36 layers of gated DeltaNet, 12 layers of top-k sparse attention, a 26.8 GiB n-gram table and a built-in MTP draft head. unsloth UD-Q4_K_XL, 103.69 GiB. It fits in the Strix Halo's unified memory and nowhere else on a consumer box. Numbers first, caveats after. Hardware: AMD Ryzen AI MAX+ 395 (Stri</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · VTT Dice UI usability test</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1w4u2ba/vtt_dice_ui_usability_test/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w4u2ba/vtt_dice_ui_usability_test/</guid>
-      <pubDate>Tue, 01 Sep 2026 23:52:17 +0000</pubDate>
-      <description>Calling all tabletop gamers! I created a short usability test comparing three different dice interfaces for a virtual tabletop (VTT); and I’d love your input. Try each version, share what feels intuitive (or frustrating), and help shape a smoother dice-rolling experience for players. Take the test here: https://dice-interface-lab.wkkesling.chatgpt.site/ submitted by /u/WillKeslingDesign to r/OpenA</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Suggestion</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1w4tq7i/suggestion/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w4tq7i/suggestion/</guid>
-      <pubDate>Tue, 01 Sep 2026 23:38:10 +0000</pubDate>
-      <description>I thought of something useful and probably easy to link to chatgpt. Optional GPS tracking so chatgpt knows where you are and has breadcrumbs of your path. It would be an optional toggle to turn it on or off. Similar to life 360 for AI companion. Sean submitted by /u/Tiny_Mood9033 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Astra is about to drop 👀</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1w4th8t/astra_is_about_to_drop/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1w4th8t/astra_is_about_to_drop/</guid>
-      <pubDate>Tue, 01 Sep 2026 23:28:02 +0000</pubDate>
-      <description>https://preview.redd.it/7uatdei6tzmh1.png?width=584&amp;format=png&amp;auto=webp&amp;s=2146a391adcd0b34814fb2443448aad1f2463c66 Astra should be coming pretty soon, possibly this week 👀 submitted by /u/Character_Novel_2592 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Gave a try to Exllamav3 and it's great!</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1w4tejh/gave_a_try_to_exllamav3_and_its_great/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1w4tejh/gave_a_try_to_exllamav3_and_its_great/</guid>
-      <pubDate>Tue, 01 Sep 2026 23:24:47 +0000</pubDate>
-      <description>Following this post I decided to try GLM 5.3 Flash on a 8x3090 setup and I can now run a Q4 with surprising speed; 700tk/s prefill &amp; 42tk/s decoding! (lcp &amp; vllm do not allow me to get that). Was afraid about quality but &gt; 30m tokens with DSH and no issue (did not test vision yet, but looks supported). Just to say that I am really grateful to Turboderp and we should really support as much as possi</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>OpenAI · 0.152.1</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.152.1</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.152.1</guid>
-      <pubDate>Tue, 01 Sep 2026 22:34:23 +0000</pubDate>
-      <description>Bug Fixes Guardian approval review now honors Node REPL policies provided through model metadata. Full Changelog : rust-v0.152.0...rust-v0.152.1</description>
-      <category>codex</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Anthropic · v2.1.258</title>
-      <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.258</link>
-      <guid isPermaLink="true">https://github.com/anthropics/claude-code/releases/tag/v2.1.258</guid>
-      <pubDate>Tue, 01 Sep 2026 22:33:20 +0000</pubDate>
-      <description>What's changed Fixed Claude Code failing to launch on macOS 12 (Monterey), a regression introduced in 2.1.255 Fixed remote and scheduled sessions failing with "user messages must have non-empty content" after a re-sent permission approval could not be applied</description>
-      <category>claude-code</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>OpenAI · 0.153.0-alpha.4</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.4</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.4</guid>
-      <pubDate>Tue, 01 Sep 2026 21:05:41 +0000</pubDate>
-      <description>Release 0.153.0-alpha.4</description>
-      <category>codex</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Google · Release v0.58.0</title>
-      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.58.0</link>
-      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.58.0</guid>
-      <pubDate>Tue, 01 Sep 2026 20:51:17 +0000</pubDate>
-      <description>What's Changed Changelog for v0.57.0-preview.0 by @gemini-cli-robot in #28918 fix(core): ensure consistent symlink evaluation in ignore path handling by @luisfelipe-alt in #28915 refactor(core): remove eslint-disable and type-asserts from shellExecutionService by @DavidAPierce in #28862 fix(sandbox): isolate Docker and container runtime sockets and binaries in macOS Seatbelt by @josebalius in #289</description>
-      <category>gemini</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Google · Release v0.59.0-preview.0</title>
-      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-preview.0</link>
-      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.59.0-preview.0</guid>
-      <pubDate>Tue, 01 Sep 2026 20:19:07 +0000</pubDate>
-      <description>What's Changed Changelog for v0.58.0-preview.0 by @gemini-cli-robot in #29082 chore(release): bump version to 0.59.0-nightly.20260825.g812f7a2bc by @gemini-cli-robot in #29083 fix(core): prevent SSRF in MCP OAuth metadata discovery and authentication by @josebalius in #29081 fix(core): enforce fail-closed workspace trust and filter mcpServers in restricted mode by @luisfelipe-alt in #29099 Full Ch</description>
-      <category>gemini</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>OpenAI · rust-v0.153.0-alpha.3</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.3</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.153.0-alpha.3</guid>
-      <pubDate>Tue, 01 Sep 2026 19:09:08 +0000</pubDate>
-      <description>Release 0.153.0-alpha.3</description>
-      <category>codex</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Anthropic · v2.1.257</title>
-      <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.257</link>
-      <guid isPermaLink="true">https://github.com/anthropics/claude-code/releases/tag/v2.1.257</guid>
-      <pubDate>Tue, 01 Sep 2026 17:53:52 +0000</pubDate>
-      <description>What's changed Added Claude Fable 5.1 ( claude-fable-5-1 ), now the default Fable model — 1M context, $10/$50 per Mtok with $0.25/Mtok cache reads Added "Time format" ( timeFormat ) and timeZone settings: 12-hour, 24-hour, 24-hour UTC, or a strftime pattern for the turn-end clock and transcript-view timestamps Added a Containment Escape rule to auto mode so cloud metadata-credential fetches, egres</description>
-      <category>claude-code</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
     </item>
   </channel>
 </rss>
