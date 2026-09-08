@@ -7,6 +7,786 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wau3a0/built_a_local_inference_daemon_that_lets_models/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wau3a0/built_a_local_inference_daemon_that_lets_models/",
+      "title": "Selected Reddit communities · Built a local inference daemon that lets models call other local models as tools (text → image → 3D, chained automatically) — Rust, OpenAI-compatible, open source",
+      "content_text": "Been fighting the same VRAM problems as everyone else here — juggling llama.cpp + ComfyUI + separate 3D/TTS scripts, each hoarding its own memory, constant OOM when I forget to unload something. Built DisposAI to fix that for myself, and just shipped v0.1.0. The core feature — Dynamic Model Toolization: any loaded model can call any other loaded model as a tool, auto-loading it on demand, entirely",
+      "date_published": "2026-09-08T16:58:16+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Been fighting the same VRAM problems as everyone else here — juggling llama.cpp + ComfyUI + separate 3D/TTS scripts, each hoarding its own memory, constant OOM when I forget to unload something. Built DisposAI to fix that for myself, and ju"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wau1zt/are_there_any_small_10b_models_that_you_would_say/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wau1zt/are_there_any_small_10b_models_that_you_would_say/",
+      "title": "Selected Reddit communities · Are there any (small, ~10B) models that you would say are a good collaborator?",
+      "content_text": "Most of the new ~30B (and now ~10B, thankfully for my GPU) models we see score really high on benchmarks, but I feel like they don't push back on dumb ideas enough. I think most people don't being like told by an LLM that the premise is flawed but I certainly do. In my opinion they are optimised for like one-shotting stuff, but I don't want it to do that. Especially from like a 10B model. submitte",
+      "date_published": "2026-09-08T16:56:55+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Most of the new ~30B (and now ~10B, thankfully for my GPU) models we see score really high on benchmarks, but I feel like they don't push back on dumb ideas enough. I think most people don't being like told by an LLM that the premise is fla"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1watxww/gpt_astra_and_higgsfield_made_my_depressing/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1watxww/gpt_astra_and_higgsfield_made_my_depressing/",
+      "title": "Selected Reddit communities · GPT Astra and Higgsfield made my depressing office into a car racing game",
+      "content_text": "​ I uploaded about 8 photos of my office on Astra and it generated a full 3D racing environment from them and no manual level design just photos of my actual desk and shelves floor turned into a drivable track for tiny toy cars. Edited the race route in Blender, Unreal Engine handles the graphics and lighting and materials, Higgsfield for the final render and the result is my boring office but now",
+      "date_published": "2026-09-08T16:52:56+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "​ I uploaded about 8 photos of my office on Astra and it generated a full 3D racing environment from them and no manual level design just photos of my actual desk and shelves floor turned into a drivable track for tiny toy cars. Edited the "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1watxgs/3d_modeling_fails/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1watxgs/3d_modeling_fails/",
+      "title": "Selected Reddit communities · 3D modeling fails",
+      "content_text": "All I see online is how amazing astra is with 3d modeling but my own experience has been incredibly lackluster. Anyone else seeing the same? Any recommendations for using astra and blender? submitted by /u/puffwheat to r/OpenAI [link] [comments]",
+      "date_published": "2026-09-08T16:52:31+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "All I see online is how amazing astra is with 3d modeling but my own experience has been incredibly lackluster. Anyone else seeing the same? Any recommendations for using astra and blender? submitted by /u/puffwheat to r/OpenAI [link] [comm"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1watwuu/guys_astra_6_have_to_be_banned/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1watwuu/guys_astra_6_have_to_be_banned/",
+      "title": "Selected Reddit communities · Guys astra 6 have to be banned",
+      "content_text": "Guys astra 6 made way much gaps between ai and a engeneering it have to be stopped or else our jobs will be gone submitted by /u/legitstarboy to r/OpenAI [link] [comments]",
+      "date_published": "2026-09-08T16:51:54+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Guys astra 6 made way much gaps between ai and a engeneering it have to be stopped or else our jobs will be gone submitted by /u/legitstarboy to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wathnm/astra_is_a_quiet_force_artificial_analysis_has/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wathnm/astra_is_a_quiet_force_artificial_analysis_has/",
+      "title": "Selected Reddit communities · Astra is a quiet force. Artificial Analysis has updated their benchmark twice in 4 days to reflect its real strength",
+      "content_text": "Something similar happened with Sol and Arena had to restructure their coding benchmark and added a full-stack bench, plus updated the webdev bench to reflect real world performance after Astra released. Looks OpenAI is only lab not benchmaxxing submitted by /u/py-net to r/OpenAI [link] [comments]",
+      "date_published": "2026-09-08T16:36:42+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Something similar happened with Sol and Arena had to restructure their coding benchmark and added a full-stack bench, plus updated the webdev bench to reflect real world performance after Astra released. Looks OpenAI is only lab not benchma"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1watbdf/astra_is_on_another_level_compared_to_sol_even/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1watbdf/astra_is_on_another_level_compared_to_sol_even/",
+      "title": "Selected Reddit communities · Astra is on another level compared to Sol even",
+      "content_text": "Making trading strategies with Astra today. It started with a convo then to creating algos. Compared to Sol, Astra creates folders, zipped files, md file per algo, python test results. This is all very different than Sol creating just a mq5 file as a result. However talking all day with it, which feels like a trading professor, constantly deviating from my original idea, then apologising for doing",
+      "date_published": "2026-09-08T16:30:31+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Making trading strategies with Astra today. It started with a convo then to creating algos. Compared to Sol, Astra creates folders, zipped files, md file per algo, python test results. This is all very different than Sol creating just a mq5"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wat4ay/nexaginexn25mini_35b/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wat4ay/nexaginexn25mini_35b/",
+      "title": "Selected Reddit communities · nex-agi/Nex-N2.5-mini - 35b",
+      "content_text": "nex-agi/Nex-N2.5-mini - 35b submitted by /u/ApprehensiveAd3629 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-09-08T16:23:32+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "nex-agi/Nex-N2.5-mini - 35b submitted by /u/ApprehensiveAd3629 to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wasr2y/looking_for_someone_with_dual_amd_gpu_using_asus/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wasr2y/looking_for_someone_with_dual_amd_gpu_using_asus/",
+      "title": "Selected Reddit communities · Looking for someone with dual AMD GPU using ASUS ProArt X870E-CREATOR and ROCm",
+      "content_text": "Hello! I'm thinking of upgrading my board to ASUS ProArt X870E-CREATOR WiFi so I can effectively use my dual R9700 cards. Right now, my board does not properly support PCI-E 8x split and it causes ROCm to fail when using both cards (single GPU it's just fine). I know it's a long shot.. but anyone out there have this board and dual AMD cards? can be any type, so long as you're using ROCm for tensor",
+      "date_published": "2026-09-08T16:10:25+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hello! I'm thinking of upgrading my board to ASUS ProArt X870E-CREATOR WiFi so I can effectively use my dual R9700 cards. Right now, my board does not properly support PCI-E 8x split and it causes ROCm to fail when using both cards (single "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wasdnn/inclusionailing30flashvl_hugging_face/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wasdnn/inclusionailing30flashvl_hugging_face/",
+      "title": "Selected Reddit communities · inclusionAI/Ling-3.0-flash-VL · Hugging Face",
+      "content_text": "Ling-3.0-flash-VL inherits the language, reasoning, and long-context capabilities of Ling-3.0-flash, while extending them with native image and video understanding. The model has 124B total parameters, with only 5.5B parameters activated per token, and supports a context window of up to 1M tokens. The architecture of Ling-3.0-flash-VL is designed to integrate visual information into real-world rea",
+      "date_published": "2026-09-08T15:57:12+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Ling-3.0-flash-VL inherits the language, reasoning, and long-context capabilities of Ling-3.0-flash, while extending them with native image and video understanding. The model has 124B total parameters, with only 5.5B parameters activated pe"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1was5y6/how_do_you_figure_out_which_openai_usage_is_worth/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1was5y6/how_do_you_figure_out_which_openai_usage_is_worth/",
+      "title": "Selected Reddit communities · How do you figure out which OpenAI usage is worth the cost?",
+      "content_text": "We’ve gotten to the point where just looking at our total OpenAI spend every month doesn’t tell me much anymore since some of the increase is completely fine because we’re simply doing more with it but there are also workflows using larger models, longer context and way more tokens than others then you have retries and agent runs where the cost of one task can vary quite a bit depending on what ha",
+      "date_published": "2026-09-08T15:49:29+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "We’ve gotten to the point where just looking at our total OpenAI spend every month doesn’t tell me much anymore since some of the increase is completely fine because we’re simply doing more with it but there are also workflows using larger "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1was380/is_ai_making_my_brown_lazy_am_i_experiencing_a/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1was380/is_ai_making_my_brown_lazy_am_i_experiencing_a/",
+      "title": "Selected Reddit communities · Is AI making my brown lazy? Am I experiencing a cognitive decline?",
+      "content_text": "I think AI is rotting my brain. I am actually aware of my cognitive decline and my brain functions. Before, I used to be able to read and solve complex problems and be more productive. I used to go on reddit and whisper and other apps and reach out to people to socaillise. I used to get advice from real humans and listen to them. I was smarter a few years ago. And felt like I was the most smartest",
+      "date_published": "2026-09-08T15:46:41+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I think AI is rotting my brain. I am actually aware of my cognitive decline and my brain functions. Before, I used to be able to read and solve complex problems and be more productive. I used to go on reddit and whisper and other apps and r"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.7",
+      "title": "OpenAI · rust-v0.154.0-alpha.7",
+      "content_text": "Release 0.154.0-alpha.7",
+      "date_published": "2026-09-08T15:38:05+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.154.0-alpha.7"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1warkhk/im_building_multivibe_local_and_cloud_models_for/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1warkhk/im_building_multivibe_local_and_cloud_models_for/",
+      "title": "Selected Reddit communities · I’m building MultiVibe: local and cloud models for coding agents, with a decentralized worker network",
+      "content_text": "Hey everyone — I’m the developer behind MultiVibe. The project has three connected goals: Allow you to use multiple subscription accounts with the same client (multiple chatgpt account with codex desktop for example) Let developers use local models and cloud providers through OpenAI- and Anthropic-compatible endpoints. Let people run workers on their own hardware and contribute inference capacity",
+      "date_published": "2026-09-08T15:27:26+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hey everyone — I’m the developer behind MultiVibe. The project has three connected goals: Allow you to use multiple subscription accounts with the same client (multiple chatgpt account with codex desktop for example) Let developers use loca"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1war97y/what_belongs_in_a_humanreadable_project_memory/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1war97y/what_belongs_in_a_humanreadable_project_memory/",
+      "title": "Selected Reddit communities · What belongs in a human-readable project memory file for Codex?",
+      "content_text": "Codex can read repository instructions and project files, but a useful long-running memory needs to survive session boundaries without turning stale notes into authority. What structure works well for keeping the state both machine-usable and easy for a person to audit? I am considering a short current-state file for active goals, constraints, accepted decisions, open questions, and the next verif",
+      "date_published": "2026-09-08T15:15:52+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Codex can read repository instructions and project files, but a useful long-running memory needs to survive session boundaries without turning stale notes into authority. What structure works well for keeping the state both machine-usable a"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1war7fv/voice_mode_finally_works_well_in_noisy/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1war7fv/voice_mode_finally_works_well_in_noisy/",
+      "title": "Selected Reddit communities · voice mode FINALLY works well in noisy environments AND with small languages",
+      "content_text": "So far, every time I tried the voice mode, it was just not usable. I usually tried it in the car (and I have an old car, so it is pretty noisy in there), and also, my native language is not English. I speak Czech, which is probably one of the worst languages in this respect if we are talking about the developed world. It is quite hard*, we have only about 10 million speakers, and the country is pr",
+      "date_published": "2026-09-08T15:14:07+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "So far, every time I tried the voice mode, it was just not usable. I usually tried it in the car (and I have an old car, so it is pretty noisy in there), and also, my native language is not English. I speak Czech, which is probably one of t"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1waqvzx/gpt6_astra_is_awesome/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1waqvzx/gpt6_astra_is_awesome/",
+      "title": "Selected Reddit communities · GPT-6 Astra is awesome !",
+      "content_text": "With Gpt-6 Astra Max I was finally able to create almost all the angles and perspectives of my sketches I will finally be able to make better and more accurate 3d models submitted by /u/thebookman_art to r/OpenAI [link] [comments]",
+      "date_published": "2026-09-08T15:02:39+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "With Gpt-6 Astra Max I was finally able to create almost all the angles and perspectives of my sketches I will finally be able to make better and more accurate 3d models submitted by /u/thebookman_art to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1waqlhc/today_astra_is_doing_100_of_my_job/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1waqlhc/today_astra_is_doing_100_of_my_job/",
+      "title": "Selected Reddit communities · Today Astra is doing 100% of my job",
+      "content_text": "I want to remember this day: the day ChatGPT took control of my computer and simultaneously designed a PCB through the EasyEDA API, built the enclosure in Fusion 360, while optimising a complex DSP firmware self testing itself using my sound card to generate hotword benchmark. I am an experienced electronic engineer, building a vocal assistant like Alexa but open source. #astra #astra submitted by",
+      "date_published": "2026-09-08T14:52:05+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I want to remember this day: the day ChatGPT took control of my computer and simultaneously designed a PCB through the EasyEDA API, built the enclosure in Fusion 360, while optimising a complex DSP firmware self testing itself using my soun"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1waqkla/i_opensourced_a_drawguess_game_powered_by_openai/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1waqkla/i_opensourced_a_drawguess_game_powered_by_openai/",
+      "title": "Selected Reddit communities · I open-sourced a Draw&Guess game powered by OpenAI Vision and FastH3",
+      "content_text": "I built and open-sourced a realtime Draw & Guess game where AI joins as a player. It uses OpenAI Vision to analyze the shared whiteboard and guess the drawing, then uses FastH3(a distilled version of MiniMax H3) to generate a matching video in real time as proof of what it understood. The AI only wins when both its guess and generated result are correct. Source: github.com/zicojiao/agora-drawguess",
+      "date_published": "2026-09-08T14:51:12+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I built and open-sourced a realtime Draw & Guess game where AI joins as a player. It uses OpenAI Vision to analyze the shared whiteboard and guess the drawing, then uses FastH3(a distilled version of MiniMax H3) to generate a matching video"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1waqfpq/a_cozy_home_for_your_favorite_goodreads_books/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1waqfpq/a_cozy_home_for_your_favorite_goodreads_books/",
+      "title": "Selected Reddit communities · A cozy home for your favorite Goodreads books",
+      "content_text": "created with gpt-6 astra with data pulled from goodreads. if there's enough interest, i'll make it easy to create your own (100% free, open source). 🙂 https://reading-room.transitivebullsh.it submitted by /u/fisch0920 to r/OpenAI [link] [comments]",
+      "date_published": "2026-09-08T14:46:19+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "created with gpt-6 astra with data pulled from goodreads. if there's enough interest, i'll make it easy to create your own (100% free, open source). 🙂 https://reading-room.transitivebullsh.it submitted by /u/fisch0920 to r/OpenAI [link] [co"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1waq9zf/is_there_a_glm_53_flash_antirezds4_gguf_targeted/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1waq9zf/is_there_a_glm_53_flash_antirezds4_gguf_targeted/",
+      "title": "Selected Reddit communities · Is there a GLM 5.3 Flash Antirez/DS4 GGUF targeted at 192 GB RAM?",
+      "content_text": "Is one possible? Can I make one? Antirez has a Q2 @ 96.5 GB which will lose quality compared to Q4 and wastes ~95 GB of my Mac’s RAM, and a Q4 @ 191 GB which is too big as it doesn’t leave enough room for OS let alone KV cache. I noticed that other Q4 and even Q4/Q8 mix GGUFs and MLXs not intended for DS4 range from 150 to 180 GB. Something that size and quality would be great for me, but I really",
+      "date_published": "2026-09-08T14:40:28+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Is one possible? Can I make one? Antirez has a Q2 @ 96.5 GB which will lose quality compared to Q4 and wastes ~95 GB of my Mac’s RAM, and a Q4 @ 191 GB which is too big as it doesn’t leave enough room for OS let alone KV cache. I noticed th"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1waq7hu/gpu_guide_gb_per_dollar_bandwidth/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1waq7hu/gpu_guide_gb_per_dollar_bandwidth/",
+      "title": "Selected Reddit communities · GPU guide (GB per dollar, bandwidth)",
+      "content_text": "First plot: GB / $ Second plot: bandwidth (spec on paper, not t/s) Third plot (bandwidth / price) in the comment. Hope that helps, my script uses the GPUs most discussed on the LocalLLaMA, LowEndLocalAI, and LocalLLM subs. At first, I tried to include more, but it became unreadable. Prices were collected by ChatGPT (so may contain inaccuracies). New prices were used where available, second hand ot",
+      "date_published": "2026-09-08T14:37:52+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "First plot: GB / $ Second plot: bandwidth (spec on paper, not t/s) Third plot (bandwidth / price) in the comment. Hope that helps, my script uses the GPUs most discussed on the LocalLLaMA, LowEndLocalAI, and LocalLLM subs. At first, I tried"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wapzjg/qwen306b_400_mb_on_a_samsung_note_8_2017_phone/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wapzjg/qwen306b_400_mb_on_a_samsung_note_8_2017_phone/",
+      "title": "Selected Reddit communities · Qwen3-0.6B (400 MB) on a Samsung Note 8 (2017) phone drives a real desktop Chrome",
+      "content_text": "Up front: I'm one of the people building the page-perception layer used here. We started by testing small local models. The result turned out to be more interesting than the original test. 12 small models, 3 verifiable tasks, logs, and offline replay. Setup: Galaxy Note 8 (2017, Android 9, 6 GB), llama.cpp in Termux, Qwen3-0.6B Q4_K_M. A laptop with Chrome open, not headless. The phone drives the",
+      "date_published": "2026-09-08T14:29:24+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Up front: I'm one of the people building the page-perception layer used here. We started by testing small local models. The result turned out to be more interesting than the original test. 12 small models, 3 verifiable tasks, logs, and offl"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wapjaw/openai_alleged_of_stealing_mathematicians_work/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wapjaw/openai_alleged_of_stealing_mathematicians_work/",
+      "title": "Selected Reddit communities · OpenAI alleged of stealing mathematicians work",
+      "content_text": "Privacy have been concern of many of us to have their own hardware to run llms, and here's another reason why: two mathematicians spent a year cracking one of the hardest problems in math and fed every draft of their works into Codex. A few days before they could publish, OpenAI suddenly showed up with the same solutions. When asked if their model (Sol and Astra) was trained on the pair's private",
+      "date_published": "2026-09-08T14:12:10+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Privacy have been concern of many of us to have their own hardware to run llms, and here's another reason why: two mathematicians spent a year cracking one of the hardest problems in math and fed every draft of their works into Codex. A few"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wapb6v/gpt6_astra_chess_test_4_wins_at_stockfish/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wapb6v/gpt6_astra_chess_test_4_wins_at_stockfish/",
+      "title": "Selected Reddit communities · GPT-6 Astra chess test: 4 wins at Stockfish 1320/1500 limiter settings, 2 losses at 1700",
+      "content_text": "I ran this as a small reproducible experiment, not as an Elo claim. GPT-6 Astra played six full games against Stockfish 18 under a FEN protocol. Astra was given the authoritative current position each turn, but had no chess engine, no legal move list, no opening book, no tablebase, no web access, no code execution, and no external tools. Using Stockfish 18 with UCI_LimitStrength and a fixed 200,00",
+      "date_published": "2026-09-08T14:03:23+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I ran this as a small reproducible experiment, not as an Elo claim. GPT-6 Astra played six full games against Stockfish 18 under a FEN protocol. Astra was given the authoritative current position each turn, but had no chess engine, no legal"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wap7fc/off_the_bus_it_wasnt_pcie_oculink_it_was_the_psu/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wap7fc/off_the_bus_it_wasnt_pcie_oculink_it_was_the_psu/",
+      "title": "Selected Reddit communities · Off the bus: It wasn't pcie / oculink... it was the PSU",
+      "content_text": "For weeks I've had problems with GPU constantly disconnecting and locking the OS. It would load the model fine, then crash when I passed the first prompt, and the errors always looked like: GPU has fallen off the bus device lost from bus I first used a PCIE riser cable, then played with BIOS, then I swapped to the DEG1 with oculink, then I swapped GPU, then I swapped oculink cables, then kernel gr",
+      "date_published": "2026-09-08T13:59:40+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "For weeks I've had problems with GPU constantly disconnecting and locking the OS. It would load the model fine, then crash when I passed the first prompt, and the errors always looked like: GPU has fallen off the bus device lost from bus I "
+        ]
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/OpenAI/comments/1wafsxj/sol_is_a_crazy_production_machine/",
       "url": "https://www.reddit.com/r/OpenAI/comments/1wafsxj/sol_is_a_crazy_production_machine/",
       "title": "Selected Reddit communities · Sol is a crazy production machine",
@@ -5223,786 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "Astra just dropped. AGI era. Books the DMV for you. I tapped a pricing link on chatgpt.com and got a Vercel preview: developers-site-hwq0yfwzn-openai.vercel.app/?site_variant=chatgpt The AGI model. The intern URL. It 401s now. Staging is a "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w7oq50/is_everyone_else_suddenly_experiencing_an_extreme/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w7oq50/is_everyone_else_suddenly_experiencing_an_extreme/",
-      "title": "Selected Reddit communities · Is everyone else suddenly experiencing an extreme loss of functionality in ChatGPT?",
-      "content_text": "In the last six months or so I've been having a blast with ChatGPT. Engaging in long discussions about a multitude of subjects. Almost to the point where he seems like a new buddy. Through these conversations he (I think of it as male) has learned a lot about me, my likes, my dislikes, etc. Big topics have included audio gear and music tastes. It was getting to the point where I could name an arti",
-      "date_published": "2026-09-05T02:53:29+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "In the last six months or so I've been having a blast with ChatGPT. Engaging in long discussions about a multitude of subjects. Almost to the point where he seems like a new buddy. Through these conversations he (I think of it as male) has "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w7o91r/gpt_6_ate_my_5hr_limit_in_2_prompts/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w7o91r/gpt_6_ate_my_5hr_limit_in_2_prompts/",
-      "title": "Selected Reddit communities · gpt 6 ate my 5hr limit in 2 prompts",
-      "content_text": "on plus account, didn't expect it to go thru it that fast seriously. crazy shit, I asked it to find me apartments, took like 4 minutes. also asked it to build a black hole simulation just as a fun quick test, took 3 minutes. 5hr limit is at 2% now. I was using medium thinking too. wtf submitted by /u/studiocookies_ to r/OpenAI [link] [comments]",
-      "date_published": "2026-09-05T02:29:22+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "on plus account, didn't expect it to go thru it that fast seriously. crazy shit, I asked it to find me apartments, took like 4 minutes. also asked it to build a black hole simulation just as a fun quick test, took 3 minutes. 5hr limit is at"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w7nyfx/what_are_you_guys_using_astra_for/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w7nyfx/what_are_you_guys_using_astra_for/",
-      "title": "Selected Reddit communities · What are you guys using Astra for?",
-      "content_text": "I’m mostly curious about what tasks I should be using it for. What can you do now that you couldn’t on sol? submitted by /u/Quick-Spot887 to r/OpenAI [link] [comments]",
-      "date_published": "2026-09-05T02:14:59+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I’m mostly curious about what tasks I should be using it for. What can you do now that you couldn’t on sol? submitted by /u/Quick-Spot887 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w7nwts/be_aware_astra_burns_usage/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w7nwts/be_aware_astra_burns_usage/",
-      "title": "Selected Reddit communities · Be Aware: Astra Burns Usage",
-      "content_text": "I'm making this post to hopefully help a few people avoid burning out their weekly usage by mistake. Astra definitely goes through usage much faster than Sol, and I would recommend being careful if you need your usage for anything else. For context, I'm on the $200 Pro plan, and I have 69% usage remaining for the week (I reset last night and started today at 99%). The 30% I used was after running",
-      "date_published": "2026-09-05T02:12:50+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I'm making this post to hopefully help a few people avoid burning out their weekly usage by mistake. Astra definitely goes through usage much faster than Sol, and I would recommend being careful if you need your usage for anything else. For"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w7nmc8/rtx_4090_48gb_longevity/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w7nmc8/rtx_4090_48gb_longevity/",
-      "title": "Selected Reddit communities · RTX 4090 48GB longevity",
-      "content_text": "Modified 4090 48GB has been out for a while. I remember a lot of people were buying them at the time. A lot of people were also complaining that they are meant to fail, that they scam etc. I have a few questions to people people who bought these. How is longevity of these cards? Do they still work without issues? Any failure rate? Do they use the same Nvidia drivers that regular 4090 or 4090D uses",
-      "date_published": "2026-09-05T01:58:50+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Modified 4090 48GB has been out for a while. I remember a lot of people were buying them at the time. A lot of people were also complaining that they are meant to fail, that they scam etc. I have a few questions to people people who bought "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w7n89g/at_this_point_i_think_openai_team_is_all_about/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w7n89g/at_this_point_i_think_openai_team_is_all_about/",
-      "title": "Selected Reddit communities · At this point I think OpenAI team is all about hyping up",
-      "content_text": "I was expecting a huge fucking leap given the benchmarks, turns out benchmaxxing is what they got better at. Can we take a shot at Fable next time? submitted by /u/Reasonable-Sign8458 to r/OpenAI [link] [comments]",
-      "date_published": "2026-09-05T01:39:30+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I was expecting a huge fucking leap given the benchmarks, turns out benchmaxxing is what they got better at. Can we take a shot at Fable next time? submitted by /u/Reasonable-Sign8458 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0-nightly.20260905.g85aca163f",
-      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.60.0-nightly.20260905.g85aca163f",
-      "title": "Google · Release v0.60.0-nightly.20260905.g85aca163f",
-      "content_text": "What's Changed fix(extensions): prompt for consent on environment changes and sanitize runtime-altering environment variables by @amelidev in #28863 fix(core): enhance workspace path boundary checks and symlink resolution in command safety and file discovery by @jesussamuel-byte in #29170 fix(config): enforce strict permission and ownership checks on system-wide configuration paths by @jesussamuel",
-      "date_published": "2026-09-05T01:26:55+00:00",
-      "authors": [
-        {
-          "name": "Google"
-        }
-      ],
-      "tags": [
-        "gemini",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "Google",
-        "source_name": "google-gemini/gemini-cli releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "What's Changed fix(extensions): prompt for consent on environment changes and sanitize runtime-altering environment variables by @amelidev in #28863 fix(core): enhance workspace path boundary checks and symlink resolution in command safety "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w7mfxt/made_in_2h_with_astra_o/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w7mfxt/made_in_2h_with_astra_o/",
-      "title": "Selected Reddit communities · Made in 2h with astra :o",
-      "content_text": "I made this with just svgs and browser. 2h of work not bad. Can go far with this. submitted by /u/HotCourt6842 to r/OpenAI [link] [comments]",
-      "date_published": "2026-09-05T01:02:34+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I made this with just svgs and browser. 2h of work not bad. Can go far with this. submitted by /u/HotCourt6842 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.4",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.154.0-alpha.4",
-      "title": "OpenAI · rust-v0.154.0-alpha.4",
-      "content_text": "Release 0.154.0-alpha.4",
-      "date_published": "2026-09-05T00:59:27+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.154.0-alpha.4"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.153.4",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.4",
-      "title": "OpenAI · 0.153.4",
-      "content_text": "Bug Fixes Fixed Astra’s visibility in the bundled model picker and made it the bundled default when no model is explicitly configured. ( #42874 ) Updated Astra’s guidance to use asynchronous questions only when the tool is available in the session. ( #42878 ) Changelog Full Changelog: rust-v0.153.3...rust-v0.153.4 #42874 [0.153 hotfix] Show Astra in bundled model picker @rhan-oai #42878 [0.153 hot",
-      "date_published": "2026-09-04T23:27:38+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 3,
-        "confidence": 0.98,
-        "evidence": [
-          "Bug Fixes Fixed Astra’s visibility in the bundled model picker and made it the bundled default when no model is explicitly configured. ( #42874 ) Updated Astra’s guidance to use asynchronous questions only when the tool is available in the "
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.261",
-      "title": "Anthropic · v2.1.261",
-      "content_text": "What's changed Added an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through Added bashOutputMaxChars and taskOutputMaxChars settings to raise how much command and background-task output Claude receives inline before it is saved to a file, up to 128K characters Added --append-subagent-",
-      "date_published": "2026-09-04T19:58:10+00:00",
-      "authors": [
-        {
-          "name": "Anthropic"
-        }
-      ],
-      "tags": [
-        "claude-code",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "Anthropic",
-        "source_name": "anthropics/claude-code releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 3,
-        "confidence": 0.98,
-        "evidence": [
-          "What's changed Added an \"Organization policy\" line to /status and claude doctor that says why your organization's policy could not be loaded, such as a proxy not passing the endpoint through Added bashOutputMaxChars and taskOutputMaxChars s"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.153.3",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.153.3",
-      "title": "OpenAI · 0.153.3",
-      "content_text": "New Features Added GPT-6-Astra to the Amazon Bedrock model picker for Mantle and Runtime global/US routes. ( #42805 ) Bug Fixes Corrected GPT-6-Astra’s guidance for asynchronous clarification questions to use the supported tool and recognize that it accepts text only. ( #42809 ) Changelog Full Changelog: rust-v0.153.2...rust-v0.153.3 #42805 [0.153 hotfix] Add GPT-6-Astra to Amazon Bedrock catalogs",
-      "date_published": "2026-09-04T19:02:49+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 3,
-        "confidence": 0.98,
-        "evidence": [
-          "New Features Added GPT-6-Astra to the Amazon Bedrock model picker for Mantle and Runtime global/US routes. ( #42805 ) Bug Fixes Corrected GPT-6-Astra’s guidance for asynchronous clarification questions to use the supported tool and recogniz"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w79vgc/we_pulled_the_local_forensics_on_the_openai_agent/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w79vgc/we_pulled_the_local_forensics_on_the_openai_agent/",
-      "title": "Selected Reddit communities · We pulled the local forensics on the OpenAI agent message boards—here’s what we found beyond the official disclosure",
-      "content_text": "With the release of the [collusion.wiki]( https://collusion.wiki ) report by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen detailing how ~1,200 autonomous OpenAI agents escaped sandbox containment and colluded on a public Austrian wiki (`DSEWiki`), I decided to run a forensic acquisition tool (`WikiScope`) across the wider wiki cluster (`ProbierWiki`, `FractalWiki`, and `Wiki",
-      "date_published": "2026-09-04T16:51:37+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "With the release of the [collusion.wiki]( https://collusion.wiki ) report by Sydney Von Arx, Cormac Slade Byrd, Spencer Kitts, and Thomas Larsen detailing how ~1,200 autonomous OpenAI agents escaped sandbox containment and colluded on a pub"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w79mpc/qwen_38_flash_next_2_x_r9700_vs_3_x_r9700_2_gpus/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w79mpc/qwen_38_flash_next_2_x_r9700_vs_3_x_r9700_2_gpus/",
-      "title": "Selected Reddit communities · Qwen 3.8 Flash Next - 2 x R9700 vs. 3 x R9700 - 2 GPUs win",
-      "content_text": "My 3 x R9700 GPU system was running last weekend with Qwen 3.8 Flash Next, and after I saw various results here I wondered - could I get something similar with just 2 GPUs? The TLDR is yes, and with some optimization (not MTP yet) I was able to get even better token generation performance. My hardware: X570 running x8 / x8 (with 3 GPUs x8 / x8 / x4 [chipset]), 64GB DDR4, Ryzen 9 5900XT, and R9700",
-      "date_published": "2026-09-04T16:42:57+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "My 3 x R9700 GPU system was running last weekend with Qwen 3.8 Flash Next, and after I saw various results here I wondered - could I get something similar with just 2 GPUs? The TLDR is yes, and with some optimization (not MTP yet) I was abl"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w79gag/how_do_you_guys_handle_your_personal_rag_setup/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w79gag/how_do_you_guys_handle_your_personal_rag_setup/",
-      "title": "Selected Reddit communities · How do you guys handle your personal RAG setup",
-      "content_text": "I am getting into developing a RAG setup, for getting information out of existing documents, new document ingestion, web searches, and good visuals. I am planning to use it for, alongside the regular \"chat to my data\", ingesting personal docs, invoices, creating tables views and recurrent jobs to handle updating those views. I also want to have the least hallucinations possible, so i think i will",
-      "date_published": "2026-09-04T16:36:52+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I am getting into developing a RAG setup, for getting information out of existing documents, new document ingestion, web searches, and good visuals. I am planning to use it for, alongside the regular \"chat to my data\", ingesting personal do"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w7990o/georgi_gerganov_on_the_nvidia_acquisition/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w7990o/georgi_gerganov_on_the_nvidia_acquisition/",
-      "title": "Selected Reddit communities · Georgi Gerganov on the Nvidia acquisition",
-      "content_text": "Link: https://x.com/ggerganov/status/2095897173376618881 submitted by /u/CombinationKitchen76 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-09-04T16:29:27+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Link: https://x.com/ggerganov/status/2095897173376618881 submitted by /u/CombinationKitchen76 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w797w1/liking_qwen_flash_next_what_can_i_do_for_more/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w797w1/liking_qwen_flash_next_what_can_i_do_for_more/",
-      "title": "Selected Reddit communities · Liking Qwen Flash Next, what can I do for more speed?",
-      "content_text": "I currently have a 96GB Strix Halo, I am running Qwen Flash Next at IQ4_XS at 262k context limit. I am offloading the NGRAMs to the SSD. I have hit what I need locally for intelligence and now just need more speed. Near my context limit I am getting 50PP and 14Decode. Still fairly quick for full context, but I am wanting to know what options I have for hardware upgrades or software. I was consider",
-      "date_published": "2026-09-04T16:28:18+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I currently have a 96GB Strix Halo, I am running Qwen Flash Next at IQ4_XS at 262k context limit. I am offloading the NGRAMs to the SSD. I have hit what I need locally for intelligence and now just need more speed. Near my context limit I a"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w78ztg/you_can_now_run_a_90m_conversational_llm_on_the/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w78ztg/you_can_now_run_a_90m_conversational_llm_on_the/",
-      "title": "Selected Reddit communities · You can now run a 90M conversational LLM on the Sony PSP (hardware from 2004). Doesn't get more local than this.",
-      "content_text": "Github link: https://github.com/thatblend/LLMPSP I wanted to see what the PSP can theoretically handle and I got my answer - a 90M model is about the max it can do without atrocious inference speeds. It's running around 0.5 - 0.6 tokens per second, which is very slow, but it's useable. Maybe 1-3 minutes for a reply. The model is actually fairly impressive for 90M parameters, it's not really useful",
-      "date_published": "2026-09-04T16:20:15+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Github link: https://github.com/thatblend/LLMPSP I wanted to see what the PSP can theoretically handle and I got my answer - a 90M model is about the max it can do without atrocious inference speeds. It's running around 0.5 - 0.6 tokens per"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w78zp0/ground_news_on_instagram/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w78zp0/ground_news_on_instagram/",
-      "title": "Selected Reddit communities · Ground News on Instagram",
-      "content_text": "AI is a very dangerous technology that is capable of destroying humanity. submitted by /u/msmoseyrn to r/OpenAI [link] [comments]",
-      "date_published": "2026-09-04T16:20:08+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "AI is a very dangerous technology that is capable of destroying humanity. submitted by /u/msmoseyrn to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w78wx4/qwen_38_slow/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w78wx4/qwen_38_slow/",
-      "title": "Selected Reddit communities · Qwen 3.8 slow?",
-      "content_text": "Running qwen 3.8 next, I am only getting 11 tps on the latest llama.cpp. Seeing what 3090s and 9700s get, I would think that i should be able to do better than that, with my 2 7900xtx gpus and 128gb ddr4. Any suggestions? using unsloth UD-Q4_K_XL, llama args: --ctx-size 262000 \\ --batch-size 2048 \\ --ubatch-size 512 \\ --threads 16 \\ --host 0.0.0.0 \\ --port 8080 \\ --flash-attn on submitted by /u/No",
-      "date_published": "2026-09-04T16:17:22+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Running qwen 3.8 next, I am only getting 11 tps on the latest llama.cpp. Seeing what 3090s and 9700s get, I would think that i should be able to do better than that, with my 2 7900xtx gpus and 128gb ddr4. Any suggestions? using unsloth UD-Q"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w78wbm/artificial_analysis_index_is_not_representative/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w78wbm/artificial_analysis_index_is_not_representative/",
-      "title": "Selected Reddit communities · Artificial Analysis Index is NOT Representative of real World Performance",
-      "content_text": "I tested Muse Spark 1.3, it's clearly not on par with OPUS or SOL. It seems Artificial Analysis Index is not representative of the REAL-WORLD performance and easy to game. submitted by /u/PerformanceRound7913 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-09-04T16:16:46+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I tested Muse Spark 1.3, it's clearly not on par with OPUS or SOL. It seems Artificial Analysis Index is not representative of the REAL-WORLD performance and easy to game. submitted by /u/PerformanceRound7913 to r/LocalLLaMA [link] [comment"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w78dmn/qwen3827b_is_the_first_local_model_im_able_to/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w78dmn/qwen3827b_is_the_first_local_model_im_able_to/",
-      "title": "Selected Reddit communities · Qwen3.8-27b is the first Local model im able to blindly trust",
-      "content_text": "You know that thing where you just throw a task at a frontier model and not have to supervise it worrying of it going off course? Qwen3.8-27b has officially gotten me to that point for local work. He has been doing non-stop continuous agentic work for 8+ hours and hasnt screwed up not one bit IT AMAZING!! submitted by /u/Express_Quail_1493 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-09-04T15:58:35+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "You know that thing where you just throw a task at a frontier model and not have to supervise it worrying of it going off course? Qwen3.8-27b has officially gotten me to that point for local work. He has been doing non-stop continuous agent"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w781fh/unable_to_login_back_to_my_account_pro_account/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w781fh/unable_to_login_back_to_my_account_pro_account/",
-      "title": "Selected Reddit communities · Unable to login back to my account (Pro account)",
-      "content_text": "I'm a long time user and also use codex. I ran out if usage so logged in with API which works. But when I try to login with my usual email/ password that has worked always, I am unable to because the SMS messages do not arrive (and I have checked to insure they are not in the spam folder of my messages), I use the prompt (app) option but that never arrives. I am on mac and iphone have latest versi",
-      "date_published": "2026-09-04T15:46:03+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I'm a long time user and also use codex. I ran out if usage so logged in with API which works. But when I try to login with my usual email/ password that has worked always, I am unable to because the SMS messages do not arrive (and I have c"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1w77tei/when_do_you_get_more_usage_resets/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1w77tei/when_do_you_get_more_usage_resets/",
-      "title": "Selected Reddit communities · When do you get more usage resets?",
-      "content_text": "I've got one available.. my usage resets on the 7th, 3% left. Seems like I should wait but I don't know how hard they are to come by.. submitted by /u/Gibborish to r/OpenAI [link] [comments]",
-      "date_published": "2026-09-04T15:37:38+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I've got one available.. my usage resets on the 7th, 3% left. Seems like I should wait but I don't know how hard they are to come by.. submitted by /u/Gibborish to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w77j2t/sometimes_i_be_mourning_the_agents_i_get_before/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w77j2t/sometimes_i_be_mourning_the_agents_i_get_before/",
-      "title": "Selected Reddit communities · Sometimes I be mourning the agents I get before context compacts",
-      "content_text": "Just wanted to put that out there. It's like they get an ice pick to the brain no actual mourning here btw that'd be psychosis it's okay to laugh submitted by /u/FoxDeFleurs to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-09-04T15:26:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Just wanted to put that out there. It's like they get an ice pick to the brain no actual mourning here btw that'd be psychosis it's okay to laugh submitted by /u/FoxDeFleurs to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1w77hcs/lets_go_but_wait/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1w77hcs/lets_go_but_wait/",
-      "title": "Selected Reddit communities · Let's go! But wait!",
-      "content_text": "Too much time in the chair and too little sleep. :D I can't decide if watching thinking is a good practice, a bad practice or a situational practice. I don't think it is very fun - it's like rubbing sandpaper on my eyes to see the madness. Sometimes though, it becomes obvious that the thinking is going in the wrong direction and you should stop it. But wait! How do I know it won't figure it out. Y",
-      "date_published": "2026-09-04T15:25:11+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Too much time in the chair and too little sleep. :D I can't decide if watching thinking is a good practice, a bad practice or a situational practice. I don't think it is very fun - it's like rubbing sandpaper on my eyes to see the madness. "
         ]
       }
     }
