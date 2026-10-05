@@ -7,6 +7,816 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wy1o8a/i_got_qwen_flash_next_q4_running_on_a_mac_mini_m5/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wy1o8a/i_got_qwen_flash_next_q4_running_on_a_mac_mini_m5/",
+      "title": "Selected Reddit communities · I got Qwen Flash Next Q4 running on a Mac Mini m5 64gb with ssd streaming",
+      "content_text": "Bit of a side project I wanted to share. The metrics are 17.5tks decode, 360tks prompt processing based testing against my normal ai usage. I tested a couple of new things others haven’t done (at least that I’ve seen). Setup a carousel buffer for streaming in experts for prompt processing which got my pp +30% tks. Tried a second external ssd to get parallel reads which got my +15% on both prompt p",
+      "date_published": "2026-10-05T06:44:55+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Bit of a side project I wanted to share. The metrics are 17.5tks decode, 360tks prompt processing based testing against my normal ai usage. I tested a couple of new things others haven’t done (at least that I’ve seen). Setup a carousel buff"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1wy1l37/les_comparto_unas_gráficas_de_mi_arquitectura/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1wy1l37/les_comparto_unas_gráficas_de_mi_arquitectura/",
+      "title": "Selected Reddit communities · Les comparto unas gráficas de mi Arquitectura (ASRN) contra Transformer, mamba y RWKV. [D]",
+      "content_text": "¿Dudas, Preguntas] La metí a pelear en una A100 contra Mamba-2 y RWKV-7 y FlashAttention; En la prueba de copiar texto exacto desde lejos, Mamba y RWKV se mueren en 0.2% de exactitud (como era de esperarse por su estado fijo) ASRN saco el 100% y hasta aguantó los 16k tokens sin tener que reentrenar. El consumo de memoria se queda completamente plano en 22.9 GB. Le metas lo que le metas, la VRAM ni",
+      "date_published": "2026-10-05T06:39:17+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "¿Dudas, Preguntas] La metí a pelear en una A100 contra Mamba-2 y RWKV-7 y FlashAttention; En la prueba de copiar texto exacto desde lejos, Mamba y RWKV se mueren en 0.2% de exactitud (como era de esperarse por su estado fijo) ASRN saco el 1"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wy1g24/is_there_an_ai_i_can_use_to_show_pictures_of_my/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wy1g24/is_there_an_ai_i_can_use_to_show_pictures_of_my/",
+      "title": "Selected Reddit communities · Is there an AI I can use to show pictures of my home to it and have it provide me interior design advice on how to decorate.furnish it?",
+      "content_text": "I want my home to be well-decorated, but I'm also a guy, so yeah 😂😂 Plus I'm lazy. It doesn't have to be world-class, just generically competent/average. submitted by /u/Correct-Manner9641 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-05T06:30:11+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I want my home to be well-decorated, but I'm also a guy, so yeah 😂😂 Plus I'm lazy. It doesn't have to be world-class, just generically competent/average. submitted by /u/Correct-Manner9641 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wy14eb/codex_censorship_is_crazy_fyi_chat_is_being/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wy14eb/codex_censorship_is_crazy_fyi_chat_is_being/",
+      "title": "Selected Reddit communities · Codex censorship is crazy. Fyi, chat is being removed and everything will consume usage.",
+      "content_text": "https://preview.redd.it/2gd4fr4ablth1.png?width=673&format=png&auto=webp&s=1d7a2b463ba8ddf89b568fe964eb10093e34013b Removing my post because I mentioned China is crazy. I didn't even say anything, tone down what language? submitted by /u/Current_Balance6692 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-05T06:09:29+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "https://preview.redd.it/2gd4fr4ablth1.png?width=673&format=png&auto=webp&s=1d7a2b463ba8ddf89b568fe964eb10093e34013b Removing my post because I mentioned China is crazy. I didn't even say anything, tone down what language? submitted by /u/Cu"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wy0pd9/look_at_how_they_massacred_my_boy/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wy0pd9/look_at_how_they_massacred_my_boy/",
+      "title": "Selected Reddit communities · Look at how they massacred my boy",
+      "content_text": "From enjoying some very sexy, good-looking, and neat templating that had a lot of colors, appropriate picturing, formatting, and stuff, it suddenly went back to a very ugly Markdown. Why does this happen and any way to get it back? I was just enjoying myself. submitted by /u/Particular-Let-7185 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-05T05:43:20+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "From enjoying some very sexy, good-looking, and neat templating that had a lot of colors, appropriate picturing, formatting, and stuff, it suddenly went back to a very ugly Markdown. Why does this happen and any way to get it back? I was ju"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wy0jrc/reflection_ai_is_about_to_release_a_us_openweight/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wy0jrc/reflection_ai_is_about_to_release_a_us_openweight/",
+      "title": "Selected Reddit communities · Reflection AI Is About to Release a US Open-Weight Model to Take On DeepSeek and Qwen",
+      "content_text": "Looks like new open model coming soon and will be \"strong\" hopefully something under 200b for us memory poor. Also seeing statements about more western open models coming. Hope we get some good competition again on the open front! Here is original artical but its not free to access. Maybe someone has it already here. https://www.axios.com/2026/10/04/reflection-open-weight-ai Oct starting strong! s",
+      "date_published": "2026-10-05T05:33:32+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Looks like new open model coming soon and will be \"strong\" hopefully something under 200b for us memory poor. Also seeing statements about more western open models coming. Hope we get some good competition again on the open front! Here is o"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wy0h2n/annoying_news_capsule_above_chat_box/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wy0h2n/annoying_news_capsule_above_chat_box/",
+      "title": "Selected Reddit communities · Annoying “news” capsule above chat box",
+      "content_text": "I don’t know what to call this “feature” to search for it, and neither does GPT. It says it doesn’t know how to turn it off. It’s annoying and spoiled a sporting event for me (I’ve blacked out the team for you). Does anyone know how to disable this? submitted by /u/jigglebelly69420 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-05T05:28:56+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I don’t know what to call this “feature” to search for it, and neither does GPT. It says it doesn’t know how to turn it off. It’s annoying and spoiled a sporting event for me (I’ve blacked out the team for you). Does anyone know how to disa"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wy0et2/this_was_the_thing_that_made_me_stick_with_claude/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wy0et2/this_was_the_thing_that_made_me_stick_with_claude/",
+      "title": "Selected Reddit communities · This was the thing that made me stick with Claude",
+      "content_text": "After years of building the muscle memory of typing \"code\" to open VS Code in Spotlight, the ChatGPT app came along and bumped itself first somehow (using Codex as a search term, I guess). I know OpenAI will have a better model for a week and then Anthropic a better one the next week and so on. So it got to a point where it's something small like this that makes me decide who do go with. After ope",
+      "date_published": "2026-10-05T05:25:00+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "After years of building the muscle memory of typing \"code\" to open VS Code in Spotlight, the ChatGPT app came along and bumped itself first somehow (using Codex as a search term, I guess). I know OpenAI will have a better model for a week a"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxzfgh/dm_we_can_talk_i_can_run_36b_model_with_i5_6600k/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxzfgh/dm_we_can_talk_i_can_run_36b_model_with_i5_6600k/",
+      "title": "Selected Reddit communities · DM we can talk 👌I can run 36b model with i5 6600k cpu, two ssd with 16gb ram... built on new architecture.",
+      "content_text": "submitted by /u/Dry_Durian_2723 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-05T04:27:03+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/Dry_Durian_2723 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1wxz5qq/distilling_stockfish_on_a_billion_positions_full/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1wxz5qq/distilling_stockfish_on_a_billion_positions_full/",
+      "title": "Selected Reddit communities · Distilling Stockfish on a Billion Positions, Full 3.9B Dataset Available [P]",
+      "content_text": "In this project, I distilled the Stockfish value function into a ResNet/ViT model using 1 billion positions from the Gigafish dataset. The 3.9 billion position dataset is available on huggingface: https://huggingface.co/datasets/lukesalamone/gigafish-3.8b-d10 . It is built from the positions from 37 months of Lichess games. I was interested in the idea that at depth-limited search, the value funct",
+      "date_published": "2026-10-05T04:11:48+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "In this project, I distilled the Stockfish value function into a ResNet/ViT model using 1 billion positions from the Gigafish dataset. The 3.9 billion position dataset is available on huggingface: https://huggingface.co/datasets/lukesalamon"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxyuxx/infermeld_a_linux_kit_for_running_one_gguf_across/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxyuxx/infermeld_a_linux_kit_for_running_one_gguf_across/",
+      "title": "Selected Reddit communities · Infermeld: a Linux kit for running one GGUF across AMD + NVIDIA GPUs with llama.cpp",
+      "content_text": "Following on from club-5060ti and club-rdna16 , I’ve put together Infermeld : a small, open-source Linux companion kit for running one GGUF across an AMD GPU and an NVIDIA GPU, powered by llama.cpp. I’m the maintainer. This is an experimental v0.1.0 release , and I’m looking for people with other mixed GPU combinations to help reproduce the setup and find the rough edges. The idea is practical: if",
+      "date_published": "2026-10-05T03:55:27+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Following on from club-5060ti and club-rdna16 , I’ve put together Infermeld : a small, open-source Linux companion kit for running one GGUF across an AMD GPU and an NVIDIA GPU, powered by llama.cpp. I’m the maintainer. This is an experiment"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxyrkz/from_dec_2024_fields_medalists_terence_tao/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxyrkz/from_dec_2024_fields_medalists_terence_tao/",
+      "title": "Selected Reddit communities · From Dec 2024: Fields medalists Terence Tao, Timothy Gowers, and Richard Borcherds characterized [FrontierMath] Tier 3 as “exceptionally challenging,” with Tao predicting it will “resist AIs for several years.” They were fully saturated <2 years later.",
+      "content_text": "https://epoch.ai/frontiermath/tiers-1-4?tier=Tiers+1-3+%28v2%29&view=graph&tab=release-date submitted by /u/Eliv_nurotic to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-05T03:50:04+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "https://epoch.ai/frontiermath/tiers-1-4?tier=Tiers+1-3+%28v2%29&view=graph&tab=release-date submitted by /u/Eliv_nurotic to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxxrnm/dots_usage_and_review/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxxrnm/dots_usage_and_review/",
+      "title": "Selected Reddit communities · Dots usage and review",
+      "content_text": "Just got the following from openai. \"Your dot is on a break. Congrats you are in the very top users and have hit our abuse prevention limit. Check back in a bit!\" Im on the 200 plan trying to decide whether to upgrade to 500. I wanted to try to push dots to see how well it could work without having to be on my laptop all the time. It was going OK just very slow. I've still got credits a reset and",
+      "date_published": "2026-10-05T02:55:16+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Just got the following from openai. \"Your dot is on a break. Congrats you are in the very top users and have hit our abuse prevention limit. Check back in a bit!\" Im on the 200 plan trying to decide whether to upgrade to 500. I wanted to tr"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxxqfe/strataswiftiq3_xxs_randomly_interjecting/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxxqfe/strataswiftiq3_xxs_randomly_interjecting/",
+      "title": "Selected Reddit communities · strata-swift-iq3_xxs randomly interjecting completely unrelated information in thoughts",
+      "content_text": "I have been using Qwen3.8-27b-iq4xs variants for the past few weeks, tweaking parameters and running random tasks, but I dove into using https://github.com/Niko1221/Strata today and it has given me 2~3x performance on a \"smarter\" strata-swift-iq3_xxs model with my 5070ti! However, I saw something in its reasoning thoughts that just plain didn't make any sense to see there; it was on a sub-task to",
+      "date_published": "2026-10-05T02:53:22+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I have been using Qwen3.8-27b-iq4xs variants for the past few weeks, tweaking parameters and running random tasks, but I dove into using https://github.com/Niko1221/Strata today and it has given me 2~3x performance on a \"smarter\" strata-swi"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxxfyi/dots_muse_cant_resize_browser_to_mobile/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxxfyi/dots_muse_cant_resize_browser_to_mobile/",
+      "title": "Selected Reddit communities · Dots & Muse Can't Resize Browser to Mobile",
+      "content_text": "I'm a web developer, and testing out both Dots and Muse with some website projects. But one thing I've noticed right off the bat, neither of them can actually resize their browsers down to useful mobile sizes. Like 500px seems to be the lowest they can resize. So they can't even confirm whether a mobile design will look good on all mobile devices. Seriously strange limitation to have placed on the",
+      "date_published": "2026-10-05T02:37:40+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I'm a web developer, and testing out both Dots and Muse with some website projects. But one thing I've noticed right off the bat, neither of them can actually resize their browsers down to useful mobile sizes. Like 500px seems to be the low"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.162.0-alpha.14",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.162.0-alpha.14",
+      "title": "OpenAI · 0.162.0-alpha.14",
+      "content_text": "Release 0.162.0-alpha.14",
+      "date_published": "2026-10-05T02:17:14+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.162.0-alpha.14"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261005.gfb972b2f8",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261005.gfb972b2f8",
+      "title": "Google · Release v0.64.0-nightly.20261005.gfb972b2f8",
+      "content_text": "Full Changelog : v0.64.0-nightly.20261003.gfb972b2f8...v0.64.0-nightly.20261005.gfb972b2f8",
+      "date_published": "2026-10-05T01:39:02+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Full Changelog : v0.64.0-nightly.20261003.gfb972b2f8...v0.64.0-nightly.20261005.gfb972b2f8"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxvt41/my_qwen_model_hallucinated_a_signed_url_to/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxvt41/my_qwen_model_hallucinated_a_signed_url_to/",
+      "title": "Selected Reddit communities · My qwen model hallucinated a signed URL to Alibaba cloud, normal or sketchy?",
+      "content_text": "I'm using Qwen3.8-Flash-Next running on my Mac Studio as a daily driver for coding + productivity tasks, and yesterday it did something weird: I had it do some product research on amazon, so it was doing a lot of Web tool calls to amazon.com , until it made one request to routify-file-proxy-sg.oss-ap-southeast-1.aliyuncs.com 🤔 As soon as I noticed this in the tool calls I stopped the session becau",
+      "date_published": "2026-10-05T01:13:22+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I'm using Qwen3.8-Flash-Next running on my Mac Studio as a daily driver for coding + productivity tasks, and yesterday it did something weird: I had it do some product research on amazon, so it was doing a lot of Web tool calls to amazon.co"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxv58h/is_there_seriously_no_way_to_delete_old_finished/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxv58h/is_there_seriously_no_way_to_delete_old_finished/",
+      "title": "Selected Reddit communities · Is there seriously no way to delete old / finished codex projects?",
+      "content_text": "I did some brief research and it seems like you can't delete old projects? Does that mean your computer just clogs up with crap? I guess I could delete the repos, but wouldn't that cause the projects to go haywire like daws do when they search for missing plugins? Edit: found a well hidden remove project button and trashed my repo. I think it worked? submitted by /u/Unlikely-Database-27 to r/OpenA",
+      "date_published": "2026-10-05T00:39:41+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I did some brief research and it seems like you can't delete old projects? Does that mean your computer just clogs up with crap? I guess I could delete the repos, but wouldn't that cause the projects to go haywire like daws do when they sea"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxv4fg/ai_boom_is_far_from_over_as_long_as_it_can_wow_us/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxv4fg/ai_boom_is_far_from_over_as_long_as_it_can_wow_us/",
+      "title": "Selected Reddit communities · AI boom is far from over as long as it can wow us",
+      "content_text": "My thinking is for a boom to be over, we need at least three iterations of updates that fail to wow us. Unfortunately, the new LLMs continue to wow us in all levels in the last iteration: Astra was found to be useful in Blender. This opens up a new and big application. Deepseek 4 Flash 0731 makes 2x Sparks useful and push up Spark prices. Qwen3.8-27B pushes up prices of 3090 et al. An unreleased O",
+      "date_published": "2026-10-05T00:38:31+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "My thinking is for a boom to be over, we need at least three iterations of updates that fail to wow us. Unfortunately, the new LLMs continue to wow us in all levels in the last iteration: Astra was found to be useful in Blender. This opens "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxv1fo/free_local_tools_for_narrated_explainer_videos/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxv1fo/free_local_tools_for_narrated_explainer_videos/",
+      "title": "Selected Reddit communities · Free, local tools for narrated explainer videos? (like explainroo)",
+      "content_text": "I've been using explainroo to make short narrated explainer videos. It runs fully local: Kokoro for the voice, Whisper for word timing, headless Chrome to draw the frames, and ffmpeg to put it together. No API keys needed. It works and I like it but it's very simple. After a few videos everything starts to look the same. Anyone know other free, local options in this space? Tools, pipelines, or you",
+      "date_published": "2026-10-05T00:34:18+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I've been using explainroo to make short narrated explainer videos. It runs fully local: Kokoro for the voice, Whisper for word timing, headless Chrome to draw the frames, and ffmpeg to put it together. No API keys needed. It works and I li"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxul6s/a_personal_ai_that_clones_my_judgment_from/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxul6s/a_personal_ai_that_clones_my_judgment_from/",
+      "title": "Selected Reddit communities · A personal AI that clones my judgment from everyday chats, keeps a RAG cloud AI can't read, and collects the blind spots of eight AIs. Completed on 4 October 2026.",
+      "content_text": "Rent their intelligence. Own your memory. Three things make my personal AI different: 1. A clone of me that gets sharper every day, on its own. A judgment-ownership module learns how I decide from my everyday conversations. I do nothing extra. The more I talk, the closer the clone gets. 2. A private RAG that cloud AI can write into but can never read. Not a prompt rule. There is simply no path. 3.",
+      "date_published": "2026-10-05T00:11:40+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Rent their intelligence. Own your memory. Three things make my personal AI different: 1. A clone of me that gets sharper every day, on its own. A judgment-ownership module learns how I decide from my everyday conversations. I do nothing ext"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxu34d/upgrading_from_1xr9700_to_2xr9700_thoughts_on/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxu34d/upgrading_from_1xr9700_to_2xr9700_thoughts_on/",
+      "title": "Selected Reddit communities · Upgrading from 1xR9700 to 2xR9700. Thoughts on build before buying?",
+      "content_text": "Currently have a R9700 build with 64GB RAM. Want to get a second one for both speed and the ability to run Qwen3.8-Flash-Next at Q4/higher quants of 3.8 27B. Looking for thoughts or any improvements before buying the rest of the parts. Made sure to get a motherboard that supports x8/x8 bifurcation. Some prices, like the RAM, are very cheap as I bought them two years ago and I'm upgrading from a pr",
+      "date_published": "2026-10-04T23:47:48+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Currently have a R9700 build with 64GB RAM. Want to get a second one for both speed and the ability to run Qwen3.8-Flash-Next at Q4/higher quants of 3.8 27B. Looking for thoughts or any improvements before buying the rest of the parts. Made"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxt9qj/now_that_dots_works_proactively_they_should/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxt9qj/now_that_dots_works_proactively_they_should/",
+      "title": "Selected Reddit communities · now that dots works proactively they should create problem solving centers where you share you dot and they work in paralell by the thousands just like they did w navier stokes, just now collaborativelyy",
+      "content_text": "https://preview.redd.it/placnxkhfjth1.png?width=1536&format=png&auto=webp&s=b3ac5d8eb396001ca3b47fb9873681827318e872 then everyone will get their name in something important when breaktrhoughs happens, also you could guide the dot based on the current gathered progress so that it contributes w your ideas, if you are versed in that subject... thats the idea thanks! submitted by /u/Fit_Reindeer9304",
+      "date_published": "2026-10-04T23:07:01+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "https://preview.redd.it/placnxkhfjth1.png?width=1536&format=png&auto=webp&s=b3ac5d8eb396001ca3b47fb9873681827318e872 then everyone will get their name in something important when breaktrhoughs happens, also you could guide the dot based on "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wxsawe/spopi_ui_and_editor_around_pi_that_pi_can_change/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wxsawe/spopi_ui_and_editor_around_pi_that_pi_can_change/",
+      "title": "Selected Reddit communities · SPOPI: UI and editor around Pi that Pi can change itself",
+      "content_text": "Hi all. Happy to share my take on a PI UI that I tried to create in PI's spirit. It's definitely still beta but it works well enough as my daily driver for simple projects and phone chat support. Fully local, fully offline, no telemetry. Why another Pi GUI? I wanted a simple editor around Pi that Pi itself can change and is fully aware of. Ask Pi for a different layout, colour, button, support for",
+      "date_published": "2026-10-04T22:20:42+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hi all. Happy to share my take on a PI UI that I tried to create in PI's spirit. It's definitely still beta but it works well enough as my daily driver for simple projects and phone chat support. Fully local, fully offline, no telemetry. Wh"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxsa8k/chatgpt_sites_deployment_fails_with_incomplete/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxsa8k/chatgpt_sites_deployment_fails_with_incomplete/",
+      "title": "Selected Reddit communities · ChatGPT Sites deployment fails with “incomplete input: SQLITE_ERROR” on a D1 trigger migration. Local tests pass, Windows CRLF found in upload.",
+      "content_text": "Has anyone hit this with ChatGPT Sites and found a supported recovery path? I’m updating an existing Site using its managed publishing workflow with Cloudflare D1 and Drizzle migrations. The previous release remains live. Source push and saving the new version both succeeded, but deployment failed during database migration with: incomplete input: SQLITE_ERROR The new migration creates two SQLite t",
+      "date_published": "2026-10-04T22:19:51+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Has anyone hit this with ChatGPT Sites and found a supported recovery path? I’m updating an existing Site using its managed publishing workflow with Cloudflare D1 and Drizzle migrations. The previous release remains live. Source push and sa"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1wxsa2t/were_the_limits_on_the_original_chatgpt_pro_200/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1wxsa2t/were_the_limits_on_the_original_chatgpt_pro_200/",
+      "title": "Selected Reddit communities · Were the limits on the original ChatGPT Pro 200 subs kept the same or are they the same as whatever the new subscription gives?",
+      "content_text": "Could not find a straightforward questions whether there is difference between new subscriptions and old subscriptions. submitted by /u/gajus0 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-04T22:19:39+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Could not find a straightforward questions whether there is difference between new subscriptions and old subscriptions. submitted by /u/gajus0 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/OpenAI/comments/1wxlc3e/what_could_have_been_done_here/",
       "url": "https://www.reddit.com/r/OpenAI/comments/1wxlc3e/what_could_have_been_done_here/",
       "title": "Selected Reddit communities · What could have been done here?",
@@ -5195,816 +6005,6 @@
         "confidence": 0.65,
         "evidence": [
           "Folks 👋! Over the last few days I've been digging into how to configure Cursor and Codex so that usage limits get used as efficiently as possible. My current setup: Main agent: GPT-6.1 Sol (Medium) Subagent: GPT-6 Luna (Medium) We often rea"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv6zkk/any_good_uncensored_ornith159b/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv6zkk/any_good_uncensored_ornith159b/",
-      "title": "Selected Reddit communities · Any good uncensored Ornith1.5-9B",
-      "content_text": "Everything I tried refuses basic tests even if they have \"0/100 refusal\". Anything you use that's good? submitted by /u/circumcised_hobbit to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-10-01T18:19:09+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Everything I tried refuses basic tests even if they have \"0/100 refusal\". Anything you use that's good? submitted by /u/circumcised_hobbit to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv6w8v/feature_request_native_workspace_orchestration_ui/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv6w8v/feature_request_native_workspace_orchestration_ui/",
-      "title": "Selected Reddit communities · Feature Request: Native Workspace Orchestration UI — Stop Punishing Disciplined Power Users for Interface Inefficiencies",
-      "content_text": "Dear OpenAI Product and Infrastructure Teams, The DevDay 2026 decision to cut the Pro 200 usage tier from a 20x multiplier down to 10x is a deeply frustrating and unjust punishment for disciplined power users . Those of us building complex software, managing multi-file workspaces, and writing local LLM launchers have spent months engineering rigorous, custom multi-agent routing frameworks. We do t",
-      "date_published": "2026-10-01T18:15:41+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Dear OpenAI Product and Infrastructure Teams, The DevDay 2026 decision to cut the Pro 200 usage tier from a 20x multiplier down to 10x is a deeply frustrating and unjust punishment for disciplined power users . Those of us building complex "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv6qqb/having_trouble_migrating_to_plugins_after_custom/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv6qqb/having_trouble_migrating_to_plugins_after_custom/",
-      "title": "Selected Reddit communities · Having trouble migrating to Plugin's after Custom GPTs are deprecated",
-      "content_text": "I have this GPT I use almost everyday that connects to AWS API Gateway and lambdas which pulls my runs either from Strava, or from a database. Its super useful ask questions like \"how many miles have I run in this marathon build vs my build in 2023\" etc. With custom GPTs going away, it seems like a lot of functionality for Custom API calls are going away. I set up a MCP server but it seems like al",
-      "date_published": "2026-10-01T18:09:53+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I have this GPT I use almost everyday that connects to AWS API Gateway and lambdas which pulls my runs either from Strava, or from a database. Its super useful ask questions like \"how many miles have I run in this marathon build vs my build"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv6eyc/whats_the_best_setup_for_qwen38_27b_for_a_16_gig/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv6eyc/whats_the_best_setup_for_qwen38_27b_for_a_16_gig/",
-      "title": "Selected Reddit communities · What's the best setup for Qwen3.8 27b for a 16 gig VRAM?",
-      "content_text": "Hello guys! I have been experimenting with qwen 3.8 for a long time and I hadn't been able to get reasonable speed. I am on an 5060Ti 16 GB, and although this gpu can game, I am aware that AI demands more than 16 GB. I am on a Fedora 44, AMD Ryzen 9600x and 16 GB system ram (16 GB system ram and 16 GB vram, totaling to 32 GB) and I would like to use llamacpp, although I would use any other tool if",
-      "date_published": "2026-10-01T17:57:44+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hello guys! I have been experimenting with qwen 3.8 for a long time and I hadn't been able to get reasonable speed. I am on an 5060Ti 16 GB, and although this gpu can game, I am aware that AI demands more than 16 GB. I am on a Fedora 44, AM"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv6dab/marketing_effectiveness_lesson_no1_know_your/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv6dab/marketing_effectiveness_lesson_no1_know_your/",
-      "title": "Selected Reddit communities · Marketing effectiveness lesson No.1: Know your audience.",
-      "content_text": "submitted by /u/mindaugasrudokas to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T17:56:00+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/mindaugasrudokas to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv69wj/future_of_openai_local_ai/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv69wj/future_of_openai_local_ai/",
-      "title": "Selected Reddit communities · Future of OpenAI + Local AI",
-      "content_text": "Codex Cloud, Dots, and the existing remote Codex all allow users to untether themselves from their PC, and now untether themselves from even owning a PC with their server based Codex Cloud and Dots that can run 24/7. Combine this with Meta’s & OpenAI’s planned hardware releases and the goal is clear: work around Microsoft/Apple’s control of user hardware, provide AI devices that complement and eve",
-      "date_published": "2026-10-01T17:52:23+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Codex Cloud, Dots, and the existing remote Codex all allow users to untether themselves from their PC, and now untether themselves from even owning a PC with their server based Codex Cloud and Dots that can run 24/7. Combine this with Meta’"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv69ef/very_nice/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv69ef/very_nice/",
-      "title": "Selected Reddit communities · Very nice?",
-      "content_text": "submitted by /u/Sinkencronge to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T17:51:50+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/Sinkencronge to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv672i/future_of_local_ai_after_openai_devday/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv672i/future_of_local_ai_after_openai_devday/",
-      "title": "Selected Reddit communities · Future of Local AI after OpenAI DevDay",
-      "content_text": "Codex Cloud, Dots, and the existing remote Codex all allow users to untether themselves from their PC, and now untether themselves from even owning a PC with their server based Codex Cloud and Dots that can run 24/7. Combine this with Meta’s & OpenAI’s planned hardware releases and the goal is clear: work around Microsoft/Apple’s control of user hardware, provide AI devices that complement and eve",
-      "date_published": "2026-10-01T17:49:20+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Codex Cloud, Dots, and the existing remote Codex all allow users to untether themselves from their PC, and now untether themselves from even owning a PC with their server based Codex Cloud and Dots that can run 24/7. Combine this with Meta’"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv61dm/its_too_easy/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv61dm/its_too_easy/",
-      "title": "Selected Reddit communities · It’s too easy!",
-      "content_text": "Listen, most people don’t have a deep understanding of how much water data centers actually use. But if you’re on Oracle or OpenAI’s PR team, how does nobody look at this before publishing it and say, “Maybe LESS WATER FOR NEW MEXICO isn’t the winning slogan we think it is”? 😂 submitted by /u/Expert-Cut-5791 to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T17:43:17+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Listen, most people don’t have a deep understanding of how much water data centers actually use. But if you’re on Oracle or OpenAI’s PR team, how does nobody look at this before publishing it and say, “Maybe LESS WATER FOR NEW MEXICO isn’t "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv5jvq/openai_ignored_employees_who_warned_it_wasnt/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv5jvq/openai_ignored_employees_who_warned_it_wasnt/",
-      "title": "Selected Reddit communities · OpenAI Ignored Employees Who Warned It Wasn’t Doing Enough About Security (Gift Link)",
-      "content_text": "To the surprise of fucking no one. They literally don’t know how to secure a sandbox. Just a fucking circus. submitted by /u/Bloated_Plaid to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T17:25:23+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "To the surprise of fucking no one. They literally don’t know how to secure a sandbox. Just a fucking circus. submitted by /u/Bloated_Plaid to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv5irv/how_exactly_are_we_supposed_to_prepare_for_near/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv5irv/how_exactly_are_we_supposed_to_prepare_for_near/",
-      "title": "Selected Reddit communities · how exactly are we supposed to prepare for near term ai risks?",
-      "content_text": "I’m talking about things like internet outages. In a few months, I’m sure someone will try to jailbreak a frontier model and run it on AWS or Azure, which may or may not work. Or maybe Qwen 5, or something similar, could be used by Russia in an attempt to take down the West’s internet in some kind of superhacker scenario. How do we prepare for these risks? There’s also bioterrorism, though I don’t",
-      "date_published": "2026-10-01T17:24:15+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I’m talking about things like internet outages. In a few months, I’m sure someone will try to jailbreak a frontier model and run it on AWS or Azure, which may or may not work. Or maybe Qwen 5, or something similar, could be used by Russia i"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv5h8x/update_2_post_training_yandexaliceai80ba3b/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv5h8x/update_2_post_training_yandexaliceai80ba3b/",
-      "title": "Selected Reddit communities · Update #2: Post training yandex/AliceAI-80B-A3B [instruct!] from scratch",
-      "content_text": "Last update: https://www.reddit.com/r/LocalLLaMA/comments/1wu9ksu/update_yandexaliceai_80ba3b_fine_tune_progress/ - basically, an instruct fine tune on the base model using a synthetic distilled data set. I've been posting regular updates so I imagine at least a few people have seen this. Live stream: https://figure-bios-expect-cio.trycloudflare.com/ The initial train is finally almost done, after",
-      "date_published": "2026-10-01T17:22:35+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Last update: https://www.reddit.com/r/LocalLLaMA/comments/1wu9ksu/update_yandexaliceai_80ba3b_fine_tune_progress/ - basically, an instruct fine tune on the base model using a synthetic distilled data set. I've been posting regular updates s"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv5gm4/how_to_know_about_optimized_engines/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv5gm4/how_to_know_about_optimized_engines/",
-      "title": "Selected Reddit communities · How to know about optimized engines",
-      "content_text": "Optimizing an engine for a family of models and hardware combination seems very appealing. As someone who uses qwen3.6 and 3.8 a lot, and is evaluating hardware options before going fully local, it's hard to keep up with the state of things. Huggingface made it possible to see the development branches and derivative modifications to models. Is there something similar for inference engines yet? I'v",
-      "date_published": "2026-10-01T17:21:55+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Optimizing an engine for a family of models and hardware combination seems very appealing. As someone who uses qwen3.6 and 3.8 a lot, and is evaluating hardware options before going fully local, it's hard to keep up with the state of things"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv5a62/2fa_silently_turned_on_despited_i_never_toggled/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv5a62/2fa_silently_turned_on_despited_i_never_toggled/",
-      "title": "Selected Reddit communities · 2FA silently turned on despited I never toggled it on",
-      "content_text": "2FA silently turned on despite I never toggled it on after I started subbing for plus in the new account. I updated the chatgpt app on the desktop and cannot log in again, it insists me to input authentication code sent on my device which has never been added. I'm still logged in into it on my phone but I cannot remove the 2fa cause it requires 2fa code to remove it which I never even set it up. I",
-      "date_published": "2026-10-01T17:15:12+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "2FA silently turned on despite I never toggled it on after I started subbing for plus in the new account. I updated the chatgpt app on the desktop and cannot log in again, it insists me to input authentication code sent on my device which h"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv59q6/ai_godfather_yann_lecun_has_zero_concerns_about/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv59q6/ai_godfather_yann_lecun_has_zero_concerns_about/",
-      "title": "Selected Reddit communities · AI ‘godfather’ Yann LeCun has ‘zero concerns’ about human extinction, says Anthropic CEO Dario Amodei is ‘deluded’",
-      "content_text": "submitted by /u/sourdub to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T17:14:45+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/sourdub to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.160.0",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.160.0",
-      "title": "OpenAI · rust-v0.160.0",
-      "content_text": "Release 0.160.0",
-      "date_published": "2026-10-01T17:13:38+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 3,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.160.0"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv51nt/nirnay_450m_decision_model_beats_jev_on_banking77/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv51nt/nirnay_450m_decision_model_beats_jev_on_banking77/",
-      "title": "Selected Reddit communities · NIRNAY: 450M decision model beats Jev on Banking77, runs on CPU",
-      "content_text": "Built a small open decision model for intent classification and routing. 450M params (Laya fork plus ~30M), one forward pass gives calibrated probabilities, no text generation. Banking77 test, 3,080 cases: **0.8792**, Brier 0.208, fitted ECE 0.045. Same cases through Jev 1.13.0: 0.803. Caveat, stated plainly: we fine-tuned, Jev answered zero-shot. Fine-tune beats API on your own data, that is the",
-      "date_published": "2026-10-01T17:06:19+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Built a small open decision model for intent classification and routing. 450M params (Laya fork plus ~30M), one forward pass gives calibrated probabilities, no text generation. Banking77 test, 3,080 cases: **0.8792**, Brier 0.208, fitted EC"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv4zzi/clef_open_weights_decision_model_by_cloudflare/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv4zzi/clef_open_weights_decision_model_by_cloudflare/",
-      "title": "Selected Reddit communities · Clef: Open Weights decision model by Cloudflare",
-      "content_text": "submitted by /u/paf1138 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-10-01T17:04:38+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/paf1138 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv4yph/openai_parts_ways_with_3_researchers_who/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv4yph/openai_parts_ways_with_3_researchers_who/",
-      "title": "Selected Reddit communities · \"OpenAI Parts Ways With 3 Researchers Who Allegedly Shared Confidential Information\" with AI safety organization",
-      "content_text": "submitted by /u/gwern to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T17:03:19+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/gwern to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1wv4vot/heretic_is_on_pewdiepie/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wv4vot/heretic_is_on_pewdiepie/",
-      "title": "Selected Reddit communities · Heretic is on PewDiePie!",
-      "content_text": "So I haven’t played a computer game in 20 years, and I know nothing about Minecraft, and I definitely prefer classical literature over YouTube culture, but even I have heard about the individual called PewDiePie, for two reasons: His monicker starts with the initials of my own name I remember a recurring Internet meme a few years ago where he was competing for the most subscribers with an Indian f",
-      "date_published": "2026-10-01T17:00:21+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So I haven’t played a computer game in 20 years, and I know nothing about Minecraft, and I definitely prefer classical literature over YouTube culture, but even I have heard about the individual called PewDiePie, for two reasons: His monick"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv4umd/when_will_the_decision_api_be_released/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv4umd/when_will_the_decision_api_be_released/",
-      "title": "Selected Reddit communities · When will the Decision API be released?",
-      "content_text": "They said it will be coming in the upcoming days? What does this mean more precisely? I have use case that Im using Jev for. Decision API would suit me better with its image input capabilities. Release now pls! submitted by /u/RegardedDev to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T16:59:16+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "They said it will be coming in the upcoming days? What does this mean more precisely? I have use case that Im using Jev for. Decision API would suit me better with its image input capabilities. Release now pls! submitted by /u/RegardedDev t"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv4p19/or_maybe_it_just_seems_that_way_and_everythings/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv4p19/or_maybe_it_just_seems_that_way_and_everythings/",
-      "title": "Selected Reddit communities · Or maybe it just seems that way, and everything's fine?....",
-      "content_text": "I have a very strong feeling that, starting yesterday or today, Astra has become just a little bit weaker... Of course, I'm not sure, and I'm most likely wrong, but it really does seem like it's gotten weaker. Of course, I’m sure this has nothing to do with the fact that version 6.1 was recently released, and they need to show it in the best light when comparing 6.1 and Astra… That’s just how it i",
-      "date_published": "2026-10-01T16:53:22+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I have a very strong feeling that, starting yesterday or today, Astra has become just a little bit weaker... Of course, I'm not sure, and I'm most likely wrong, but it really does seem like it's gotten weaker. Of course, I’m sure this has n"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.13",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.13",
-      "title": "OpenAI · 0.161.0-alpha.13",
-      "content_text": "Release 0.161.0-alpha.13",
-      "date_published": "2026-10-01T16:47:56+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.161.0-alpha.13"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1wv4ic5/i_tested_gpt61_sol_reasoning_levels_on_the_exact/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1wv4ic5/i_tested_gpt61_sol_reasoning_levels_on_the_exact/",
-      "title": "Selected Reddit communities · I tested GPT-6.1 SOL reasoning levels on the exact same 3D prompt",
-      "content_text": "GPT-6.1 SOL also looks clearly better than GPT-6.0 SOL in this test, especially at Very High reasoning. submitted by /u/bursinru to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-01T16:46:16+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "GPT-6.1 SOL also looks clearly better than GPT-6.0 SOL in this test, especially at Very High reasoning. submitted by /u/bursinru to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.12",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.12",
-      "title": "OpenAI · 0.161.0-alpha.12",
-      "content_text": "Release 0.161.0-alpha.12",
-      "date_published": "2026-10-01T14:54:43+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.161.0-alpha.12"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.11",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.11",
-      "title": "OpenAI · 0.161.0-alpha.11",
-      "content_text": "Release 0.161.0-alpha.11",
-      "date_published": "2026-10-01T12:32:41+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.161.0-alpha.11"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.10",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.161.0-alpha.10",
-      "title": "OpenAI · 0.161.0-alpha.10",
-      "content_text": "Release 0.161.0-alpha.10",
-      "date_published": "2026-10-01T10:40:16+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.161.0-alpha.10"
         ]
       }
     }
