@@ -7,6 +7,786 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3usg5/what_does_it_say_about_ai_and_people_if_i_could/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3usg5/what_does_it_say_about_ai_and_people_if_i_could/",
+      "title": "Selected Reddit communities · What does it say about AI and people if I could show a post on Reddit and people only see the positivity, and yet I show the exact same post to two different chatbots and they both picked up on the negativity.",
+      "content_text": "I don't want to get into the details right here, but I made a post about a personal subject and posted it on two subreddits where I talk about something in a way that's filled with lots of negativity. And all the people who saw it there completely missed the negativity, completely missed my point, and just unironically congratulated me. And I showed the exact same post to both ChatGPT and Google,",
+      "date_published": "2026-10-12T06:45:42+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I don't want to get into the details right here, but I made a post about a personal subject and posted it on two subreddits where I talk about something in a way that's filled with lots of negativity. And all the people who saw it there com"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3u3y5/receipt_scanner_that_runs_a_finetuned_08b_vision/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3u3y5/receipt_scanner_that_runs_a_finetuned_08b_vision/",
+      "title": "Selected Reddit communities · Receipt scanner that runs a fine-tuned 0.8B vision model on the phone (free) - detailed cost tracking",
+      "content_text": "I wanted to track grocery spending per item without sending my receipts to anyone, so I built an Android app around a small vision model that reads a photo of a receipt into JSON: store, date, total, every line item. (iOS will take a couple more days to be checked by the Apple team.) Also, most apps only allow broad categories like “Food” or whatever, but I wanted to see a more detailed breakdown,",
+      "date_published": "2026-10-12T06:04:05+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I wanted to track grocery spending per item without sending my receipts to anyone, so I built an Android app around a small vision model that reads a photo of a receipt into JSON: store, date, total, every line item. (iOS will take a couple"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3th4p/decision_30_open_multimodal_decision_models_from/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3th4p/decision_30_open_multimodal_decision_models_from/",
+      "title": "Selected Reddit communities · Decision 3.0: open, multimodal decision models from 0.6B to 27B. Ranks #1 on both Jev Decision Index boards",
+      "content_text": "With the vLLM Semantic Router team we released Decision 3.0 (d3) , our new SOTA decision model family ranging from 0.6B to 27B, Apache-2.0, all reading text, images and video. How it works - Built on Qwen3.5 (0.8B / 2B / 4B / 9B) and Qwen3.8-27B. The parameter counts include the vision encoder: 0.33B in the 4B, 0.46B in the 27B. - Three decision types: choice, yes/no, score. Probability for every",
+      "date_published": "2026-10-12T05:26:01+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "With the vLLM Semantic Router team we released Decision 3.0 (d3) , our new SOTA decision model family ranging from 0.6B to 27B, Apache-2.0, all reading text, images and video. How it works - Built on Qwen3.5 (0.8B / 2B / 4B / 9B) and Qwen3."
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3sx3d/bitexact_speculative_decoding_on_qwen3827b_106_ts/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3sx3d/bitexact_speculative_decoding_on_qwen3827b_106_ts/",
+      "title": "Selected Reddit communities · Bit-exact speculative decoding on Qwen3.8-27B: 106 t/s on one RTX PRO 6000",
+      "content_text": "Follow-up to my earlier post on Qwen3.8-27B decode speed: https://www.reddit.com/r/LocalLLaMA/comments/1vuli3h/ Some people asked for the recipe, it's at the bottom. That post said \"lossless\". I meant BF16 weights and BF16 KV, and that part holds. The outputs didn't match no speculation, though. I checked token ids, not text. vLLM nightly, DFlash2 k=9 + XQA, BF16, temp 0, one request at a time, a",
+      "date_published": "2026-10-12T04:53:57+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Follow-up to my earlier post on Qwen3.8-27B decode speed: https://www.reddit.com/r/LocalLLaMA/comments/1vuli3h/ Some people asked for the recipe, it's at the bottom. That post said \"lossless\". I meant BF16 weights and BF16 KV, and that part"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3sqxc/vectordash_a_full_windows_search_replacement/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3sqxc/vectordash_a_full_windows_search_replacement/",
+      "title": "Selected Reddit communities · VectorDash: A full Windows search replacement incorporating Embeddinggemma-2",
+      "content_text": "Inspired by DigUp for macOS, VectorDash aims to be a full Windows 11 search replacement, powered by EmbeddingGemma 2 . Full indexing: search by meaning or exact words across photos, screenshots, audio, video, PDFs and Office documents. Find “images of dogs,” a podcast discussion, or a specific PDF clause—with page and timestamp matches. Supports multilingual and optional code search. This uses Emb",
+      "date_published": "2026-10-12T04:44:16+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Inspired by DigUp for macOS, VectorDash aims to be a full Windows 11 search replacement, powered by EmbeddingGemma 2 . Full indexing: search by meaning or exact words across photos, screenshots, audio, video, PDFs and Office documents. Find"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3san4/why_do_some_people_with_adhd_find_ai_tools_so/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3san4/why_do_some_people_with_adhd_find_ai_tools_so/",
+      "title": "Selected Reddit communities · Why do some people with ADHD find AI tools so useful?",
+      "content_text": "I've heard some people with ADHD say AI tools make parts of their work easier. I'm curious which parts help, because \"AI improves productivity\" is too vague to tell me much. Is it breaking a large, fuzzy task into a first step? Getting feedback right away? Having somewhere to put an idea before you lose your train of thought? Or simply getting a tedious task out of the way? Job applications are on",
+      "date_published": "2026-10-12T04:18:37+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I've heard some people with ADHD say AI tools make parts of their work easier. I'm curious which parts help, because \"AI improves productivity\" is too vague to tell me much. Is it breaking a large, fuzzy task into a first step? Getting feed"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3s4qu/strixllama_new_branch_prompt_processing_2154_over/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3s4qu/strixllama_new_branch_prompt_processing_2154_over/",
+      "title": "Selected Reddit communities · strix-llama new branch: prompt processing +21–54% over Vulkan and up to 2.7× over stock ROCm kernel at 128k, same outputs quality",
+      "content_text": "I've been tuning llama.cpp on my Strix Halo box (Radeon 8060S, 128 GB) and the numbers are good enough to share. It's a branch called rdna35-perf on top of halo-box/strix-llama.cpp , a llama.cpp fork aimed at Strix Halo: https://github.com/asf0/strix-llama.cpp/tree/rdna35-perf (10 commits, ROCm/HIP only) TL;DR Prompt processing: 21–54% faster than Vulkan, and 8–174% faster than stock ROCm. The lea",
+      "date_published": "2026-10-12T04:09:27+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I've been tuning llama.cpp on my Strix Halo box (Radeon 8060S, 128 GB) and the numbers are good enough to share. It's a branch called rdna35-perf on top of halo-box/strix-llama.cpp , a llama.cpp fork aimed at Strix Halo: https://github.com/"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3rtkb/what_are_you_doing_for_a_reliable_well_designed/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3rtkb/what_are_you_doing_for_a_reliable_well_designed/",
+      "title": "Selected Reddit communities · What are you doing for a reliable, well designed local model based AI search?",
+      "content_text": "Ive been using OpenWebUI's inbuilt web search and I can't put my finger on it, but it's not quite as polished, reliable, seamless as using Claude or Gemini. And its often slow beyond a limit that makes me subconsciously not want to use it - I understand its unlikely to get to cloud speed without making huge compromises in model quality/quantization, but im ok with something like a minute or two ma",
+      "date_published": "2026-10-12T03:52:59+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Ive been using OpenWebUI's inbuilt web search and I can't put my finger on it, but it's not quite as polished, reliable, seamless as using Claude or Gemini. And its often slow beyond a limit that makes me subconsciously not want to use it -"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3rdtm/do_you_actually_test_openmodel_inference/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3rdtm/do_you_actually_test_openmodel_inference/",
+      "title": "Selected Reddit communities · Do you actually test open-model inference compatibility?",
+      "content_text": "Hey everyone, So the same model can behave differently depending on the inference engine (llama.cpp, vLLM, Ollama, SGLang, etc.), model quantization, chat template, or runtime version. Sometimes behavior breaks after upgrading a runtime or switching to a different model artifact,tool calling, structured output, streaming, or other How do you guys handle this. Have you ever ran into compatibility i",
+      "date_published": "2026-10-12T03:28:58+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hey everyone, So the same model can behave differently depending on the inference engine (llama.cpp, vLLM, Ollama, SGLang, etc.), model quantization, chat template, or runtime version. Sometimes behavior breaks after upgrading a runtime or "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3r5zs/i_made_chatgpt_claude_gemini_etc_into_free/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3r5zs/i_made_chatgpt_claude_gemini_etc_into_free/",
+      "title": "Selected Reddit communities · I made ChatGPT, Claude, Gemini, etc. into FREE text-to-speech sites — perfect for audiobooks and more!",
+      "content_text": "Nowadays, all popular ai chatting websites like qwen, chatgpt, gemini, claude, etc. come with a read aloud functionality that allows users to read aloud the AI's responses. I used that feature to instead make the AI repeat back the text that i gave it -- effectively turning the platforms into text to speech tools. The voices sound really nice and it's free to use! You can get all of these extensio",
+      "date_published": "2026-10-12T03:16:54+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Nowadays, all popular ai chatting websites like qwen, chatgpt, gemini, claude, etc. come with a read aloud functionality that allows users to read aloud the AI's responses. I used that feature to instead make the AI repeat back the text tha"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3r37a/when_will_openai_prioritise_stability_of_cloud/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3r37a/when_will_openai_prioritise_stability_of_cloud/",
+      "title": "Selected Reddit communities · When will OpenAI prioritise stability of Cloud Agents ?",
+      "content_text": "For a long time ChatGPT Mobile App didn’t have an in-built Codex Cloud Agents support and now even when it does it is very unreliable and incomplete. We can’t see Diffs, it is slower and just feels like Chat with GitHub Connection. Long Agentic tasks on keep getting stuck after some time and once the session gets long somehow luckily we can’t load the chat later without trying thousands of times.",
+      "date_published": "2026-10-12T03:12:49+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "For a long time ChatGPT Mobile App didn’t have an in-built Codex Cloud Agents support and now even when it does it is very unreliable and incomplete. We can’t see Diffs, it is slower and just feels like Chat with GitHub Connection. Long Age"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3qx4i/best_async_speech_to_text_ai_transcriber/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3qx4i/best_async_speech_to_text_ai_transcriber/",
+      "title": "Selected Reddit communities · Best async speech to text ai transcriber?",
+      "content_text": "Best async speech to text ai transcriber? API submitted by /u/cooking-chef-2000 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-12T03:03:46+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Best async speech to text ai transcriber? API submitted by /u/cooking-chef-2000 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3qujn/astra_cant_even_build_me_a_6_figure_business_it/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3qujn/astra_cant_even_build_me_a_6_figure_business_it/",
+      "title": "Selected Reddit communities · Astra can't even build me a 6 figure business. It ate all my credits",
+      "content_text": "I set Astra on ultra mode and told it to make me a 6 figure business. It ran for 3 days and then ran out of usage. I had some resets banked which was able to keep me going for another 4 days, but after a week of running, I still don't have any money. I have some spending capacity on my Visa and American Express credit cards. Should I buy 19 more subscriptions??? Or should I just switch to Claud? T",
+      "date_published": "2026-10-12T03:00:15+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I set Astra on ultra mode and told it to make me a 6 figure business. It ran for 3 days and then ran out of usage. I had some resets banked which was able to keep me going for another 4 days, but after a week of running, I still don't have "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3qrzq/how_much_should_go_to_the_expert_behind_a_paid_ai/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3qrzq/how_much_should_go_to_the_expert_behind_a_paid_ai/",
+      "title": "Selected Reddit communities · How much should go to the expert behind a paid AI twin?",
+      "content_text": "An AI twin could use an OpenAI model, but the reason people choose it might be the specialist behind it. That person teaches it their approach, fixes answers and brings a community that trusts their knowledge. The service provides the model and runs the conversations. If people pay to use it, how would you think about sharing that money? What would make it a fair deal for the person contributing t",
+      "date_published": "2026-10-12T02:56:32+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "An AI twin could use an OpenAI model, but the reason people choose it might be the specialist behind it. That person teaches it their approach, fixes answers and brings a community that trusts their knowledge. The service provides the model"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0-nightly.20261012.g9b6e0265d",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.65.0-nightly.20261012.g9b6e0265d",
+      "title": "Google · Release v0.65.0-nightly.20261012.g9b6e0265d",
+      "content_text": "Full Changelog : v0.65.0-nightly.20261010.g9b6e0265d...v0.65.0-nightly.20261012.g9b6e0265d",
+      "date_published": "2026-10-12T01:29:25+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Full Changelog : v0.65.0-nightly.20261010.g9b6e0265d...v0.65.0-nightly.20261012.g9b6e0265d"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3nock/full_resets_and_what_happens_if_you_upgrade/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3nock/full_resets_and_what_happens_if_you_upgrade/",
+      "title": "Selected Reddit communities · Full resets, and what happens if you upgrade?",
+      "content_text": "I have a couple of accounts with OpenAI for different businesses, all legitimate. And one, I was just going to shut down is a $150 AUD account, $100 US dollar- pro 5x. And I went to close that account and noticed that there's three full account resets in there. So I'm just wondering, and I'm not expecting something for nothing, but I'm just wondering if I upgrade, will they become resets for the 2",
+      "date_published": "2026-10-12T00:17:03+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I have a couple of accounts with OpenAI for different businesses, all legitimate. And one, I was just going to shut down is a $150 AUD account, $100 US dollar- pro 5x. And I went to close that account and noticed that there's three full acc"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3n8ex/opencode_2026_is_out_if_you_need_to_constantly/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3n8ex/opencode_2026_is_out_if_you_need_to_constantly/",
+      "title": "Selected Reddit communities · OpenCode 2.0.26 is out, if you need to constantly prompt \"Continue\" it's not just your bot AFAIK",
+      "content_text": "I upgraded to OpenCode 2.0.26 today, and even with competent bots it seems to hang up where the bot will be like, \"Great, I'll implement that.\" And I have to prompt it with, \"Yes, go ahead.\" as if it has no agenticness. Bot: \"Fixing the test:\" Me \" T-t-t-today, junior! \" submitted by /u/SM8085 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-10-11T23:56:26+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I upgraded to OpenCode 2.0.26 today, and even with competent bots it seems to hang up where the bot will be like, \"Great, I'll implement that.\" And I have to prompt it with, \"Yes, go ahead.\" as if it has no agenticness. Bot: \"Fixing the tes"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3mtac/is_scheduled_task_creation_a_complete_mess_at_the/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3mtac/is_scheduled_task_creation_a_complete_mess_at_the/",
+      "title": "Selected Reddit communities · Is scheduled task creation a complete mess at the moment?",
+      "content_text": "I mean configuring cloud tasks, not local tasks. I have a large scheduled work task that I want to run daily using luna 6 max, it has to run some python and use the Google drive plugin. The web and android apps scheduled task interfaces expose no way to configure the task's model or whether it runs as chat or work The desktop app does expose model selection but no way to specify chat or work I cre",
+      "date_published": "2026-10-11T23:35:26+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I mean configuring cloud tasks, not local tasks. I have a large scheduled work task that I want to run daily using luna 6 max, it has to run some python and use the Google drive plugin. The web and android apps scheduled task interfaces exp"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3mit8/how_can_opensource_models_ever_catch_up_random/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3mit8/how_can_opensource_models_ever_catch_up_random/",
+      "title": "Selected Reddit communities · How can open-source models ever catch up? (random shower thoughts)",
+      "content_text": "Hypothetically, say BigScience was to launch BLOOM 2 tomorrow, a truly open-source LLM that beats even closed-source frontier models on most benchmarks. To accomplish such strong performance, BLOOM 2 needed to incorporate several highly novel techniques that nobody's thought of before. However, since BLOOM 2 is fully open-source from end-to-end, labs like OpenAI and Anthropic can literally steal t",
+      "date_published": "2026-10-11T23:21:07+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hypothetically, say BigScience was to launch BLOOM 2 tomorrow, a truly open-source LLM that beats even closed-source frontier models on most benchmarks. To accomplish such strong performance, BLOOM 2 needed to incorporate several highly nov"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3ma8c/bug_chatgpt_replied_in_hebrew/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3ma8c/bug_chatgpt_replied_in_hebrew/",
+      "title": "Selected Reddit communities · (BUG) ChatGPT replied in Hebrew?",
+      "content_text": "So I was asking ChatGPT about a anime character and some of the text it replied with was Hebrew? submitted by /u/CookiePP to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-11T23:09:53+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "So I was asking ChatGPT about a anime character and some of the text it replied with was Hebrew? submitted by /u/CookiePP to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3m3zu/vram_leasing_service_for_every_gpu_you_run/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3m3zu/vram_leasing_service_for_every_gpu_you_run/",
+      "title": "Selected Reddit communities · VRAM leasing service for every GPU you run",
+      "content_text": "I run a chat model through llama-swap, a second engine I start by hand, and ComfyUI on one RTX 4090. Every so often two of them load at once and one dies with CUDA out of memory. I got tired of it and wrote Berth. You start each engine through `berth run`. It asks the daemon for the card and waits its turn. When a higher-priority engine wants the GPU, Berth asks the current holder to unload: llama",
+      "date_published": "2026-10-11T23:01:32+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I run a chat model through llama-swap, a second engine I start by hand, and ComfyUI on one RTX 4090. Every so often two of them load at once and one dies with CUDA out of memory. I got tired of it and wrote Berth. You start each engine thro"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3lzmk/auroraimg6m_releases/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3lzmk/auroraimg6m_releases/",
+      "title": "Selected Reddit communities · AuroraIMG-6M Releases!",
+      "content_text": "It's a tiny 6M parameter text to image model, and it can make recognizable images at 64x64. The 6M accounts for everything, there's no oversized text encoder or VAE. Check out the model card for samples, a detailed explanation about it's architecture and training, and a quick start! submitted by /u/Tall_Abrocoma_3533 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-10-11T22:56:03+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "It's a tiny 6M parameter text to image model, and it can make recognizable images at 64x64. The 6M accounts for everything, there's no oversized text encoder or VAE. Check out the model card for samples, a detailed explanation about it's ar"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3lxt3/we_did_it_were_innovating_backward_now/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3lxt3/we_did_it_were_innovating_backward_now/",
+      "title": "Selected Reddit communities · We did it! We're innovating backward now!",
+      "content_text": "submitted by /u/mailto_devnull to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-10-11T22:53:36+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/mailto_devnull to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1x3lgnz/i_built_a_browser_tool_to_visualize_how_a_small/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1x3lgnz/i_built_a_browser_tool_to_visualize_how_a_small/",
+      "title": "Selected Reddit communities · I built a browser tool to visualize how a small LLM picks its next word and see what it's attending to [P]",
+      "content_text": "I made a little thing that visualizes attention. It runs SmolLM2-135M fully in the browser (onnxruntime-web, int8, no server, works on my phone). You give it a prompt, it generates one token at a time, and for each step you get the next-token candidates with probabilities, plus the attention from the current token back to the earlier ones drawn as links with the weights labeled. You can click any",
+      "date_published": "2026-10-11T22:30:50+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I made a little thing that visualizes attention. It runs SmolLM2-135M fully in the browser (onnxruntime-web, int8, no server, works on my phone). You give it a prompt, it generates one token at a time, and for each step you get the next-tok"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1x3lfnw/newbie_here_may_i_know_what_do_you_use_openai_api/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1x3lfnw/newbie_here_may_i_know_what_do_you_use_openai_api/",
+      "title": "Selected Reddit communities · Newbie here. May I know what do you use OpenAI API for / like what have you built with it? Thank you.",
+      "content_text": "Newbie here. May I know what do you use OpenAI API for / like what have you built with it? Thank you. submitted by /u/ImprovementLong1992 to r/OpenAI [link] [comments]",
+      "date_published": "2026-10-11T22:29:35+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Newbie here. May I know what do you use OpenAI API for / like what have you built with it? Thank you. submitted by /u/ImprovementLong1992 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x3lbvh/new_benchmark_that_ive_used_to_test_actual/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x3lbvh/new_benchmark_that_ive_used_to_test_actual/",
+      "title": "Selected Reddit communities · New benchmark that I've used to test actual quality of local models and not just speed.",
+      "content_text": "I started doing this benchmark, seems like a good way to test model's abilities. I think sometimes too you can just \"roll a bad seed\" where the model goes off to neverland trying to solve a problem before it even starts.. The prompt is simply this \"I want you to create an internet radio streaming player for me in C#. It should stream . It only has to run a single stream. I want the UI to be a cons",
+      "date_published": "2026-10-11T22:24:48+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I started doing this benchmark, seems like a good way to test model's abilities. I think sometimes too you can just \"roll a bad seed\" where the model goes off to neverland trying to solve a problem before it even starts.. The prompt is simp"
+        ]
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/OpenAI/comments/1x3ej80/the_website_is_forcing_gpt_6_on_new_chats_even/",
       "url": "https://www.reddit.com/r/OpenAI/comments/1x3ej80/the_website_is_forcing_gpt_6_on_new_chats_even/",
       "title": "Selected Reddit communities · The Website is forcing GPT 6 on new chats, even though it shows 5.6 Sol",
@@ -5223,786 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "I really enjoy using the voice mode and spend a lot of time having discussions in the car. I have noticed (or thought I noticed) a lot of times that the voice is ever so slightly different, other times changes are noticeably different (incl"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1x0xt5x/production_grade_retrieval_pipeline_that_admits_i/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1x0xt5x/production_grade_retrieval_pipeline_that_admits_i/",
-      "title": "Selected Reddit communities · Production Grade Retrieval Pipeline That Admits \"I Don't Know\" [P]",
-      "content_text": "If you're moving a RAG prototype to production, this is the checklist I wish I'd had. - Citations on every answer - Refusing when the context doesn't support one - Access control that can't be bypassed - Ingestion that never blocks a user Enjoy !! https://youtu.be/-GK1e4KZqhw submitted by /u/Winter_Mistake_3185 to r/MachineLearning [link] [comments]",
-      "date_published": "2026-10-08T17:55:50+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "If you're moving a RAG prototype to production, this is the checklist I wish I'd had. - Citations on every answer - Refusing when the context doesn't support one - Access control that can't be bypassed - Ingestion that never blocks a user E"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0xs3s/is_there_a_way_for_me_to_give_data_to_chatgpt_so/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0xs3s/is_there_a_way_for_me_to_give_data_to_chatgpt_so/",
-      "title": "Selected Reddit communities · Is there a way for me to give data to chatgpt so that it can teach me how to use blender via processing data from a video guide? And what is the best way for me to teach IT how to correctly process data from existing files",
-      "content_text": "There is a collection of tutorials on blender, for a specific community project, for which I would like to learn how to make assets via blender. I both want to make assets on my own, and use ai for stuff I am less interested in How can I give a video speedmodeling video to chatgpt, and have it REALLY detailed process what exactly does the person do to achieve a very specific level of quality. Also",
-      "date_published": "2026-10-08T17:54:42+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "There is a collection of tutorials on blender, for a specific community project, for which I would like to learn how to make assets via blender. I both want to make assets on my own, and use ai for stuff I am less interested in How can I gi"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1x0xqx2/complimentary_registrations_for_reviewers_neurips/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1x0xqx2/complimentary_registrations_for_reviewers_neurips/",
-      "title": "Selected Reddit communities · Complimentary Registrations for Reviewers neurips 2026 [D]",
-      "content_text": "Are they sending to all reviewers or some selected reviewers? Just got an email about complimentary registration. submitted by /u/Intrepid_Discount_67 to r/MachineLearning [link] [comments]",
-      "date_published": "2026-10-08T17:53:25+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Are they sending to all reviewers or some selected reviewers? Just got an email about complimentary registration. submitted by /u/Intrepid_Discount_67 to r/MachineLearning [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xoul/this_is_too_true_i_had_to_share/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xoul/this_is_too_true_i_had_to_share/",
-      "title": "Selected Reddit communities · This is too true, I had to share",
-      "content_text": "It’s just interesting to me that everyone ends in the same loop: There is NEVER enough VRAM. submitted by /u/Miserable-Dare5090 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-10-08T17:51:13+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "It’s just interesting to me that everyone ends in the same loop: There is NEVER enough VRAM. submitted by /u/Miserable-Dare5090 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xkk7/running_a_3b_roleplay_finetune_fully_on_iphone/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xkk7/running_a_3b_roleplay_finetune_fully_on_iphone/",
-      "title": "Selected Reddit communities · Running a 3B roleplay finetune fully on iPhone: what we measured about keeping a small model in character (I make the app)",
-      "content_text": "I make Castmates, a closed-source iOS app (free tier, paid Pro) that runs a 3B roleplay model entirely on the phone. Posting for the engineering notes, not to sell it. The app is mentioned once, at the bottom. Setup: Impish Llama 3B (a Llama 3.2 3B RP finetune), plus our own rank 16 LoRA, fused and requantized to Q4_K_M from the fp16 base. About 2.0 GB, downloaded after install. llama.cpp with Met",
-      "date_published": "2026-10-08T17:46:37+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I make Castmates, a closed-source iOS app (free tier, paid Pro) that runs a 3B roleplay model entirely on the phone. Posting for the engineering notes, not to sell it. The app is mentioned once, at the bottom. Setup: Impish Llama 3B (a Llam"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xk7d/chat_with_llm_model_with_zero_setup/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xk7d/chat_with_llm_model_with_zero_setup/",
-      "title": "Selected Reddit communities · chat with llm model with zero setup!",
-      "content_text": "Hey folks! Aritra here from Hugging Face. We introduce a no config, no key, no setup way to directly chat with a model hosted with the Hugging Face Inference Providers. `ssh chat.hf.co` And you are good to go. 🔥 Let us know what you think about this. submitted by /u/Disastrous-Work-1632 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-10-08T17:46:14+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hey folks! Aritra here from Hugging Face. We introduce a no config, no key, no setup way to directly chat with a model hosted with the Hugging Face Inference Providers. `ssh chat.hf.co` And you are good to go. 🔥 Let us know what you think a"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xgqq/lfm_25_54b/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0xgqq/lfm_25_54b/",
-      "title": "Selected Reddit communities · LFM 2.5 5.4B",
-      "content_text": "would be good for laptops, 8B A1B is a bit worse than 2.6B dense imo, not worth the speed bump ime as you can't even use it for subagents with low vram/ram submitted by /u/Aggravating-Push-207 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-10-08T17:42:30+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "would be good for laptops, 8B A1B is a bit worse than 2.6B dense imo, not worth the speed bump ime as you can't even use it for subagents with low vram/ram submitted by /u/Aggravating-Push-207 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wyge/probably_im_doing_something_wrong_using_pr29887/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wyge/probably_im_doing_something_wrong_using_pr29887/",
-      "title": "Selected Reddit communities · Probably I'm doing something wrong using PR#29887 (Add a GPU cache for MoE experts kept in host memory)",
-      "content_text": "I have 8GB VRAM(4060) + 32GB RAM(DDR5 5600). Tried this feature with b11491. Experimented with both cmoe & fit. Not getting expected t/s. Please fix this for me. And others, what are you getting for your limited VRAM? Share your t/s stats. llama-server -m E:\\LLM\\models\\MOE\\Qwen3.6-35B-A3B-IQ4_XS-00001-of-00002.gguf -cmoe 3.25.566.603 I slot print_timing: id 3 | task 0 | prompt eval time = 7546.59",
-      "date_published": "2026-10-08T17:23:57+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I have 8GB VRAM(4060) + 32GB RAM(DDR5 5600). Tried this feature with b11491. Experimented with both cmoe & fit. Not getting expected t/s. Please fix this for me. And others, what are you getting for your limited VRAM? Share your t/s stats. "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wy9t/tokenizers_and_huggingface_onnx_model_pipeline_ue5/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wy9t/tokenizers_and_huggingface_onnx_model_pipeline_ue5/",
-      "title": "Selected Reddit communities · Tokenizers and HuggingFace ONNX Model Pipeline (UE5)",
-      "content_text": "I created a tokenizers plugin and an HuggingFace ONNX model pipeline plugin for UE5. The tokenizers repo is fairly complete for Windows, but does not currently support other platforms. The pipelines repo only supports text embeddings, text classification, image classification and object detection for now. I plan to add a lot more in the future. The plugins are open source. Claude was used to build",
-      "date_published": "2026-10-08T17:23:45+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I created a tokenizers plugin and an HuggingFace ONNX model pipeline plugin for UE5. The tokenizers repo is fairly complete for Windows, but does not currently support other platforms. The pipelines repo only supports text embeddings, text "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wnz1/2800_rig_with_8x_radeon_pro_v620_256_gb_vram/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0wnz1/2800_rig_with_8x_radeon_pro_v620_256_gb_vram/",
-      "title": "Selected Reddit communities · $2800 rig with 8x Radeon Pro V620 (256 GB VRAM) + custom vLLM fork = Qwen3.8-Flash-Next at 60 to 100 t/s decode and 3000+ t/s prefill",
-      "content_text": "Post title is slightly misleading, I don't think you can get these for $350 each anymore but they're still pretty cheap all things considered. They're Radeon Pro V620's which are older RDNA2 enterprise cloud gaming cards with 32 GB VRAM. (Ignore the RTX 4090 on the side, it's just used for stuff like image/video gen models, no LLMs) But I bought these cards a couple months ago as a gamble to see i",
-      "date_published": "2026-10-08T17:12:46+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Post title is slightly misleading, I don't think you can get these for $350 each anymore but they're still pretty cheap all things considered. They're Radeon Pro V620's which are older RDNA2 enterprise cloud gaming cards with 32 GB VRAM. (I"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0wlqn/navier_stokes_solution_fail_verification/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0wlqn/navier_stokes_solution_fail_verification/",
-      "title": "Selected Reddit communities · Navier Stokes Solution Fail Verification",
-      "content_text": "Slow your roll people… we may have hit a kink. submitted by /u/Derek-Bond to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T17:10:18+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Slow your roll people… we may have hit a kink. submitted by /u/Derek-Bond to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.162.0-alpha.17.2",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.162.0-alpha.17.2",
-      "title": "OpenAI · 0.162.0-alpha.17.2",
-      "content_text": "Release 0.162.0-alpha.17.2",
-      "date_published": "2026-10-08T07:43:55+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.162.0-alpha.17.2"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0k4lz/the_ai_doc/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0k4lz/the_ai_doc/",
-      "title": "Selected Reddit communities · The AI doc",
-      "content_text": "Have you seen the new documentary on Netflix? What is your opinion about it!? submitted by /u/jeppa35 to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T06:56:52+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Have you seen the new documentary on Netflix? What is your opinion about it!? submitted by /u/jeppa35 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0k0h1/261008144_navierstokes_lost_in_translation_why/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0k0h1/261008144_navierstokes_lost_in_translation_why/",
-      "title": "Selected Reddit communities · [2610.08144] Navier-Stokes lost in translation: Why Lean verification of AI autoformalisation does not guarantee correct natural language proofs",
-      "content_text": "submitted by /u/Turbulent_Breath_548 to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T06:49:25+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/Turbulent_Breath_548 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0jsdv/some_recent_decision_models_3b_on_internal/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0jsdv/some_recent_decision_models_3b_on_internal/",
-      "title": "Selected Reddit communities · Some recent decision models <=3B on internal benchmarks vs fine-tuned embedding model",
-      "content_text": "Before anyone has the change, yes, I know that the classifier models may be able to better generalize. But in my case with a dataset of ~10k rows and general task routing based on a sleuth of customer service inquiry/interaction to the appropriate service/task, it basically covers the whole range of what I can think of and what I could find online already. Very surprised from my results to see lar",
-      "date_published": "2026-10-08T06:35:26+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Before anyone has the change, yes, I know that the classifier models may be able to better generalize. But in my case with a dataset of ~10k rows and general task routing based on a sleuth of customer service inquiry/interaction to the appr"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0jjv8/researchers_are_already_significantly_improving/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0jjv8/researchers_are_already_significantly_improving/",
-      "title": "Selected Reddit communities · Researchers are already significantly improving on OpenAI’s recent math results, verified in Lean",
-      "content_text": "So much for the “we don’t learn anything from these slop proofs!” excuse https://github.com/CrocSwap/integer-mult-bounds submitted by /u/Eliv_nurotic to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T06:20:18+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So much for the “we don’t learn anything from these slop proofs!” excuse https://github.com/CrocSwap/integer-mult-bounds submitted by /u/Eliv_nurotic to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0jjfj/i_tried_imagine_25_for_vintage_magazine_covers/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0jjfj/i_tried_imagine_25_for_vintage_magazine_covers/",
-      "title": "Selected Reddit communities · I tried imagine 2.5 for vintage magazine covers and now I am wondering why they feel so convincing",
-      "content_text": "i figured this would be a quick novelty thing. Run a few familiar images through a vintage magazine treatment, get some sepia and fake paper damage, and call it a day. Made these three with image2.5 (flare version) through atlas cloud. Each one feels like it belongs to a different magazine. That's the bit I didn't expect: I can imagine the publication around it, even though I am only looking at a",
-      "date_published": "2026-10-08T06:19:34+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "i figured this would be a quick novelty thing. Run a few familiar images through a vintage magazine treatment, get some sepia and fake paper damage, and call it a day. Made these three with image2.5 (flare version) through atlas cloud. Each"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0jhna/cloudflare_clef_experience/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0jhna/cloudflare_clef_experience/",
-      "title": "Selected Reddit communities · Cloudflare Clef Experience",
-      "content_text": "Using llama.cpp 0.6.0 and bartowski's Q4_K_M quant for Cloudflare Clef Running the basic example: curl http://127.0.0.1:8080/v1/systemone \\ -H \"Content-Type: application/json\" \\ -d '{ \"state\": \"I was charged twice this month, please refund one of them.\", \"questions\": { \"refund\": { \"type\": \"noul\", \"instructions\": \"Is the customer asking for a refund?\" }, \"team\": { \"type\": \"choice\", \"instructions\":",
-      "date_published": "2026-10-08T06:16:41+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Using llama.cpp 0.6.0 and bartowski's Q4_K_M quant for Cloudflare Clef Running the basic example: curl http://127.0.0.1:8080/v1/systemone \\ -H \"Content-Type: application/json\" \\ -d '{ \"state\": \"I was charged twice this month, please refund "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0jazc/unbelievable_i_enabled_gpt6_high_in_chat_mode_and/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0jazc/unbelievable_i_enabled_gpt6_high_in_chat_mode_and/",
-      "title": "Selected Reddit communities · Unbelievable! I enabled GPT-6 high in Chat Mode, and asked which model it is using to chat with me, it replied \"GPT 5.6 Sol\".....tried many times in different windows and device, it all replied the same \"GPT 5.6 Sol\"....",
-      "content_text": "submitted by /u/Super_Pattern6594 to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T06:05:36+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/Super_Pattern6594 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0j5d8/did_you_know_your_personalized_suggestions_may/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0j5d8/did_you_know_your_personalized_suggestions_may/",
-      "title": "Selected Reddit communities · Did you know? Your personalized suggestions may still appear after the user has disabled them.",
-      "content_text": "I disabled “Personalized suggestions” in ChatGPT settings. Yet the new-chat screen continues to display suggestions based on my recent conversations and connected sources, including Google Drive. One suggestion referred directly to a recent research thread; another proposed a recurring activity based on my family conversations. Here is the engineering question: Why spend computational resources pr",
-      "date_published": "2026-10-08T05:56:20+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I disabled “Personalized suggestions” in ChatGPT settings. Yet the new-chat screen continues to display suggestions based on my recent conversations and connected sources, including Google Drive. One suggestion referred directly to a recent"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0j4k4/epoch_ai_shows_llms_still_have_a_long_way_to_go/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0j4k4/epoch_ai_shows_llms_still_have_a_long_way_to_go/",
-      "title": "Selected Reddit communities · Epoch AI shows LLMs still have a long way to go before matching human researchers on innovation",
-      "content_text": "https://fixupx.com/EpochAIResearch/status/2107895808217788800?s=20 submitted by /u/Eliv_nurotic to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T05:54:57+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "https://fixupx.com/EpochAIResearch/status/2107895808217788800?s=20 submitted by /u/Eliv_nurotic to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0j0f7/reset_when_my_usage_is_bleeding_like_a_cut_vein/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0j0f7/reset_when_my_usage_is_bleeding_like_a_cut_vein/",
-      "title": "Selected Reddit communities · Reset when? My usage is bleeding like a cut vein.",
-      "content_text": "Tibo owes us for this unreliably. Comment '1' for a reset, '0' if you think you're rich and don't need anymore reset. submitted by /u/Current_Balance6692 to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T05:47:45+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Tibo owes us for this unreliably. Comment '1' for a reset, '0' if you think you're rich and don't need anymore reset. submitted by /u/Current_Balance6692 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0j0ae/qwen_flash_q2_0_vs_iq2_xs_gsqrco_using_strata/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0j0ae/qwen_flash_q2_0_vs_iq2_xs_gsqrco_using_strata/",
-      "title": "Selected Reddit communities · Qwen Flash Q2_0 vs IQ2_XS GSQ-RCO using Strata",
-      "content_text": "Hello, so lately I have been testing those two quants, since those are the ones that run decently enough on my old laptop. IQ3 destroys prefill. I have noticed IQ2_XS definately has better preserved world knowledge, but is much more prone to looping than q2_0 at the same recommended sampler settings, especially without thinking. What are your experiences running these quants? The benchmarks are al",
-      "date_published": "2026-10-08T05:47:30+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hello, so lately I have been testing those two quants, since those are the ones that run decently enough on my old laptop. IQ3 destroys prefill. I have noticed IQ2_XS definately has better preserved world knowledge, but is much more prone t"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0iygt/can_any_openweight_models_handle_a_decomprecomp/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0iygt/can_any_openweight_models_handle_a_decomprecomp/",
-      "title": "Selected Reddit communities · Can any open-weight models handle a decomp/recomp project yet?",
-      "content_text": "Opus5.5, Sol6.1, Fable, and Astra have all proven they can and the scene has exploded this past week. Part of that is from the tools and feedback loops maturing though. Are any open weight models (at all, so including K3, GLM5.3, Qwen3.8-Max, and Mimo-2.6) able to do this? Can the larger models this sub regularly runs (GLM 5.3-Flash, Qwen 3.8-Next-Flash, V4.1-deepseek Flash..) handle a simpler one",
-      "date_published": "2026-10-08T05:44:23+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Opus5.5, Sol6.1, Fable, and Astra have all proven they can and the scene has exploded this past week. Part of that is from the tools and feedback loops maturing though. Are any open weight models (at all, so including K3, GLM5.3, Qwen3.8-Ma"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1x0ixh6/deepseek_v41_flash_beat_haiku_55_as_my_research/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1x0ixh6/deepseek_v41_flash_beat_haiku_55_as_my_research/",
-      "title": "Selected Reddit communities · DeepSeek V4.1 Flash beat Haiku 5.5 as my research sub-agent and title model (small eval)",
-      "content_text": "I ran Haiku 5.5 to see if it could replace DeepSeek V4.1 Flash in two small jobs in my app. It didn't. Small eval, but maybe useful for someone. GPU poor here (M2 Max, 32GB), so DeepSeek runs through OpenRouter with a minimum of 8-bit precision, sorted by throughput. Most runs landed on Baidu, one on Parasail. Job 1: research sub-agent. It gets a brief, searches the web, reads pages and writes a r",
-      "date_published": "2026-10-08T05:42:42+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I ran Haiku 5.5 to see if it could replace DeepSeek V4.1 Flash in two small jobs in my app. It didn't. Small eval, but maybe useful for someone. GPU poor here (M2 Max, 32GB), so DeepSeek runs through OpenRouter with a minimum of 8-bit preci"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1x0ipva/why_is_effort_defaulting_to_instant_all_of_a/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1x0ipva/why_is_effort_defaulting_to_instant_all_of_a/",
-      "title": "Selected Reddit communities · Why is effort defaulting to Instant all of a sudden? Anyone else experiencing this issue?",
-      "content_text": "Instant default This is wild, anyone else experiencing this? Share your experience below! submitted by /u/Current_Balance6692 to r/OpenAI [link] [comments]",
-      "date_published": "2026-10-08T05:29:41+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Instant default This is wild, anyone else experiencing this? Share your experience below! submitted by /u/Current_Balance6692 to r/OpenAI [link] [comments]"
         ]
       }
     }
