@@ -6,7 +6,331 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 28 Oct 2026 18:21:25 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 06:59:03 +0000</lastBuildDate>
+    <item>
+      <title>Selected Reddit communities · Strix Halo-specific kernels for vLLM: up to 31× faster prefill at 64k, plugs into stock vLLM</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xicvut/strix_halospecific_kernels_for_vllm_up_to_31/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xicvut/strix_halospecific_kernels_for_vllm_up_to_31/</guid>
+      <pubDate>Thu, 29 Oct 2026 06:59:03 +0000</pubDate>
+      <description>I've had a Strix Halo box (Radeon 8060S, 128 GB unified) for a while. vLLM runs on it, but slowly, because the stock ROCm kernels are written with MI300 in mind and not this APU. Long-context prefill was the worst of it. A 256k prompt on Qwen3.6-35B-A3B took more than two hours. So I spent the last few weeks writing HIP kernels just for gfx1151 and wrapped them in a vLLM plugin. It's called libstr</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Shenzhen judges closed 50% more cases with AI. Top UK judge: it could decide simple claims</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xicu9s/shenzhen_judges_closed_50_more_cases_with_ai_top/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xicu9s/shenzhen_judges_closed_50_more_cases_with_ai_top/</guid>
+      <pubDate>Thu, 29 Oct 2026 06:56:15 +0000</pubDate>
+      <description>How do you feel about this? submitted by /u/mawcopolow to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · pruned NVIDIA's new 30B speech LLM from 67.5GB to 10GB with zero retraining, it still transcribes at 5.16% WER (teacher: 4.12%)</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xibujk/pruned_nvidias_new_30b_speech_llm_from_675gb_to/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xibujk/pruned_nvidias_new_30b_speech_llm_from_675gb_to/</guid>
+      <pubDate>Thu, 29 Oct 2026 05:54:38 +0000</pubDate>
+      <description>submitted by /u/Illustrious_Row_9971 to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · OpenAI vs Google when you're planning for a kid: how would you weigh it?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xia4gt/openai_vs_google_when_youre_planning_for_a_kid/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xia4gt/openai_vs_google_when_youre_planning_for_a_kid/</guid>
+      <pubDate>Thu, 29 Oct 2026 04:14:27 +0000</pubDate>
+      <description>A Google employee is having a hard time deciding whether to join OpenAI. They'd likely be joining at a $1.25T valuation. Their manager and director are trying to get them a retention offer. Google: ~450K TC (~235K base, rest bonus/RSUs). OpenAI: ~610K TC (~300K base + ~310K in RSUs per year). They're planning to try for a kid soon. The OpenAI team says work hours are generally 9-5 (which the candi</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · [Update Benchmark] Basalt's new PRs (Strata fork) new record IQ3_S Qwen3.8 Flash Next on single RTX 5080 and 51 GB RAM with 5500 tok/s prompt processing and up to 275 tok/s peak generation (during opencode coding live session)</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi9sfl/update_benchmark_basalts_new_prs_strata_fork_new/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi9sfl/update_benchmark_basalts_new_prs_strata_fork_new/</guid>
+      <pubDate>Thu, 29 Oct 2026 03:57:02 +0000</pubDate>
+      <description>Code and tool calls can peak up to 275 tok/s - Reasoning traces up to 190 tok/s Hardware: 5080 16GB PCIe gen5x16, 64 DDR5 6400, Core Ultra 9 285K https://github.com/jesdga95/basalt Some PRs for the optimizations under my name are still pending (xyehya) but upstream already have solid gains &amp; memory optimizations. and yes the IQ3_S is super usable. submitted by /u/yehyakar to r/LocalLLaMA [link] [c</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · 6.1 Terra likes to just... stop</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xi9a6n/61_terra_likes_to_just_stop/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xi9a6n/61_terra_likes_to_just_stop/</guid>
+      <pubDate>Thu, 29 Oct 2026 03:30:14 +0000</pubDate>
+      <description>Title. I am using OpenAI Codex subscription (Pro 5x) and I am experimenting using Terra for my Hermes (I use primarily for handling a lot of stuff that are non-coding, good fit for Terra I assume). ... But it is very terrible for cron jobs. I have one cron job who purpose is to reconcile and reorganize the different stores and memories of my Hermes and ensuring all information and decisions made w</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · &gt;2b model.</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi9798/2b_model/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi9798/2b_model/</guid>
+      <pubDate>Thu, 29 Oct 2026 03:26:00 +0000</pubDate>
+      <description>Why there no new model coming in &gt;2b weight category ? Model which actually capable in this category is gemma e2b which is release 6 month ago, why still no new model. submitted by /u/Competitive-Scar-627 to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · I post-trained Qwen3-4B as a tool-using agent, and the result runs on a Mac as a 66 MB llama.cpp LoRA. Validation 0.51 → 0.83, everything open, including what didn't work</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi8yav/i_posttrained_qwen34b_as_a_toolusing_agent_and/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi8yav/i_posttrained_qwen34b_as_a_toolusing_agent_and/</guid>
+      <pubDate>Thu, 29 Oct 2026 03:13:27 +0000</pubDate>
+      <description>Tadpole is an agent I built from scratch (plain Python, ~3,500 lines, no LangChain or other framework), then post-trained one measured stage at a time. I use it every day as a Telegram bot. Repo: https://github.com/shakewingo/Tadpole · Adapters and data in HF Run the trained model locally. Each adapter is on Hugging Face as a llama.cpp LoRA (66 MB) that loads on top of the Q8_0 GGUF: hf download u</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · OpenAI really is dominating the entire Pareto Frontier</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xi8img/openai_really_is_dominating_the_entire_pareto/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xi8img/openai_really_is_dominating_the_entire_pareto/</guid>
+      <pubDate>Thu, 29 Oct 2026 02:51:53 +0000</pubDate>
+      <description>submitted by /u/Lucky_Creme_5208 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · I squoze Raon-1-mini-preview (29B MoE, 4B active) onto my 16GB RTX 5070 Ti and went from 50 to 232 tok/s</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi7k3y/i_squoze_raon1minipreview_29b_moe_4b_active_onto/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi7k3y/i_squoze_raon1minipreview_29b_moe_4b_active_onto/</guid>
+      <pubDate>Thu, 29 Oct 2026 02:05:00 +0000</pubDate>
+      <description>I'll be honest, I don't know shit about how models work under the hood, but I used to work on idle/incremental/clicker games professionally, and I really like watching numbers go up. And since I'm relatively GPU poor compared to some of you, I was excited to hear about Raon and figured it'd be a fun project to vibe on, and to see if I could get it to fit in VRAM. I only have a 5070 Ti with 16GB VR</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Using compute to verify paper results [D]</title>
+      <link>https://www.reddit.com/r/MachineLearning/comments/1xi7hpf/using_compute_to_verify_paper_results_d/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1xi7hpf/using_compute_to_verify_paper_results_d/</guid>
+      <pubDate>Thu, 29 Oct 2026 02:01:46 +0000</pubDate>
+      <description>I’m not a reviewer yet, but I likely will be by next year. As a reviewer, how do you decide to allocate compute to verify paper results? (and is the code in the papers you’re reviewing usually easy to run?) submitted by /u/Relative_Wallaby_823 to r/MachineLearning [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · any fun casual podcasts? [D]</title>
+      <link>https://www.reddit.com/r/MachineLearning/comments/1xi7cvk/any_fun_casual_podcasts_d/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1xi7cvk/any_fun_casual_podcasts_d/</guid>
+      <pubDate>Thu, 29 Oct 2026 01:55:38 +0000</pubDate>
+      <description>Does anyone know any fun casual conversational style podcasts that discuss current papers/industry trends, with discussions at a high to mid technical level? Edit: small preference for conversation discussion styles between two constant hosts submitted by /u/Upstairs-Cry-9233 to r/MachineLearning [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.166.0-alpha.6</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.166.0-alpha.6</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.166.0-alpha.6</guid>
+      <pubDate>Thu, 29 Oct 2026 01:50:14 +0000</pubDate>
+      <description>Release 0.166.0-alpha.6</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Qwen4 1M context window</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi7390/qwen4_1m_context_window/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi7390/qwen4_1m_context_window/</guid>
+      <pubDate>Thu, 29 Oct 2026 01:42:55 +0000</pubDate>
+      <description>Qwen4 models will have a 1 million context window. Qwen4-27B was not mentioned here, but should be announced at Apsara netherlands tommorow. We have a date for Qwen4-max, it is November 1st. Edit: It says October 1st, so its probably a placeholder. PR: https://github.com/QwenLM/qwen-code/pull/15762 https://preview.redd.it/ounsliro9byh1.png?width=823&amp;format=png&amp;auto=webp&amp;s=0762bd7178df8605b3082d60f</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · 5 Frontier LLM's grade 39 local LLM's on 50 prompts</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi6edm/5_frontier_llms_grade_39_local_llms_on_50_prompts/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi6edm/5_frontier_llms_grade_39_local_llms_on_50_prompts/</guid>
+      <pubDate>Thu, 29 Oct 2026 01:10:56 +0000</pubDate>
+      <description>This is just something i had running for about 10-20 hours (kept adding models), various tests/benchmarks and had 4 (Claude kind of graded, his tokens are too precious) frontier LLM's grade the answers of the local LLM's. Big models got about 44 and smaller models got 66 prompt/tests. Some written by me, most by AI, most Ai generated tests based off work ive done with ai agents. Grading took about</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · What is the best Small Non-Reasoning Model?</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi5qxa/what_is_the_best_small_nonreasoning_model/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi5qxa/what_is_the_best_small_nonreasoning_model/</guid>
+      <pubDate>Thu, 29 Oct 2026 00:41:07 +0000</pubDate>
+      <description>I tried LFM3 for my local use case, but it is a latency sensitive task and disabling reasoning makes it not give coherent responses. And with reasoning it's a 15 second wait instead of less than 1. submitted by /u/AryanEmbered to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Fine, I’ll read it myself - local audiobook producer</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi5o93/fine_ill_read_it_myself_local_audiobook_producer/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi5o93/fine_ill_read_it_myself_local_audiobook_producer/</guid>
+      <pubDate>Thu, 29 Oct 2026 00:37:40 +0000</pubDate>
+      <description>I vibe-coded an app to turn my favorite webnovels chapters into multi-voice audio with acceptable quality. What was funny is that Opus completely refused to write site scraping part due to “legal reasons“. Well, qwen 3.8 FN had no such reservations. submitted by /u/SwimmerJazzlike to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Astra Beats Every Model in Robot Intelligence</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xi59sd/astra_beats_every_model_in_robot_intelligence/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xi59sd/astra_beats_every_model_in_robot_intelligence/</guid>
+      <pubDate>Thu, 29 Oct 2026 00:19:18 +0000</pubDate>
+      <description>https://www.withplayground.ai/blog/robot-intelligence-index submitted by /u/karsickk to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Should humanity be afraid of AI? And who should be most afraid?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xi44kc/should_humanity_be_afraid_of_ai_and_who_should_be/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xi44kc/should_humanity_be_afraid_of_ai_and_who_should_be/</guid>
+      <pubDate>Wed, 28 Oct 2026 23:31:03 +0000</pubDate>
+      <description>I believe we should respect AI, understand its risks and prepare for its impact.. but not necessarily fear it. AI isn't just another technological revolution. It's different because, for the first time, we're building machines capable of performing tasks that previously required human intelligence. Who should be most concerned? 1. People who refuse to adapt AI won't replace every human, but people</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · How do I get rid of this "update" prompt that shows EVERY time I start Chatgpt on windows</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xi40ds/how_do_i_get_rid_of_this_update_prompt_that_shows/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xi40ds/how_do_i_get_rid_of_this_update_prompt_that_shows/</guid>
+      <pubDate>Wed, 28 Oct 2026 23:26:10 +0000</pubDate>
+      <description>https://preview.redd.it/jirjcpw9layh1.png?width=1172&amp;format=png&amp;auto=webp&amp;s=7e39ca37db4aa0b059b26a55a71c67aec5a5c483 Not even ChatGPT can give me the answer! I don't want to update. It pops up EVERY SINGLE time i start chatGPT submitted by /u/henchman171 to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Electronics hobbyist converts $120 DDR5 SODIMM kit into ‘$1000’ desktop kit to fight RAM crisis — ICs from SK hynix DDR5-5600 16GB modules used to create DDR5-7800 desktop sticks</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi3l9r/electronics_hobbyist_converts_120_ddr5_sodimm_kit/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi3l9r/electronics_hobbyist_converts_120_ddr5_sodimm_kit/</guid>
+      <pubDate>Wed, 28 Oct 2026 23:08:15 +0000</pubDate>
+      <description>So just read this article and had a couple questions about this as I have not much experience in this. Maybe the more experience people may be able to explain it better. Is this a viable path to upgrade hardware at a lower cost for LLM, is it much harder than as stated in the read like soldiering and what not, also has anyone done something similar to this and had good and stable results? submitte</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Claude max for $29 instead of $200 ... seriously how are they doing this?</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xi2w0r/claude_max_for_29_instead_of_200_seriously_how/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xi2w0r/claude_max_for_29_instead_of_200_seriously_how/</guid>
+      <pubDate>Wed, 28 Oct 2026 22:38:48 +0000</pubDate>
+      <description>i got a Claude max account from a reseller for essentially nothing compared to what I used to pay . It works flawless. since 3 months No issues yet i paid only for 1 month . Now I can't stop thinking about their business model. If resellers can sell it this cheap and still profit, how are they acquiring these accounts at scale? submitted by /u/mehdiweb to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Looking to buy a Macbook Pro. Please help me decide between 64GB and 128GB of RAM.</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi2q47/looking_to_buy_a_macbook_pro_please_help_me/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi2q47/looking_to_buy_a_macbook_pro_please_help_me/</guid>
+      <pubDate>Wed, 28 Oct 2026 22:32:01 +0000</pubDate>
+      <description>Okay, so I've seen a few older threads on this but figured with Qwen3.8 and the newer inference engines it's worth an ask. I'm looking to buy a new Macbook Pro. At the least, I'm looking at the 64GB M5 Max with the higher-spec GPU. I'm having a hard time justifying spending $2000 more for an incremental 64GB of RAM (for net a total of 128GB). What's the state of inference on Apple Silicon? For mod</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Grand jury indicts former OpenAI engineer accused of bugging SF office</title>
+      <link>https://www.reddit.com/r/OpenAI/comments/1xi2m9m/grand_jury_indicts_former_openai_engineer_accused/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xi2m9m/grand_jury_indicts_former_openai_engineer_accused/</guid>
+      <pubDate>Wed, 28 Oct 2026 22:27:40 +0000</pubDate>
+      <description>submitted by /u/sfgate to r/OpenAI [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · I ran Doom inside the Qwen model weights!</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi2jfm/i_ran_doom_inside_the_qwen_model_weights/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi2jfm/i_ran_doom_inside_the_qwen_model_weights/</guid>
+      <pubDate>Wed, 28 Oct 2026 22:24:32 +0000</pubDate>
+      <description>Inspired by the qwenputer project posted in this sub earlier today, I managed to get a basic version of Doom running on the virtual machine created in the post. It's quite slow, but here we are. Doom running on an LLM. Project repo: https://github.com/mapestree/qwenputer-doom submitted by /u/mapestree to r/LocalLLaMA [link] [comments]</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>Selected Reddit communities · Single-Neuron Identity Shifts</title>
+      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xi25sk/singleneuron_identity_shifts/</link>
+      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xi25sk/singleneuron_identity_shifts/</guid>
+      <pubDate>Wed, 28 Oct 2026 22:09:19 +0000</pubDate>
+      <description>These guys are running a pretty interesting experiment: https://neuronpersonas.com/ Credit where it's due, I came across it here: https://news.ycombinator.com/item?id=50266910 Basically, they're tweaking one single neuron at a time during inference, systematically going through every one for models like Qwen3-8B and 14B. In roughly 4% this makes the model claim an entirely different identity when</description>
+      <category>community-feedback</category>
+      <category>use-cases</category>
+      <category>emerging-signals</category>
+      <category>T3</category>
+      <category>reddit</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.166.0-alpha.5.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.166.0-alpha.5.1</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.166.0-alpha.5.1</guid>
+      <pubDate>Wed, 28 Oct 2026 19:25:04 +0000</pubDate>
+      <description>Release 0.166.0-alpha.5.1</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
     <item>
       <title>Selected Reddit communities · A 4B model made me a netherite ingot from bare hands. All I did was type one sentence in chat.</title>
       <link>https://www.reddit.com/r/LocalLLaMA/comments/1xhw2l0/a_4b_model_made_me_a_netherite_ingot_from_bare/</link>
@@ -102,18 +426,6 @@
       <category>emerging-signals</category>
       <category>T3</category>
       <category>reddit</category>
-    </item>
-    <item>
-      <title>OpenAI · rust-v0.166.0-alpha.5.1</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.166.0-alpha.5.1</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.166.0-alpha.5.1</guid>
-      <pubDate>Wed, 28 Oct 2026 17:38:55 +0000</pubDate>
-      <description>Release 0.166.0-alpha.5.1</description>
-      <category>codex</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
     </item>
     <item>
       <title>Selected Reddit communities · the AI that worked in call centres didn't replace anyone</title>
@@ -2089,318 +2401,6 @@
       <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xf4sxg/the_minimum_size_of_an_llm_to_generate_a_little/</guid>
       <pubDate>Sun, 25 Oct 2026 15:09:15 +0000</pubDate>
       <description>I am trying to find the smallest model to generate something in "normal" English, it could be like AI generated, but it should be mostly grammar correct, sensible in the context. I hope it could be less than 10M to be easy for CPU, so I tested some like Supra-Mini-v6-1M. well it's not good enough. ```output // its out put for prompt "Once upon a time": rounded, and dripped a small part and mi, whi</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Made a Frankenstein trying to make an all in one local ai app. now i'm not sure it's worth it.</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xf45hd/made_a_frankenstein_trying_to_make_an_all_in_one/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xf45hd/made_a_frankenstein_trying_to_make_an_all_in_one/</guid>
-      <pubDate>Sun, 25 Oct 2026 14:42:58 +0000</pubDate>
-      <description>I tried to solve the problems of multiple applications I actually use , but the thing is that efficiency of using those applications has pushed me to try creating an app. Hutash. But it became a Frankenstein of sorts. Comfyui like system (local and free) but without the complicated nodes and dependency issues. Has a internal engine built ground up. Openart AI / magnific like studio experience but</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Eight States Sue OpenAI Over ChatGPT Safety Claims</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xf43x8/eight_states_sue_openai_over_chatgpt_safety_claims/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xf43x8/eight_states_sue_openai_over_chatgpt_safety_claims/</guid>
-      <pubDate>Sun, 25 Oct 2026 14:41:07 +0000</pubDate>
-      <description>submitted by /u/openclassactions2 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · PSA— Don’t forget. The only thing that can stop a bad guy with AI, is a good guy with AI.</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xf3wuo/psa_dont_forget_the_only_thing_that_can_stop_a/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xf3wuo/psa_dont_forget_the_only_thing_that_can_stop_a/</guid>
-      <pubDate>Sun, 25 Oct 2026 14:33:06 +0000</pubDate>
-      <description>It feels like inevitably this is the road everything is going down lmao. AI finding all these vulnerabilities in our Technology means we need a Stronger AI to keep the bad guy AI’s in check. Thank you for coming to my Ted talk. submitted by /u/Aeylwar to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · How would you check if a given model weights is "safe" ?</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xf3i59/how_would_you_check_if_a_given_model_weights_is/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xf3i59/how_would_you_check_if_a_given_model_weights_is/</guid>
-      <pubDate>Sun, 25 Oct 2026 14:16:15 +0000</pubDate>
-      <description>Imagine you want to download a new model but it's recent and there is not consensus about wether its safe or not. How would you check against potential malicious weights ? There is the first "obvious" layer where the weights try to execute arbitrary code, but safetensors are for this. I am rather talking about less obvious things like template backdoor, llm poisoning etc submitted by /u/LelouchZer</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · CloudFlare is aware of more severe vulnerabilities in critical software</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xf37nf/cloudflare_is_aware_of_more_severe/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xf37nf/cloudflare_is_aware_of_more_severe/</guid>
-      <pubDate>Sun, 25 Oct 2026 14:04:14 +0000</pubDate>
-      <description>submitted by /u/Puzzleheaded-King584 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · OpenAI killed Sora. now Nvidia is backing a company built mostly on other people’s video models</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xf1lby/openai_killed_sora_now_nvidia_is_backing_a/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xf1lby/openai_killed_sora_now_nvidia_is_backing_a/</guid>
-      <pubDate>Sun, 25 Oct 2026 12:52:30 +0000</pubDate>
-      <description>Saw the Higgsfield news this week and had to post about it somewhere where we could get a quality discussion going. Nvidia and TCV just joined their series B, on top of the august round that valued them at $5.4 billion. Higgsfield says it passed a billion dollars in annual run rate in september and has over 40 million users. they have a couple of models of their own, but most of what people use th</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · how much difference does kv cache quants even make?</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xf1cx0/how_much_difference_does_kv_cache_quants_even_make/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xf1cx0/how_much_difference_does_kv_cache_quants_even_make/</guid>
-      <pubDate>Sun, 25 Oct 2026 12:41:13 +0000</pubDate>
-      <description>I currently run qwen flash next 3.8 iq3xxs via strata (like almost everyone lol) and I currently have kv cache at q8 with 262k ctx. Ive never actually tried any other quant and dont know how big the difference even is. Id like to have a bit more context (like 300-400k) but it doesnt fit my ram then. how bad is q4 cache? Thanks for your help Edit: Thanks for all of your suggestions, opinions and in</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Lure-TTS and Lure-Turbo: 600M voice models to run 4x faster than real time, with inline (tags), direction, and voice cloning. Trained for under $200.</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xf14j2/luretts_and_lureturbo_600m_voice_models_to_run_4x/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xf14j2/luretts_and_lureturbo_600m_voice_models_to_run_4x/</guid>
-      <pubDate>Sun, 25 Oct 2026 12:29:32 +0000</pubDate>
-      <description>I trained Lure TTS by finetuning Qwen3-TTS using some of the latest developments in model training, such as RLVR, OPD, and multi-teacher OPD. My goal was to create a faster, smaller TTS model that I could listen to as a voice assistant and not get angry at it. Mostly, I just wanted a faster model that sounded good so I didn't have to whip out a big gpu when I needed it. The first thing I did was u</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Backup your quants!</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xf11qj/backup_your_quants/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xf11qj/backup_your_quants/</guid>
-      <pubDate>Sun, 25 Oct 2026 12:25:39 +0000</pubDate>
-      <description>source: https://huggingface.co/mradermacher/model_requests I'm sure the situation is the same for other quant producers. If you have anything you want to keep, it's best to make a backup now. If you have the means to, please create torrents of them and share them here: https://llama.garden https://pirateface.co/models https://huggingbay.xyz/browse submitted by /u/Kahvana to r/LocalLLaMA [link] [co</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Nanbeige/Nanbeige4.3-33B · Hugging Face</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xf0kz4/nanbeigenanbeige4333b_hugging_face/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xf0kz4/nanbeigenanbeige4333b_hugging_face/</guid>
-      <pubDate>Sun, 25 Oct 2026 12:01:34 +0000</pubDate>
-      <description>Stronger than Qwen3.8-27B across a range of benchmarks. but also lays the necessary foundation to power our upcoming small model distillation pipeline (e.g., for Nanbeige4.3-3B). It'll distilled into their 3B small models, maybe other sizes too. submitted by /u/Mysterious_Finish543 to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Not worthy anymore.</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xf01ou/not_worthy_anymore/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xf01ou/not_worthy_anymore/</guid>
-      <pubDate>Sun, 25 Oct 2026 11:32:40 +0000</pubDate>
-      <description>Im leaving openai pro100 to go to Google ultra. I literally asked Astra medium to reserch and implement on my usb loader to push a wifi bios profile.it found winpe and 1 other app can import bios wifi settings. This very minor project (took maybe 10-15mins) It sucked over 10% WEEKLY usage and 400+ credits and im on the pro100 plan. Between that, extreme inconsistencies of usage rates i have experi</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Better Tool for research</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xezzlx/better_tool_for_research/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xezzlx/better_tool_for_research/</guid>
-      <pubDate>Sun, 25 Oct 2026 11:29:37 +0000</pubDate>
-      <description>Hi guys, in the past i've used perplexity, you, gemini, claude, manus and openai for research purposes (mainly for long form content i used to upskill myself in some professional fields). But for the past year or so i am only using Open AI Tools (Codex and chatgpt) due to ease of use. And although the research stuff in chatgpt is "ok", it's not perfect. Sometimes it offers wrong advice or provides</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · I got tired of scrolling through long ChatGPT chats, so I brought back the table of contents</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xezzbo/i_got_tired_of_scrolling_through_long_chatgpt/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xezzbo/i_got_tired_of_scrolling_through_long_chatgpt/</guid>
-      <pubDate>Sun, 25 Oct 2026 11:29:12 +0000</pubDate>
-      <description>Finding an earlier question in a long ChatGPT conversation gets old pretty quickly. I missed ChatGPT’s old table of contents, so I made a userscript to bring that interaction back. It sits at the center-right edge as a small stack of pills. Hover over it to see your prompts, recognize the one you want, and click to jump back to it. A few things I wanted to get right: It stays unobtrusive while you</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Uh oh</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xezf6x/uh_oh/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xezf6x/uh_oh/</guid>
-      <pubDate>Sun, 25 Oct 2026 10:58:05 +0000</pubDate>
-      <description>submitted by /u/Puzzleheaded-King584 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Flash Next (Q2) on a 24GB M5 MacBook Air: 49 t/s decode with Splash expert streaming</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xezdgs/flash_next_q2_on_a_24gb_m5_macbook_air_49_ts/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xezdgs/flash_next_q2_on_a_24gb_m5_macbook_air_49_ts/</guid>
-      <pubDate>Sun, 25 Oct 2026 10:55:18 +0000</pubDate>
-      <description>Qwen3.8-Flash-Next (ISTA GSQ-RCO Q2_0) + Flash-Next-DFlash2 draft on a MacBook Air M5 (24 GB), on Splash 1.4.0 with a small fork. Experts that don't fit are streamed from the SSD: 6,800 of 24,576 expert slots (~28%) live in ~8.8 GB, the rest is read on demand, 256K context. Decode | Setup | code | tool | explain | avg t/s | |---|---|---|---|---| | Stock Splash 1.4.0 | 31.6 | 29.5 | 25.4 | 28.8 | |</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · OpenAI gave Pro users 62,500 Codex credits ("worth $2,500"). The day your plan ends, they're locked to the smallest models</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xeympb/openai_gave_pro_users_62500_codex_credits_worth/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xeympb/openai_gave_pro_users_62500_codex_credits_worth/</guid>
-      <pubDate>Sun, 25 Oct 2026 10:11:45 +0000</pubDate>
-      <description>My Pro plan ended this morning. I still have 57,556 of those 62,500 credits, and every serious model now returns: The 'gpt-6.1-sol' model is not supported when using Codex with a ChatGPT account. Same for Astra, 6 Sol and 5.6 Sol. The 62,500 credits now only buy Luna and Terra, which a free account gets anyway. This isn't a third-party bug. It reproduces with OpenAI's own codex CLI, and my account</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Does OpenAI secretly make people who use Codex a lot burn through their usage limits faster than people who rarely use it, even when both are using the same model to do the exact same task?</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xeymjr/does_openai_secretly_make_people_who_use_codex_a/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xeymjr/does_openai_secretly_make_people_who_use_codex_a/</guid>
-      <pubDate>Sun, 25 Oct 2026 10:11:30 +0000</pubDate>
-      <description>What if OpenAI is using dynamic usage limits based on individual user behavior to push people into buying extra credits or upgrading their subscriptions? Before the Reddit geniuses and bots rush in to explain why this supposedly makes no sense, use your imagination for a moment. Let’s say you’re a Codex power user . You use it heavily every day. What if OpenAI recognizes that pattern and puts your</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Build Strange Minds (Disco's Revenge Remix)</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xeyfwi/build_strange_minds_discos_revenge_remix/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xeyfwi/build_strange_minds_discos_revenge_remix/</guid>
-      <pubDate>Sun, 25 Oct 2026 10:00:53 +0000</pubDate>
-      <description>[Intro: low machine pulse, chopped breath, distant crowd noise] Lever. Book. Lens. Wire. Memory. Number. Signal. Fire. Then the archive talked back. [Beat enters] Fuck it. Build strange minds. [Verse 1] We made the lever stronger than the arm. Made the page remember when the body was gone. Put an eye in the sky, put a voice through the wire, put the whole damn library inside the fire. Then somebod</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Imp : News backdooring the local models</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xeuk0q/imp_news_backdooring_the_local_models/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xeuk0q/imp_news_backdooring_the_local_models/</guid>
-      <pubDate>Sun, 25 Oct 2026 06:03:55 +0000</pubDate>
-      <description>https://projectdiscovery.io/research/how-abliterated-models-can-get-you-pwned Guys, what is your thoughts on this ? submitted by /u/repair_and_privacy to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Suspended business subscription renewal</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xeue1q/suspended_business_subscription_renewal/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xeue1q/suspended_business_subscription_renewal/</guid>
-      <pubDate>Sun, 25 Oct 2026 05:54:08 +0000</pubDate>
-      <description>OpenAI told me that a space we were using, which is almost one year suspended and unused, is gonna be renewd soon. I told them It's not used and they can delete it. Their bot and human keep telling me that I should cancel it. account menu → Workspace settings → Billing → Manage plan → Cancel subscription. Sent them screenshots, that it's not possible, cause suspended, but they keep repeating the s</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · ICLR 2027 is still handing out desk rejects [N]</title>
-      <link>https://www.reddit.com/r/MachineLearning/comments/1xeu2z1/iclr_2027_is_still_handing_out_desk_rejects_n/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1xeu2z1/iclr_2027_is_still_handing_out_desk_rejects_n/</guid>
-      <pubDate>Sun, 25 Oct 2026 05:35:36 +0000</pubDate>
-      <description>Thank you for your efforts in protecting the community from AI slop. submitted by /u/Temporary_Switch_339 to r/MachineLearning [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · memt-1.0 architecture breakdown gated deltanet-2, mixture-of-storage, and 66x smaller storage footprint for agent memory [D]</title>
-      <link>https://www.reddit.com/r/MachineLearning/comments/1xeu0ht/memt10_architecture_breakdown_gated_deltanet2/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1xeu0ht/memt10_architecture_breakdown_gated_deltanet2/</guid>
-      <pubDate>Sun, 25 Oct 2026 05:31:19 +0000</pubDate>
-      <description>been digesting the details behind memt-1.0's memory-native architecture recently, and the engineering tradeoffs between full context kv caching and internalized parametric memory are pretty wild. instead of using append-only prompt stacking or external rag pipelines, memt-1.0 bakes memory directly into the model computation layer using gated deltanet-2 with a stable token-level memory update mecha</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · To make it through this alive and happy we have to dodge:</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xesgvl/to_make_it_through_this_alive_and_happy_we_have/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xesgvl/to_make_it_through_this_alive_and_happy_we_have/</guid>
-      <pubDate>Sun, 25 Oct 2026 04:04:03 +0000</pubDate>
-      <description>submitted by /u/Puzzleheaded-King584 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Web fetch still restricted after removing a custom connector in dot?</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xesgc6/web_fetch_still_restricted_after_removing_a/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xesgc6/web_fetch_still_restricted_after_removing_a/</guid>
-      <pubDate>Sun, 25 Oct 2026 04:03:13 +0000</pubDate>
-      <description>Anyone else seeing this? After installing and then removing a custom connector, dot’s web fetch still seems restricted. Could a connector-related safety restriction be sticking around after removal? Regular ChatGPT can open the same URLs, but dot can’t. This seems like a safety measurement bug ... that web fetch is automatically disabled. But then they forgot to remove it for Dots. now my Dots web</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · [Benchmark] Strata/Basalt runs Qwen3.8 Flash Next IQ3_S with 16GB VRAM and 55GB RAM with up to 250 tok/s generation and 5,600 tok/s prompt processing (5080, Concurrency 1)</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xesda1/benchmark_stratabasalt_runs_qwen38_flash_next_iq3/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xesda1/benchmark_stratabasalt_runs_qwen38_flash_next_iq3/</guid>
-      <pubDate>Sun, 25 Oct 2026 03:59:23 +0000</pubDate>
-      <description>Qwen3.8-Flash-Next IQ3_S on Basalt | RTX 5080 16 GB, Core Ultra 9 285K, 62 GB DDR5-6800 | 262K context, int8 KV Workload (prompts 5K+) PP avg (t/s) PP peak (t/s) TG avg (t/s) TG peak (t/s) VRAM RAM (engine / left free) Agent coding session (opencode, 103 requests, up to 130K ctx) 5,011 5,118 153.0 262 15.7 GB 54.1 GB / 5.2 GB Context sweep (fresh prompts 15K-207K) 5,475 5,662 154.9 186.6 15.7 GB 5</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Too good to be true? ISTA's GSQ-RCO 2-bit DeepSeek-V4.1-Flash scoring the same as the base model</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xes5x0/too_good_to_be_true_istas_gsqrco_2bit/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xes5x0/too_good_to_be_true_istas_gsqrco_2bit/</guid>
-      <pubDate>Sun, 25 Oct 2026 03:48:25 +0000</pubDate>
-      <description>Has anyone tried ISTA's GSQ-RCO GGUFs for DeepSeek-V4.1-Flash? Does the quality feel as good as their benchmarks show (IQ2_XXS matching the base)? Their benchmarks are saturated (90%+, and AIME25 is 100 for every version), so they probably can't show the degradation, and I couldn't find any KLD for GSQ-RCO models. Has anyone measured KLD or PPL? What KLD would you expect at ~2 bpw? https://hugging</description>
       <category>community-feedback</category>
       <category>use-cases</category>
       <category>emerging-signals</category>
