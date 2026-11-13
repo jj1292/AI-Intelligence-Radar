@@ -7,6 +7,846 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvin23/food_for_thought/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvin23/food_for_thought/",
+      "title": "Selected Reddit communities · Food for thought",
+      "content_text": "submitted by /u/Nickism to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-11-13T20:23:01+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/Nickism to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvikos/i_built_sysd_an_inbrowser_system_design_workbench/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvikos/i_built_sysd_an_inbrowser_system_design_workbench/",
+      "title": "Selected Reddit communities · I built sysd, an in-browser system design workbench on Excalidraw with local WASM/WebGPU voice and tool-calling",
+      "content_text": "With AI writing more of our boilerplate, I wanted a fast way to keep my own distributed systems instincts sharp, so I baked sysd. You sketch architectures on Excalidraw (Free-Flow or across 11 canonical prompts) while a live < 5ms scene-graph analyzer flags anti-patterns like direct Client -> DB writes or missing presigned offloads, and stamps multi-plane Staff+ reference blueprints with capacity",
+      "date_published": "2026-11-13T20:20:34+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "With AI writing more of our boilerplate, I wanted a fast way to keep my own distributed systems instincts sharp, so I baked sysd. You sketch architectures on Excalidraw (Free-Flow or across 11 canonical prompts) while a live < 5ms scene-gra"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvihou/vellium_195_visual_novels_that_actually_work_on_a/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvihou/vellium_195_visual_novels_that_actually_work_on_a/",
+      "title": "Selected Reddit communities · Vellium 1.9.5: visual novels that actually work on a 12B local model",
+      "content_text": "Vellium 1.9.5: Visual Novel Mode Update Vellium is a free, open-source, local-first AI chat and roleplay app with a built-in visual novel mode. Version 1.9.5 focuses on making visual novels work reliably with smaller local models like Gemma 12B, improving image consistency, reducing prompt overhead, and adding new ways to generate and manage scenes. What's new: Lite mode for small models. Instead",
+      "date_published": "2026-11-13T20:17:16+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Vellium 1.9.5: Visual Novel Mode Update Vellium is a free, open-source, local-first AI chat and roleplay app with a built-in visual novel mode. Version 1.9.5 focuses on making visual novels work reliably with smaller local models like Gemma"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvia6x/voice_dictation_with_one_model/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvia6x/voice_dictation_with_one_model/",
+      "title": "Selected Reddit communities · Voice dictation with one model.",
+      "content_text": "Hey, I'm 14 and was looking into how AI voice dictation apps like Wispr Flow work. As you might know they use a transcription model + LLM. The transcriber outputs one to one text as it hears it and then the LLM gets rid of fillers like \"um\" and adds punctuation, flow, corrected restarts and formatting. I ran that on my laptop (RTX 3050 Ti, 4 GB VRAM), then trained a single model to do both steps a",
+      "date_published": "2026-11-13T20:08:48+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hey, I'm 14 and was looking into how AI voice dictation apps like Wispr Flow work. As you might know they use a transcription model + LLM. The transcriber outputs one to one text as it hears it and then the LLM gets rid of fillers like \"um\""
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzq9/deepseek_v41_flash_vs_qwen_38_flash_next/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzq9/deepseek_v41_flash_vs_qwen_38_flash_next/",
+      "title": "Selected Reddit communities · DeepSeek v4.1 Flash vs Qwen 3.8 Flash Next Performance",
+      "content_text": "While waiting for Qwen 4, I installed and benchmarked DeepSeek v4.1 Flash to see if I was missing out. Based on the type of work I do, DeepSeek is not better but is definitely much slower. Turns out Strata with Qwen 3.8 Flash-Next is best bang for buck on my machine. submitted by /u/Critical-Entry3377 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-11-13T19:57:57+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "While waiting for Qwen 4, I installed and benchmarked DeepSeek v4.1 Flash to see if I was missing out. Based on the type of work I do, DeepSeek is not better but is definitely much slower. Turns out Strata with Qwen 3.8 Flash-Next is best b"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzes/poormans_local_llm/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzes/poormans_local_llm/",
+      "title": "Selected Reddit communities · Poorman's Local LLM",
+      "content_text": "The Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16–64 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it. Mine is the 32 GB module. It sat on a shelf collecting dust. It is \" quite terrible \". I wanted a real number for how a modern LLM runs on it. Getting there cost about $300 in tokens on GPT-6-",
+      "date_published": "2026-11-13T19:57:32+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "The Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16–64 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it. Mine is the 32 GB module. It sat"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xvhooc/two_things_happened_close_together_and_im_curious/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xvhooc/two_things_happened_close_together_and_im_curious/",
+      "title": "Selected Reddit communities · Two things happened close together and I’m curious how people here see it:",
+      "content_text": "1. The Microsoft 365 outage. Outlook, Teams and Copilot were affected. Microsoft said it was a network issue, “not related to cyber or AI / agents.” But a lot of people I know quietly switched to ChatGPT to keep working while Copilot was down. 2. Copilot pricing is changing. Microsoft plans to turn on usage-based billing by default for new Copilot Business subscriptions bought through partners (cu",
+      "date_published": "2026-11-13T19:45:46+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "1. The Microsoft 365 outage. Outlook, Teams and Copilot were affected. Microsoft said it was a network issue, “not related to cyber or AI / agents.” But a lot of people I know quietly switched to ChatGPT to keep working while Copilot was do"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/",
+      "title": "Selected Reddit communities · Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B & Flash Next [GGUF]",
+      "content_text": "hey llamas, its Alish from nace.ai (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the last post , we are releasing the GGUF weights based on the Nace quantization of Qwen 9B, 27B, 35B and Flash-Next. I will describe our process on how we came up with these quants right below, so skip",
+      "date_published": "2026-11-13T19:23:54+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "hey llamas, its Alish from nace.ai (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the last post , we are releasing the GGUF w"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xvgw7k/chatgpts_agents_can_now_buy_things_for_you_with/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xvgw7k/chatgpts_agents_can_now_buy_things_for_you_with/",
+      "title": "Selected Reddit communities · ChatGPT’s agents can now buy things for you with your credit card",
+      "content_text": "Not sure I'd trust it... submitted by /u/ross2000 to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-13T19:15:36+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Not sure I'd trust it... submitted by /u/ross2000 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvgnt7/qwen_35_4b_1010_on_hidden_tests_as_a_coding_agent/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvgnt7/qwen_35_4b_1010_on_hidden_tests_as_a_coding_agent/",
+      "title": "Selected Reddit communities · qwen 3.5 4b: 10/10 on hidden tests as a coding agent on a 16gb macbook air, after one endpoint change",
+      "content_text": "tl;dr: qwen 3.5 4b got 10/10 on hidden tests as a coding agent on a 16gb air, fully local. if your small model keeps writing broken files, use llama-server’s openai compatible endpoint instead of a json grammar. people keep telling me i only test big models on big hardware so this one is the opposite. setup m4 macbook air, 16gb, fully offline agent: atomic agent, no approvals, one attempt per run",
+      "date_published": "2026-11-13T19:06:48+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "tl;dr: qwen 3.5 4b got 10/10 on hidden tests as a coding agent on a 16gb air, fully local. if your small model keeps writing broken files, use llama-server’s openai compatible endpoint instead of a json grammar. people keep telling me i onl"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.4",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.4",
+      "title": "OpenAI · 0.171.0-alpha.4",
+      "content_text": "Release 0.171.0-alpha.4",
+      "date_published": "2026-11-13T19:02:32+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.171.0-alpha.4"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvggj6/how_do_you_guys_containerize_local_llms_on_mac/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvggj6/how_do_you_guys_containerize_local_llms_on_mac/",
+      "title": "Selected Reddit communities · How do you guys containerize local LLMs on Mac ?",
+      "content_text": "Docker doesn’t support GPU on apple silicon, I simply create a docker to run llama.cpp there on Linux, I wonder if I am missing something on Mac. submitted by /u/Shadow_s_Bane to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-11-13T18:59:28+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Docker doesn’t support GPU on apple silicon, I simply create a docker to run llama.cpp there on Linux, I wonder if I am missing something on Mac. submitted by /u/Shadow_s_Bane to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1xvgf6h/four_frontier_models_scored_978100_on_a_7part/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xvgf6h/four_frontier_models_scored_978100_on_a_7part/",
+      "title": "Selected Reddit communities · Four frontier models scored 97.8–100 on a 7-part materials-science research test. How should we score long-horizon agent evals instead? [d]",
+      "content_text": "I work in graphene and 2D materials, and I built a test of the everyday technical work in a research group. It has seven parts: reducing a messy tensile data set against a lab SOP (with unit and outlier traps), writing a CIF density function checked on three hidden structures, four back-of-envelope physics calculations, critiquing a manuscript with 10 planted errors and 6 correct-but-suspicious de",
+      "date_published": "2026-11-13T18:58:00+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I work in graphene and 2D materials, and I built a test of the everyday technical work in a research group. It has seven parts: reducing a messy tensile data set against a lab SOP (with unit and outlier traps), writing a CIF density functio"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xvg2ll/in_six_days_openai_will_begin_using_your_medical/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xvg2ll/in_six_days_openai_will_begin_using_your_medical/",
+      "title": "Selected Reddit communities · In six days, OpenAI will begin using your medical data for training unless you opt-out.",
+      "content_text": "submitted by /u/damontoo to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-13T18:44:45+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/damontoo to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvg1xb/paper_model_gstar_groupscaled_token_capacity_for/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvg1xb/paper_model_gstar_groupscaled_token_capacity_for/",
+      "title": "Selected Reddit communities · [Paper & Model] G-STAR: Group-Scaled Token Capacity for Deeply Compressed Autoregressive Generation",
+      "content_text": "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduces representation capacity. Based on product quantization, we show that, under a fixed nominal information budget, group size should scale quadratically with th",
+      "date_published": "2026-11-13T18:44:01+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Discrete autoregressive models offer a scalable framework for image generation. However, they face a fundamental trade-off: long token sequences preserve representation quality but slow generation, while aggressive spatial compression reduc"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvflyc/a_year_ago_i_couldnt_get_vllm_running_on_my_5090/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvflyc/a_year_ago_i_couldnt_get_vllm_running_on_my_5090/",
+      "title": "Selected Reddit communities · A year ago I couldn't get vLLM running on my 5090. Now work gave me a DGX Station for a month. What should I run?",
+      "content_text": "So about a year ago I was in here asking why vLLM wouldnt run on my 5090 (WSL, flash-infer, the usual pain). These days I'm the AI guy at work, and this week a DGX Station showed up. ASUS ET900N G3, GB300 with ~250 GB VRAM, 72 Grace cores, 750 GB RAM, liquid cooled, plus an RTX PRO 6000 riding along in the same case. I get it more or less to myself for a month before it becomes the shared inferenc",
+      "date_published": "2026-11-13T18:27:21+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "So about a year ago I was in here asking why vLLM wouldnt run on my 5090 (WSL, flash-infer, the usual pain). These days I'm the AI guy at work, and this week a DGX Station showed up. ASUS ET900N G3, GB300 with ~250 GB VRAM, 72 Grace cores, "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvfg2n/computer_use_programspi_extensions/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvfg2n/computer_use_programspi_extensions/",
+      "title": "Selected Reddit communities · Computer use programs/Pi extensions",
+      "content_text": "I've eard much stuff about Codex and CC computer use, is there any decent program/Pi Agent extension that I can install and use to let my local models control my pc. I am using Qwen3.6-35BA3B on PolyStrata and Pi Agent, I need the model to do basic tasks on my PC, maybe by using its vision. submitted by /u/circumcised_hobbit to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-11-13T18:21:09+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I've eard much stuff about Codex and CC computer use, is there any decent program/Pi Agent extension that I can install and use to let my local models control my pc. I am using Qwen3.6-35BA3B on PolyStrata and Pi Agent, I need the model to "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xvfehk/the_next_generation_will_never_see_a_real_video/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xvfehk/the_next_generation_will_never_see_a_real_video/",
+      "title": "Selected Reddit communities · The next generation will never see a real video",
+      "content_text": "submitted by /u/No_Tomatillo1695 to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-13T18:19:33+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/No_Tomatillo1695 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xveibt/chatgpt_as_a_home_assistant/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xveibt/chatgpt_as_a_home_assistant/",
+      "title": "Selected Reddit communities · ChatGPT as a home assistant?",
+      "content_text": "So I had an idea to turn ChatGPT into basically a \"digital butler\" for me. Like \"ChatGPT, turn off the lights in my bedroom\" and it executes a task via a plugin and my lights go off. This seems like the sort of thing that should be very doable but I can't find a plugin/app combo that makes it work. I already have Tasker for various Android automations I coded myself, and my smart watch can trigger",
+      "date_published": "2026-11-13T17:46:48+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "So I had an idea to turn ChatGPT into basically a \"digital butler\" for me. Like \"ChatGPT, turn off the lights in my bedroom\" and it executes a task via a plugin and my lights go off. This seems like the sort of thing that should be very doa"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xve9cg/can_i_just_use_a_local_vlm_to_control_a_robot_arm/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xve9cg/can_i_just_use_a_local_vlm_to_control_a_robot_arm/",
+      "title": "Selected Reddit communities · Can I just use a local VLM to control a robot arm, or do I need the robot-specific models?",
+      "content_text": "Trying to get into the robotics side with what I have, which is a 3090 and 64GB RAM. No arm yet, just sim. I've seen people drive robots with the big API models, so my first thought was to point a decent local VLM at the sim and let it output the moves. But everything I read says you want a dedicated model for that. pi0.5, SmolVLA, even touch has its own model now. LingBot-Touch is only 5.46M para",
+      "date_published": "2026-11-13T17:37:28+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Trying to get into the robotics side with what I have, which is a 3090 and 64GB RAM. No arm yet, just sim. I've seen people drive robots with the big API models, so my first thought was to point a decent local VLM at the sim and let it outp"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvdmzb/tontaube_v11_openweights_tts_with_voice_cloning/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvdmzb/tontaube_v11_openweights_tts_with_voice_cloning/",
+      "title": "Selected Reddit communities · Tontaube V1.1: open-weights TTS with voice cloning for long-form generation. 4-bit version runs about real time on a desktop CPU",
+      "content_text": "We just released Tontaube V1.1, a text-to-speech model built for long-form audio (audiobooks, articles, voice agents) with zero-shot voice cloning. Our previous V1 release needed a lot of VRAM because of its vLLM setup, so this version is about making it more accessible: the 4-bit weights run in about 4 GB of VRAM, or at about real time on a desktop CPU. In a blind listening study with 400 pairwis",
+      "date_published": "2026-11-13T17:14:40+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "We just released Tontaube V1.1, a text-to-speech model built for long-form audio (audiobooks, articles, voice agents) with zero-shot voice cloning. Our previous V1 release needed a lot of VRAM because of its vLLM setup, so this version is a"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xvd1ci/openai_introduces_chatgpt_wallet_so_agents_can/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xvd1ci/openai_introduces_chatgpt_wallet_so_agents_can/",
+      "title": "Selected Reddit communities · OpenAI introduces ChatGPT Wallet so agents can complete purchases with user approval",
+      "content_text": "submitted by /u/rhiever to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-13T16:52:52+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/rhiever to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcmm0/i_built_speedy_strix_halo_kernels_for_the_top51/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcmm0/i_built_speedy_strix_halo_kernels_for_the_top51/",
+      "title": "Selected Reddit communities · I built speedy Strix Halo kernels for the top-51 LLMs with AMD Loom (and you can too)",
+      "content_text": "I’ve been trying out a new experimental software flow from AMD’s AI Group, and I’ve been having a lot of fun with it, so I thought I’d share and see what y’all think too. hrx-loom is a new end-to-end tool stack (compiler, runtime, serving tools) that lets anyone build, optimize, serve, and share model programs without any modifications to the inference engine or server. The kernels are written in",
+      "date_published": "2026-11-13T16:37:41+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I’ve been trying out a new experimental software flow from AMD’s AI Group, and I’ve been having a lot of fun with it, so I thought I’d share and see what y’all think too. hrx-loom is a new end-to-end tool stack (compiler, runtime, serving t"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcgxq/deepseek_flash_max_is_the_first_model_to_reach_1/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcgxq/deepseek_flash_max_is_the_first_model_to_reach_1/",
+      "title": "Selected Reddit communities · DeepSeek flash max is the first model to reach >1% on challenging SWE-sweep bug finding benchmark",
+      "content_text": "Hi, I've just updated the SWE-sweep leaderboard with more open-weight models! DeepSeek v4.1 flash (max) is the first open-weight model we evaluated that gets >1%. This benchmark is extremely challenging: Models get a snapshot of a (potentially very large) repo containing hundreds of bugs. They don't receive any hint about what these bugs are and need to fix them all. This makes for a very reasonin",
+      "date_published": "2026-11-13T16:31:47+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hi, I've just updated the SWE-sweep leaderboard with more open-weight models! DeepSeek v4.1 flash (max) is the first open-weight model we evaluated that gets >1%. This benchmark is extremely challenging: Models get a snapshot of a (potentia"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1xvce5h/scaling_to_1t_moe_on_torchtitan_p/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xvce5h/scaling_to_1t_moe_on_torchtitan_p/",
+      "title": "Selected Reddit communities · Scaling to 1T MoE on TorchTitan [P]",
+      "content_text": "Hi everyone! Over the last few months we've been in the trenches with the TorchTitan and PyTorch maintainers, trying to find out how far GH200 (the GPUs inside the JUPITER supercomputer) can be pushed. Short answer: far enough to train a ~1T-parameter MoE at ~1,300 tokens/s per GPU on 384 GPUs. That's 14X where we started, and our starting point was, let's say, humbling. Along the way we collected",
+      "date_published": "2026-11-13T16:28:36+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hi everyone! Over the last few months we've been in the trenches with the TorchTitan and PyTorch maintainers, trying to find out how far GH200 (the GPUs inside the JUPITER supercomputer) can be pushed. Short answer: far enough to train a ~1"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcbbh/nvidia_privately_confirmed_it_could_track_chips/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvcbbh/nvidia_privately_confirmed_it_could_track_chips/",
+      "title": "Selected Reddit communities · Nvidia privately confirmed it could track chips to fight smuggling, even as industry publicly questioned feasibility",
+      "content_text": "\"Foster told MIT Technology Review he intends to introduce new, stricter legislation in the new year that would offer a workaround. The new rule would require licenses to operate advanced GPUs, and before a GPU could connect, its valid license would need to be verified. \" Basically they will lock the gpus. submitted by /u/OldEffective9726 to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-11-13T16:25:31+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "\"Foster told MIT Technology Review he intends to introduce new, stricter legislation in the new year that would offer a workaround. The new rule would require licenses to operate advanced GPUs, and before a GPU could connect, its valid lice"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
+      "title": "OpenAI · 0.169.0",
+      "content_text": "New Features The opt-in terminal workspace supports multiple side-chat tabs. Switch between them with the keyboard or mouse, and reopen saved local side chats after restarting Codex. ( #59784 , #60152 , #60181 ) Search older tasks from the agent command center by name, prompt preview, or working directory. ( #60286 ) Turn on Collapse turn details in the full-screen transcript to fold completed act",
+      "date_published": "2026-11-13T08:39:10+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "New Features The opt-in terminal workspace supports multiple side-chat tabs. Switch between them with the keyboard or mouse, and reopen saved local side chats after restarting Codex. ( #59784 , #60152 , #60181 ) Search older tasks from the "
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.2",
+      "title": "OpenAI · 0.171.0-alpha.2",
+      "content_text": "Release 0.171.0-alpha.2",
+      "date_published": "2026-11-13T08:04:06+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.171.0-alpha.2"
+        ]
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xv1wif/your_model_didnt_get_dumber/",
       "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xv1wif/your_model_didnt_get_dumber/",
       "title": "Selected Reddit communities · Your Model Didn't Get Dumber",
@@ -187,36 +1027,6 @@
       }
     },
     {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0",
-      "title": "OpenAI · rust-v0.169.0",
-      "content_text": "Release 0.169.0",
-      "date_published": "2026-11-13T04:48:20+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 3,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.169.0"
-        ]
-      }
-    },
-    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.3",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.3",
       "title": "OpenAI · rust-v0.171.0-alpha.3",
@@ -243,36 +1053,6 @@
         "confidence": 0.98,
         "evidence": [
           "Release 0.171.0-alpha.3"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.2",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.2",
-      "title": "OpenAI · rust-v0.171.0-alpha.2",
-      "content_text": "Release 0.171.0-alpha.2",
-      "date_published": "2026-11-13T04:34:19+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.171.0-alpha.2"
         ]
       }
     },
@@ -5223,786 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "Overview Provides a new --shard command line argument and support for loading a model from multiple shard locations; common use case is loading the PLE (engram) files from a separate GGUF. Adds conversion support for building both a PLE-les"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsg7wr/unpopular_opinion_llms_without_thinking_are/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsg7wr/unpopular_opinion_llms_without_thinking_are/",
-      "title": "Selected Reddit communities · Unpopular opinion: LLMs without thinking are useless for agentic work because they can't follow instructions",
-      "content_text": "I've been trying to create semi-autonomous agents to handle private data sorting, and regardless of their size I find them unable to follow detailed instructions provided in AGENTS.md I have tried qwen3.6, then qwen3-coder, and any instruction that is even a little vague gets completely ignored. Then I tried other variants, with gpt-oss, other qwen variants, and then qwen3.6 without thinking, and",
-      "date_published": "2026-11-10T06:56:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I've been trying to create semi-autonomous agents to handle private data sorting, and regardless of their size I find them unable to follow detailed instructions provided in AGENTS.md I have tried qwen3.6, then qwen3-coder, and any instruct"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsg2cu/prediction_more_enthusiasts_will_get_custom/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsg2cu/prediction_more_enthusiasts_will_get_custom/",
-      "title": "Selected Reddit communities · Prediction: more enthusiasts will get custom quantisations build by opus and Asta for their hardware and precision needs",
-      "content_text": "Based on my own little experiment and other reports I predict that more and more enthusiasts will ask a frontier LLM to build a custom quant of their favourite model. If Qwen 4 finally arrives I’ll try a ready made quant at first, probably unsloth. But I already plan to let opus build a quant specifically for my hardware, context size and precision needs. What do you guys think? submitted by /u/ei",
-      "date_published": "2026-11-10T06:47:23+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Based on my own little experiment and other reports I predict that more and more enthusiasts will ask a frontier LLM to build a custom quant of their favourite model. If Qwen 4 finally arrives I’ll try a ready made quant at first, probably "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xseyo3/regular_show_house_if_it_was_in_real_life/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xseyo3/regular_show_house_if_it_was_in_real_life/",
-      "title": "Selected Reddit communities · Regular show house if it was in real life",
-      "content_text": "submitted by /u/TommycoolGun to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-10T05:42:10+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/TommycoolGun to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsdy76/audio_embeddings_inference_in_cggml_with_clapcpp/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsdy76/audio_embeddings_inference_in_cggml_with_clapcpp/",
-      "title": "Selected Reddit communities · Audio embeddings inference in C++/GGML with clap.cpp",
-      "content_text": "I implemented clap.cpp , audio embedding inference in C++/GGML. It uses GGUF models and provides a CLI, an HTTP server, and Python, Rust, and Node.js bindings. Models including CLAP, CLAP2, CLaMP3, MERT, MuQ, and MuQ-MuLan. WAV, MP3, and FLAC input, with automatic resampling and mono downmixing. An HTTP endpoint with an OpenAI-compatible text embeddings request format . GitHub: https://github.com/",
-      "date_published": "2026-11-10T04:46:16+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I implemented clap.cpp , audio embedding inference in C++/GGML. It uses GGUF models and provides a CLI, an HTTP server, and Python, Rust, and Node.js bindings. Models including CLAP, CLAP2, CLaMP3, MERT, MuQ, and MuQ-MuLan. WAV, MP3, and FL"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xsduos/sam_altmans_enemy/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xsduos/sam_altmans_enemy/",
-      "title": "Selected Reddit communities · Sam Altman’s Enemy",
-      "content_text": "submitted by /u/Adorable-Floor-3373 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-10T04:41:03+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/Adorable-Floor-3373 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsde08/these_names_are_wild_but_i_love_themnew_model/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsde08/these_names_are_wild_but_i_love_themnew_model/",
-      "title": "Selected Reddit communities · These names are wild, but I love them/New Model: DavidAU Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF",
-      "content_text": "So fresh I havent even loaded it up yet https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF Interested to see what the expansion out of 27B to 40B has done overall as well as what has to be a record for chat_template length submitted by /u/mp3m4k3r to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-10T04:16:17+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So fresh I havent even loaded it up yet https://huggingface.co/DavidAU/Qwen3.8-40B-Ultimate-Heretic-Uncensored-Turbo-Brilliance-50x-AGI-NEO-GGUF Interested to see what the expansion out of 27B to 40B has done overall as well as what has to "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xsd8ba/i_spent_17_months_building_a_247_ai_television/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xsd8ba/i_spent_17_months_building_a_247_ai_television/",
-      "title": "Selected Reddit communities · I spent 17 months building a 24/7 AI television network. Here's what I've learned.",
-      "content_text": "Two months ago, I shared my AI-generated television network, Botflix , here on r/OpenAI . Since then, I've made some interesting discoveries. I'm a filmmaker running a five-channel, 24/7 AI television network single-handedly. Here are my biggest takeaways: The breakthrough wasn't longer AI videos. It was agents. I expected video models to soon generate entire scenes or full length videos. Instead,",
-      "date_published": "2026-11-10T04:07:41+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Two months ago, I shared my AI-generated television network, Botflix , here on r/OpenAI . Since then, I've made some interesting discoveries. I'm a filmmaker running a five-channel, 24/7 AI television network single-handedly. Here are my bi"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbmbx/qwen38flashnext_have_you_tried_swapping_the/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbmbx/qwen38flashnext_have_you_tried_swapping_the/",
-      "title": "Selected Reddit communities · Qwen3.8-Flash-Next: Have you tried swapping the ngrams as per their latest version?",
-      "content_text": "Edit: Using unsloth UD-Q4_K_XL and q8_0 engrams Just curious to know what benefit it brings. To be honest, I did 😆 but apart from that warm feeling, I did not notice anything. I would like to know if someone did and did notice some benefits. My rig is AMD Strix Halo 128 GB + Windows 11 + gufo v0.33.0. Cheers! submitted by /u/Novel_Friendship913 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-10T02:46:55+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Edit: Using unsloth UD-Q4_K_XL and q8_0 engrams Just curious to know what benefit it brings. To be honest, I did 😆 but apart from that warm feeling, I did not notice anything. I would like to know if someone did and did notice some benefits"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbdtj/i_tried_replacing_ai_multiplication_with_a_giant/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbdtj/i_tried_replacing_ai_multiplication_with_a_giant/",
-      "title": "Selected Reddit communities · I tried replacing AI multiplication with a giant book of answers",
-      "content_text": "This started with what felt like a slightly dumb question: Why does an AI model keep multiplying and adding numbers? What if we calculated the answers once, stored them, and looked them up later? It’s the same idea as memorizing multiplication tables in school. You don’t work out 7 × 8 every time. You remember that the answer is 56. So I built that idea for AI calculations. I called it Product Atl",
-      "date_published": "2026-11-10T02:35:17+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "This started with what felt like a slightly dumb question: Why does an AI model keep multiplying and adding numbers? What if we calculated the answers once, stored them, and looked them up later? It’s the same idea as memorizing multiplicat"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xsbc48/who_prompting_whom/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xsbc48/who_prompting_whom/",
-      "title": "Selected Reddit communities · Who prompting whom!?",
-      "content_text": "submitted by /u/recoil669 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-10T02:32:57+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/recoil669 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbc2r/multiverse_computings_comet_60b_a12b_ggufs_with/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsbc2r/multiverse_computings_comet_60b_a12b_ggufs_with/",
-      "title": "Selected Reddit communities · Multiverse Computing's Comet 60B (A12B) GGUFs with the MTP head",
-      "content_text": "I wanted to try MultiverseComputingCAI/Comet_60B_A12B_BF16 (Multiverse Computing's compressed version of Nemotron 3.5 Super), so I converted it to GGUF, and it runs on stock llama.cpp: Q4_K_M (42.6 GB) Q8_0 (64.2 GB) They keep the MTP head, so you can pass --spec-type draft-mtp to llama-server for speculative decoding. Just sharing, so you can try it too. Note that these GGUFs are text only (the v",
-      "date_published": "2026-11-10T02:32:52+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I wanted to try MultiverseComputingCAI/Comet_60B_A12B_BF16 (Multiverse Computing's compressed version of Nemotron 3.5 Super), so I converted it to GGUF, and it runs on stock llama.cpp: Q4_K_M (42.6 GB) Q8_0 (64.2 GB) They keep the MTP head,"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
-      "title": "Anthropic · v2.1.322",
-      "content_text": "What's changed Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it",
-      "date_published": "2026-11-10T02:29:43+00:00",
-      "authors": [
-        {
-          "name": "Anthropic"
-        }
-      ],
-      "tags": [
-        "claude-code",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "Anthropic",
-        "source_name": "anthropics/claude-code releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 3,
-        "confidence": 0.98,
-        "evidence": [
-          "What's changed Added fast mode on Vertex in the global, us and eu regions, falling back to standard speed if Vertex refuses it"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsaurn/cudarocm_dualbackends_llm_inference_for/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsaurn/cudarocm_dualbackends_llm_inference_for/",
-      "title": "Selected Reddit communities · CUDA+ROCm dual-backends LLM inference for mixed-vendor GPUs (up to 48% faster)",
-      "content_text": "I have seen potential in combining Strix Halo's iGPU with RTX 5090 for LLM inferencing. Initially I found no inference engine that can run LLM inference on both these GPUs at the same time, inference engine such as vLLM support inference on all CUDA GPUs, or all AMD GPUs. llama.cpp Vulkan backend was the only inference engine I found that support both, but it has a huge limitation on the prefill p",
-      "date_published": "2026-11-10T02:09:31+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I have seen potential in combining Strix Halo's iGPU with RTX 5090 for LLM inferencing. Initially I found no inference engine that can run LLM inference on both these GPUs at the same time, inference engine such as vLLM support inference on"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsaujd/australian_finetunes/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsaujd/australian_finetunes/",
-      "title": "Selected Reddit communities · Australian Finetunes",
-      "content_text": "The Australian AI lab Maincode has released a set of Qwen 3 fine tunes that have been pulled together with Model Stitching. From the model card: Matilda Platypus is a family of intermediate-size language models built by connecting the lower layers of a larger pretrained Qwen3 model to the upper layers of a smaller one. A learned linear Representation Bridge aligns the hidden representations at the",
-      "date_published": "2026-11-10T02:09:12+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "The Australian AI lab Maincode has released a set of Qwen 3 fine tunes that have been pulled together with Model Stitching. From the model card: Matilda Platypus is a family of intermediate-size language models built by connecting the lower"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1xsasyf/did_we_ever_really_get_to_the_bottom_of_why/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xsasyf/did_we_ever_really_get_to_the_bottom_of_why/",
-      "title": "Selected Reddit communities · Did we ever really get to the bottom of why BatchNorm works? [D]",
-      "content_text": "It's been a long time since I studied this. Just checking in on an old friend. I also realize it's fallen out of favor for being extremely inconvenient , but why did it ever work? submitted by /u/XTXinverseXTY to r/MachineLearning [link] [comments]",
-      "date_published": "2026-11-10T02:07:04+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "It's been a long time since I studied this. Just checking in on an old friend. I also realize it's fallen out of favor for being extremely inconvenient , but why did it ever work? submitted by /u/XTXinverseXTY to r/MachineLearning [link] [c"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xsaand/why_dont_they_provide_any_free_reset_anymore/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xsaand/why_dont_they_provide_any_free_reset_anymore/",
-      "title": "Selected Reddit communities · Why don't they provide any free reset anymore?",
-      "content_text": "Title. Plus user here out of usage for 3 days! submitted by /u/TameYour to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-10T01:42:35+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Title. Plus user here out of usage for 3 days! submitted by /u/TameYour to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsa6jf/what_type_of_rig_would_you_suggest_for_68k_cad/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsa6jf/what_type_of_rig_would_you_suggest_for_68k_cad/",
-      "title": "Selected Reddit communities · What type of rig would you suggest for 6-8k CAD? (4-5k USD)",
-      "content_text": "I need to get an all-around work station soon because my current laptop is getting old and I'm now offloading a bit of work to it. Since I dabble with local AI already, I was thinking of getting an m5 utlra 96GB (8k) or a m5 max 128GB (7.9k)... Or should I build a custom PC with a bunch of ram? Or are there other work stations that I can use? I really enjoy using a hybrid approach with AI, flagshi",
-      "date_published": "2026-11-10T01:37:01+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I need to get an all-around work station soon because my current laptop is getting old and I'm now offloading a bit of work to it. Since I dabble with local AI already, I was thinking of getting an m5 utlra 96GB (8k) or a m5 max 128GB (7.9k"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xsa5a6/sammy_boy/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xsa5a6/sammy_boy/",
-      "title": "Selected Reddit communities · sammy boy",
-      "content_text": "sam altman has got to be in deep psychosis😭 i don’t understand how you cultists support this bullshit company submitted by /u/TheoneL1C0 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-10T01:35:24+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "sam altman has got to be in deep psychosis😭 i don’t understand how you cultists support this bullshit company submitted by /u/TheoneL1C0 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xsa420/arete27b_vs_qwen3827b_comparison/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xsa420/arete27b_vs_qwen3827b_comparison/",
-      "title": "Selected Reddit communities · Arete-27B vs Qwen3.8-27B comparison",
-      "content_text": "Arete-27B is a post-train of Qwen3.8-27B by Nous Research to \"Reinforce Western Values\". https://nousresearch.com/arete . \"Why the name: Arete (ἀρετή) is the ancient Greek concept of excellence and virtue.\" From my local GPU evaluation, Arete does remove CCP framing when that conflicts with the historical record like for Tiananmen Square, Hong Kong protests ... , and Arete doesn't replace it (comp",
-      "date_published": "2026-11-10T01:33:44+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Arete-27B is a post-train of Qwen3.8-27B by Nous Research to \"Reinforce Western Values\". https://nousresearch.com/arete . \"Why the name: Arete (ἀρετή) is the ancient Greek concept of excellence and virtue.\" From my local GPU evaluation, Are"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xs9nux/i_made_a_400m_model_for_npc_judgement_calls_in/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs9nux/i_made_a_400m_model_for_npc_judgement_calls_in/",
-      "title": "Selected Reddit communities · I made a 400M model for NPC judgement calls in games (Apache-2.0, ~0.1s on a 3060 Ti)",
-      "content_text": "The model is an encoder (Ettin-400M) fine-tuned to answer small game questions. You give it a scene, a question, and some options, and it returns probabilities or \"not sure\". The model was inspired by Jev. Stuff like: is the player threatening this guard, is that apology sincere, which memory fits what they just said, did my LLM's reply leak a secret or make something up. The idea is your local LL",
-      "date_published": "2026-11-10T01:11:58+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "The model is an encoder (Ettin-400M) fine-tuned to answer small game questions. You give it a scene, a question, and some options, and it returns probabilities or \"not sure\". The model was inspired by Jev. Stuff like: is the player threaten"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.8",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.8",
-      "title": "OpenAI · rust-v0.169.0-alpha.8",
-      "content_text": "Release 0.169.0-alpha.8",
-      "date_published": "2026-11-09T23:51:39+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.169.0-alpha.8"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.167.0-alpha.4.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0-alpha.4.1",
-      "title": "OpenAI · 0.167.0-alpha.4.1",
-      "content_text": "Release 0.167.0-alpha.4.1",
-      "date_published": "2026-11-09T23:49:13+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.167.0-alpha.4.1"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1xs6494/followup_2026_papers_are_finally_in_the_topic/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xs6494/followup_2026_papers_are_finally_in_the_topic/",
-      "title": "Selected Reddit communities · Follow-up: 2026 papers are finally in the topic pages, and we made ICML / CVPR / ICLR 2026 \"newspapers\"[P]",
-      "content_text": "A few weeks ago I posted the topic pages we built from 10 years of ICML/NeurIPS/ICLR/CVPR/AAAI papers. A bunch of you pointed out the obvious gap: the benchmark records and ablations stopped at 2025. That's fixed now. We've pulled results out of about 101k full texts (it was 79k when I posted), roughly a million \"tried X, got Y\" findings. 2026 is mostly covered: almost all of ICML, CVPR and AAAI,",
-      "date_published": "2026-11-09T22:39:13+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "A few weeks ago I posted the topic pages we built from 10 years of ICML/NeurIPS/ICLR/CVPR/AAAI papers. A bunch of you pointed out the obvious gap: the benchmark records and ablations stopped at 2025. That's fixed now. We've pulled results o"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5yyt/can_someone_finetune_a_9b_model_to_lift_assembly/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5yyt/can_someone_finetune_a_9b_model_to_lift_assembly/",
-      "title": "Selected Reddit communities · Can someone fine-tune a 9b model to lift assembly to higher level code?",
-      "content_text": "FGS, guys we need it more than anything rn. submitted by /u/scknkkrer to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-09T22:33:09+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "FGS, guys we need it more than anything rn. submitted by /u/scknkkrer to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xs5pkl/is_artificialanalysis_biased_against_open_weight/",
-      "title": "Selected Reddit communities · Is ArtificialAnalysis biased against open weight models?",
-      "content_text": "It seems like whenever open weight models come close to proprietary US models, ArtificialAnalysis conveniently \"re-calibrates\" their benchmarks which then shoves open weight models down the toilet. Then they advertise on X/Twitter this \"intelligence index\" which presents open weight models as dog shit compared to Claude or GPT (all while ignoring the actual intelligence of models like DeepSeek or",
-      "date_published": "2026-11-09T22:22:35+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "It seems like whenever open weight models come close to proprietary US models, ArtificialAnalysis conveniently \"re-calibrates\" their benchmarks which then shoves open weight models down the toilet. Then they advertise on X/Twitter this \"int"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.7",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.7",
-      "title": "OpenAI · 0.169.0-alpha.7",
-      "content_text": "Release 0.169.0-alpha.7",
-      "date_published": "2026-11-09T22:01:36+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.169.0-alpha.7"
         ]
       }
     }
