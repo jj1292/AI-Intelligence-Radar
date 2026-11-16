@@ -7,6 +7,786 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxibeh/new_aa_ranking_qwen38fn_better_than_glm53flash/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxibeh/new_aa_ranking_qwen38fn_better_than_glm53flash/",
+      "title": "Selected Reddit communities · New AA ranking Qwen3.8-FN better than GLM-5.3-Flash?",
+      "content_text": "Thoughts on Qwen3.8-Flash-Next scoring better than GLM-5.3-flash? I've always experienced GLM5.3-Flash to give better responses submitted by /u/CryMoreT_T to r/LocalLLaMA [link] [comments]",
+      "date_published": "2026-11-16T06:32:08+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Thoughts on Qwen3.8-Flash-Next scoring better than GLM-5.3-flash? I've always experienced GLM5.3-Flash to give better responses submitted by /u/CryMoreT_T to r/LocalLLaMA [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxi6br/i_have_access_to_two_systems_i_dont_know_which/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxi6br/i_have_access_to_two_systems_i_dont_know_which/",
+      "title": "Selected Reddit communities · I have access to two systems, I don't know which one is better for LocalLLM. Please help!",
+      "content_text": "Hi, I can make two systems with the parts that I have: 12600k / 64GB DDR4 / 3x3060 12GB 7950X3D / 32GB DDR5 / 3x3060 12GB + 1x4060 8GB I've been consulting Claude and Gemini for which is better, but I can't really decide which i should go for. I'm thinking of setting them up with either llama.cpp or strata. This is for my work, so agentic document creation, and output quality is important. I'm als",
+      "date_published": "2026-11-16T06:23:47+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hi, I can make two systems with the parts that I have: 12600k / 64GB DDR4 / 3x3060 12GB 7950X3D / 32GB DDR5 / 3x3060 12GB + 1x4060 8GB I've been consulting Claude and Gemini for which is better, but I can't really decide which i should go f"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxhubd/what_you_all_guys_think/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxhubd/what_you_all_guys_think/",
+      "title": "Selected Reddit communities · What you all guys think?",
+      "content_text": "submitted by /u/Open_Philosophy_1016 to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-16T06:04:08+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/Open_Philosophy_1016 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxh1tf/nvidias_problem_openai_is_90_plus_percent_nvidia/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxh1tf/nvidias_problem_openai_is_90_plus_percent_nvidia/",
+      "title": "Selected Reddit communities · Nvidia’s Problem: OpenAI Is “90 Plus Percent Nvidia,” and It’s the Lab Burning Cash",
+      "content_text": "submitted by /u/ThereWas to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-16T05:18:26+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/ThereWas to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxg12n/release_qwen3827bperplexingpegasusheretic_unified/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxg12n/release_qwen3827bperplexingpegasusheretic_unified/",
+      "title": "Selected Reddit communities · [Release] Qwen3.8-27B-Perplexing-Pegasus-Heretic: Unified vision + typed decider + abliterated weights for local agent stacks (GGUF, AutoRound, NVFP4)",
+      "content_text": "Hey everyone, While building and testing WebBrain with local models, getting reliable agent performance usually required keeping two or three separate models in memory at once: * A vision model to inspect and parse browser/UI state * A fast typed-decision model for structured routing and scoring * An abliterated / uncensored model so realistic web workflows do not randomly choke on false-positive",
+      "date_published": "2026-11-16T04:22:20+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hey everyone, While building and testing WebBrain with local models, getting reliable agent performance usually required keeping two or three separate models in memory at once: * A vision model to inspect and parse browser/UI state * A fast"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxfv69/im_starting_to_think_a_specialized_4b_is_enough/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxfv69/im_starting_to_think_a_specialized_4b_is_enough/",
+      "title": "Selected Reddit communities · I'm starting to think a specialized 4B is enough for most of the tasks I'd use an LLM for",
+      "content_text": "When I started training Qwen3.5-4B-3D-Coder , I honestly wasn't sure it would work. Now, after that model and the GLB asset version, I'm starting to think I underestimated how much these smaller models can actually learn. My impression is that a 4B model might be enough for most practical tasks if you train it specifically for the job. Generating 3D assets, building and orchestrating complex scene",
+      "date_published": "2026-11-16T04:13:31+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "When I started training Qwen3.5-4B-3D-Coder , I honestly wasn't sure it would work. Now, after that model and the GLB asset version, I'm starting to think I underestimated how much these smaller models can actually learn. My impression is t"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxfcr6/github_icryoglmtandem_glm53flash_on_two_mac/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxfcr6/github_icryoglmtandem_glm53flash_on_two_mac/",
+      "title": "Selected Reddit communities · GitHub - icryo/GLM-Tandem: GLM-5.3-Flash on two Mac Studios, tensor-parallel: about 140 tokens/s on fresh prose",
+      "content_text": "Workload tok/s Fresh prose, temperature 0.6 141–146 Fresh prose, temperature 0 141 Chat fixture (256 tokens), T=0 / T=1 143 / 140 Code fixture (256 tokens), T=0 / T=1 157 / 146 JSON extraction 148 Add docstrings, whole file back 210 Code edit, whole file back 219 Request with an image 133–136 (measured before the last change) Several requests at once (total tokens/s including prompt time, 300-toke",
+      "date_published": "2026-11-16T03:46:33+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Workload tok/s Fresh prose, temperature 0.6 141–146 Fresh prose, temperature 0 141 Chat fixture (256 tokens), T=0 / T=1 143 / 140 Code fixture (256 tokens), T=0 / T=1 157 / 146 JSON extraction 148 Add docstrings, whole file back 210 Code ed"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxf75n/what_models_should_i_backup_if_huggingface_what/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxf75n/what_models_should_i_backup_if_huggingface_what/",
+      "title": "Selected Reddit communities · What models should I backup if Huggingface... What if they already started?",
+      "content_text": "Let me start by saying what is happening may not be intentionally malicious and just an effort to load balance their servers to serve as many as possible. That said, I have seen a pattern where less well known models download 3-4 times slower, if not infinitely slower (one model exceeded an hour when I quit). Most recently, a Glimmer based model was going to take an hour to download, and it was on",
+      "date_published": "2026-11-16T03:38:13+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Let me start by saying what is happening may not be intentionally malicious and just an effort to load balance their servers to serve as many as possible. That said, I have seen a pattern where less well known models download 3-4 times slow"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxen8a/sam_altman_is_a_liar_who_uses_scaremongering_to/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxen8a/sam_altman_is_a_liar_who_uses_scaremongering_to/",
+      "title": "Selected Reddit communities · Sam Altman is a liar who uses scaremongering to campaign against open source AI.",
+      "content_text": "submitted by /u/Winter-Track-4793 to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-16T03:09:29+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/Winter-Track-4793 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxellh/gpt6_astra_led_proof_for_candidate_lattice/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxellh/gpt6_astra_led_proof_for_candidate_lattice/",
+      "title": "Selected Reddit communities · GPT-6 Astra led proof for candidate lattice definition of the Standard Model",
+      "content_text": "https://runtimewire.com/article/gpt-6-astra-candidate-lattice-standard-model submitted by /u/ryanmerket to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-16T03:07:09+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "https://runtimewire.com/article/gpt-6-astra-candidate-lattice-standard-model submitted by /u/ryanmerket to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxdsoz/chatgpt_vs_chatgpt_plus_is_chatgpt_enough/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxdsoz/chatgpt_vs_chatgpt_plus_is_chatgpt_enough/",
+      "title": "Selected Reddit communities · ChatGPT Vs ChatGPT Plus, is ChatGPT enough?",
+      "content_text": "I want to know if I need ChatGPT Plus or ChatGPT is enough. All I do is ask questions and generate images, someone told me ChatGPT Plus was faster so I started paying last month. Do I need to pay or the free version is enough. This is what my account showing so that might tell what I’m using I guess. In a week I might generate 5 images and ask 20 questions I’m not deep into AI, I just ask question",
+      "date_published": "2026-11-16T02:26:40+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I want to know if I need ChatGPT Plus or ChatGPT is enough. All I do is ask questions and generate images, someone told me ChatGPT Plus was faster so I started paying last month. Do I need to pay or the free version is enough. This is what "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxdn31/my_ignis_server_qwen3827b_262k_context_now_runs/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxdn31/my_ignis_server_qwen3827b_262k_context_now_runs/",
+      "title": "Selected Reddit communities · My Ignis server (Qwen3.8-27B 262k context) now runs on RTX 3090/4090 and 16 GB RTX 40 cards. looking for testers",
+      "content_text": "I've been working on ignis , an inference server for Qwen3.8 that I use to run coding agents locally. It's meant to run on the machine you're already working on, Windows or Linux, sharing the card with your desktop, not on a dedicated box. So most of the work went into what matters when it sits next to your IDE all day, more than into peak tok/s. Some examples. At start it reads how much VRAM is f",
+      "date_published": "2026-11-16T02:19:05+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I've been working on ignis , an inference server for Qwen3.8 that I use to run coding agents locally. It's meant to run on the machine you're already working on, Windows or Linux, sharing the card with your desktop, not on a dedicated box. "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxc9hj/you_can_now_generate_and_edit_gifs_with_chatgpt/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxc9hj/you_can_now_generate_and_edit_gifs_with_chatgpt/",
+      "title": "Selected Reddit communities · You can now generate and edit GIFs with ChatGPT - here's how - Engadget",
+      "content_text": "submitted by /u/ThereWas to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-16T01:11:40+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/ThereWas to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1xxc63w/social_simulation_with_llms_from_proxies_to/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xxc63w/social_simulation_with_llms_from_proxies_to/",
+      "title": "Selected Reddit communities · Social Simulation with LLMs - From Proxies to Population (CFP @ AAAI'27) Due Nov. 20 [R]",
+      "content_text": "Say you simulate a population of LLM agents and get polarization, norm formation or an information cascade. How do you know the population produced it, and not the prompt, the base model or something memorized from pretraining? That attribution problem is the focus of the 3rd Workshop on Social Simulation with LLMs (Social Sim’27), held at AAAI-27 in Montréal (Feb 22 or 23, 2027). We’re looking fo",
+      "date_published": "2026-11-16T01:07:01+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Say you simulate a population of LLM agents and get polarization, norm formation or an information cascade. How do you know the population produced it, and not the prompt, the base model or something memorized from pretraining? That attribu"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxc5tq/open_ais_new_blog_for_science/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxc5tq/open_ais_new_blog_for_science/",
+      "title": "Selected Reddit communities · Open AIs new blog for science",
+      "content_text": "submitted by /u/ThereWas to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-16T01:06:40+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/ThereWas to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxc0mn/bay_area_lawyers_are_seeing_a_stunning_rise_in_ai/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxc0mn/bay_area_lawyers_are_seeing_a_stunning_rise_in_ai/",
+      "title": "Selected Reddit communities · Bay Area Lawyers are seeing a ‘stunning’ rise in AI employee prenups this year — and more postnups too",
+      "content_text": "submitted by /u/Medical-Decision-125 to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-16T00:59:59+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "submitted by /u/Medical-Decision-125 to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1xxbo56/iclr_did_you_post_reminder_of_rebuttal_response_d/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xxbo56/iclr_did_you_post_reminder_of_rebuttal_response_d/",
+      "title": "Selected Reddit communities · ICLR did you post reminder of rebuttal response? [D]",
+      "content_text": "Well, I know they are busy due to the CVPR(So am I). But it's only about few days left and none of the reviewers replied my response. Do you think this is a good time to post a reminder to reviewers? submitted by /u/Opening_Progress6820 to r/MachineLearning [link] [comments]",
+      "date_published": "2026-11-16T00:42:45+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Well, I know they are busy due to the CVPR(So am I). But it's only about few days left and none of the reviewers replied my response. Do you think this is a good time to post a reminder to reviewers? submitted by /u/Opening_Progress6820 to "
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xxawbh/why_download_abliterated_flash_next_models_when/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xxawbh/why_download_abliterated_flash_next_models_when/",
+      "title": "Selected Reddit communities · Why download abliterated Flash Next models when LoRA exists?",
+      "content_text": "TL;DR -- Download LoRA, add --lora HUIHUI-V2-Qwen3.8-Flash-Next-LoRA-F32.gguf to your llama.cpp launch command for ANY FN quant, and boom, you've got an identical huihui v2 abliterated model on demand and you saved 150GB of space. I just wanted to post a kind of PSA for everyone out there downloading hundreds of GB of abliterated models. You don't need to do that -- the vast majority of abliterati",
+      "date_published": "2026-11-16T00:06:16+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "TL;DR -- Download LoRA, add --lora HUIHUI-V2-Qwen3.8-Flash-Next-LoRA-F32.gguf to your llama.cpp launch command for ANY FN quant, and boom, you've got an identical huihui v2 abliterated model on demand and you saved 150GB of space. I just wa"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxanjc/if_we_dont_build_it_china_will_they_said_as_the/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxanjc/if_we_dont_build_it_china_will_they_said_as_the/",
+      "title": "Selected Reddit communities · “If we don’t build it, China will” they said, as the US didn’t blacklist a single Chinese company in more than a year and knew about a potential spy and did nothing…",
+      "content_text": "So, why do we need to move towards ASI as fast as possible despite repeated claims that it is likely to be detrimental for humanity, again?? submitted by /u/allpossiblepaths to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-15T23:56:46+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "So, why do we need to move towards ASI as fast as possible despite repeated claims that it is likely to be detrimental for humanity, again?? submitted by /u/allpossiblepaths to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1xxa13x/handson_ml_orchestration_tutorial_with_airflow3_p/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xxa13x/handson_ml_orchestration_tutorial_with_airflow3_p/",
+      "title": "Selected Reddit communities · Hands-on ML Orchestration Tutorial with Airflow3 [P]",
+      "content_text": "It's available in English and Spanish . A couple of months ago I was looking for a good ML orchestration tutorial, and I found Made With ML's orchestration lesson , part of its full MLOps tutorial. There were only two problems. First, it was written for Airflow 2, and from what I had gathered at the time, Airflow 3 has some differences. Second, my brain doesn't retain a tutorial I only read for lo",
+      "date_published": "2026-11-15T23:28:01+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "It's available in English and Spanish . A couple of months ago I was looking for a good ML orchestration tutorial, and I found Made With ML's orchestration lesson , part of its full MLOps tutorial. There were only two problems. First, it wa"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xxa0op/did_something_go_wrong_on_my_end_or_is_openai/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xxa0op/did_something_go_wrong_on_my_end_or_is_openai/",
+      "title": "Selected Reddit communities · Did something go wrong on my end or is OpenAI making Codex harder to work with?",
+      "content_text": "In the past one or two weeks its been a chore to do anything with my Codex projects. I have a directory for all project work, then there's a staging directory. There's basically two workflows: 1. A new feature rollout: Gets a full reinstall 2. Bugfix type update. Instead of a reinstall Codex has been writing to the staging folder and I redeploy. I've been using both methods for months, but in the",
+      "date_published": "2026-11-15T23:27:27+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "In the past one or two weeks its been a chore to do anything with my Codex projects. I have a directory for all project work, then there's a staging directory. There's basically two workflows: 1. A new feature rollout: Gets a full reinstall"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/MachineLearning/comments/1xx9za4/anyone_working_in_aml_transaction_monitoring/",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1xx9za4/anyone_working_in_aml_transaction_monitoring/",
+      "title": "Selected Reddit communities · Anyone working in AML / transaction monitoring / sanctions screening using ML? Looking for advice on where to start [R]",
+      "content_text": "Hi everyone, I’m a data analyst on a financial crime team, and I’m trying to get a machine learning project started to improve how we handle AML (anti-money laundering) work. I’d love to hear from anyone who works in transaction monitoring, customer screening, or sanctions/PEP screening and has used ML in practice. Some context: like most teams in this space, we rely mostly on rule-based systems,",
+      "date_published": "2026-11-15T23:25:39+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Hi everyone, I’m a data analyst on a financial crime team, and I’m trying to get a machine learning project started to improve how we handle AML (anti-money laundering) work. I’d love to hear from anyone who works in transaction monitoring,"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.7",
+      "title": "OpenAI · 0.171.0-alpha.7",
+      "content_text": "Release 0.171.0-alpha.7",
+      "date_published": "2026-11-15T23:18:44+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.171.0-alpha.7"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xx9fjs/ui_native_scheduling_engine_swap_board_and_more/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx9fjs/ui_native_scheduling_engine_swap_board_and_more/",
+      "title": "Selected Reddit communities · UI native scheduling, engine swap board, and more (Berth v0.6.0)",
+      "content_text": "I’m providing an update! We have around 300 berth users now so the project is moving fast. Recent updates for v0.6.0: - v0.6.0 gives each card a schedule - berth train runs a training that nothing automated can interrupt - learned engine sizes (berth learns your engines resource claims) A month on the reference workstation berthd counts every handoff it makes, and the harbor's board shows every ha",
+      "date_published": "2026-11-15T23:01:04+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I’m providing an update! We have around 300 berth users now so the project is moving fast. Recent updates for v0.6.0: - v0.6.0 gives each card a schedule - berth train runs a training that nothing automated can interrupt - learned engine si"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/OpenAI/comments/1xx8bo9/havent_seen_this_in_a_while/",
+      "url": "https://www.reddit.com/r/OpenAI/comments/1xx8bo9/havent_seen_this_in_a_while/",
+      "title": "Selected Reddit communities · Haven't seen this in a while",
+      "content_text": "Just got brickwalled by this ominous message. What's up? submitted by /u/robertverdes to r/OpenAI [link] [comments]",
+      "date_published": "2026-11-15T22:12:36+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "Just got brickwalled by this ominous message. What's up? submitted by /u/robertverdes to r/OpenAI [link] [comments]"
+        ]
+      }
+    },
+    {
+      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xx85mw/someone_should_do_an_analysis_on_the_rate_of/",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xx85mw/someone_should_do_an_analysis_on_the_rate_of/",
+      "title": "Selected Reddit communities · Someone should do an analysis on the rate of Self-promo here.",
+      "content_text": "I think the last 3 posts from here that showed up on my feed were barely veiled self-promos. I was here when huggingface first started getting popular, and the level of support for running local models here was incredible. Now I am debating whether or not to leave the sub. Why isn’t there more attention to moderation to this? Take a user’s post, and type their username with quotes into google and",
+      "date_published": "2026-11-15T22:05:21+00:00",
+      "authors": [
+        {
+          "name": "Community"
+        }
+      ],
+      "tags": [
+        "community-feedback",
+        "use-cases",
+        "emerging-signals",
+        "T3",
+        "reddit"
+      ],
+      "_radar": {
+        "company": "Community",
+        "source_name": "Selected Reddit communities",
+        "source_tier": 3,
+        "platform": "reddit",
+        "impact_score": 2,
+        "confidence": 0.65,
+        "evidence": [
+          "I think the last 3 posts from here that showed up on my feed were barely veiled self-promos. I was here when huggingface first started getting popular, and the level of support for running local models here was incredible. Now I am debating"
+        ]
+      }
+    },
+    {
       "id": "https://www.reddit.com/r/OpenAI/comments/1xx3yy3/why_does_openai_suddenly_not_work_for_me_and_goes/",
       "url": "https://www.reddit.com/r/OpenAI/comments/1xx3yy3/why_does_openai_suddenly_not_work_for_me_and_goes/",
       "title": "Selected Reddit communities · Why does OpenAI suddenly not work for me and goes in wrong direction of my goal?",
@@ -5223,786 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "It was my understanding when MTP came out that it was mainly beneficial for larger dense models and that small and/or MoE models didn't realize much performance benefit. That being said, I now see many smaller MoE models (Gemma-4-E2B, Mellu"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xulxe7/made_with_images_26/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xulxe7/made_with_images_26/",
-      "title": "Selected Reddit communities · Made with images 2.6",
-      "content_text": "submitted by /u/ExtremeCenterism to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-12T19:19:14+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/ExtremeCenterism to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1xul9u7/creating_author_burdens_to_reduce_paper/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xul9u7/creating_author_burdens_to_reduce_paper/",
-      "title": "Selected Reddit communities · Creating author burdens to reduce paper submissions is STUPID [D]",
-      "content_text": "Over the past two years, conferences have been trying to add different administrative nonsense. Initially, it was author/reviewer sign-up, then reciprocal reviewing, and now CVPR has this author enrollment form that freaks everyone out. I get that we're trying to filter out low-quality submissions, but this is such a stupid way to do it. People I know collaborate with medical doctors, mathematicia",
-      "date_published": "2026-11-12T18:55:13+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Over the past two years, conferences have been trying to add different administrative nonsense. Initially, it was author/reviewer sign-up, then reciprocal reviewing, and now CVPR has this author enrollment form that freaks everyone out. I g"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xul2ep/warning_downgrading_chatgpt_pro_midweek/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xul2ep/warning_downgrading_chatgpt_pro_midweek/",
-      "title": "Selected Reddit communities · Warning: downgrading ChatGPT Pro mid-week re-measures your existing usage against the smaller plan — I started my \"new\" plan at 0% for the whole week, and support says there's no appeal.",
-      "content_text": "Posting this so it doesn't happen to anyone else. Everything below is from my own support case (19718258) — screenshots of OpenAI's emails are attached. **What happened, from my account readings (in my own email to support, Nov 10):** My Codex usage stood at **49% of my Pro 500 weekly allowance** at 6:41 PM, week ending November 14. I switched to Pro 200. At 8:34 PM the **same week, same end date*",
-      "date_published": "2026-11-12T18:47:43+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Posting this so it doesn't happen to anyone else. Everything below is from my own support case (19718258) — screenshots of OpenAI's emails are attached. **What happened, from my account readings (in my own email to support, Nov 10):** My Co"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xukt9t/so_this_will_be_true_in_couple_of_years/",
-      "title": "Selected Reddit communities · So this will be true in couple of years?",
-      "content_text": "I think after jensen they will fully focus on AI compute for data centers submitted by /u/UltramanQuar to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-12T18:38:17+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I think after jensen they will fully focus on AI compute for data centers submitted by /u/UltramanQuar to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xuk2vn/baldanders_use_codex_on_real_customer_data/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xuk2vn/baldanders_use_codex_on_real_customer_data/",
-      "title": "Selected Reddit communities · Baldanders: use Codex on real customer data without it reaching OpenAI",
-      "content_text": "It sits in front of the Codex CLI and swaps names, emails, IDs, IBANs, cards and secrets for tokens like [PERSON_1] before your message leaves the laptop, then restores them in the reply. The model only sees the tokens, the map stays local, and -v shows exactly what was sent. Uses your ChatGPT login, not an API key. https://github.com/Nahuel990/Baldanders submitted by /u/nahuel990 to r/OpenAI [lin",
-      "date_published": "2026-11-12T18:11:21+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "It sits in front of the Codex CLI and swaps names, emails, IDs, IBANs, cards and secrets for tokens like [PERSON_1] before your message leaves the laptop, then restores them in the reply. The model only sees the tokens, the map stays local,"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xujtvx/open_ai_and_not_being_able_to_release_models/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xujtvx/open_ai_and_not_being_able_to_release_models/",
-      "title": "Selected Reddit communities · Open AI and not being able to release models",
-      "content_text": "Ever since Astra dropped, Open AI has just not been able to release a decent model. Anthropic has now released 3 different versions of Fable with each one being a massive improvement. They also released multiple versions of Opus. Sonnet, and haiku. GPT 6 Sol, GPT 6 Luna, GPT 6.1 Sol, and GPT 6.1 terra have all felt like downgrades and not improvements. Has OpenAI hit a wall that they can't get pas",
-      "date_published": "2026-11-12T18:01:56+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Ever since Astra dropped, Open AI has just not been able to release a decent model. Anthropic has now released 3 different versions of Fable with each one being a massive improvement. They also released multiple versions of Opus. Sonnet, an"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xujr31/tell_me_im_late_to_the_party_with_renaming_him_to/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xujr31/tell_me_im_late_to_the_party_with_renaming_him_to/",
-      "title": "Selected Reddit communities · Tell me I’m late to the party with renaming him to Ram Altman",
-      "content_text": "submitted by /u/No_Dragonfruit_4876 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-12T17:59:16+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/No_Dragonfruit_4876 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xujdb3/best_llm_router_to_serve_many_models_on_the_same/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xujdb3/best_llm_router_to_serve_many_models_on_the_same/",
-      "title": "Selected Reddit communities · best LLM router to serve many models on the same port?",
-      "content_text": "I'm working on a router that wraps many LLMs serving from different ips and ports and exposes them all as a single port, since i have 2 machines serving many slots of Qwen 3.8 FN but i wanted to ensure speed is always fast (one machine is faster and can hold more slots, but too many slots busy and then it's better to call the other machine, also i gotta avoid evicting from the cache active convers",
-      "date_published": "2026-11-12T17:45:20+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I'm working on a router that wraps many LLMs serving from different ips and ports and exposes them all as a single port, since i have 2 machines serving many slots of Qwen 3.8 FN but i wanted to ensure speed is always fast (one machine is f"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xuj697/astra_lazy_the_last_week/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xuj697/astra_lazy_the_last_week/",
-      "title": "Selected Reddit communities · Astra lazy the last week",
-      "content_text": "It basically isn't finishing tasks anymore it just stops half way? This never used to be a problem it's like opus 4.8 submitted by /u/185EDRIVER to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-12T17:38:01+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "It basically isn't finishing tasks anymore it just stops half way? This never used to be a problem it's like opus 4.8 submitted by /u/185EDRIVER to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1xuillf/does_metas_brainresponse_model_tribe_v2_actually/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xuillf/does_metas_brainresponse_model_tribe_v2_actually/",
-      "title": "Selected Reddit communities · Does Meta's brain-response model (TRIBE v2) actually recover retinotopy/tonotopy/motion maps? [D]",
-      "content_text": "TRIBE v2 predicts fMRI from video/audio/text. Its own paper never tested whether it reproduces classic topographic maps (retinotopy, tonotopy, motion selectivity) — and its methods section admits video features get spatially averaged before prediction, which should wreck position info. Nobody checked. I ran the classic mapping stimuli (checkerboard wedges/rings, hemifield flicker, moving dots, ton",
-      "date_published": "2026-11-12T17:16:46+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "TRIBE v2 predicts fMRI from video/audio/text. Its own paper never tested whether it reproduces classic topographic maps (retinotopy, tonotopy, motion selectivity) — and its methods section admits video features get spatially averaged before"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xuijih/cmp170hx_now_fully_unlockabke_and_more_full_120/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xuijih/cmp170hx_now_fully_unlockabke_and_more_full_120/",
-      "title": "Selected Reddit communities · CMP170hx now fully unlockabke and more, full 120 SMs —> Techie uses voltage glitching hack to turn $2,500 Nvidia 8GB cryptomining GPU into a full-fat $20,000 A100 with 80GB of VRAM — hack carefully blows onboard fuses to unlock entire VRAM and shader modules",
-      "content_text": "submitted by /u/chemist_slime to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-12T17:14:43+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/chemist_slime to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xu70bz/the_funniest_thing_i_saw_today/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xu70bz/the_funniest_thing_i_saw_today/",
-      "title": "Selected Reddit communities · The Funniest Thing I Saw Today",
-      "content_text": "submitted by /u/Downtown_Way5997 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-12T07:59:47+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/Downtown_Way5997 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xu6ubg/gpt_talks_a_lot_but_doesnt_deliver/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xu6ubg/gpt_talks_a_lot_but_doesnt_deliver/",
-      "title": "Selected Reddit communities · GPT talks a lot but doesn't deliver.",
-      "content_text": "Ohh yes, this crm, I completely understood the pipeline, now we have md file, ok I am gonna make it - makes a half baked slop. Ohh you have installed 6 githubs to support video production, have an exact flow, and put md, in place and \"here a peak slop video\" , claude does it better in free tier smh. absolutely mid job , every single time. Doesn't matter if its sol or Astra. Gpt just talks a lot an",
-      "date_published": "2026-11-12T07:48:58+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Ohh yes, this crm, I completely understood the pipeline, now we have md file, ok I am gonna make it - makes a half baked slop. Ohh you have installed 6 githubs to support video production, have an exact flow, and put md, in place and \"here "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xu6tth/curated_list_of_resources_for_the_topic_of/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu6tth/curated_list_of_resources_for_the_topic_of/",
-      "title": "Selected Reddit communities · Curated list of resources for the topic of Quantization for beginners",
-      "content_text": "Hey everyone! I have gathered some must read topics, for beginners, to step into the realm of Quantization: 1) BitNet: Scaling 1-bit Transformers for Large Language Models 2) AWQ: Activation-aware Weight Quantization for LLM Compression and Acceleration 3) The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits 4) EfficientQAT: Efficient Quantization-Aware Training for Large Language Mod",
-      "date_published": "2026-11-12T07:48:00+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hey everyone! I have gathered some must read topics, for beginners, to step into the realm of Quantization: 1) BitNet: Scaling 1-bit Transformers for Large Language Models 2) AWQ: Activation-aware Weight Quantization for LLM Compression and"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xu6td8/chat_refactor_gemma4_to_build_loose_schema_rules/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu6td8/chat_refactor_gemma4_to_build_loose_schema_rules/",
-      "title": "Selected Reddit communities · chat : refactor gemma4 to build loose schema rules and clean up by aldehir · Pull Request #31915 · ggml-org/llama.cpp",
-      "content_text": "If you’ve ever tried agentic coding with Gemma and had tool calling issues, give it another try, in my case, it completely fixed Gemma submitted by /u/jacek2023 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-12T07:47:12+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "If you’ve ever tried agentic coding with Gemma and had tool calling issues, give it another try, in my case, it completely fixed Gemma submitted by /u/jacek2023 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xu6qmd/stablecoin_issuer_tether_releases_botpsy_an_ai/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu6qmd/stablecoin_issuer_tether_releases_botpsy_an_ai/",
-      "title": "Selected Reddit communities · Stablecoin issuer Tether releases BotPsy, an AI agent small enough for a phone",
-      "content_text": "Very interesting submitted by /u/mawcopolow to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-12T07:42:21+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Very interesting submitted by /u/mawcopolow to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xu5w2y/europeonly_chatgpt_ads_get_1660_visits_from_iran/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xu5w2y/europeonly_chatgpt_ads_get_1660_visits_from_iran/",
-      "title": "Selected Reddit communities · Europe-only ChatGPT ads get 16/60 visits from Iran",
-      "content_text": "I'm running ChatGPT Ads with the target location explicitly set to Europe only . However, I'm seeing a weird difference between the clicks reported in ChatGPT Ads and the traffic recorded in Matomo and Microsoft Clarity: Europe: 44 visits (73.3%) Iran: 16 visits (26.7%) I realise IP geolocation isn't perfect, and VPNs, proxies, bots or differences in attribution could explain some of this. But 16",
-      "date_published": "2026-11-12T06:50:44+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I'm running ChatGPT Ads with the target location explicitly set to Europe only . However, I'm seeing a weird difference between the clicks reported in ChatGPT Ads and the traffic recorded in Matomo and Microsoft Clarity: Europe: 44 visits ("
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xu5p6p/qwen4_is_coming_pull_requests_spoted_on_github/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu5p6p/qwen4_is_coming_pull_requests_spoted_on_github/",
-      "title": "Selected Reddit communities · Qwen4 is coming, pull requests spoted on github",
-      "content_text": "The first one was on RTP-LLM The second one was from llama.cpp https://github.com/ggml-org/llama.cpp/pull/32082 , commits with `qwen4exp` prefix submitted by /u/kinetic_energy28 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-12T06:39:02+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "The first one was on RTP-LLM The second one was from llama.cpp https://github.com/ggml-org/llama.cpp/pull/32082 , commits with `qwen4exp` prefix submitted by /u/kinetic_energy28 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xu52fa/information_from_a_locked_chat_is_known_outside/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xu52fa/information_from_a_locked_chat_is_known_outside/",
-      "title": "Selected Reddit communities · Information from a Locked Chat is known outside of Locked Chats. Is this a severe privacy bug?",
-      "content_text": "A few days ago, I started a very sensitive conversation inside a Locked Chat. The entire conversation, from beginning to end, was inside a locked chat. I placed it in a Locked Chat so that if someone ever accesses my chatgpt, they won't be able to inquire about this private information. I read online that information provided in locked chats does not leak outside of it. Today I tried to verify tha",
-      "date_published": "2026-11-12T06:02:02+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "A few days ago, I started a very sensitive conversation inside a Locked Chat. The entire conversation, from beginning to end, was inside a locked chat. I placed it in a Locked Chat so that if someone ever accesses my chatgpt, they won't be "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xu4ysu/ai_safety_and_our_future_could_this_affect/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu4ysu/ai_safety_and_our_future_could_this_affect/",
-      "title": "Selected Reddit communities · Ai safety and our future. Could this affect running locally in the future without regulation?",
-      "content_text": "How does this determine are use of running locally. Will we be able to define a pathway forward as running local LLM gets more attention? Should we have some back up plans or listings of what is needed if regulating picks up? What are your steps in protecting yourself against any future regulation that is a must to know? For example avoid updating windows or things a like. submitted by /u/Benefici",
-      "date_published": "2026-11-12T05:56:32+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "How does this determine are use of running locally. Will we be able to define a pathway forward as running local LLM gets more attention? Should we have some back up plans or listings of what is needed if regulating picks up? What are your "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xu4ycr/ai_2027_authors_unfortunately_it_seems_like_the/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xu4ycr/ai_2027_authors_unfortunately_it_seems_like_the/",
-      "title": "Selected Reddit communities · AI 2027 authors: \"Unfortunately, it seems like the intelligence explosion will be happening in 2027 after all.\" ... \"very worried\" we're 3-12 months from AI takeover.",
-      "content_text": "Src: https://blog.aifutures.org/p/q35-timelines-update-looks-like-the submitted by /u/Puzzleheaded-King584 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-12T05:55:50+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Src: https://blog.aifutures.org/p/q35-timelines-update-looks-like-the submitted by /u/Puzzleheaded-King584 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xu4n7b/gemma431b_latent_space_discovery_caring_and/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu4n7b/gemma431b_latent_space_discovery_caring_and/",
-      "title": "Selected Reddit communities · Gemma4-31b latent space discovery: Caring and Contempt for user controlled by the same 3 neurons! Plus, how to find your own steering recipes and export to GGUF steering vector for llama.cpp",
-      "content_text": "submitted by /u/New_Alps_5655 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-12T05:37:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/New_Alps_5655 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xu43fd/models_are_great_but_not_yet_cool/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xu43fd/models_are_great_but_not_yet_cool/",
-      "title": "Selected Reddit communities · Models are great, but not yet “cool”",
-      "content_text": "I find openAI models more than enough for my needs, and it keeps amazing me every once in a while - I’m like “wow!”. It is very smart and obeys my instructions well. But I find that “Claude” is seen as being cool. Like “I’m using Claude” is a cool statement than “I’m using G-P-T”. Why can’t openAI give a cool name for their model collection? Or is it all supposed to be chatGPT? That’s geeky and un",
-      "date_published": "2026-11-12T05:07:31+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I find openAI models more than enough for my needs, and it keeps amazing me every once in a while - I’m like “wow!”. It is very smart and obeys my instructions well. But I find that “Claude” is seen as being cool. Like “I’m using Claude” is"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xu3z95/doofenshmirtz_evil_incorporated_if_it_was_in_real/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xu3z95/doofenshmirtz_evil_incorporated_if_it_was_in_real/",
-      "title": "Selected Reddit communities · Doofenshmirtz evil incorporated if it was in real life",
-      "content_text": "submitted by /u/TommycoolGun to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-12T05:01:28+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/TommycoolGun to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1xu3n5f/how_much_does_reviewer_confidence_matter_in_iclr/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xu3n5f/how_much_does_reviewer_confidence_matter_in_iclr/",
-      "title": "Selected Reddit communities · How much does reviewer confidence matter in ICLR decisions? [D]",
-      "content_text": "My ICLR submission received ratings of 3 / 3 / 2 with confidence 1 / 3 / 3. One weak accept comes from a low-confidence reviewer (Though their review seemed knowledgeable and pinpointed a key issue in the paper.) the other weak accept and the weak reject both have confidence 3. How do ACs typically weigh a split like this after the rebuttal and discussion? Does the low-confidence positive review c",
-      "date_published": "2026-11-12T04:42:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "My ICLR submission received ratings of 3 / 3 / 2 with confidence 1 / 3 / 3. One weak accept comes from a low-confidence reviewer (Though their review seemed knowledgeable and pinpointed a key issue in the paper.) the other weak accept and t"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xu2mdo/the_regulation_of_local_ai_couldshould_be_viewed/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xu2mdo/the_regulation_of_local_ai_couldshould_be_viewed/",
-      "title": "Selected Reddit communities · The regulation of local AI could/should be viewed as the largest censorship implementation in the history of mankind.",
-      "content_text": "With all of this fear mongering on the “dangers” of LLM’s, I see how using people’s ignorance and emotions on the subject can be used as a tool to limit and restrict the tool from the average person. My fear is that China and the US https://www.reuters.com/world/china/us-china-should-stay-clear-eyed-ai-cooperation-competition-bessent-says-2026-11-11/ will use people’s lack of understanding of loca",
-      "date_published": "2026-11-12T03:49:33+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "With all of this fear mongering on the “dangers” of LLM’s, I see how using people’s ignorance and emotions on the subject can be used as a tool to limit and restrict the tool from the average person. My fear is that China and the US https:/"
         ]
       }
     }
