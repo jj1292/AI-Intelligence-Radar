@@ -6,13 +6,61 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 17 Nov 2026 21:05:52 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 05:52:48 +0000</lastBuildDate>
     <item>
-      <title>OpenAI · rust-v0.169.1</title>
+      <title>OpenAI · 0.171.0-alpha.13</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13</guid>
+      <pubDate>Wed, 18 Nov 2026 05:52:48 +0000</pubDate>
+      <description>Release 0.171.0-alpha.13</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.170.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.170.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.170.0</guid>
+      <pubDate>Wed, 18 Nov 2026 03:45:39 +0000</pubDate>
+      <description>New Features Added WebRTC negotiation for realtime voice calls in the TUI. ( #61172 ) Added automatically refreshed authentication headers for OpenTelemetry HTTP exporters. ( #61028 ) Added experimental support for using identically named MCP servers across environments. ( #60905 ) Bug Fixes Oversized WebSocket requests now fall back to HTTP without unnecessary retries. ( #60840 , #60841 ) Fixed M</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.170.0-alpha.4.2</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.170.0-alpha.4.2</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.170.0-alpha.4.2</guid>
+      <pubDate>Wed, 18 Nov 2026 02:02:46 +0000</pubDate>
+      <description>Release 0.170.0-alpha.4.2</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>Anthropic · v2.1.327</title>
+      <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.327</link>
+      <guid isPermaLink="true">https://github.com/anthropics/claude-code/releases/tag/v2.1.327</guid>
+      <pubDate>Tue, 17 Nov 2026 23:17:45 +0000</pubDate>
+      <description>What's changed Added a confirmation before /install-github-app changes a repository Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session Added a line when a resumed session's earlier messages can't be loaded Added a list in /status of broken agent, skill, command and output style files, keybinding erro</description>
+      <category>claude-code</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.169.1</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.169.1</link>
       <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.169.1</guid>
-      <pubDate>Tue, 17 Nov 2026 21:05:52 +0000</pubDate>
-      <description>Release 0.169.1</description>
+      <pubDate>Tue, 17 Nov 2026 22:22:49 +0000</pubDate>
+      <description>Chores No verified release highlights available. Changelog Full Changelog: rust-v0.169.0...rust-v0.169.1</description>
       <category>codex</category>
       <category>coding-agents</category>
       <category>developer-tools</category>
@@ -2353,54 +2401,6 @@
       <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xvgw7k/chatgpts_agents_can_now_buy_things_for_you_with/</guid>
       <pubDate>Fri, 13 Nov 2026 19:15:36 +0000</pubDate>
       <description>Not sure I'd trust it... submitted by /u/ross2000 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · qwen 3.5 4b: 10/10 on hidden tests as a coding agent on a 16gb macbook air, after one endpoint change</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvgnt7/qwen_35_4b_1010_on_hidden_tests_as_a_coding_agent/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvgnt7/qwen_35_4b_1010_on_hidden_tests_as_a_coding_agent/</guid>
-      <pubDate>Fri, 13 Nov 2026 19:06:48 +0000</pubDate>
-      <description>tl;dr: qwen 3.5 4b got 10/10 on hidden tests as a coding agent on a 16gb air, fully local. if your small model keeps writing broken files, use llama-server’s openai compatible endpoint instead of a json grammar. people keep telling me i only test big models on big hardware so this one is the opposite. setup m4 macbook air, 16gb, fully offline agent: atomic agent, no approvals, one attempt per run</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>OpenAI · 0.171.0-alpha.4</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.4</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.4</guid>
-      <pubDate>Fri, 13 Nov 2026 19:02:32 +0000</pubDate>
-      <description>Release 0.171.0-alpha.4</description>
-      <category>codex</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · How do you guys containerize local LLMs on Mac ?</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvggj6/how_do_you_guys_containerize_local_llms_on_mac/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvggj6/how_do_you_guys_containerize_local_llms_on_mac/</guid>
-      <pubDate>Fri, 13 Nov 2026 18:59:28 +0000</pubDate>
-      <description>Docker doesn’t support GPU on apple silicon, I simply create a docker to run llama.cpp there on Linux, I wonder if I am missing something on Mac. submitted by /u/Shadow_s_Bane to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Four frontier models scored 97.8–100 on a 7-part materials-science research test. How should we score long-horizon agent evals instead? [d]</title>
-      <link>https://www.reddit.com/r/MachineLearning/comments/1xvgf6h/four_frontier_models_scored_978100_on_a_7part/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/MachineLearning/comments/1xvgf6h/four_frontier_models_scored_978100_on_a_7part/</guid>
-      <pubDate>Fri, 13 Nov 2026 18:58:00 +0000</pubDate>
-      <description>I work in graphene and 2D materials, and I built a test of the everyday technical work in a research group. It has seven parts: reducing a messy tensile data set against a lab SOP (with unit and outlier traps), writing a CIF density function checked on three hidden structures, four back-of-envelope physics calculations, critiquing a manuscript with 10 planted errors and 6 correct-but-suspicious de</description>
       <category>community-feedback</category>
       <category>use-cases</category>
       <category>emerging-signals</category>

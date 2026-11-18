@@ -7,11 +7,41 @@
   "language": "zh-CN",
   "items": [
     {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.169.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.1",
-      "title": "OpenAI · rust-v0.169.1",
-      "content_text": "Release 0.169.1",
-      "date_published": "2026-11-17T21:05:52+00:00",
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13",
+      "title": "OpenAI · 0.171.0-alpha.13",
+      "content_text": "Release 0.171.0-alpha.13",
+      "date_published": "2026-11-18T05:52:48+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.171.0-alpha.13"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.170.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0",
+      "title": "OpenAI · 0.170.0",
+      "content_text": "New Features Added WebRTC negotiation for realtime voice calls in the TUI. ( #61172 ) Added automatically refreshed authentication headers for OpenTelemetry HTTP exporters. ( #61028 ) Added experimental support for using identically named MCP servers across environments. ( #60905 ) Bug Fixes Oversized WebSocket requests now fall back to HTTP without unnecessary retries. ( #60840 , #60841 ) Fixed M",
+      "date_published": "2026-11-18T03:45:39+00:00",
       "authors": [
         {
           "name": "OpenAI"
@@ -32,7 +62,97 @@
         "impact_score": 3,
         "confidence": 0.98,
         "evidence": [
-          "Release 0.169.1"
+          "New Features Added WebRTC negotiation for realtime voice calls in the TUI. ( #61172 ) Added automatically refreshed authentication headers for OpenTelemetry HTTP exporters. ( #61028 ) Added experimental support for using identically named M"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.170.0-alpha.4.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0-alpha.4.2",
+      "title": "OpenAI · 0.170.0-alpha.4.2",
+      "content_text": "Release 0.170.0-alpha.4.2",
+      "date_published": "2026-11-18T02:02:46+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.170.0-alpha.4.2"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+      "title": "Anthropic · v2.1.327",
+      "content_text": "What's changed Added a confirmation before /install-github-app changes a repository Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session Added a line when a resumed session's earlier messages can't be loaded Added a list in /status of broken agent, skill, command and output style files, keybinding erro",
+      "date_published": "2026-11-17T23:17:45+00:00",
+      "authors": [
+        {
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "claude-code",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Anthropic",
+        "source_name": "anthropics/claude-code releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's changed Added a confirmation before /install-github-app changes a repository Added claude mcp add-json - to read the server's JSON from stdin, so tokens can stay off the command line; not available inside a Claude Code session Added "
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.169.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.1",
+      "title": "OpenAI · 0.169.1",
+      "content_text": "Chores No verified release highlights available. Changelog Full Changelog: rust-v0.169.0...rust-v0.169.1",
+      "date_published": "2026-11-17T22:22:49+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "Chores No verified release highlights available. Changelog Full Changelog: rust-v0.169.0...rust-v0.169.1"
         ]
       }
     },
@@ -5883,126 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "Not sure I'd trust it... submitted by /u/ross2000 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvgnt7/qwen_35_4b_1010_on_hidden_tests_as_a_coding_agent/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvgnt7/qwen_35_4b_1010_on_hidden_tests_as_a_coding_agent/",
-      "title": "Selected Reddit communities · qwen 3.5 4b: 10/10 on hidden tests as a coding agent on a 16gb macbook air, after one endpoint change",
-      "content_text": "tl;dr: qwen 3.5 4b got 10/10 on hidden tests as a coding agent on a 16gb air, fully local. if your small model keeps writing broken files, use llama-server’s openai compatible endpoint instead of a json grammar. people keep telling me i only test big models on big hardware so this one is the opposite. setup m4 macbook air, 16gb, fully offline agent: atomic agent, no approvals, one attempt per run",
-      "date_published": "2026-11-13T19:06:48+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "tl;dr: qwen 3.5 4b got 10/10 on hidden tests as a coding agent on a 16gb air, fully local. if your small model keeps writing broken files, use llama-server’s openai compatible endpoint instead of a json grammar. people keep telling me i onl"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.4",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.4",
-      "title": "OpenAI · 0.171.0-alpha.4",
-      "content_text": "Release 0.171.0-alpha.4",
-      "date_published": "2026-11-13T19:02:32+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.171.0-alpha.4"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvggj6/how_do_you_guys_containerize_local_llms_on_mac/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvggj6/how_do_you_guys_containerize_local_llms_on_mac/",
-      "title": "Selected Reddit communities · How do you guys containerize local LLMs on Mac ?",
-      "content_text": "Docker doesn’t support GPU on apple silicon, I simply create a docker to run llama.cpp there on Linux, I wonder if I am missing something on Mac. submitted by /u/Shadow_s_Bane to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-13T18:59:28+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Docker doesn’t support GPU on apple silicon, I simply create a docker to run llama.cpp there on Linux, I wonder if I am missing something on Mac. submitted by /u/Shadow_s_Bane to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/MachineLearning/comments/1xvgf6h/four_frontier_models_scored_978100_on_a_7part/",
-      "url": "https://www.reddit.com/r/MachineLearning/comments/1xvgf6h/four_frontier_models_scored_978100_on_a_7part/",
-      "title": "Selected Reddit communities · Four frontier models scored 97.8–100 on a 7-part materials-science research test. How should we score long-horizon agent evals instead? [d]",
-      "content_text": "I work in graphene and 2D materials, and I built a test of the everyday technical work in a research group. It has seven parts: reducing a messy tensile data set against a lab SOP (with unit and outlier traps), writing a CIF density function checked on three hidden structures, four back-of-envelope physics calculations, critiquing a manuscript with 10 planted errors and 6 correct-but-suspicious de",
-      "date_published": "2026-11-13T18:58:00+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I work in graphene and 2D materials, and I built a test of the everyday technical work in a research group. It has seven parts: reducing a messy tensile data set against a lab SOP (with unit and outlier traps), writing a CIF density functio"
         ]
       }
     }
