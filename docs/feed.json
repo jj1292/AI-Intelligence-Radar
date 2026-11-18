@@ -7,6 +7,36 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.1",
+      "title": "OpenAI · 0.172.0-alpha.1",
+      "content_text": "Release 0.172.0-alpha.1",
+      "date_published": "2026-11-18T18:01:02+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.172.0-alpha.1"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13",
       "title": "OpenAI · 0.171.0-alpha.13",
@@ -5973,36 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "hey llamas, its Alish from nace.ai (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the last post , we are releasing the GGUF w"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvgw7k/chatgpts_agents_can_now_buy_things_for_you_with/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvgw7k/chatgpts_agents_can_now_buy_things_for_you_with/",
-      "title": "Selected Reddit communities · ChatGPT’s agents can now buy things for you with your credit card",
-      "content_text": "Not sure I'd trust it... submitted by /u/ross2000 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-13T19:15:36+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Not sure I'd trust it... submitted by /u/ross2000 to r/OpenAI [link] [comments]"
         ]
       }
     }
