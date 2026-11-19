@@ -6,7 +6,43 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 18 Nov 2026 18:01:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 01:45:47 +0000</lastBuildDate>
+    <item>
+      <title>Google · Release v0.69.0</title>
+      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0</link>
+      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0</guid>
+      <pubDate>Thu, 19 Nov 2026 01:45:47 +0000</pubDate>
+      <description>What's Changed fix(core,cli): preserve literal $ characters during template placeholder replacement by @jesussamuel-byte in #30136 feat(cli): add /stats heatmap subcommand for daily token usage by @jvargassanchez-dot in #30135 fix(core): prevent GCLI_EXPAND_TARGET env collision in expandEnvVars by @villahernandez-coder in #30138 chore(release): bump version to 0.69.0-nightly.20261104.g89e9d25d6 by</description>
+      <category>gemini</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>Anthropic · v2.1.328</title>
+      <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.328</link>
+      <guid isPermaLink="true">https://github.com/anthropics/claude-code/releases/tag/v2.1.328</guid>
+      <pubDate>Thu, 19 Nov 2026 01:14:04 +0000</pubDate>
+      <description>What's changed Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission mode start in it Added "onFailure": "block" for mcp_tool hooks, as for command and HTTP hooks: a hook whose call fails blocks the action Added a warning when a message from a session that skips permiss</description>
+      <category>claude-code</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>Google · Release v0.70.0-preview.0</title>
+      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0-preview.0</link>
+      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0-preview.0</guid>
+      <pubDate>Thu, 19 Nov 2026 00:09:03 +0000</pubDate>
+      <description>What's Changed Changelog for v0.69.0-preview.0 by @gemini-cli-robot in #30222 Changelog for v0.68.0 by @gemini-cli-robot in #30224 chore(release): bump version to 0.70.0-nightly.20261110.g1603e9bab by @gemini-cli-robot in #30223 test(cli): remove redundant lowercase restart test in AdminSettingsChangedDialog by @luisfelipe-alt in #30221 fix(cli): preserve Unicode prompts and strip ANSI fragments i</description>
+      <category>gemini</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
     <item>
       <title>OpenAI · 0.172.0-alpha.1</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.1</link>
@@ -2365,42 +2401,6 @@
       <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvhzq9/deepseek_v41_flash_vs_qwen_38_flash_next/</guid>
       <pubDate>Fri, 13 Nov 2026 19:57:57 +0000</pubDate>
       <description>While waiting for Qwen 4, I installed and benchmarked DeepSeek v4.1 Flash to see if I was missing out. Based on the type of work I do, DeepSeek is not better but is definitely much slower. Turns out Strata with Qwen 3.8 Flash-Next is best bang for buck on my machine. submitted by /u/Critical-Entry3377 to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Poorman's Local LLM</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvhzes/poormans_local_llm/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvhzes/poormans_local_llm/</guid>
-      <pubDate>Fri, 13 Nov 2026 19:57:32 +0000</pubDate>
-      <description>The Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16–64 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it. Mine is the 32 GB module. It sat on a shelf collecting dust. It is " quite terrible ". I wanted a real number for how a modern LLM runs on it. Getting there cost about $300 in tokens on GPT-6-</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Two things happened close together and I’m curious how people here see it:</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xvhooc/two_things_happened_close_together_and_im_curious/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xvhooc/two_things_happened_close_together_and_im_curious/</guid>
-      <pubDate>Fri, 13 Nov 2026 19:45:46 +0000</pubDate>
-      <description>1. The Microsoft 365 outage. Outlook, Teams and Copilot were affected. Microsoft said it was a network issue, “not related to cyber or AI / agents.” But a lot of people I know quietly switched to ChatGPT to keep working while Copilot was down. 2. Copilot pricing is changing. Microsoft plans to turn on usage-based billing by default for new Copilot Business subscriptions bought through partners (cu</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B &amp; Flash Next [GGUF]</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/</guid>
-      <pubDate>Fri, 13 Nov 2026 19:23:54 +0000</pubDate>
-      <description>hey llamas, its Alish from nace.ai (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) &amp; Kapitsa (optimized inference for apple silicon). As promised in the last post , we are releasing the GGUF weights based on the Nace quantization of Qwen 9B, 27B, 35B and Flash-Next. I will describe our process on how we came up with these quants right below, so skip</description>
       <category>community-feedback</category>
       <category>use-cases</category>
       <category>emerging-signals</category>

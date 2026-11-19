@@ -7,6 +7,96 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0",
+      "title": "Google · Release v0.69.0",
+      "content_text": "What's Changed fix(core,cli): preserve literal $ characters during template placeholder replacement by @jesussamuel-byte in #30136 feat(cli): add /stats heatmap subcommand for daily token usage by @jvargassanchez-dot in #30135 fix(core): prevent GCLI_EXPAND_TARGET env collision in expandEnvVars by @villahernandez-coder in #30138 chore(release): bump version to 0.69.0-nightly.20261104.g89e9d25d6 by",
+      "date_published": "2026-11-19T01:45:47+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed fix(core,cli): preserve literal $ characters during template placeholder replacement by @jesussamuel-byte in #30136 feat(cli): add /stats heatmap subcommand for daily token usage by @jvargassanchez-dot in #30135 fix(core): pr"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.328",
+      "title": "Anthropic · v2.1.328",
+      "content_text": "What's changed Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission mode start in it Added \"onFailure\": \"block\" for mcp_tool hooks, as for command and HTTP hooks: a hook whose call fails blocks the action Added a warning when a message from a session that skips permiss",
+      "date_published": "2026-11-19T01:14:04+00:00",
+      "authors": [
+        {
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "claude-code",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Anthropic",
+        "source_name": "anthropics/claude-code releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's changed Added auto mode for Claude Opus 4.6 and Sonnet 4.6 on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude apps gateway; interactive sessions with no permission mode start in it Added \"onFailure\": \"bloc"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0-preview.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0-preview.0",
+      "title": "Google · Release v0.70.0-preview.0",
+      "content_text": "What's Changed Changelog for v0.69.0-preview.0 by @gemini-cli-robot in #30222 Changelog for v0.68.0 by @gemini-cli-robot in #30224 chore(release): bump version to 0.70.0-nightly.20261110.g1603e9bab by @gemini-cli-robot in #30223 test(cli): remove redundant lowercase restart test in AdminSettingsChangedDialog by @luisfelipe-alt in #30221 fix(cli): preserve Unicode prompts and strip ANSI fragments i",
+      "date_published": "2026-11-19T00:09:03+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 2,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed Changelog for v0.69.0-preview.0 by @gemini-cli-robot in #30222 Changelog for v0.68.0 by @gemini-cli-robot in #30224 chore(release): bump version to 0.70.0-nightly.20261110.g1603e9bab by @gemini-cli-robot in #30223 test(cli): "
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.1",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.1",
       "title": "OpenAI · 0.172.0-alpha.1",
@@ -5913,96 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "While waiting for Qwen 4, I installed and benchmarked DeepSeek v4.1 Flash to see if I was missing out. Based on the type of work I do, DeepSeek is not better but is definitely much slower. Turns out Strata with Qwen 3.8 Flash-Next is best b"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzes/poormans_local_llm/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzes/poormans_local_llm/",
-      "title": "Selected Reddit communities · Poorman's Local LLM",
-      "content_text": "The Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16–64 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it. Mine is the 32 GB module. It sat on a shelf collecting dust. It is \" quite terrible \". I wanted a real number for how a modern LLM runs on it. Getting there cost about $300 in tokens on GPT-6-",
-      "date_published": "2026-11-13T19:57:32+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "The Jetson AGX Xavier came out in September 2018, four years before ChatGPT existed. It has 16–64 GB of LPDDR4x at 136 GB/s. The GPU is a 512-core Volta, and people skip the board for local AI because of it. Mine is the 32 GB module. It sat"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvhooc/two_things_happened_close_together_and_im_curious/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvhooc/two_things_happened_close_together_and_im_curious/",
-      "title": "Selected Reddit communities · Two things happened close together and I’m curious how people here see it:",
-      "content_text": "1. The Microsoft 365 outage. Outlook, Teams and Copilot were affected. Microsoft said it was a network issue, “not related to cyber or AI / agents.” But a lot of people I know quietly switched to ChatGPT to keep working while Copilot was down. 2. Copilot pricing is changing. Microsoft plans to turn on usage-based billing by default for new Copilot Business subscriptions bought through partners (cu",
-      "date_published": "2026-11-13T19:45:46+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "1. The Microsoft 365 outage. Outlook, Teams and Copilot were affected. Microsoft said it was a network issue, “not related to cyber or AI / agents.” But a lot of people I know quietly switched to ChatGPT to keep working while Copilot was do"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvh4ag/weight_space_programming_for_quantization_nace/",
-      "title": "Selected Reddit communities · Weight Space Programming for Quantization: Nace quants achieve up to 2x better KL divergence for Qwen 9B, 27B, 35B & Flash Next [GGUF]",
-      "content_text": "hey llamas, its Alish from nace.ai (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the last post , we are releasing the GGUF weights based on the Nace quantization of Qwen 9B, 27B, 35B and Flash-Next. I will describe our process on how we came up with these quants right below, so skip",
-      "date_published": "2026-11-13T19:23:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "hey llamas, its Alish from nace.ai (open source ai lab behind #1 decision model on latest Artificial Analysis decision index v2.1) & Kapitsa (optimized inference for apple silicon). As promised in the last post , we are releasing the GGUF w"
         ]
       }
     }
