@@ -7,6 +7,126 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0",
+      "title": "Google · Release v0.70.0",
+      "content_text": "What's Changed Changelog for v0.69.0-preview.0 by @gemini-cli-robot in #30222 Changelog for v0.68.0 by @gemini-cli-robot in #30224 chore(release): bump version to 0.70.0-nightly.20261110.g1603e9bab by @gemini-cli-robot in #30223 test(cli): remove redundant lowercase restart test in AdminSettingsChangedDialog by @luisfelipe-alt in #30221 fix(cli): preserve Unicode prompts and strip ANSI fragments i",
+      "date_published": "2026-11-19T21:08:05+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed Changelog for v0.69.0-preview.0 by @gemini-cli-robot in #30222 Changelog for v0.68.0 by @gemini-cli-robot in #30224 chore(release): bump version to 0.70.0-nightly.20261110.g1603e9bab by @gemini-cli-robot in #30223 test(cli): "
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-preview.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-preview.0",
+      "title": "Google · Release v0.71.0-preview.0",
+      "content_text": "What's Changed Changelog for v0.70.0-preview.0 by @gemini-cli-robot in #30361 chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in #30366 Changelog for v0.69.0 by @gemini-cli-robot in #30365 fix(core,cli): parse PowerShell commands asynchronously to prevent UI spinner freeze by @tadipavan in #30334 chore(gcp): push development worker to private artifact regist",
+      "date_published": "2026-11-19T20:48:23+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 2,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed Changelog for v0.70.0-preview.0 by @gemini-cli-robot in #30361 chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in #30366 Changelog for v0.69.0 by @gemini-cli-robot in #30365 fix(core,cl"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1",
+      "title": "OpenAI · rust-v0.171.0-alpha.13.1",
+      "content_text": "Release 0.171.0-alpha.13.1",
+      "date_published": "2026-11-19T20:39:52+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.171.0-alpha.13.1"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2",
+      "title": "OpenAI · 0.172.0-alpha.2",
+      "content_text": "Release 0.172.0-alpha.2",
+      "date_published": "2026-11-19T15:49:51+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.172.0-alpha.2"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0",
       "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0",
       "title": "Google · Release v0.69.0",
@@ -5883,126 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "submitted by /u/Nickism to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvikos/i_built_sysd_an_inbrowser_system_design_workbench/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvikos/i_built_sysd_an_inbrowser_system_design_workbench/",
-      "title": "Selected Reddit communities · I built sysd, an in-browser system design workbench on Excalidraw with local WASM/WebGPU voice and tool-calling",
-      "content_text": "With AI writing more of our boilerplate, I wanted a fast way to keep my own distributed systems instincts sharp, so I baked sysd. You sketch architectures on Excalidraw (Free-Flow or across 11 canonical prompts) while a live < 5ms scene-graph analyzer flags anti-patterns like direct Client -> DB writes or missing presigned offloads, and stamps multi-plane Staff+ reference blueprints with capacity",
-      "date_published": "2026-11-13T20:20:34+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "With AI writing more of our boilerplate, I wanted a fast way to keep my own distributed systems instincts sharp, so I baked sysd. You sketch architectures on Excalidraw (Free-Flow or across 11 canonical prompts) while a live < 5ms scene-gra"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvihou/vellium_195_visual_novels_that_actually_work_on_a/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvihou/vellium_195_visual_novels_that_actually_work_on_a/",
-      "title": "Selected Reddit communities · Vellium 1.9.5: visual novels that actually work on a 12B local model",
-      "content_text": "Vellium 1.9.5: Visual Novel Mode Update Vellium is a free, open-source, local-first AI chat and roleplay app with a built-in visual novel mode. Version 1.9.5 focuses on making visual novels work reliably with smaller local models like Gemma 12B, improving image consistency, reducing prompt overhead, and adding new ways to generate and manage scenes. What's new: Lite mode for small models. Instead",
-      "date_published": "2026-11-13T20:17:16+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Vellium 1.9.5: Visual Novel Mode Update Vellium is a free, open-source, local-first AI chat and roleplay app with a built-in visual novel mode. Version 1.9.5 focuses on making visual novels work reliably with smaller local models like Gemma"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvia6x/voice_dictation_with_one_model/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvia6x/voice_dictation_with_one_model/",
-      "title": "Selected Reddit communities · Voice dictation with one model.",
-      "content_text": "Hey, I'm 14 and was looking into how AI voice dictation apps like Wispr Flow work. As you might know they use a transcription model + LLM. The transcriber outputs one to one text as it hears it and then the LLM gets rid of fillers like \"um\" and adds punctuation, flow, corrected restarts and formatting. I ran that on my laptop (RTX 3050 Ti, 4 GB VRAM), then trained a single model to do both steps a",
-      "date_published": "2026-11-13T20:08:48+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hey, I'm 14 and was looking into how AI voice dictation apps like Wispr Flow work. As you might know they use a transcription model + LLM. The transcriber outputs one to one text as it hears it and then the LLM gets rid of fillers like \"um\""
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzq9/deepseek_v41_flash_vs_qwen_38_flash_next/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvhzq9/deepseek_v41_flash_vs_qwen_38_flash_next/",
-      "title": "Selected Reddit communities · DeepSeek v4.1 Flash vs Qwen 3.8 Flash Next Performance",
-      "content_text": "While waiting for Qwen 4, I installed and benchmarked DeepSeek v4.1 Flash to see if I was missing out. Based on the type of work I do, DeepSeek is not better but is definitely much slower. Turns out Strata with Qwen 3.8 Flash-Next is best bang for buck on my machine. submitted by /u/Critical-Entry3377 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-13T19:57:57+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "While waiting for Qwen 4, I installed and benchmarked DeepSeek v4.1 Flash to see if I was missing out. Based on the type of work I do, DeepSeek is not better but is definitely much slower. Turns out Strata with Qwen 3.8 Flash-Next is best b"
         ]
       }
     }

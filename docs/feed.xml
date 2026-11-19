@@ -6,7 +6,55 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 19 Nov 2026 01:45:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 21:08:05 +0000</lastBuildDate>
+    <item>
+      <title>Google · Release v0.70.0</title>
+      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0</link>
+      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0</guid>
+      <pubDate>Thu, 19 Nov 2026 21:08:05 +0000</pubDate>
+      <description>What's Changed Changelog for v0.69.0-preview.0 by @gemini-cli-robot in #30222 Changelog for v0.68.0 by @gemini-cli-robot in #30224 chore(release): bump version to 0.70.0-nightly.20261110.g1603e9bab by @gemini-cli-robot in #30223 test(cli): remove redundant lowercase restart test in AdminSettingsChangedDialog by @luisfelipe-alt in #30221 fix(cli): preserve Unicode prompts and strip ANSI fragments i</description>
+      <category>gemini</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>Google · Release v0.71.0-preview.0</title>
+      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-preview.0</link>
+      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-preview.0</guid>
+      <pubDate>Thu, 19 Nov 2026 20:48:23 +0000</pubDate>
+      <description>What's Changed Changelog for v0.70.0-preview.0 by @gemini-cli-robot in #30361 chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in #30366 Changelog for v0.69.0 by @gemini-cli-robot in #30365 fix(core,cli): parse PowerShell commands asynchronously to prevent UI spinner freeze by @tadipavan in #30334 chore(gcp): push development worker to private artifact regist</description>
+      <category>gemini</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · rust-v0.171.0-alpha.13.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1</guid>
+      <pubDate>Thu, 19 Nov 2026 20:39:52 +0000</pubDate>
+      <description>Release 0.171.0-alpha.13.1</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.172.0-alpha.2</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2</guid>
+      <pubDate>Thu, 19 Nov 2026 15:49:51 +0000</pubDate>
+      <description>Release 0.172.0-alpha.2</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
     <item>
       <title>Google · Release v0.69.0</title>
       <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0</link>
@@ -2353,54 +2401,6 @@
       <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvin23/food_for_thought/</guid>
       <pubDate>Fri, 13 Nov 2026 20:23:01 +0000</pubDate>
       <description>submitted by /u/Nickism to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · I built sysd, an in-browser system design workbench on Excalidraw with local WASM/WebGPU voice and tool-calling</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvikos/i_built_sysd_an_inbrowser_system_design_workbench/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvikos/i_built_sysd_an_inbrowser_system_design_workbench/</guid>
-      <pubDate>Fri, 13 Nov 2026 20:20:34 +0000</pubDate>
-      <description>With AI writing more of our boilerplate, I wanted a fast way to keep my own distributed systems instincts sharp, so I baked sysd. You sketch architectures on Excalidraw (Free-Flow or across 11 canonical prompts) while a live &lt; 5ms scene-graph analyzer flags anti-patterns like direct Client -&gt; DB writes or missing presigned offloads, and stamps multi-plane Staff+ reference blueprints with capacity</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Vellium 1.9.5: visual novels that actually work on a 12B local model</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvihou/vellium_195_visual_novels_that_actually_work_on_a/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvihou/vellium_195_visual_novels_that_actually_work_on_a/</guid>
-      <pubDate>Fri, 13 Nov 2026 20:17:16 +0000</pubDate>
-      <description>Vellium 1.9.5: Visual Novel Mode Update Vellium is a free, open-source, local-first AI chat and roleplay app with a built-in visual novel mode. Version 1.9.5 focuses on making visual novels work reliably with smaller local models like Gemma 12B, improving image consistency, reducing prompt overhead, and adding new ways to generate and manage scenes. What's new: Lite mode for small models. Instead</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Voice dictation with one model.</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvia6x/voice_dictation_with_one_model/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvia6x/voice_dictation_with_one_model/</guid>
-      <pubDate>Fri, 13 Nov 2026 20:08:48 +0000</pubDate>
-      <description>Hey, I'm 14 and was looking into how AI voice dictation apps like Wispr Flow work. As you might know they use a transcription model + LLM. The transcriber outputs one to one text as it hears it and then the LLM gets rid of fillers like "um" and adds punctuation, flow, corrected restarts and formatting. I ran that on my laptop (RTX 3050 Ti, 4 GB VRAM), then trained a single model to do both steps a</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · DeepSeek v4.1 Flash vs Qwen 3.8 Flash Next Performance</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvhzq9/deepseek_v41_flash_vs_qwen_38_flash_next/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvhzq9/deepseek_v41_flash_vs_qwen_38_flash_next/</guid>
-      <pubDate>Fri, 13 Nov 2026 19:57:57 +0000</pubDate>
-      <description>While waiting for Qwen 4, I installed and benchmarked DeepSeek v4.1 Flash to see if I was missing out. Based on the type of work I do, DeepSeek is not better but is definitely much slower. Turns out Strata with Qwen 3.8 Flash-Next is best bang for buck on my machine. submitted by /u/Critical-Entry3377 to r/LocalLLaMA [link] [comments]</description>
       <category>community-feedback</category>
       <category>use-cases</category>
       <category>emerging-signals</category>
