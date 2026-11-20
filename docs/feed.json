@@ -7,6 +7,156 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.1",
+      "title": "OpenAI · 0.173.0-alpha.1",
+      "content_text": "Release 0.173.0-alpha.1",
+      "date_published": "2026-11-20T02:54:54+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.173.0-alpha.1"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261120.gd4cb1713f",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261120.gd4cb1713f",
+      "title": "Google · Release v0.71.0-nightly.20261120.gd4cb1713f",
+      "content_text": "What's Changed fix(core,cli): preserve literal $ characters during template placeholder replacement by @jesussamuel-byte in #30136 feat(cli): add /stats heatmap subcommand for daily token usage by @jvargassanchez-dot in #30135 fix(core): prevent GCLI_EXPAND_TARGET env collision in expandEnvVars by @villahernandez-coder in #30138 chore(release): bump version to 0.69.0-nightly.20261104.g89e9d25d6 by",
+      "date_published": "2026-11-20T01:12:42+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed fix(core,cli): preserve literal $ characters during template placeholder replacement by @jesussamuel-byte in #30136 feat(cli): add /stats heatmap subcommand for daily token usage by @jvargassanchez-dot in #30135 fix(core): pr"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0",
+      "title": "OpenAI · 0.171.0",
+      "content_text": "New Features Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection. ( #62106 ) Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside the main conversation. ( #61352 , #61888 , #61889 , #61919 , #62157 ) Added configurable undo and redo shortcuts to the non-Vim prompt composer, including restora",
+      "date_published": "2026-11-20T00:47:14+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "New Features Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection. ( #62106 ) Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside th"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.329",
+      "title": "Anthropic · v2.1.329",
+      "content_text": "What's changed Added a trust dialog warning that says where a folder's hooks are declared Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load Added this session's scheduled tasks, /loop wakeups, the goal and this conversation's forks to /tasks ; x stops one after asking Added a \"Server message\" row to a server's page i",
+      "date_published": "2026-11-19T22:14:41+00:00",
+      "authors": [
+        {
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "claude-code",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Anthropic",
+        "source_name": "anthropics/claude-code releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's changed Added a trust dialog warning that says where a folder's hooks are declared Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load Added this session"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1",
+      "title": "OpenAI · 0.171.0-alpha.13.1",
+      "content_text": "Release 0.171.0-alpha.13.1",
+      "date_published": "2026-11-19T22:07:59+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.171.0-alpha.13.1"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0",
       "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0",
       "title": "Google · Release v0.70.0",
@@ -63,36 +213,6 @@
         "confidence": 0.98,
         "evidence": [
           "What's Changed Changelog for v0.70.0-preview.0 by @gemini-cli-robot in #30361 chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in #30366 Changelog for v0.69.0 by @gemini-cli-robot in #30365 fix(core,cl"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1",
-      "title": "OpenAI · rust-v0.171.0-alpha.13.1",
-      "content_text": "Release 0.171.0-alpha.13.1",
-      "date_published": "2026-11-19T20:39:52+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.171.0-alpha.13.1"
         ]
       }
     },
@@ -5883,126 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "submitted by /u/py-net to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvql86/us_nonprofits_are_suing_openai_anthropic_meta/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvql86/us_nonprofits_are_suing_openai_anthropic_meta/",
-      "title": "Selected Reddit communities · U.S. nonprofits are suing OpenAI, Anthropic, Meta, SpaceX, and Google, demanding an immediate freeze on AI",
-      "content_text": "submitted by /u/Malor777 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-14T02:12:12+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/Malor777 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.5",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.5",
-      "title": "OpenAI · 0.171.0-alpha.5",
-      "content_text": "Release 0.171.0-alpha.5",
-      "date_published": "2026-11-14T01:25:03+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.171.0-alpha.5"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
-      "title": "Anthropic · v2.1.325",
-      "content_text": "What's changed Fixed a security issue in how zstd-compressed responses are decoded Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear Adde",
-      "date_published": "2026-11-13T20:40:01+00:00",
-      "authors": [
-        {
-          "name": "Anthropic"
-        }
-      ],
-      "tags": [
-        "claude-code",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "Anthropic",
-        "source_name": "anthropics/claude-code releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 3,
-        "confidence": 0.98,
-        "evidence": [
-          "What's changed Fixed a security issue in how zstd-compressed responses are decoded Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook Add"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvin23/food_for_thought/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvin23/food_for_thought/",
-      "title": "Selected Reddit communities · Food for thought",
-      "content_text": "submitted by /u/Nickism to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-13T20:23:01+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/Nickism to r/LocalLLaMA [link] [comments]"
         ]
       }
     }

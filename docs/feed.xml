@@ -6,7 +6,67 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 19 Nov 2026 21:08:05 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 02:54:54 +0000</lastBuildDate>
+    <item>
+      <title>OpenAI · 0.173.0-alpha.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.1</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.1</guid>
+      <pubDate>Fri, 20 Nov 2026 02:54:54 +0000</pubDate>
+      <description>Release 0.173.0-alpha.1</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>Google · Release v0.71.0-nightly.20261120.gd4cb1713f</title>
+      <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261120.gd4cb1713f</link>
+      <guid isPermaLink="true">https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261120.gd4cb1713f</guid>
+      <pubDate>Fri, 20 Nov 2026 01:12:42 +0000</pubDate>
+      <description>What's Changed fix(core,cli): preserve literal $ characters during template placeholder replacement by @jesussamuel-byte in #30136 feat(cli): add /stats heatmap subcommand for daily token usage by @jvargassanchez-dot in #30135 fix(core): prevent GCLI_EXPAND_TARGET env collision in expandEnvVars by @villahernandez-coder in #30138 chore(release): bump version to 0.69.0-nightly.20261104.g89e9d25d6 by</description>
+      <category>gemini</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.171.0</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0</guid>
+      <pubDate>Fri, 20 Nov 2026 00:47:14 +0000</pubDate>
+      <description>New Features Added GPT-6.2 Sol and Astra to model catalogs, with Sol as the default catalog selection. ( #62106 ) Enabled the TUI workspace by default, with searchable document previews, image previews, and subagent transcripts alongside the main conversation. ( #61352 , #61888 , #61889 , #61919 , #62157 ) Added configurable undo and redo shortcuts to the non-Vim prompt composer, including restora</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>Anthropic · v2.1.329</title>
+      <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.329</link>
+      <guid isPermaLink="true">https://github.com/anthropics/claude-code/releases/tag/v2.1.329</guid>
+      <pubDate>Thu, 19 Nov 2026 22:14:41 +0000</pubDate>
+      <description>What's changed Added a trust dialog warning that says where a folder's hooks are declared Added a warning in the conversation, in Claude Desktop and other non-interactive hosts, when hooks in managed settings fail to load Added this session's scheduled tasks, /loop wakeups, the goal and this conversation's forks to /tasks ; x stops one after asking Added a "Server message" row to a server's page i</description>
+      <category>claude-code</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.171.0-alpha.13.1</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1</guid>
+      <pubDate>Thu, 19 Nov 2026 22:07:59 +0000</pubDate>
+      <description>Release 0.171.0-alpha.13.1</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
     <item>
       <title>Google · Release v0.70.0</title>
       <link>https://github.com/google-gemini/gemini-cli/releases/tag/v0.70.0</link>
@@ -26,18 +86,6 @@
       <pubDate>Thu, 19 Nov 2026 20:48:23 +0000</pubDate>
       <description>What's Changed Changelog for v0.70.0-preview.0 by @gemini-cli-robot in #30361 chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in #30366 Changelog for v0.69.0 by @gemini-cli-robot in #30365 fix(core,cli): parse PowerShell commands asynchronously to prevent UI spinner freeze by @tadipavan in #30334 chore(gcp): push development worker to private artifact regist</description>
       <category>gemini</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>OpenAI · rust-v0.171.0-alpha.13.1</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.1</guid>
-      <pubDate>Thu, 19 Nov 2026 20:39:52 +0000</pubDate>
-      <description>Release 0.171.0-alpha.13.1</description>
-      <category>codex</category>
       <category>coding-agents</category>
       <category>developer-tools</category>
       <category>T1</category>
@@ -2353,54 +2401,6 @@
       <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xvqp23/openai_is_behind_3_labs_in_coding_capability_at_7/</guid>
       <pubDate>Sat, 14 Nov 2026 02:17:37 +0000</pubDate>
       <description>submitted by /u/py-net to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · U.S. nonprofits are suing OpenAI, Anthropic, Meta, SpaceX, and Google, demanding an immediate freeze on AI</title>
-      <link>https://www.reddit.com/r/OpenAI/comments/1xvql86/us_nonprofits_are_suing_openai_anthropic_meta/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/OpenAI/comments/1xvql86/us_nonprofits_are_suing_openai_anthropic_meta/</guid>
-      <pubDate>Sat, 14 Nov 2026 02:12:12 +0000</pubDate>
-      <description>submitted by /u/Malor777 to r/OpenAI [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>OpenAI · 0.171.0-alpha.5</title>
-      <link>https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.5</link>
-      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.5</guid>
-      <pubDate>Sat, 14 Nov 2026 01:25:03 +0000</pubDate>
-      <description>Release 0.171.0-alpha.5</description>
-      <category>codex</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Anthropic · v2.1.325</title>
-      <link>https://github.com/anthropics/claude-code/releases/tag/v2.1.325</link>
-      <guid isPermaLink="true">https://github.com/anthropics/claude-code/releases/tag/v2.1.325</guid>
-      <pubDate>Fri, 13 Nov 2026 20:40:01 +0000</pubDate>
-      <description>What's changed Fixed a security issue in how zstd-compressed responses are decoded Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a Jupyter notebook Added a line under the error shown when your organization's policy blocks a request, saying how to continue: run /rewind and change the message, or run /clear Adde</description>
-      <category>claude-code</category>
-      <category>coding-agents</category>
-      <category>developer-tools</category>
-      <category>T1</category>
-      <category>github</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Food for thought</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvin23/food_for_thought/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvin23/food_for_thought/</guid>
-      <pubDate>Fri, 13 Nov 2026 20:23:01 +0000</pubDate>
-      <description>submitted by /u/Nickism to r/LocalLLaMA [link] [comments]</description>
       <category>community-feedback</category>
       <category>use-cases</category>
       <category>emerging-signals</category>
