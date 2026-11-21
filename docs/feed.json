@@ -7,6 +7,126 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261121.geecccfcd5",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261121.geecccfcd5",
+      "title": "Google · Release v0.71.0-nightly.20261121.geecccfcd5",
+      "content_text": "What's Changed fix(cli): expand Windows home-relative paths using tilde and backslash by @urielefrenvirtusa in #30376 fix(cli): resume most recently active session instead of most recently started by @urielefrenvirtusa in #30389 Full Changelog : v0.71.0-nightly.20261120.gd4cb1713f...v0.71.0-nightly.20261121.geecccfcd5",
+      "date_published": "2026-11-21T01:19:21+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed fix(cli): expand Windows home-relative paths using tilde and backslash by @urielefrenvirtusa in #30376 fix(cli): resume most recently active session instead of most recently started by @urielefrenvirtusa in #30389 Full Change"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.4",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.4",
+      "title": "OpenAI · 0.173.0-alpha.4",
+      "content_text": "Release 0.173.0-alpha.4",
+      "date_published": "2026-11-21T00:40:17+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.173.0-alpha.4"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+      "title": "Anthropic · v2.1.330",
+      "content_text": "What's changed Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login , Claude Code applies the organization's settings and uses its cloud provider or gateway Added easel, a built-in mod that draws charts when asked and under MCP metrics results, on Pro, Max and, where available, Team and Enterprise on macOS and Linux; turn automatic charts off in /",
+      "date_published": "2026-11-20T22:32:56+00:00",
+      "authors": [
+        {
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "claude-code",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Anthropic",
+        "source_name": "anthropics/claude-code releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's changed Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login , Claude Code applies the organization's settings and uses its cloud provider or gateway Added easel, a built-in mod that"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.3",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.3",
+      "title": "OpenAI · 0.173.0-alpha.3",
+      "content_text": "Release 0.173.0-alpha.3",
+      "date_published": "2026-11-20T22:28:53+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.173.0-alpha.3"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.2",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.2",
       "title": "OpenAI · 0.173.0-alpha.2",
@@ -5883,126 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "submitted by /u/billy_booboo to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvrgk4/since_gpu_prices_have_changed_and_i_got_my_old_pc/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvrgk4/since_gpu_prices_have_changed_and_i_got_my_old_pc/",
-      "title": "Selected Reddit communities · Since GPU Prices have changed and I got my old Pc fixed, I wanna ask what I should do for what’ll mostly likely be my only upgrades for a few years, any advice?",
-      "content_text": "So, I have two PCs available to me, and I intend to connect them for compute: Ultra 7 265KF + 5070ti + 32GB DDR5-6000 CL30 (KLEVV Urbane V) on a Z890 MAX GAMING WIFI7 + 1000w 80+ G Apevia PR1000w PSU (Will likely get replaced by a SAMA P1200w PSU) i9-14900F + 4070S + 32GB DDR5-5200 CL40 (Apacer Panther, not on sale) on a PRO B760-VC WIFI IV + 750w 80+ G PSU (likely a shoddy PSU but seems to be att",
-      "date_published": "2026-11-14T02:56:05+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "So, I have two PCs available to me, and I intend to connect them for compute: Ultra 7 265KF + 5070ti + 32GB DDR5-6000 CL30 (KLEVV Urbane V) on a Z890 MAX GAMING WIFI7 + 1000w 80+ G Apevia PR1000w PSU (Will likely get replaced by a SAMA P120"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvrgf1/cq_4bit_matches_bf16_on_qwen3827b_benchmarks/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvrgf1/cq_4bit_matches_bf16_on_qwen3827b_benchmarks/",
-      "title": "Selected Reddit communities · CQ 4-bit matches BF16 on Qwen3.8-27B benchmarks while NF4 drops 12 points on GSM8K, plus GCMP, a LoRA replacement with 55× fewer parameters",
-      "content_text": "A few weeks ago I posted CQ, our calibration-free 4-bit format, along with a training-loss comparison against Unsloth NF4. Some of you correctly pointed out that loss logged by two different trainers isn't comparable, and asked for results where answers are counted right or wrong. Here they are. Setup: Qwen3.8-27B. Every row uses the same lm-evaluation-harness code, prompts and questions, with gre",
-      "date_published": "2026-11-14T02:55:54+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "A few weeks ago I posted CQ, our calibration-free 4-bit format, along with a training-loss comparison against Unsloth NF4. Some of you correctly pointed out that loss logged by two different trainers isn't comparable, and asked for results "
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvrdpr/stand_with_jensen_read_the_stand_with_jensen/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvrdpr/stand_with_jensen_read_the_stand_with_jensen/",
-      "title": "Selected Reddit communities · Stand with Jensen — Read the Stand with Jensen letter and consider adding your name. #standwithjensen #bringjensenback",
-      "content_text": "submitted by /u/kinkvoid to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-14T02:51:59+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/kinkvoid to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvquae/unsloth_qwen3827b_quantizations_dynamic_v31_update/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvquae/unsloth_qwen3827b_quantizations_dynamic_v31_update/",
-      "title": "Selected Reddit communities · Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
-      "content_text": "submitted by /u/slacka123 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-14T02:25:01+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/slacka123 to r/LocalLLaMA [link] [comments]"
         ]
       }
     }
