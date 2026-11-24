@@ -7,11 +7,71 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
+      "title": "OpenAI · 0.173.0-alpha.5",
+      "content_text": "Release 0.173.0-alpha.5",
+      "date_published": "2026-11-24T06:48:20+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.173.0-alpha.5"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1",
+      "title": "Google · Release v0.71.1",
+      "content_text": "What's Changed fix(patch): cherry-pick aafdfdf to release/v0.71.0-pr-30420 to patch version v0.71.0 and create version 0.71.1 by @gemini-cli-robot in #30429 Full Changelog : v0.71.0...v0.71.1",
+      "date_published": "2026-11-24T03:50:24+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed fix(patch): cherry-pick aafdfdf to release/v0.71.0-pr-30420 to patch version v0.71.0 and create version 0.71.1 by @gemini-cli-robot in #30429 Full Changelog : v0.71.0...v0.71.1"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.1",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.1",
-      "title": "OpenAI · rust-v0.174.0-alpha.1",
+      "title": "OpenAI · 0.174.0-alpha.1",
       "content_text": "Release 0.174.0-alpha.1",
-      "date_published": "2026-11-24T00:48:55+00:00",
+      "date_published": "2026-11-24T01:51:10+00:00",
       "authors": [
         {
           "name": "OpenAI"
@@ -33,6 +93,66 @@
         "confidence": 0.98,
         "evidence": [
           "Release 0.174.0-alpha.1"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0",
+      "title": "Google · Release v0.71.0",
+      "content_text": "What's Changed Changelog for v0.70.0-preview.0 by @gemini-cli-robot in #30361 chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in #30366 Changelog for v0.69.0 by @gemini-cli-robot in #30365 fix(core,cli): parse PowerShell commands asynchronously to prevent UI spinner freeze by @tadipavan in #30334 chore(gcp): push development worker to private artifact regist",
+      "date_published": "2026-11-24T01:16:44+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed Changelog for v0.70.0-preview.0 by @gemini-cli-robot in #30361 chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in #30366 Changelog for v0.69.0 by @gemini-cli-robot in #30365 fix(core,cl"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261124.gaafdfdfb5",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261124.gaafdfdfb5",
+      "title": "Google · Release v0.71.0-nightly.20261124.gaafdfdfb5",
+      "content_text": "What's Changed fix(a2a-server): enforce bearer token authentication and request input validation by @diegogodinezr in #30420 Full Changelog : v0.71.0-nightly.20261123.geecccfcd5...v0.71.0-nightly.20261124.gaafdfdfb5",
+      "date_published": "2026-11-24T01:13:47+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed fix(a2a-server): enforce bearer token authentication and request input validation by @diegogodinezr in #30420 Full Changelog : v0.71.0-nightly.20261123.geecccfcd5...v0.71.0-nightly.20261124.gaafdfdfb5"
         ]
       }
     },
@@ -93,36 +213,6 @@
         "confidence": 0.98,
         "evidence": [
           "New Features Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. ( #62332 ) Press Tab to complete arguments for supported slash commands. For example, /mcp lo completes to /"
-        ]
-      }
-    },
-    {
-      "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
-      "title": "OpenAI · rust-v0.173.0-alpha.5",
-      "content_text": "Release 0.173.0-alpha.5",
-      "date_published": "2026-11-23T23:10:34+00:00",
-      "authors": [
-        {
-          "name": "OpenAI"
-        }
-      ],
-      "tags": [
-        "codex",
-        "coding-agents",
-        "developer-tools",
-        "T1",
-        "github"
-      ],
-      "_radar": {
-        "company": "OpenAI",
-        "source_name": "openai/codex releases",
-        "source_tier": 1,
-        "platform": "github",
-        "impact_score": 1,
-        "confidence": 0.98,
-        "evidence": [
-          "Release 0.173.0-alpha.5"
         ]
       }
     },
@@ -5913,96 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "https://www.tbsnews.net/explainer/nvidia-ceos-alleged-affair-tech-entrepreneur-raises-questions-over-china-chip-links submitted by /u/nathan555 to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvu5pt/gpt_keeps_quietly_shrinking_your_limits_meanwhile/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvu5pt/gpt_keeps_quietly_shrinking_your_limits_meanwhile/",
-      "title": "Selected Reddit communities · 🔥 GPT keeps quietly shrinking your limits. Meanwhile, the neighbors are stretching theirs.",
-      "content_text": "Claude Code's 5-hour limit might stretch further this time. v2.1.323 adds an experimental feature: Code Mode. Before: one tool call per turn — read the result, then decide what's next. Now: one chunk of JS runs several calls in a single pass, in parallel. Here's the key part: Anthropic's own docs say it — every turn resends the whole conversation so far. The bigger the context, the more tokens you",
-      "date_published": "2026-11-14T05:20:34+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Claude Code's 5-hour limit might stretch further this time. v2.1.323 adds an experimental feature: Code Mode. Before: one tool call per turn — read the result, then decide what's next. Now: one chunk of JS runs several calls in a single pas"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvu3eu/family_guy_house_if_it_was_in_real_life/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvu3eu/family_guy_house_if_it_was_in_real_life/",
-      "title": "Selected Reddit communities · Family guy house if it was in real life",
-      "content_text": "submitted by /u/TommycoolGun to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-14T05:16:59+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/TommycoolGun to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvu0n5/audio_asrtts_on_llamacpp/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvu0n5/audio_asrtts_on_llamacpp/",
-      "title": "Selected Reddit communities · Audio (ASR/TTS) on llama.cpp",
-      "content_text": "Hey everyone, I've been using audio.cpp for a while now, and it's quite nice. However I've noticed that Yue2, Qwen3-ASR and Qwen3-TTS got supported in comfyui / llama.cpp. While I've tried gemma 4 audio input and it worked well, I haven't tried TTS models yet nor the qwen3-asr/tts series on llama.cpp. Has any of you? So far I found these discussions and PRs on ASR / TTS support: support planning:",
-      "date_published": "2026-11-14T05:12:38+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hey everyone, I've been using audio.cpp for a while now, and it's quite nice. However I've noticed that Yue2, Qwen3-ASR and Qwen3-TTS got supported in comfyui / llama.cpp. While I've tried gemma 4 audio input and it worked well, I haven't t"
         ]
       }
     }
