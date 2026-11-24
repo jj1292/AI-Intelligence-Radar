@@ -7,6 +7,96 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.4",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.4",
+      "title": "OpenAI · rust-v0.174.0-alpha.4",
+      "content_text": "Release 0.174.0-alpha.4",
+      "date_published": "2026-11-24T21:57:34+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.174.0-alpha.4"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.3",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.3",
+      "title": "OpenAI · 0.174.0-alpha.3",
+      "content_text": "Release 0.174.0-alpha.3",
+      "date_published": "2026-11-24T20:18:38+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.174.0-alpha.3"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.2",
+      "title": "OpenAI · 0.174.0-alpha.2",
+      "content_text": "Release 0.174.0-alpha.2",
+      "date_published": "2026-11-24T16:21:51+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.174.0-alpha.2"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
       "title": "OpenAI · 0.173.0-alpha.5",
@@ -5913,96 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and ca"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvud3r/for_long_context_does_high_quant_matter/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvud3r/for_long_context_does_high_quant_matter/",
-      "title": "Selected Reddit communities · For long context does high quant matter?",
-      "content_text": "Question: if I'm regularly at higher context - say 300-400k - do higher quant versions of the same model perform better? I'm thinking something like Qwen Flash Next q6 and q8. I recently swapped from q6 to q8 and performed a/b testing. I originally expected q6 to be lossless but there were areas where q6 got the wrong answer while q8 was fine. Was wondering whether this is because of my context. M",
-      "date_published": "2026-11-14T05:32:12+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Question: if I'm regularly at higher context - say 300-400k - do higher quant versions of the same model perform better? I'm thinking something like Qwen Flash Next q6 and q8. I recently swapped from q6 to q8 and performed a/b testing. I or"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvuclv/ernie_55_flash_base_ernie/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvuclv/ernie_55_flash_base_ernie/",
-      "title": "Selected Reddit communities · ERNIE 5.5 Flash Base · ERNIE",
-      "content_text": "I guess some may like to read this. submitted by /u/yahbluez to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-14T05:31:24+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I guess some may like to read this. submitted by /u/yahbluez to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvubha/crazy_theres_a_probable_connection_between_my/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvubha/crazy_theres_a_probable_connection_between_my/",
-      "title": "Selected Reddit communities · Crazy there's a probable connection between my desktop running Qwen 3.8 27B and a major geo-economic-political event",
-      "content_text": "https://www.tbsnews.net/explainer/nvidia-ceos-alleged-affair-tech-entrepreneur-raises-questions-over-china-chip-links submitted by /u/nathan555 to r/LocalLLaMA [link] [comments]",
-      "date_published": "2026-11-14T05:29:37+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "https://www.tbsnews.net/explainer/nvidia-ceos-alleged-affair-tech-entrepreneur-raises-questions-over-china-chip-links submitted by /u/nathan555 to r/LocalLLaMA [link] [comments]"
         ]
       }
     }

@@ -6,7 +6,43 @@
     <description>Source-linked signals from frontier AI companies and products.</description>
     <language>zh-cn</language>
     <atom:link href="https://jj1292.github.io/AI-Intelligence-Radar/feed.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 24 Nov 2026 06:48:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 21:57:34 +0000</lastBuildDate>
+    <item>
+      <title>OpenAI · rust-v0.174.0-alpha.4</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.4</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.4</guid>
+      <pubDate>Tue, 24 Nov 2026 21:57:34 +0000</pubDate>
+      <description>Release 0.174.0-alpha.4</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.174.0-alpha.3</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.3</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.3</guid>
+      <pubDate>Tue, 24 Nov 2026 20:18:38 +0000</pubDate>
+      <description>Release 0.174.0-alpha.3</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
+    <item>
+      <title>OpenAI · 0.174.0-alpha.2</title>
+      <link>https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.2</link>
+      <guid isPermaLink="true">https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.2</guid>
+      <pubDate>Tue, 24 Nov 2026 16:21:51 +0000</pubDate>
+      <description>Release 0.174.0-alpha.2</description>
+      <category>codex</category>
+      <category>coding-agents</category>
+      <category>developer-tools</category>
+      <category>T1</category>
+      <category>github</category>
+    </item>
     <item>
       <title>OpenAI · 0.173.0-alpha.5</title>
       <link>https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5</link>
@@ -2365,42 +2401,6 @@
       <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvuit5/paper_read_less_solve_more_tokenefficient_sparse/</guid>
       <pubDate>Sat, 14 Nov 2026 05:41:22 +0000</pubDate>
       <description>Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and can dilute relevant evidence. We present SparseRead, a reusable reading control layer that governs content admission without modifying the agent model. Its Read I</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · For long context does high quant matter?</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvud3r/for_long_context_does_high_quant_matter/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvud3r/for_long_context_does_high_quant_matter/</guid>
-      <pubDate>Sat, 14 Nov 2026 05:32:12 +0000</pubDate>
-      <description>Question: if I'm regularly at higher context - say 300-400k - do higher quant versions of the same model perform better? I'm thinking something like Qwen Flash Next q6 and q8. I recently swapped from q6 to q8 and performed a/b testing. I originally expected q6 to be lossless but there were areas where q6 got the wrong answer while q8 was fine. Was wondering whether this is because of my context. M</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · ERNIE 5.5 Flash Base · ERNIE</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvuclv/ernie_55_flash_base_ernie/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvuclv/ernie_55_flash_base_ernie/</guid>
-      <pubDate>Sat, 14 Nov 2026 05:31:24 +0000</pubDate>
-      <description>I guess some may like to read this. submitted by /u/yahbluez to r/LocalLLaMA [link] [comments]</description>
-      <category>community-feedback</category>
-      <category>use-cases</category>
-      <category>emerging-signals</category>
-      <category>T3</category>
-      <category>reddit</category>
-    </item>
-    <item>
-      <title>Selected Reddit communities · Crazy there's a probable connection between my desktop running Qwen 3.8 27B and a major geo-economic-political event</title>
-      <link>https://www.reddit.com/r/LocalLLaMA/comments/1xvubha/crazy_theres_a_probable_connection_between_my/</link>
-      <guid isPermaLink="true">https://www.reddit.com/r/LocalLLaMA/comments/1xvubha/crazy_theres_a_probable_connection_between_my/</guid>
-      <pubDate>Sat, 14 Nov 2026 05:29:37 +0000</pubDate>
-      <description>https://www.tbsnews.net/explainer/nvidia-ceos-alleged-affair-tech-entrepreneur-raises-questions-over-china-chip-links submitted by /u/nathan555 to r/LocalLLaMA [link] [comments]</description>
       <category>community-feedback</category>
       <category>use-cases</category>
       <category>emerging-signals</category>
