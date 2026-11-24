@@ -7,6 +7,216 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.1",
+      "title": "OpenAI · rust-v0.174.0-alpha.1",
+      "content_text": "Release 0.174.0-alpha.1",
+      "date_published": "2026-11-24T00:48:55+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.174.0-alpha.1"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.72.0-preview.0",
+      "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.72.0-preview.0",
+      "title": "Google · Release v0.72.0-preview.0",
+      "content_text": "What's Changed Changelog for v0.70.0 by @gemini-cli-robot in #30380 fix(core): handle nested .gitignore negations under dir/** patterns by @urielefrenvirtusa in #30370 fix(cli): expand Windows home-relative paths using tilde and backslash by @urielefrenvirtusa in #30376 fix(cli): resume most recently active session instead of most recently started by @urielefrenvirtusa in #30389 fix(a2a-server): e",
+      "date_published": "2026-11-24T00:34:15+00:00",
+      "authors": [
+        {
+          "name": "Google"
+        }
+      ],
+      "tags": [
+        "gemini",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Google",
+        "source_name": "google-gemini/gemini-cli releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 2,
+        "confidence": 0.98,
+        "evidence": [
+          "What's Changed Changelog for v0.70.0 by @gemini-cli-robot in #30380 fix(core): handle nested .gitignore negations under dir/** patterns by @urielefrenvirtusa in #30370 fix(cli): expand Windows home-relative paths using tilde and backslash b"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0",
+      "title": "OpenAI · 0.172.0",
+      "content_text": "New Features Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. ( #62332 ) Press Tab to complete arguments for supported slash commands. For example, /mcp lo completes to /mcp login . ( #62343 ) Jump between task groups in the agent command center with Shift+Up and Shift+Down . ( #62200 ) Optional stdio MCP servers with cached too",
+      "date_published": "2026-11-24T00:06:41+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "New Features Follow thread links from search results and transcripts to open saved conversations and nested agents in the terminal. ( #62332 ) Press Tab to complete arguments for supported slash commands. For example, /mcp lo completes to /"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.173.0-alpha.5",
+      "title": "OpenAI · rust-v0.173.0-alpha.5",
+      "content_text": "Release 0.173.0-alpha.5",
+      "date_published": "2026-11-23T23:10:34+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.173.0-alpha.5"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+      "title": "Anthropic · v2.1.331",
+      "content_text": "What's changed Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS Added oidc.groups_jsonpath to the Claude apps gateway, to read groups from the matching entries of a list of objects with a small subset of JSONPath (RFC 9535) Added an API connectivity section to claude doctor that reports whether the API can b",
+      "date_published": "2026-11-23T21:34:41+00:00",
+      "authors": [
+        {
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "claude-code",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Anthropic",
+        "source_name": "anthropics/claude-code releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's changed Added Code Mode support in terminal sessions on Amazon Bedrock, Google Cloud's Agent Platform, Microsoft Foundry and Claude Platform on AWS Added oidc.groups_jsonpath to the Claude apps gateway, to read groups from the matchi"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.2",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.171.0-alpha.13.2",
+      "title": "OpenAI · 0.171.0-alpha.13.2",
+      "content_text": "Release 0.171.0-alpha.13.2",
+      "date_published": "2026-11-23T19:43:27+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.171.0-alpha.13.2"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2.1",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.172.0-alpha.2.1",
+      "title": "OpenAI · 0.172.0-alpha.2.1",
+      "content_text": "Release 0.172.0-alpha.2.1",
+      "date_published": "2026-11-23T18:07:33+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.172.0-alpha.2.1"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261123.geecccfcd5",
       "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261123.geecccfcd5",
       "title": "Google · Release v0.71.0-nightly.20261123.geecccfcd5",
@@ -5793,216 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "Hey everyone, I've been using audio.cpp for a while now, and it's quite nice. However I've noticed that Yue2, Qwen3-ASR and Qwen3-TTS got supported in comfyui / llama.cpp. While I've tried gemma 4 audio input and it worked well, I haven't t"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvtzzd/how_chatgpt_sees_us_human/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvtzzd/how_chatgpt_sees_us_human/",
-      "title": "Selected Reddit communities · How ChatGPT sees us human",
-      "content_text": "ChatGPT answer was quite smooth ! submitted by /u/Lanky-Butterscotch28 to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-14T05:11:40+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "ChatGPT answer was quite smooth ! submitted by /u/Lanky-Butterscotch28 to r/OpenAI [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvtx9p/im_seeing_a_lot_of_conflicting_options_for_whats/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvtx9p/im_seeing_a_lot_of_conflicting_options_for_whats/",
-      "title": "Selected Reddit communities · I'm seeing a lot of conflicting options for what's the best model for purely adding punctuation and quotes. What's the way?",
-      "content_text": "I'm writing a fictional novel and using speech to text to write. I'm absolutely not looking for a model to write for me, or even change any words. I find talking especially lets me give each character a different voice and manner of speaking. The problem is when i go back to Edit, I don't have a \"new reader\" feel to it to assess what I've written because I need to do 2 or 3 passes just to add quot",
-      "date_published": "2026-11-14T05:07:31+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "I'm writing a fictional novel and using speech to text to write. I'm absolutely not looking for a model to write for me, or even change any words. I find talking especially lets me give each character a different voice and manner of speakin"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvtqkx/ai_usage_and_detection_survey/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvtqkx/ai_usage_and_detection_survey/",
-      "title": "Selected Reddit communities · AI usage and detection survey",
-      "content_text": "Hello! Im currently doing a survey for my class on AI and more importantly, how people can tell whether an image is AI-generated or not, how they know, and how it makes them feel. https://forms.gle/uw3Vg9MnsRLid99CA submitted by /u/tonyalovesch to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-14T04:57:57+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Hello! Im currently doing a survey for my class on AI and more importantly, how people can tell whether an image is AI-generated or not, how they know, and how it makes them feel. https://forms.gle/uw3Vg9MnsRLid99CA submitted by /u/tonyalov"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvtemv/what_is_this_ridiculous_codex_device_limit/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvtemv/what_is_this_ridiculous_codex_device_limit/",
-      "title": "Selected Reddit communities · What Is This Ridiculous Codex Device Limit",
-      "content_text": "​ I'm paying for 3 separate ChatGPT Plus accounts, each with its own 5-hour and weekly usage limits. So why on earth can't I use them on the same PC when I actually need them? My main account is blocked with \"Device limit reached\", and my professional work is stuck. There was no clear disclosure of this restriction when I purchased these subscriptions. What exactly am I paying for? Support can't e",
-      "date_published": "2026-11-14T04:39:50+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "​ I'm paying for 3 separate ChatGPT Plus accounts, each with its own 5-hour and weekly usage limits. So why on earth can't I use them on the same PC when I actually need them? My main account is blocked with \"Device limit reached\", and my p"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvst4u/salesforcesovereignintelligencesovtranscribe1/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvst4u/salesforcesovereignintelligencesovtranscribe1/",
-      "title": "Selected Reddit communities · salesforce-sovereign-intelligence/SOV-Transcribe-1 · Hugging Face",
-      "content_text": "SOV-Transcribe-1 SOV-Transcribe-1 is Salesforce's open-weight speech-augmented language model built for non-streaming automatic speech recognition (ASR). It combines leading English transcription accuracy with multilingual support and natural-language control over how speech is transcribed. The model ranks #1 among open-weight models for non-streaming speech-to-text on Artificial Analysis (#7 over",
-      "date_published": "2026-11-14T04:06:46+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "SOV-Transcribe-1 SOV-Transcribe-1 is Salesforce's open-weight speech-augmented language model built for non-streaming automatic speech recognition (ASR). It combines leading English transcription accuracy with multilingual support and natur"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvsp7p/do_you_believe_there_will_be_a_divergence_between/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvsp7p/do_you_believe_there_will_be_a_divergence_between/",
-      "title": "Selected Reddit communities · Do you believe there will be a divergence between local and frontier model power?",
-      "content_text": "Right now, local models have somewhat kept up with frontier, being months behind last frontier models. The issue is, I think the divide is going to be end up being hardware. Model improvements will slow down, but hardware won’t get any cheaper, especially if frontiers keep buying shit out for training and smaller returns. Thoughts on this? I know many are optimistic, but I think local trailing fro",
-      "date_published": "2026-11-14T04:01:04+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Right now, local models have somewhat kept up with frontier, being months behind last frontier models. The issue is, I think the divide is going to be end up being hardware. Model improvements will slow down, but hardware won’t get any chea"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xvsksq/be_me_a_plus_user/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xvsksq/be_me_a_plus_user/",
-      "title": "Selected Reddit communities · Be me, a Plus user",
-      "content_text": "- Get a glorious subscription for a long long time, all new features included. I am grateful - 2026 arrives - Codex gets abused. Decision is taken. Stops working when it hits allowance limit now. It kept going before, but hey, people are dumb. - Astra released. Flagship. Basically unusable in Plus. - 5 hour limits returned to Plus users. Not to Pro - several new features launched. Dots is the most",
-      "date_published": "2026-11-14T03:54:45+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "- Get a glorious subscription for a long long time, all new features included. I am grateful - 2026 arrives - Codex gets abused. Decision is taken. Stops working when it hits allowance limit now. It kept going before, but hey, people are du"
         ]
       }
     }
