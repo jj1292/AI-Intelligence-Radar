@@ -7,11 +7,71 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.332",
+      "title": "Anthropic · v2.1.332",
+      "content_text": "What's changed Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2.1.331 and older, a settings file naming it opens a dialog at start Added \"Always deliver\" to the prompt for held messages from other sessions Added a footer li",
+      "date_published": "2026-11-25T01:32:14+00:00",
+      "authors": [
+        {
+          "name": "Anthropic"
+        }
+      ],
+      "tags": [
+        "claude-code",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "Anthropic",
+        "source_name": "anthropics/claude-code releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 3,
+        "confidence": 0.98,
+        "evidence": [
+          "What's changed Added skills from MCP servers (beta). They show as server:skill in the / menu; other skills keep their names Added a PreSkillShellCommand hook event that can refuse a skill or command's inline shell commands as it loads; on 2"
+        ]
+      }
+    },
+    {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.5",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.5",
+      "title": "OpenAI · 0.174.0-alpha.5",
+      "content_text": "Release 0.174.0-alpha.5",
+      "date_published": "2026-11-25T01:23:23+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.174.0-alpha.5"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.4",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.4",
-      "title": "OpenAI · rust-v0.174.0-alpha.4",
+      "title": "OpenAI · 0.174.0-alpha.4",
       "content_text": "Release 0.174.0-alpha.4",
-      "date_published": "2026-11-24T21:57:34+00:00",
+      "date_published": "2026-11-24T23:06:32+00:00",
       "authors": [
         {
           "name": "OpenAI"
@@ -5943,66 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "If MS or FAA stuff was AI hack related there will be a MASSIVE and QUICK backlash. Sure you can't run these things locally NOW but the tech is out there and it will get cheaper and quite possibly the models will be able to be more efficient"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvujf1/harborrl_update_elastic_scaling_sshfree_cluster/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvujf1/harborrl_update_elastic_scaling_sshfree_cluster/",
-      "title": "Selected Reddit communities · 🚀 HarborRL Update: Elastic Scaling, SSH-Free Cluster Deployment, and Unified Agentic RL Training!",
-      "content_text": "🚀 HarborRL Update: Elastic Scaling, SSH-Free Cluster Deployment, and Unified Agentic RL Training We’ve recently updated HarborRL , an open-source framework for agentic reinforcement learning (RL), focusing on simplifying distributed training, deployment, and experiment management. 🆕 What’s New (November 2026) ⚡ 1. Elastic Scaling for Distributed Training Added elastic gateway scaling with static r",
-      "date_published": "2026-11-14T05:42:20+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "🚀 HarborRL Update: Elastic Scaling, SSH-Free Cluster Deployment, and Unified Agentic RL Training We’ve recently updated HarborRL , an open-source framework for agentic reinforcement learning (RL), focusing on simplifying distributed trainin"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvuit5/paper_read_less_solve_more_tokenefficient_sparse/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvuit5/paper_read_less_solve_more_tokenefficient_sparse/",
-      "title": "Selected Reddit communities · [Paper] Read Less, Solve More: Token-Efficient Sparse Reading of External Content for AI Agents",
-      "content_text": "Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and can dilute relevant evidence. We present SparseRead, a reusable reading control layer that governs content admission without modifying the agent model. Its Read I",
-      "date_published": "2026-11-14T05:41:22+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Web-facing AI agents repeatedly access webpages, documents, repositories, and tool responses, yet reading interfaces often expose entire objects when only sparse evidence is needed. This over-reading increases token and latency costs and ca"
         ]
       }
     }
