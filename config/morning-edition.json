@@ -3,23 +3,26 @@
     "label": "个人 Agent",
     "slots": 2,
     "queries": [
-      "\"AI agent\" (\"personal assistant\" OR \"personal agent\" OR \"shopping agent\" OR OpenClaw OR \"multi-app\") (site:techcrunch.com OR site:theverge.com OR site:about.fb.com OR site:openclaw.ai OR site:fortune.com OR site:reuters.com)"
+      "\"AI agent\" (\"personal assistant\" OR \"personal agent\" OR \"shopping agent\" OR OpenClaw) (site:techcrunch.com OR site:theverge.com OR site:about.fb.com OR site:openclaw.ai OR site:reuters.com)",
+      "(个人智能体 OR AI助手 OR Agent) (字节 OR 豆包 OR 腾讯 OR 阿里 OR 百度 OR 智谱 OR MiniMax OR Kimi) (site:36kr.com OR site:qbitai.com OR site:jiqizhixin.com)",
+      "(\"AI agent\" OR \"personal assistant\") (interview OR benchmark OR \"case study\" OR reasoning OR \"computer use\") (site:anthropic.com OR site:openai.com OR site:about.fb.com OR site:openclaw.ai OR site:simonwillison.net OR site:theverge.com OR site:techcrunch.com)"
     ]
   },
   "industry": {
     "label": "AI 公司与创业团队",
     "slots": 2,
     "queries": [
-      "(\"artificial intelligence\" OR \"generative AI\") (startup OR funding OR acquisition) (site:reuters.com OR site:techcrunch.com OR site:sifted.eu OR site:restofworld.org)",
-      "(\"AI model\" OR \"AI agent\") (launch OR pricing OR partnership) (site:theverge.com OR site:techcrunch.com OR site:reuters.com OR site:about.fb.com OR site:mistral.ai OR site:anthropic.com OR site:openai.com)"
+      "(AI OR \"artificial intelligence\") (startup OR funding OR acquisition) (\"Silicon Valley\" OR \"San Francisco\" OR US OR China) (site:reuters.com OR site:techcrunch.com OR site:fortune.com)",
+      "(AI OR agent) (OpenAI OR Anthropic OR Google OR Meta OR NVIDIA OR Microsoft OR Apple) (launch OR pricing OR partnership) (site:techcrunch.com OR site:reuters.com OR site:theverge.com OR site:openai.com OR site:anthropic.com OR site:about.fb.com)",
+      "(人工智能 OR 大模型 OR AI) (DeepSeek OR 阿里 OR 腾讯 OR 字节 OR 百度 OR 智谱 OR MiniMax OR 月之暗面 OR 融资) (site:36kr.com OR site:qbitai.com OR site:caixin.com OR site:jiqizhixin.com)"
     ]
   },
   "health": {
-    "label": "全球医疗 AI 与政策",
+    "label": "中美医疗 AI 与政策",
     "slots": 3,
     "queries": [
-      "(\"artificial intelligence\" OR \"clinical AI\") (hospital OR diagnosis OR reimbursement OR validation) (site:statnews.com OR site:healthcareitnews.com OR site:healthcaredive.com OR site:fiercehealthcare.com OR site:reuters.com)",
-      "(\"AI\" OR \"artificial intelligence\") (clinical OR health OR \"medical device\") (site:fda.gov OR site:who.int OR site:ema.europa.eu OR site:gov.uk OR site:health.ec.europa.eu OR site:tga.gov.au OR site:hsa.gov.sg)",
+      "(\"artificial intelligence\" OR \"clinical AI\") (hospital OR diagnosis OR reimbursement OR validation) (US OR FDA OR CMS OR Medicare OR \"United States\") (site:statnews.com OR site:healthcaredive.com OR site:fiercehealthcare.com OR site:reuters.com)",
+      "(AI OR \"artificial intelligence\") (clinical OR health OR \"medical device\") (site:fda.gov OR site:cms.gov OR site:hhs.gov OR site:nih.gov)",
       "(医疗人工智能 OR 医疗AI) (监管 OR 医院 OR 商业化) (site:nhc.gov.cn OR site:nmpa.gov.cn OR site:caixin.com OR site:36kr.com)"
     ]
   },
@@ -27,7 +30,9 @@
     "label": "AI 产品经理实践",
     "slots": 1,
     "queries": [
-      "(\"AI product\" OR \"AI agent\" OR \"LLM evaluation\") (design OR evaluation OR workflow) (site:svpg.com OR site:nngroup.com OR site:producttalk.org OR site:hamel.dev OR site:simonwillison.net OR site:anthropic.com)"
+      "(\"AI product\" OR \"AI agent\" OR \"LLM evaluation\") (design OR evaluation OR workflow) (site:figma.com/blog OR site:anthropic.com OR site:blog.google OR site:openai.com OR site:svpg.com OR site:nngroup.com OR site:hamel.dev)",
+      "(AI产品 OR 智能体 OR 大模型) (产品设计 OR 产品经理 OR 评测 OR 用户研究 OR 交互) (腾讯 OR 字节 OR 阿里 OR 百度 OR 美团 OR 蚂蚁) (site:mp.weixin.qq.com OR site:36kr.com OR site:woshipm.com)",
+      "(\"AI product\" OR \"AI agent\" OR \"AI evals\") (design OR evaluation OR workflow) (site:x.com/shreyas OR site:x.com/lennysan OR site:x.com/hamelhusain OR site:x.com/figma OR site:x.com/GoogleDesign)"
     ]
   },
   "research": {

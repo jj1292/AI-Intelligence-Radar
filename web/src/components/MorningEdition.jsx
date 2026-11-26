@@ -7,6 +7,8 @@ const KIND = {
   paper: "期刊研究",
   preprint: "预印本",
   x: "X 原帖",
+  wechat: "公众号",
+  research_trend: "研究趋势",
 };
 const dateFormat = new Intl.DateTimeFormat("zh-CN", {
   timeZone: "Asia/Taipei",
@@ -50,6 +52,12 @@ export default function MorningEdition() {
       });
     return () => controller.abort();
   }, [date]);
+
+  useEffect(() => {
+    if (status === "ready" && /^#morning-[a-f0-9]+$/.test(window.location.hash)) {
+      document.getElementById(window.location.hash.slice(1))?.scrollIntoView();
+    }
+  }, [edition, status]);
 
   function selectDate(value) {
     const url = new URL(window.location.href);
@@ -102,9 +110,10 @@ export default function MorningEdition() {
                   <h3>{label}</h3>
                   {entries.length === 0 && <p>本期暂无入选条目。</p>}
                   {entries.map((row) => (
-                    <article key={row.id} className="morning-story">
+                    <article key={row.id} id={"morning-" + row.id} className="morning-story">
                       <small>{row.source} · {KIND[row.kind]} · {dateFormat.format(new Date(row.published_at))}</small>
-                      <h4><a href={row.url} target="_blank" rel="noreferrer">{row.title} ↗</a></h4>
+                      <h4><a href={row.kind === "research_trend" ? "#research-trends" : row.url}
+                        target={row.kind === "research_trend" ? undefined : "_blank"} rel="noreferrer">{row.title} ↗</a></h4>
                       {row.insight ? (
                         <details>
                           <summary>展开分析</summary>

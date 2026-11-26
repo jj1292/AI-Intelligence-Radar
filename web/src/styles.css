@@ -342,6 +342,22 @@ a {
 .morning-story dt { font-weight: 800; }
 .morning-story dd { margin: 0 0 10px; }
 
+.radar-filter { padding-inline: clamp(24px, 4vw, 58px); }
+.radar-story {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--ink);
+  scroll-margin-top: 16px;
+  overflow-wrap: anywhere;
+}
+.radar-story:target, .morning-story:target { background: color-mix(in srgb, var(--acid) 20%, transparent); }
+.radar-story h3 { margin: 5px 0 8px; font-size: 18px; line-height: 1.4; }
+.radar-story a, .radar-trends a { color: var(--ink); }
+.radar-story summary, .radar-trends summary { cursor: pointer; }
+.radar-story dd { margin: 0 0 8px; }
+.radar-references { display: flex; flex-wrap: wrap; gap: 5px 12px; font-size: 13px; margin: 7px 0; }
+.radar-morning-link, .radar-timestamp { font-size: 13px; }
+.radar-trends li + li { margin-top: 6px; }
+
 .content-grid {
   padding: 34px clamp(24px, 4vw, 70px) 80px;
   display: grid;

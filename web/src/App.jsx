@@ -1,9 +1,7 @@
-import { useEffect, useMemo, useState } from "react";
+import { useState } from "react";
 import {
   ArrowRight,
-  ArrowSquareOut,
   Broadcast,
-  CaretDown,
   Check,
   Copy,
   GithubLogo,
@@ -18,20 +16,12 @@ import ClickSpark from "./components/ClickSpark";
 import DecryptedText from "./components/DecryptedText";
 import Magnet from "./components/Magnet";
 import MorningEdition from "./components/MorningEdition";
+import IntelligenceBoard from "./components/IntelligenceBoard";
 
-const FEED_URL = "./feed.json";
 const RSS_URL = "https://jj1292.github.io/AI-Intelligence-Radar/feed.xml";
 const JSON_URL = "https://jj1292.github.io/AI-Intelligence-Radar/feed.json";
 const CONFIG_EDIT_URL =
   "https://github.com/jj1292/AI-Intelligence-Radar/edit/main/config/subscriptions.json";
-
-const FILTERS = [
-  { id: "all", label: "全部" },
-  { id: "claude", label: "Claude" },
-  { id: "openai", label: "OpenAI" },
-  { id: "gemini", label: "Gemini" },
-  { id: "agents", label: "Agents" },
-];
 
 const SOURCE_TYPES = [
   { value: "firecrawl", label: "博客 / 新闻网站（Firecrawl）" },
@@ -39,190 +29,6 @@ const SOURCE_TYPES = [
   { value: "github", label: "GitHub Releases" },
   { value: "reddit", label: "Reddit 社区" },
 ];
-
-function parseContent(content = "") {
-  const [summaryPart, rest = ""] = content.split("\n\nWhy it matters:");
-  const [whyPart = "", sourcePart = ""] = rest.split("\n\nSource:");
-  return {
-    summary: summaryPart.trim(),
-    why: whyPart.trim() || "这条信号进入持续观察列表，仍需结合官方原文判断实际影响。",
-    source: sourcePart.trim(),
-  };
-}
-
-function normalizeItem(item) {
-  const parsed = parseContent(item.content_text);
-  const radar = item._radar || {};
-  const tier = Number(radar.source_tier || 3);
-  const tags = Array.isArray(item.tags) ? item.tags : [];
-  const publishedAt = new Date(item.date_published);
-  const impact = Number(radar.impact_score || (tier === 1 ? 3 : tier === 2 ? 3 : 2));
-  const confidence = Number(
-    radar.confidence || (tier === 1 ? 0.98 : tier === 2 ? 0.85 : 0.65),
-  );
-  const insight =
-    radar.insight &&
-    typeof radar.insight.core_idea === "string" &&
-    Array.isArray(radar.insight.key_points) &&
-    typeof radar.insight.analysis === "string" &&
-    typeof radar.insight.takeaway === "string"
-      ? radar.insight
-      : null;
-
-  return {
-    ...item,
-    company: radar.company || item.authors?.[0]?.name || "Unknown",
-    sourceName: radar.source_name || parsed.source || "Unknown source",
-    platform: radar.platform || "other",
-    tier,
-    impact,
-    confidence,
-    tags,
-    publishedAt,
-    summary: parsed.summary,
-    why: parsed.why,
-    evidence: Array.isArray(radar.evidence) ? radar.evidence : [],
-    insight,
-    hasAnalysis: Boolean(insight),
-  };
-}
-
-function matchesFilter(item, filter) {
-  if (filter === "all") return true;
-  const haystack = [item.title, item.company, item.sourceName, ...item.tags]
-    .join(" ")
-    .toLowerCase();
-  if (filter === "claude") return /claude|anthropic/.test(haystack);
-  if (filter === "openai") return /openai|codex|chatgpt/.test(haystack);
-  if (filter === "gemini") return /gemini|google|deepmind/.test(haystack);
-  return /agent|agents|agentic|codex|claude code/.test(haystack);
-}
-
-function importanceScore(item) {
-  const tierWeight = item.tier === 1 ? 40 : item.tier === 2 ? 22 : 5;
-  const officialEditorial = item.platform === "official" ? 28 : 0;
-  return officialEditorial + tierWeight + item.impact * 10 + Math.round(item.confidence * 10);
-}
-
-function isPreviewRelease(item) {
-  if (item.platform !== "github") return false;
-  return /(?:^|[\s._-])(nightly|alpha|dev|canary|snapshot|beta|preview|pre|rc\d*)(?:[\s._-]|$)/i.test(
-    item.title,
-  );
-}
-
-function selectImportantSignals(items) {
-  const seenReleaseFamilies = new Set();
-  return items
-    .filter(
-      (item) =>
-        item.hasAnalysis && item.tier <= 2 && item.impact >= 3 && !isPreviewRelease(item),
-    )
-    .sort(
-      (a, b) =>
-        importanceScore(b) - importanceScore(a) || b.publishedAt - a.publishedAt,
-    )
-    .filter((item) => {
-      if (item.platform !== "github") return true;
-      const family = `${item.company}:${item.sourceName}`;
-      if (seenReleaseFamilies.has(family)) return false;
-      seenReleaseFamilies.add(family);
-      return true;
-    });
-}
-
-function formatDate(date) {
-  if (Number.isNaN(date.getTime())) return "时间待核验";
-  return new Intl.DateTimeFormat("zh-CN", {
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-  }).format(date);
-}
-
-function sourceMark(item) {
-  if (/anthropic|claude/i.test(`${item.company} ${item.title}`)) return "AN";
-  if (/openai|codex|chatgpt/i.test(`${item.company} ${item.title}`)) return "OA";
-  if (/google|gemini|deepmind/i.test(`${item.company} ${item.title}`)) return "GD";
-  if (/reddit/i.test(item.platform)) return "RD";
-  if (/github/i.test(item.platform)) return "GH";
-  return item.company.slice(0, 2).toUpperCase();
-}
-
-function SignalInterpretation({ item }) {
-  return (
-    <div className="interpretation">
-      <div>
-        <span className="interpretation-label">核心提炼</span>
-        <p>{item.insight.core_idea}</p>
-      </div>
-      <div>
-        <span className="interpretation-label">关键要点</span>
-        <ul>
-          {item.insight.key_points.map((point) => (
-            <li key={point}>{point}</li>
-          ))}
-        </ul>
-      </div>
-      <div>
-        <span className="interpretation-label">分析</span>
-        <p>{item.insight.analysis}</p>
-      </div>
-      <div>
-        <span className="interpretation-label">输出</span>
-        <p>{item.insight.takeaway}</p>
-      </div>
-    </div>
-  );
-}
-
-function ImportantSignal({ item, index, expanded, onToggle }) {
-  return (
-    <article className={`important-signal ${expanded ? "is-expanded" : ""}`}>
-      <div className="signal-number">{String(index + 1).padStart(2, "0")}</div>
-      <div className="signal-source">
-        <span className="source-monogram">{sourceMark(item)}</span>
-        <span>{item.company}</span>
-      </div>
-      <div className="signal-body">
-        <div className="signal-meta">
-          <span>{formatDate(item.publishedAt)}</span>
-        </div>
-        <h3>{item.title}</h3>
-        <p className="signal-summary">{item.insight.core_idea}</p>
-        <div className="signal-actions">
-          <button className="text-action" type="button" onClick={onToggle}>
-            {expanded ? "收起分析" : "展开分析"}
-            <CaretDown size={16} weight="bold" aria-hidden />
-          </button>
-          <a href={item.url} target="_blank" rel="noreferrer">
-            查看原文 <ArrowSquareOut size={16} weight="bold" aria-hidden />
-          </a>
-        </div>
-        {expanded && <SignalInterpretation item={item} />}
-      </div>
-    </article>
-  );
-}
-
-function LiveSignal({ item }) {
-  return (
-    <a className="live-signal" href={item.url} target="_blank" rel="noreferrer">
-      <time>{formatDate(item.publishedAt)}</time>
-      <span className={`live-dot tier-${item.tier}`} aria-hidden />
-      <span className="live-monogram">{sourceMark(item)}</span>
-      <span className="live-copy">
-        <strong>{item.title}</strong>
-        <small>
-          {item.company} · T{item.tier}
-        </small>
-      </span>
-      <ArrowSquareOut size={17} weight="bold" aria-hidden />
-    </a>
-  );
-}
 
 function SourceManager({ onClose, onCopied }) {
   const [form, setForm] = useState({
@@ -366,49 +172,9 @@ function SourceManager({ onClose, onCopied }) {
 }
 
 export function App() {
-  const [items, setItems] = useState([]);
-  const [status, setStatus] = useState("loading");
-  const [activeFilter, setActiveFilter] = useState("all");
-  const [expanded, setExpanded] = useState(new Set());
-  const [importantLimit, setImportantLimit] = useState(6);
-  const [liveLimit, setLiveLimit] = useState(10);
   const [managerOpen, setManagerOpen] = useState(false);
   const [toast, setToast] = useState("");
   const [agentPrompt, setAgentPrompt] = useState("");
-
-  useEffect(() => {
-    let ignore = false;
-    fetch(FEED_URL)
-      .then((response) => {
-        if (!response.ok) throw new Error(`Feed HTTP ${response.status}`);
-        return response.json();
-      })
-      .then((payload) => {
-        if (ignore) return;
-        setItems(
-          (payload.items || [])
-            .map(normalizeItem)
-            .sort((a, b) => b.publishedAt - a.publishedAt),
-        );
-        setStatus("ready");
-      })
-      .catch(() => {
-        if (!ignore) setStatus("error");
-      });
-    return () => {
-      ignore = true;
-    };
-  }, []);
-
-  const filteredItems = useMemo(
-    () => items.filter((item) => matchesFilter(item, activeFilter)),
-    [items, activeFilter],
-  );
-  const importantItems = useMemo(
-    () => selectImportantSignals(filteredItems),
-    [filteredItems],
-  );
-  const tickerItems = items.slice(0, 6);
 
   function notify(message) {
     setToast(message);
@@ -418,21 +184,6 @@ export function App() {
   async function copyLink(url, label) {
     await navigator.clipboard.writeText(url);
     notify(`${label} 地址已复制`);
-  }
-
-  function toggleInterpretation(id) {
-    setExpanded((current) => {
-      const next = new Set(current);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
-    });
-  }
-
-  function selectFilter(id) {
-    setActiveFilter(id);
-    setImportantLimit(6);
-    setLiveLimit(10);
   }
 
   function previewAgent(event) {
@@ -470,7 +221,7 @@ export function App() {
               />
               <span>每日重要信号</span>
             </h1>
-            <p>个人 Agent、行业动态、全球医疗 AI、产品实践与论文。</p>
+            <p>中美 AI 热点、个人 Agent、医疗研究趋势与产品实践。</p>
           </div>
           <div className="dish-art" aria-hidden />
           <Magnet padding={44} magnetStrength={4} wrapperClassName="subscribe-magnet">
@@ -486,35 +237,9 @@ export function App() {
           </Magnet>
         </header>
 
-        <div className="signal-ticker" aria-label="实时更新">
-          <span className="ticker-label">
-            <span className="status-dot" /> LIVE SIGNALS
-          </span>
-          <div className="ticker-track">
-            {tickerItems.map((item) => (
-              <a key={item.id} href={item.url} target="_blank" rel="noreferrer">
-                {item.title}
-                <time>{formatDate(item.publishedAt)}</time>
-              </a>
-            ))}
-          </div>
-        </div>
-
         <MorningEdition />
 
         <section className="control-deck">
-          <nav className="filter-nav" aria-label="情报来源筛选">
-            {FILTERS.map((filter) => (
-              <button
-                key={filter.id}
-                type="button"
-                className={activeFilter === filter.id ? "active" : ""}
-                onClick={() => selectFilter(filter.id)}
-              >
-                {filter.label}
-              </button>
-            ))}
-          </nav>
           <form className="agent-preview" onSubmit={previewAgent}>
             <span className="preview-badge">
               <Sparkle size={18} weight="fill" /> 智能订阅
@@ -531,68 +256,7 @@ export function App() {
           </form>
         </section>
 
-        <main className="content-grid">
-          <section className="important-column">
-            <div className="section-heading">
-              <div>
-                <span className="section-kicker">CURATED SIGNALS</span>
-                <h2>今日重要信号</h2>
-              </div>
-            </div>
-            {status === "loading" && <div className="state-box">正在接收信号…</div>}
-            {status === "error" && (
-              <div className="state-box error">
-                Feed 暂时没有响应，请稍后刷新。公开订阅地址不受影响。
-              </div>
-            )}
-            {status === "ready" && importantItems.length === 0 && (
-              <div className="state-box">暂无重要信号。</div>
-            )}
-            <div className="important-list">
-              {importantItems.slice(0, importantLimit).map((item, index) => (
-                <ImportantSignal
-                  key={item.id}
-                  item={item}
-                  index={index}
-                  expanded={expanded.has(item.id)}
-                  onToggle={() => toggleInterpretation(item.id)}
-                />
-              ))}
-            </div>
-            {importantLimit < importantItems.length && (
-              <button
-                className="load-more"
-                type="button"
-                onClick={() => setImportantLimit((value) => value + 6)}
-              >
-                继续向下浏览重要信号 <CaretDown size={20} weight="bold" />
-              </button>
-            )}
-          </section>
-
-          <aside className="live-column">
-            <div className="section-heading compact-heading">
-              <div>
-                <span className="section-kicker">LATEST UPDATES</span>
-                <h2>实时情报</h2>
-              </div>
-            </div>
-            <div className="live-list">
-              {filteredItems.slice(0, liveLimit).map((item) => (
-                <LiveSignal key={item.id} item={item} />
-              ))}
-            </div>
-            {liveLimit < filteredItems.length && (
-              <button
-                className="live-more"
-                type="button"
-                onClick={() => setLiveLimit((value) => value + 10)}
-              >
-                加载更多实时情报 <CaretDown size={18} weight="bold" />
-              </button>
-            )}
-          </aside>
-        </main>
+        <IntelligenceBoard />
 
         <section className="subscribe-strip" id="subscribe">
           <div className="subscribe-statement">

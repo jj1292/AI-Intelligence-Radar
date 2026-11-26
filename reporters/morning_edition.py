@@ -31,12 +31,17 @@ PAPERS = "https://www.ebi.ac.uk/europepmc/webservices/rest/search"
 LIMIT = 10
 NOISE = re.compile(r"\b(roundup|weekly digest|coupon|horoscope|sponsored|webinar|press release distribution)\b", re.I)
 OFFICIAL = (".gov", ".gov.uk", ".gov.cn", ".gov.au", ".gov.sg", "who.int", "europa.eu")
-AI_TERM = re.compile(r"\b(ai|artificial intelligence|LLMs?|agents?|OpenAI|ChatGPT|Claude|Gemini|Anthropic|OpenClaw|machine learning|deep learning)\b|人工智能|医疗AI", re.I)
-PRACTICE = re.compile(r"\b(eval\w*|workflow\w*|design\w*|measurement|prototype\w*|user research|product discovery|case study|trade-?offs?)\b", re.I)
-PERSONAL_AGENT = re.compile(r"\b(Muse|OpenClaw|personal (ai )?(assistant|agent)|shopping agent|AI assistant|AI agent)\b", re.I)
+AI_TERM = re.compile(r"\b(ai|artificial intelligence|LLMs?|agents?|OpenAI|ChatGPT|Claude|Gemini|Anthropic|OpenClaw|machine learning|deep learning)\b|人工智能|医疗AI|大模型|智能体|AI产品|AI助手", re.I)
+PRACTICE = re.compile(r"\b(eval\w*|workflow\w*|design\w*|measurement|prototype\w*|user research|product discovery|case study|trade-?offs?)\b|设计|交互|产品经理|评测|复盘|工作流|用户研究", re.I)
+PERSONAL_AGENT = re.compile(r"\b(Muse|OpenClaw|personal (ai )?(assistant|agent)|shopping agent|AI assistant|AI agent)\b|个人智能体|个人助理|AI助手|智能助手", re.I)
 COMMON_TERMS = {"a", "an", "to", "in", "is", "its", "the", "on", "with", "of", "and", "for", "reportedly", "ai", "agent"}
 EVENT_TERMS = {"talks", "funding", "acquisition", "launch", "block", "merger", "pricing"}
 STARTUP = re.compile(r"\b(startup|raises|raised|seed round|series [a-e]|venture funding)\b|初创|融资", re.I)
+CHINA = re.compile(r"\b(China|Chinese|DeepSeek|Qwen|Alibaba|Tencent|Baidu|ByteDance|MiniMax|Zhipu|Moonshot|Kimi)\b|中国|国内|腾讯|字节|豆包|阿里|百度|美团|蚂蚁|智谱|月之暗面|通义|国家药监局|国家卫健委", re.I)
+US = re.compile(r"\b(United States|Silicon Valley|San Francisco|Washington|OpenAI|Anthropic|Google|Nvidia|Microsoft|Apple|Meta|Figma|FDA|CMS|HHS|Medicare)\b|美国|硅谷", re.I)
+REGIONAL = re.compile(r"\b(Spain|Spanish|Madrid|Barcelona|Brazil|Brazilian|Korea|Korean|United Kingdom|UK|Britain|Japan|France|Germany|Australia|Singapore)\b|西班牙|巴西|韩国|英国|日本|法国|德国|澳洲|新加坡", re.I)
+FOCUS_MARKET = re.compile(r"\b(China|Chinese|United States|Silicon Valley|San Francisco|Washington)\b|中国|美国|硅谷", re.I)
+CHANGELOG = re.compile(r"\b(changelog|release notes|nightly build|bug fixes)\b|版本日志|修复若干", re.I)
 DIRECT_FEEDS = [
     ("product", "Simon Willison", "https://simonwillison.net/atom/everything/"),
     ("product", "Product Talk", "https://www.producttalk.org/rss/"),
@@ -71,6 +76,43 @@ def item(title, url, source, date, category, kind, summary=""):
     }
 
 
+def focus(row):
+    text = row["title"]
+    china = bool(CHINA.search(text))
+    us = bool(US.search(text) or re.search(r"\b(?:US|U\.S\.)", text))
+    if china and us:
+        return "中美"
+    if china:
+        return "中国"
+    if us:
+        return "美国"
+    if REGIONAL.search(text):
+        return ""
+    return "中国" if re.search(r"[\u4e00-\u9fff]", text) else ""
+
+
+def in_scope(row):
+    if CHANGELOG.search(row["title"]):
+        return False
+    if row["category"] != "research" and REGIONAL.search(row["title"]) and not FOCUS_MARKET.search(row["title"]):
+        return False
+    return True
+
+
+def research_candidates(payload, now):
+    if payload.get("end") != local_date(now):
+        return []
+    return [
+        {
+            **item(theme["label"], SITE + "#research-trends", "PubMed / Europe PMC",
+                   now, "research", "research_trend"),
+            "id": sha256(("research:" + theme["label"]).encode()).hexdigest()[:16],
+            "summary": f"近两周样本中，指定期刊 {theme['journal']} 篇，预印本 {theme['preprint']} 篇。",
+        }
+        for theme in payload.get("themes", []) if theme["label"] != "其他医疗 AI 应用"
+    ]
+
+
 def parse_news(data, category):
     for entry in ET.fromstring(data).findall("./channel/item")[:30]:
         source_node = entry.find("source")
@@ -93,13 +135,14 @@ def parse_news(data, category):
             continue
         if category == "agent" and not PERSONAL_AGENT.search(title):
             continue
-        if category == "health" and "医疗" not in title and not AI_TERM.search(title):
-            if not official or not re.search(r"\b(regulat\w*|devices?|software|diagnos\w*)\b", title, re.I):
-                continue
+        if category == "health" and (host.startswith(("pubmed.", "pmc.")) or not AI_TERM.search(title)):
+            continue
         if category == "product" and not PRACTICE.search(title):
             continue
         # Google News descriptions typically repeat the headline and publisher.
-        yield item(title, url, source, date, category, "official" if official else "news")
+        kind = ("official" if official else "wechat" if host == "mp.weixin.qq.com"
+                else "x" if host in {"x.com", "twitter.com"} else "news")
+        yield item(title, url, source, date, category, kind)
 
 
 def parse_direct(data, category, source):
@@ -151,15 +194,16 @@ def news_url(query, category):
     days = "7d" if category == "product" or "site:fda.gov" in query else "3d"
     params = {"q": f"{query} when:{days}",
               "hl": "en-US", "gl": "US", "ceid": "US:en"}
-    if "医疗人工智能" in query:
+    if re.search(r"[\u4e00-\u9fff]", query):
         params.update({"hl": "zh-CN", "gl": "CN", "ceid": "CN:zh-Hans"})
     return NEWS + "?" + urlencode(params)
 
 
-def collect(config, now):
+def collect(config, now, *, include_papers=True):
     jobs = [
         (category, news_url(query, category), parse_news)
         for category, section in config.items() for query in section["queries"]
+        if include_papers or category != "research"
     ]
     since = (now.astimezone(TAIPEI) - timedelta(days=7)).date()
     query = (
@@ -167,9 +211,10 @@ def collect(config, now):
         'AND (TITLE_ABS:clinical OR TITLE_ABS:patient OR TITLE_ABS:healthcare) '
         f'AND FIRST_PDATE:[{since} TO {local_date(now)}] SORT_DATE:y'
     )
-    jobs.append(("research", PAPERS + "?" + urlencode({
-        "query": query, "pageSize": 25, "format": "json", "resultType": "core",
-    }), None))
+    if include_papers:
+        jobs.append(("research", PAPERS + "?" + urlencode({
+            "query": query, "pageSize": 25, "format": "json", "resultType": "core",
+        }), None))
     for category, source, url in DIRECT_FEEDS:
         jobs.append((category, url, lambda data, section, name=source: parse_direct(data, section, name)))
 
@@ -198,8 +243,10 @@ def x_candidates(feed):
         text = (row.get("content_text") or "").split("\n\nWhy it matters:")[0]
         if len(text) < 90 or NOISE.search(text):
             continue
-        if re.search(r"\b(personal assistant|personal agent|shopping agent|OpenClaw)\b", text, re.I):
+        if PERSONAL_AGENT.search(text):
             category = "agent"
+        elif PRACTICE.search(text) and AI_TERM.search(text):
+            category = "product"
         elif re.search(r"\b(launch|introduc\w*|pricing|partner\w*|acqui\w*)\b", text, re.I):
             category = "industry"
         else:
@@ -210,7 +257,7 @@ def x_candidates(feed):
 
 
 def similar(left, right):
-    if left["url"] == right["url"]:
+    if left["url"] == right["url"] and left["kind"] != "research_trend" and right["kind"] != "research_trend":
         return True
     def normalize(title):
         return re.sub(r"[^\w]+", " ", title.casefold()).strip()
@@ -230,11 +277,11 @@ def choose(candidates, config, now, previous=()):
     def rank(entry):
         age = (now - datetime.fromisoformat(entry["published_at"])).total_seconds() / 3600
         weight = {"official": 22, "paper": 30, "preprint": 24, "x": -24}.get(entry["kind"], 0)
-        return (20 if age <= 24 else 0) + weight + (12 if entry["summary"] else 0) - age / 12
+        return (20 if age <= 24 else 0) + weight + (12 if entry["summary"] else 0) + (16 if focus(entry) else 0) - age / 12
 
     candidates = [
         row for row in candidates
-        if now - timedelta(days=7 if row["category"] in {"product", "research"} or row["kind"] == "official" else 3)
+        if in_scope(row) and now - timedelta(days=7 if row["category"] in {"product", "research"} or row["kind"] == "official" else 3)
         <= datetime.fromisoformat(row["published_at"]) <= now
     ]
     ranked = sorted(candidates, key=rank, reverse=True)
@@ -247,7 +294,7 @@ def choose(candidates, config, now, previous=()):
             if count >= limit or len(selected) >= LIMIT:
                 break
             if source_counts[row["source"]] >= 2 or any(similar(row, old) for old in selected) or (
-                any(similar(row, old) for old in previous)
+                row["kind"] != "research_trend" and any(similar(row, old) for old in previous)
             ):
                 continue
             selected.append(row)
@@ -274,7 +321,7 @@ def add_analysis(rows, token):
     materials = []
     for row in rows:
         # News syndication entries ordinarily provide headlines only.
-        if row["summary"] and row["kind"] != "x" and "insight" not in row:
+        if row["summary"] and row["kind"] not in {"x", "research_trend"} and "insight" not in row:
             materials.append({key: row[key] for key in ("id", "title", "kind", "summary", "source")})
     if not materials:
         return
@@ -373,7 +420,10 @@ def main():
     previous_files = [path for path in sorted(archive.glob("????-??-??.json"), reverse=True)
                       if path.stem < edition_date][:3]
     previous = [row for path in previous_files for row in json.loads(path.read_text(encoding="utf-8"))["items"]]
-    rows = choose(collect(config, now) + x_candidates(args.feed), config, now, previous)
+    path = args.output / "research-trends.json"
+    research = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+    rows = choose(collect(config, now, include_papers=False) + x_candidates(args.feed)
+                  + research_candidates(research, now), config, now, previous)
     if not rows:
         print("No eligible stories. Retained the last published edition.")
         return
