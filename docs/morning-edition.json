@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "updated_at": "2026-11-26T02:42:10.177549+00:00",
+  "updated_at": "2026-11-26T02:40:16.731819+00:00",
   "target": 10,
   "categories": {
     "agent": "个人 Agent",
@@ -18,7 +18,7 @@
       "published_at": "2026-11-25T14:10:18+00:00",
       "category": "agent",
       "kind": "news",
-      "summary": "Amazon and Meta are discussing a potential deal that would end a two-month-long blockade of Muse.",
+      "summary": "",
       "insight": {
         "digest": "据 TechCrunch 转述，亚马逊与 Meta 正讨论让 Muse 连接亚马逊商城，搜索结果呈现和广告安排仍在谈判。",
         "analysis": "当 Agent 接手商品筛选，零售商需要重新决定搜索排名、广告曝光和售后归属。这些商业安排会影响接入速度。",
@@ -33,7 +33,7 @@
       "published_at": "2026-11-24T21:32:38+00:00",
       "category": "agent",
       "kind": "news",
-      "summary": "Walmart now lets customers shop Black Friday deals through Muse, Meta’s AI agent.",
+      "summary": "",
       "insight": {
         "digest": "沃尔玛通过 Agent Gateway 把商品发现、比价和建购物车接入 Muse。用户可设消费上限并要求购买前确认。",
         "analysis": "沃尔玛保有商品检索与购物车接口，Muse 负责接收意图。分工覆盖下单前的主要环节，也给用户留下确认点。",
@@ -66,34 +66,44 @@
       "summary": ""
     },
     {
-      "id": "6683a8555f144162",
-      "title": "AI in social care",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOV1VjdjEtT0NOUXBaakduem5NYjJobGJwLWRMbHBjdTR6MUhXVkh6dWE1ZWE3Q0JXamJlRTBxcjl5WHRfRDlaRzgta2EtR2NSNlc3RHBiN0E1RlU4YUJrandsaEpOZzAxWmVpVHVBdkVfOURrcHplYlg3Mm9UbEozRVRvM3pfaldxTjRHUlhFd2U0Tnl4UXFKU3I1TnB1eHJZY3cwSw?oc=5",
+      "id": "f3570278b06cce07",
+      "title": "MHRA sets out regulatory approach to next generation innovation",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNWENJVFpMUmc0OEpZbGM4cXpFZEYzQl9KRDRlY3FvQmxNeV9RQ3hCUHJmaFhKWVZLeHRORXppMFNJS09vQjhMNDJWb1dUTE80TlJSLUF5SHhoY25LQkRudXNlTGtUYlpVMXBlUThUWklKcU1rcFA1a0pYcXNLQklnVzE3WWt4d09haC1OaXZTSC1SYzRsclV6VlBKb3JWVFE?oc=5",
       "source": "GOV.UK",
-      "published_at": "2026-11-20T12:34:10+00:00",
+      "published_at": "2026-11-24T15:04:35+00:00",
       "category": "health",
       "kind": "official",
-      "summary": ""
+      "summary": "",
+      "insight": {
+        "digest": "英国 MHRA 与新加坡 HSA 的监管创新通道进入首个实际运行阶段，先以 AI 辅助选择流感疫苗抗原为案例。",
+        "analysis": "两地监管机构可在开发早期协调证据问题，仍分别适用各自的审批标准。公告属于合作进展。",
+        "takeaway": "关注试点会公开哪些共同证据要求，以及 2027 年是否扩大参与范围。"
+      }
     },
     {
-      "id": "31ed0aae060ce769",
-      "title": "不做“一统江湖”的单点软件：大模型下半场，德适科技想修一条医疗AI的“底层铁轨”",
-      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9EMERWTFJrREc2UkY5Q3FOS3pzTHVLNVF5amdWTXgtOGkxekN3WFRQRmlaMmlhbmZxbGx6VFlCdDMyQVFYVXRiN083bw?oc=5",
-      "source": "36Kr",
-      "published_at": "2026-11-24T11:07:14+00:00",
+      "id": "e790527cac7092cb",
+      "title": "As AI spend shifts toward clinical care, IT decision-makers take their time",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPRHhhcXEyUTB1U1FCRjdhWVRpWjdqMldaSWF2bzRhd1QwSHN4XzRXaGxHaE1NRkxqeGdHbFp0NmpkRlc3aEhnSjFfVHJHb1FUbzRzdnJRYXRtTEVVWU5xMjcxYVBRV3JyOE9MS0h1elhaZ0IzaGFlUlZHOEhuazM0N2FRc1UyUFJKODZSUzRqZkNXQjVUbGVQYXhXQm05MGRsTFR2VTBicWUwQlpEM1E?oc=5",
+      "source": "Healthcare IT News",
+      "published_at": "2026-11-25T16:30:00+00:00",
       "category": "health",
       "kind": "news",
       "summary": ""
     },
     {
-      "id": "ebfb1f129b554a1b",
-      "title": "How artificial intelligence is offering new hope for stroke patients in the Last Frontier",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOYkVfZVlKWlN6M00wcE1ETkdKVTh2VkcxN2dCQWZueGlkMnM2X2pUdWxMSkdTY09qZmpvd0JncTRfUEhCZld3SUN0NEN6YkR2bVdzVDUtdHdBNjNPQlp3bDhGU0Q1cXlyMGVGeDNyMUFiNGw0WnJja3hiTm5ibzhtZjBFZnUyNjQ2SVpnQklRek83LW8yRXhnZXgzQlA3SmJJTFA0LQ?oc=5",
-      "source": "STAT",
-      "published_at": "2026-11-24T09:37:05+00:00",
+      "id": "75b13cbc59769604",
+      "title": "Public Healthcare AI Network launched in South Korea",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUkI5Y01mVzgta1N5OHo1T1VVc0ZKM044YnVPWmJfUnBxQURhdTFnbHZDYzNaTjhUNE1yZW5kUDF0RTJ4dlBMZFNJNE5xV1BTQ0ctWGdVRmo2dGhOdEtPQ29aNm4zMXAybl9xQ3FGa1N5T0g0aUZfeTFfb3JDTEc2TWJFM3hEczBfY0hLUjVOMU1LUnczcVhB?oc=5",
+      "source": "Healthcare IT News",
+      "published_at": "2026-11-25T00:26:40+00:00",
       "category": "health",
       "kind": "news",
-      "summary": ""
+      "summary": "",
+      "insight": {
+        "digest": "韩国启动公共医疗 AI 网络试点，通过电子病历接入本地验证的医疗 AI，计划到 2029 年连通全国 72 家公立医院。",
+        "analysis": "把 AI 放进现有病历入口有利于减少工作流切换。跨院推广还要验证数据字段一致性、适用人群和实际使用情况。",
+        "takeaway": "跟踪已接入医院数、实际活跃使用量和各医院是否公开本地验证结果。"
+      }
     },
     {
       "id": "0b260d07579db847",
@@ -103,7 +113,7 @@
       "published_at": "2026-11-24T23:02:07+00:00",
       "category": "product",
       "kind": "news",
-      "summary": "I gave a keynote at the AI Engineer Code Summit a couple of weeks ago, constructed around the idea that there have been three significant inflection points in the abilities of LLMs and coding agents in the past twelve months. Here's the video of the talk. In this post I'm going to pull out the major inflection point theme and interrogate it more deeply. Coding agents in November 2025 Today, November 24th 2026, is the one year anniversary of the release of Claude Opus 4.5 . With hindsight, this was a consequential model. In the Opus 4.5 announcement, Anthropic said: Testers noted that Claude Opus 4.5 handles ambiguity and reasons about tradeoffs without hand-holding. They told us that, when pointed at a complex, multi-system bug, Opus 4.5 figures out the fix. They said that tasks that were near-impossible for Sonnet 4.5 just a few weeks ag",
+      "summary": "",
       "insight": {
         "digest": "Simon Willison 用自己的任务复盘模型能力变化，其中一个转折是编码 Agent 的默认产出开始稳定达到日常使用要求。",
         "analysis": "产品能力拐点往往体现在人工纠正次数和任务交付时间。一次成功演示很难衡量日常接手成本。",

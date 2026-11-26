@@ -74,7 +74,7 @@ Cookie 只保存在 GitHub Actions Secret 中。不要写入 Issue、README、�
 - 编辑 [晨报配置](../../config/morning-edition.json) 维护栏目与检索词。单期最多 10 条，栏目目标配额为 2、2、3、1、2。
 - 新闻发现使用 Google News RSS 和媒体原始 RSS，研究来源为 Europe PMC。已启用的 X 采集可通过公共 Feed 提供候选。
 - 可配置 Actions Secret `RADAR_EDITOR_API_KEY` 启用中文分析，模型可通过 `RADAR_EDITOR_MODEL` 指定。有摘要的条目才会提交给模型。网页展示来源摘要和原文链接，也可从首页订阅晨报 RSS。
-- 本地验证命令为 `python -m reporters.morning_edition --output /tmp/radar-morning`。生成器写出当期 JSON、历史索引和 RSS。当天候选减少时保留较完整的一期。
+- 本地验证命令为 `python -m reporters.morning_edition --output /tmp/radar-morning`。生成器写出当期 JSON、历史索引和 RSS。满 10 条的一期保留其发布快照，人工重建可使用 `--refresh`。当天候选减少时保留较完整的一期。
 
 ## 自托管与生产替代
 

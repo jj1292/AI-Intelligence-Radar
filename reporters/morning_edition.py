@@ -359,12 +359,17 @@ def main():
     parser.add_argument("--config", type=Path, default=Path("config/morning-edition.json"))
     parser.add_argument("--feed", type=Path, default=Path("docs/feed.json"))
     parser.add_argument("--output", type=Path, default=Path("docs"))
+    parser.add_argument("--refresh", action="store_true", help="Rebuild an already complete edition.")
     args = parser.parse_args()
     config = json.loads(args.config.read_text(encoding="utf-8"))
     now = datetime.now(timezone.utc)
     edition_date = local_date(now)
     archive = args.output / "editions"
     edition_path = archive / f"{edition_date}.json"
+    current = json.loads(edition_path.read_text(encoding="utf-8")) if edition_path.exists() else None
+    if current and len(current["items"]) >= LIMIT and not args.refresh:
+        print(f"Edition {edition_date} already published with {LIMIT} stories.")
+        return
     previous_files = [path for path in sorted(archive.glob("????-??-??.json"), reverse=True)
                       if path.stem < edition_date][:3]
     previous = [row for path in previous_files for row in json.loads(path.read_text(encoding="utf-8"))["items"]]
@@ -372,8 +377,7 @@ def main():
     if not rows:
         print("No eligible stories. Retained the last published edition.")
         return
-    if edition_path.exists():
-        current = json.loads(edition_path.read_text(encoding="utf-8"))
+    if current:
         if len(rows) < len(current["items"]):
             print("Retained the fuller edition for the same date.")
             return
