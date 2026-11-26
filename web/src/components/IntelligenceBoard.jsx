@@ -56,6 +56,42 @@ function ResearchTrends({ data }) {
   );
 }
 
+function Watchlists({ groups }) {
+  const [index, setIndex] = useState(0);
+  if (!groups?.length) return null;
+  const group = groups[index] || groups[0];
+  return (
+    <section className="morning-edition radar-trends" id="watchlists" aria-labelledby="watchlists-title">
+      <h2 id="watchlists-title">重点跟踪</h2>
+      <nav className="morning-tabs" aria-label="重点跟踪栏目">
+        {groups.map((entry, position) => (
+          <button key={entry.id} type="button" aria-pressed={group.id === entry.id}
+            onClick={() => setIndex(position)}>{entry.label}</button>
+        ))}
+      </nav>
+      <div className="morning-grid">
+        {group.subjects.map((subject) => (
+          <article className="morning-lane" key={subject.name}>
+            <h3><a href={subject.url} target="_blank" rel="noreferrer">{subject.name} ↗</a></h3>
+            {subject.reference && <p>
+              <time>{subject.reference.date}</time>{" · "}
+              <a href={subject.reference.url} target="_blank" rel="noreferrer">{subject.reference.title}</a>
+            </p>}
+            {subject.stories.length > 0 ? (
+              <ul>{subject.stories.map((story) => (
+                <li key={story.url}>
+                  <a href={story.url} target="_blank" rel="noreferrer">{story.title}</a>
+                  {" · "}{story.type}{" · "}{story.source}
+                </li>
+              ))}</ul>
+            ) : <small>近一周暂无新增报道。</small>}
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default function IntelligenceBoard() {
   const [data, setData] = useState(null);
   const [research, setResearch] = useState(null);
@@ -87,6 +123,7 @@ export default function IntelligenceBoard() {
 
   return (
     <main>
+      <Watchlists groups={data?.watchlists} />
       <div className="radar-filter morning-tabs" aria-label="情报栏目">
         <button type="button" aria-pressed={!category} onClick={() => setCategory("")}>全部情报</button>
         {categories.map(([key, label]) => (

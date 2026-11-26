@@ -5,7 +5,9 @@
     "queries": [
       "\"AI agent\" (\"personal assistant\" OR \"personal agent\" OR \"shopping agent\" OR OpenClaw) (site:techcrunch.com OR site:theverge.com OR site:about.fb.com OR site:openclaw.ai OR site:reuters.com)",
       "(个人智能体 OR AI助手 OR Agent) (字节 OR 豆包 OR 腾讯 OR 阿里 OR 百度 OR 智谱 OR MiniMax OR Kimi) (site:36kr.com OR site:qbitai.com OR site:jiqizhixin.com)",
-      "(\"AI agent\" OR \"personal assistant\") (interview OR benchmark OR \"case study\" OR reasoning OR \"computer use\") (site:anthropic.com OR site:openai.com OR site:about.fb.com OR site:openclaw.ai OR site:simonwillison.net OR site:theverge.com OR site:techcrunch.com)"
+      "(\"AI agent\" OR \"personal assistant\") (interview OR benchmark OR \"case study\" OR reasoning OR \"computer use\") (site:anthropic.com OR site:openai.com OR site:about.fb.com OR site:openclaw.ai OR site:simonwillison.net OR site:theverge.com OR site:techcrunch.com)",
+      "(\"personal AI agent\" OR \"OpenAI Dots\" OR \"Today.ai\" OR \"Meta Muse\" OR \"Qwen Go\" OR AutoGLM OR MaxClaw) (site:openai.com OR site:today.ai OR site:about.fb.com OR site:techcrunch.com OR site:axios.com)",
+      "(个人智能体 OR AI助理 OR Agent) (小豆 OR 千问Go OR AutoGLM OR MaxClaw) (site:36kr.com OR site:yicai.com OR site:nbd.com.cn OR site:qbitai.com)"
     ]
   },
   "industry": {
@@ -14,7 +16,9 @@
     "queries": [
       "(AI OR \"artificial intelligence\") (startup OR funding OR acquisition) (\"Silicon Valley\" OR \"San Francisco\" OR US OR China) (site:reuters.com OR site:techcrunch.com OR site:fortune.com)",
       "(AI OR agent) (OpenAI OR Anthropic OR Google OR Meta OR NVIDIA OR Microsoft OR Apple) (launch OR pricing OR partnership) (site:techcrunch.com OR site:reuters.com OR site:theverge.com OR site:openai.com OR site:anthropic.com OR site:about.fb.com)",
-      "(人工智能 OR 大模型 OR AI) (DeepSeek OR 阿里 OR 腾讯 OR 字节 OR 百度 OR 智谱 OR MiniMax OR 月之暗面 OR 融资) (site:36kr.com OR site:qbitai.com OR site:caixin.com OR site:jiqizhixin.com)"
+      "(人工智能 OR 大模型 OR AI) (DeepSeek OR 阿里 OR 腾讯 OR 字节 OR 百度 OR 智谱 OR MiniMax OR 月之暗面 OR 融资) (site:36kr.com OR site:qbitai.com OR site:caixin.com OR site:jiqizhixin.com)",
+      "(MiniMax OR 智谱 OR OpenAI OR Anthropic) (融资 OR 财报 OR 上市 OR 发售 OR 模型 OR 配售 OR 招股) (site:hkexnews.hk OR site:yicai.com OR site:stcn.com OR site:36kr.com)",
+      "(OpenAI OR Anthropic OR MiniMax OR \"Z.ai\") (funding OR IPO OR earnings OR investment OR model OR acquisition) (site:reuters.com OR site:openai.com OR site:anthropic.com OR site:minimax.io OR site:ir.minimax.cn OR site:z.ai)"
     ]
   },
   "health": {
@@ -33,6 +37,13 @@
       "(\"AI product\" OR \"AI agent\" OR \"LLM evaluation\") (design OR evaluation OR workflow) (site:figma.com/blog OR site:anthropic.com OR site:blog.google OR site:openai.com OR site:svpg.com OR site:nngroup.com OR site:hamel.dev)",
       "(AI产品 OR 智能体 OR 大模型) (产品设计 OR 产品经理 OR 评测 OR 用户研究 OR 交互) (腾讯 OR 字节 OR 阿里 OR 百度 OR 美团 OR 蚂蚁) (site:mp.weixin.qq.com OR site:36kr.com OR site:woshipm.com)",
       "(\"AI product\" OR \"AI agent\" OR \"AI evals\") (design OR evaluation OR workflow) (site:x.com/shreyas OR site:x.com/lennysan OR site:x.com/hamelhusain OR site:x.com/figma OR site:x.com/GoogleDesign)"
+    ]
+  },
+  "research_agents": {
+    "label": "科研 Agent",
+    "slots": 0,
+    "queries": [
+      "(\"research agent\" OR \"deep research\" OR \"scientific discovery\") (\"Kimi Researcher\" OR Elicit OR FutureHouse OR Consensus OR Asta) (site:kimi.com OR site:elicit.com OR site:futurehouse.org OR site:allenai.org OR site:techcrunch.com OR site:venturebeat.com)"
     ]
   },
   "research": {

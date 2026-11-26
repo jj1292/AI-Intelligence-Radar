@@ -1,0 +1,37 @@
+{
+  "vendors": {
+    "label": "中美头部 AI 厂商",
+    "subjects": [
+      {"name": "MiniMax", "aliases": ["MiniMax", "稀宇科技", "海螺AI"], "url": "https://ir.minimax.cn/news-events/new-releases",
+       "reference": {"date": "2026-11-24", "title": "发布 H3 Family 生态进展", "url": "https://www.minimax.io/h3-family"}},
+      {"name": "智谱 · Z.ai", "aliases": ["智谱", "Z.ai", "GLM-5.4", "AutoGLM"], "url": "https://www.zhipuai.cn/investor-relations",
+       "reference": {"date": "2026-11-23", "title": "发布 GLM-5.4，采用 Loop Transformer", "url": "https://z.ai/blog/glm-5.4"}},
+      {"name": "OpenAI", "aliases": ["OpenAI", "ChatGPT", "GPT-6.2"], "url": "https://openai.com/news/",
+       "reference": {"date": "2026-11-17", "title": "推出 GPT-6.2 Astra 和 Sol", "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"}},
+      {"name": "Anthropic · Claude", "aliases": ["Anthropic", "Claude"], "url": "https://investor.anthropic.com/news-and-events/news/default.aspx",
+       "reference": {"date": "2026-11-20", "title": "公告 IPO 完成及超额配售行权", "url": "https://investor.anthropic.com/news-and-events/news/default.aspx"}}
+    ]
+  },
+  "personal": {
+    "label": "个人 Agent",
+    "subjects": [
+      {"name": "OpenAI Dots", "aliases": ["OpenAI Dots", "ChatGPT Dots"], "url": "https://openai.com/index/introducing-dots/"},
+      {"name": "Today.ai", "aliases": ["Today.ai", "Today AI", "Today Team"], "url": "https://today.ai/articles/blog/what-is-today"},
+      {"name": "Meta Muse", "aliases": ["Meta Muse", "Muse AI", "AI agent Muse", "Muse agent"], "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/"},
+      {"name": "字节 · 豆包小豆", "aliases": ["豆包", "小豆", "Doubao"], "url": "https://www.doubao.com/",
+       "reference": {"date": "2026-11-24", "title": "豆包小豆开启公测", "url": "https://www.36kr.com/p/4083578123184773"}},
+      {"name": "阿里 · 千问 Go!", "aliases": ["千问Go", "千问 Go", "Qwen Go"], "url": "https://www.alibabagroup.com/"},
+      {"name": "智谱 · AutoGLM", "aliases": ["AutoGLM", "Open-AutoGLM"], "url": "https://autoglm.zhipuai.cn/"},
+      {"name": "MiniMax · MaxClaw", "aliases": ["MaxClaw", "MaxHermes", "MiniMax Agent"], "url": "https://agent.minimax.io/"}
+    ]
+  },
+  "research_agents": {
+    "label": "科研 Agent",
+    "subjects": [
+      {"name": "月之暗面 · Kimi Researcher", "aliases": ["Kimi Researcher", "Kimi-Researcher", "Kimi Deep Research"], "url": "https://www.kimi.com/en/help/deep-research/deep-research-faq"},
+      {"name": "Elicit", "aliases": ["Elicit"], "url": "https://elicit.com/"},
+      {"name": "FutureHouse", "aliases": ["FutureHouse"], "url": "https://www.futurehouse.org/"},
+      {"name": "Ai2 · Asta", "aliases": ["Ai2 Asta", "Asta Paper Finder", "Allen Institute for AI Asta"], "url": "https://asta.allen.ai/"}
+    ]
+  }
+}

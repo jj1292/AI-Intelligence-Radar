@@ -52,6 +52,51 @@ def publisher(row):
     return re.sub(r"[^a-z0-9\u4e00-\u9fff]", "", row["source"].casefold().removesuffix(".com"))
 
 
+def build_watchlists(config, candidates, now):
+    def event_type(title):
+        if re.search(r"\b(IPO|funding|raises|raised|acqui\w*|investment|earnings|financial results|revenue)\b|融资|上市|配售|财报|业绩|收购|招股", title, re.I):
+            return "资本与业绩"
+        if re.search(r"\b(model|weights|inference|benchmark)\b|大模型|开源|模型|权重", title, re.I):
+            return "模型与研究"
+        return "产品与公司动态"
+
+    recent = sorted(
+        (row for row in candidates if in_scope(row) and now - timedelta(days=7) <= timestamp(row) <= now),
+        key=timestamp, reverse=True,
+    )
+    groups = []
+    for key, group in config.items():
+        subjects = []
+        for subject in group["subjects"]:
+            aliases = [
+                (r"(?<![a-z0-9])" + re.escape(alias) + r"(?![a-z0-9])") if alias.isascii()
+                else re.escape(alias)
+                for alias in subject["aliases"]
+            ]
+            matcher = re.compile("|".join(aliases), re.IGNORECASE)
+            stories = []
+            for row in recent:
+                if not matcher.search(row["title"]) or any(similar(row, old) for old in stories):
+                    continue
+                stories.append(row)
+                if len(stories) == 12:
+                    break
+            first = stories[:1]
+            if first:
+                other = next((row for row in stories[1:] if event_type(row["title"]) != event_type(first[0]["title"])), None)
+                first.extend([other] if other else stories[1:2])
+            card = {"name": subject["name"], "url": subject["url"], "stories": [
+                {**{field: row[field] for field in ("title", "url", "source", "published_at")},
+                 "type": event_type(row["title"])} for row in first
+            ]}
+            reference = subject.get("reference")
+            if reference and (now.date() - timedelta(days=30)).isoformat() <= reference["date"] <= now.date().isoformat():
+                card["reference"] = reference
+            subjects.append(card)
+        groups.append({"id": key, "label": group["label"], "subjects": subjects})
+    return groups
+
+
 def build_intelligence(candidates, morning, categories, now):
     fresh = [
         row for row in candidates
@@ -152,6 +197,8 @@ def main():
     categories = {key: value["label"] for key, value in config.items()}
     rows = collect(config, now, include_papers=False) + x_candidates(args.data_dir / "feed.json")
     result = build_intelligence(rows, morning, categories, now)
+    watchlists = json.loads(Path("config/watchlists.json").read_text(encoding="utf-8"))
+    result["watchlists"] = build_watchlists(watchlists, rows, now)
     if not result["live"] and args.output.exists():
         print("No recent headlines. Retained previous hourly snapshot.")
         return

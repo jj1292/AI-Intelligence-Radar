@@ -1,7 +1,7 @@
 from datetime import datetime, timezone
 import unittest
 
-from reporters.hourly_intelligence import build_intelligence
+from reporters.hourly_intelligence import build_intelligence, build_watchlists
 from reporters.morning_edition import item, research_candidates
 from reporters.research_trends import summarize
 
@@ -10,6 +10,18 @@ NOW = datetime(2026, 11, 26, 2, tzinfo=timezone.utc)
 
 
 class HourlyIntelligenceTests(unittest.TestCase):
+    def test_watchlist_prefers_distinct_news_types(self):
+        group = {"vendors": {"label": "厂商", "subjects": [
+            {"name": "MiniMax", "aliases": ["MiniMax"], "url": "https://minimax.io"},
+        ]}}
+        candidates = [
+            item("MiniMax image model opens weights", "https://example.com/1", "A", NOW, "industry", "news"),
+            item("MiniMax introduces a voice model", "https://example.com/2", "A", NOW, "industry", "news"),
+            item("MiniMax releases earnings", "https://example.com/3", "B", NOW, "industry", "news"),
+        ]
+        stories = build_watchlists(group, candidates, NOW)[0]["subjects"][0]["stories"]
+        self.assertEqual([story["type"] for story in stories], ["模型与研究", "资本与业绩"])
+
     def test_morning_links_and_independent_publishers(self):
         title = "Meta Muse enables AI shopping workflow at Walmart"
         edition = item(title, "https://example.com/a", "Publisher A", NOW, "agent", "news")

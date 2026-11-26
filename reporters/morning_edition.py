@@ -131,9 +131,13 @@ def parse_news(data, category):
         if date.tzinfo is None:
             continue
         official = any(host == suffix or host.endswith("." + suffix.lstrip(".")) for suffix in OFFICIAL)
-        if category in {"industry", "agent", "research"} and not AI_TERM.search(title):
-            continue
-        if category == "agent" and not PERSONAL_AGENT.search(title):
+        named_agent = category == "agent" and bool(re.search(
+            r"\b(Dots|Today\.ai|Qwen Go|AutoGLM|MaxClaw)\b|千问\s*Go|小豆", title, re.I
+        ))
+        if category in {"industry", "agent", "research", "research_agents"} and not (AI_TERM.search(title) or named_agent):
+            if category != "industry" or not (CHINA.search(title) or US.search(title)):
+                continue
+        if category == "agent" and not (PERSONAL_AGENT.search(title) or named_agent):
             continue
         if category == "health" and (host.startswith(("pubmed.", "pmc.")) or not AI_TERM.search(title)):
             continue
@@ -191,7 +195,9 @@ def parse_papers(data):
 
 
 def news_url(query, category):
-    days = "7d" if category == "product" or "site:fda.gov" in query else "3d"
+    days = "7d" if category in {"product", "research_agents"} or any(
+        keyword in query for keyword in ("site:fda.gov", "site:hkexnews.hk", "IPO OR earnings")
+    ) else "3d"
     params = {"q": f"{query} when:{days}",
               "hl": "en-US", "gl": "US", "ceid": "US:en"}
     if re.search(r"[\u4e00-\u9fff]", query):

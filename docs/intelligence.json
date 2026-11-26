@@ -1,13 +1,30 @@
 {
-  "updated_at": "2026-11-26T03:05:51.677456+00:00",
+  "updated_at": "2026-11-26T03:11:56.496309+00:00",
   "categories": {
     "agent": "个人 Agent",
     "industry": "AI 公司与创业团队",
     "health": "中美医疗 AI 与政策",
     "product": "AI 产品经理实践",
+    "research_agents": "科研 Agent",
     "research": "医疗与大健康 AI 研究"
   },
   "live": [
+    {
+      "id": "b5ecc1350d7a5304",
+      "title": "“小豆”公测、千问Go对标竞速：实测从“聊天”到“主动办事”，个人AI助理规模化仍存关卡",
+      "category": "agent",
+      "region": "中国",
+      "published_at": "2026-11-26T00:10:00+00:00",
+      "sources": [
+        {
+          "source": "每日经济新闻",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uMzJzVmJBRUVJSmswWGtXajBaRUVHOXY4U0Q1OFFFZkFfRUJpOWtIQUdOeUN1MHplWWtXaEpRQ040NkwwSkFuZjlWYzg2WnBtZkdVOThwQVVVdUdOOWRteEpCVTZ6dw?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "b5ecc1350d7a5304"
+    },
     {
       "id": "fb19c642f1b75584",
       "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
@@ -41,20 +58,31 @@
       "event_id": "b4fddd7d3c17c325"
     },
     {
-      "id": "9d204a99ce77317c",
-      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "id": "a5a4444c18aadc50",
+      "title": "Anthropic's slide tests Wall Street's lofty bets on future AI profits",
       "category": "industry",
+      "region": "美国",
+      "published_at": "2026-11-25T18:35:00+00:00",
+      "sources": [
+        {
+          "source": "Reuters",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZE1sRHlKd3Y1aUpqaUVpeFQ3QjFmX191blVmM1gyS0hidW81RjFjSXJjQndnODAwQU9qb3VkYkJfZ3ppYzdBQ1J5cTRUaDMzamxvZVNsYzB6RUpiVzd2RlhxV2hKaDRjTFdhamRKZ3g3MXZDY1c5c3NMalpmc09aQ3JnNGEyQTR5NG85OW9VTEE1NW9md1VKdFYxeTlnbWNjd25UcjVwamhDX1pIaXc?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "a5a4444c18aadc50"
+    },
+    {
+      "id": "990b66f71863693b",
+      "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+      "category": "agent",
       "region": "美国",
       "published_at": "2026-11-25T14:10:18+00:00",
       "sources": [
         {
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
-          "kind": "news"
-        },
-        {
-          "source": "The Verge",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZEl1X3IwdWxWdGJBMUg5NGN2YnNob3dxOXpkMURXTFdGYkVBOEYtUEJKRTN5SjVSczdoVUF5X2dUZEdWRVFMVFJ3X1ctZk1nRGhoN0RWSFRtRnM1ZnFDZnZiNVlFMWlIckQ3RllDaWM0MzExelJQQmdvWEM3U3lPajNabEo?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHFMME9sY3NJajRoUmFLeXBMMEd5TkZWRkpMTkdKU1c1aUo5RnVxNjBmdHY5VkdQLUVKZDY2cTNqek1HVDVTWkJYSEhmellKWk9fNGQ2SW1OcnYxNWFZaWRxb05qQTJPbFd3WW5sOFFCU3hPaTFlSUJVdWdQWE9ySnQ5a3NfbFZIUVM5UlR2d1R1ZkFOLXNycTVFX3NIa05FaGd0UTZibw?oc=5",
           "kind": "news"
         }
       ],
@@ -62,7 +90,55 @@
         "date": "2026-11-26",
         "id": "9d204a99ce77317c"
       },
-      "event_id": "9d204a99ce77317c"
+      "event_id": "990b66f71863693b"
+    },
+    {
+      "id": "fabb22f1dd19f6c3",
+      "title": "AI“教父”杨立昆怒怼Anthropic CEO：渲染AI危险，只是想让开源模型非法-36氪",
+      "category": "industry",
+      "region": "中国",
+      "published_at": "2026-11-25T12:24:08+00:00",
+      "sources": [
+        {
+          "source": "www.36kr.com",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkbmdxb0Y1QXo2Q2k4YVJPM3g0d21PWjE5eEItS1pISTZTYlRWMXA4cG9vdXVHX3Vxd01uLW05ajBXdkZwdDJaVzN4VGVmblk?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "fabb22f1dd19f6c3"
+    },
+    {
+      "id": "e3cff68a9bd817ce",
+      "title": "秋风原上，百度续命-36氪",
+      "category": "industry",
+      "region": "中国",
+      "published_at": "2026-11-25T10:13:12+00:00",
+      "sources": [
+        {
+          "source": "36kr",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE42UWV0d042SS1INEtLTkVPaHJoYzRxbHV4cjhPTDJ1Vnl4bVhfOFl5Q3h2TWdyVVZBS01MWE9hTVhDc2JUQUt3NHFvZ0Z5NGM?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "e3cff68a9bd817ce"
+    },
+    {
+      "id": "723f51a2bcd92696",
+      "title": "68元的小豆，谁会买单？",
+      "category": "agent",
+      "region": "中国",
+      "published_at": "2026-11-25T09:41:00+00:00",
+      "sources": [
+        {
+          "source": "36Kr",
+          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zMEFHczJLR1R5WVd0cG05bWhnNWs0Xzc3RHJDa25aMWJrY1I5b1oxbmZDVXhMTlU5QjlzUGxpemp2cTQ1Tnl0V1lfdkl6Zw?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "723f51a2bcd92696"
     },
     {
       "id": "269fa4aaaf63ddc1",
@@ -84,93 +160,57 @@
       "event_id": "269fa4aaaf63ddc1"
     },
     {
-      "id": "56aba13d50d393d0",
-      "title": "Huang's return to Nvidia brings open-weight AI debate to forefront in Washington",
+      "id": "1f094e60b7acb9f5",
+      "title": "“模型太强而不敢发布”？OpenAI、Anthropic内部安全争议升温",
       "category": "industry",
       "region": "美国",
-      "published_at": "2026-11-24T22:29:00+00:00",
+      "published_at": "2026-11-25T07:05:44+00:00",
       "sources": [
         {
-          "source": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcE80eU84aDZfY24tLUhfMURrVFZHdkt3UHZuNjcxOXA3MUdWU0ZXUV9Od0d2QUJUWVFtZEN4X19BekxhdUFzcUNlVFYtZVdiMHgtTEFPQWtxU2xIS2NwUW1HVzJkUjNRS2tiMkJEa1ltcG42enk0czYyQXNjN0xibUd1SFNGU3pzd1diLWxDcFlmUVVqUmRoNVJ5VzVDNUVmMDJNRmxTY2dJSjJ3MGk4UUNhTk9DaGNLQ1E?oc=5",
-          "kind": "news"
-        }
-      ],
-      "morning": {
-        "date": "2026-11-26",
-        "id": "56aba13d50d393d0"
-      },
-      "event_id": "56aba13d50d393d0"
-    },
-    {
-      "id": "6215b23448714447",
-      "title": "OpenAI chief scientist thinks ‘perplexity’ might be the key to coordinating an AI slowdown",
-      "category": "industry",
-      "region": "美国",
-      "published_at": "2026-11-24T22:08:00+00:00",
-      "sources": [
-        {
-          "source": "Fortune",
-          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNekltRmYwR2l5VG1sMi1pRXhPM1RDTndLVG5LYzkyazZRV1BreF9SRFNGUmIta1FtQy1VM1B4M2hjOVByNWhPYkZMNU1SMHB2Ni1Ed2RFcjBiN2loelcyLVI3ZHMyMUp2Q04tckR5ZTdmUmZwaFdPUEZ3MWR6eFJXQVpKdGlvY3M1WnRyN1RjMjlSN3dWZGRPUWk5Z0EzQldWbnJyaUw2ZVdzWUprQVRMcGNCUnE5cEpKc0tMXw?oc=5",
-          "kind": "news"
-        }
-      ],
-      "morning": {
-        "date": "2026-11-26",
-        "id": "6215b23448714447"
-      },
-      "event_id": "6215b23448714447"
-    },
-    {
-      "id": "21c0753c79923770",
-      "title": "Anthropic shares tumble below $83 IPO price, on track to lose nearly $200 billion in value",
-      "category": "industry",
-      "region": "美国",
-      "published_at": "2026-11-24T20:47:56+00:00",
-      "sources": [
-        {
-          "source": "Reuters",
-          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMHBNOVY5RDc1NmxUUjNnZkNhLWROQkhUOFZpVmQ0SEI0UG9aSUpTTjhpV3EydTNkdW8xYm1KOWF6OXg2Z3BMaUJCWTE3WnFCM0hCZGNuQ3ZKUklsYUROVWQzdExOamNKVlJLRTgwYWpoYVdOUjlDY0pxTmxZajlvckJ4cHc0TG1hbW1ZUkszaDZ2M2Rvd3RqTWRFaVRENXVWT0pr?oc=5",
+          "source": "第一财经",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9nSVZtNWV3cE1aYVB1V1JENjRHTnRNRkt2ZDN5aWlRSFR6aHlKYWYwNURxUmhNV3VwZURrM3QySUJYNld0c1diR3k2clN6Sy0wTmtZ?oc=5",
           "kind": "news"
         }
       ],
       "morning": null,
-      "event_id": "21c0753c79923770"
+      "event_id": "1f094e60b7acb9f5"
     },
     {
-      "id": "31ed0aae060ce769",
-      "title": "不做“一统江湖”的单点软件：大模型下半场，德适科技想修一条医疗AI的“底层铁轨”",
-      "category": "health",
-      "region": "中国",
-      "published_at": "2026-11-24T11:07:14+00:00",
-      "sources": [
-        {
-          "source": "36Kr",
-          "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9EMERWTFJrREc2UkY5Q3FOS3pzTHVLNVF5amdWTXgtOGkxekN3WFRQRmlaMmlhbmZxbGx6VFlCdDMyQVFYVXRiN083bw?oc=5",
-          "kind": "news"
-        }
-      ],
-      "morning": {
-        "date": "2026-11-26",
-        "id": "31ed0aae060ce769"
-      },
-      "event_id": "31ed0aae060ce769"
-    },
-    {
-      "id": "3932fa7d7e9dcf80",
-      "title": "豆包有妹妹了，字节首款个人智能体开启公测，还能替我打电话",
+      "id": "3e113236a8fe9506",
+      "title": "千问Go全面开放免费代打电话服务，支持订餐厅、找快递、寻失物",
       "category": "agent",
       "region": "中国",
-      "published_at": "2026-11-23T21:36:00+00:00",
+      "published_at": "2026-11-25T02:29:00+00:00",
       "sources": [
         {
-          "source": "36Kr",
-          "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFB1dVR3QTE2WlU4QURZU0hjOUJkcG1jT25La25pdkhIcERDaDktcDAtTFlTVFdCYWdkcDVLNmtoNEgzQTVjcDBsNHFFc2kyUQ?oc=5",
+          "source": "每日经济新闻",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LMzVDanZ5ck1KZTJBbk1yaEtfSmNNZElvaXJJMHNTNXd5bEpaOEUwZEJPaUhCN0I3VjhNRi1KT3doMmlLaENyOG1HSEs3WWp4U1laTTBId3VvckdqNlZxck5mcGVjZw?oc=5",
           "kind": "news"
         }
       ],
       "morning": null,
-      "event_id": "3932fa7d7e9dcf80"
+      "event_id": "3e113236a8fe9506"
+    },
+    {
+      "id": "7efd56f3c58ae609",
+      "title": "豆包个人AI助理产品“小豆”开启邀请制公测",
+      "category": "agent",
+      "region": "中国",
+      "published_at": "2026-11-24T03:50:36+00:00",
+      "sources": [
+        {
+          "source": "第一财经",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DQ3pxM0VQRDY2UFhsWUw2SXJpemp0aUlYaEZjX3RFcUtUT2NFbFU3WHdKTUpQOWhaa21xMUdNSXV3MjViNVhqaE9nbjJCTWpGbzRn?oc=5",
+          "kind": "news"
+        },
+        {
+          "source": "每日经济新闻",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1CVDNSZEdEd05jSWt3dFl4eVlGUHlVUHdrV3FhNXF0T0h1aVEwOEFUbUQ2aGRrZ0RJNGo5MmJnMkFJV0NlUFgteWxXTEdudlMwQVc3RURIMC1UenVrbjZpci1naHdGQQ?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "7efd56f3c58ae609"
     },
     {
       "id": "0b260d07579db847",
@@ -209,24 +249,35 @@
         "id": "ebfb1f129b554a1b"
       },
       "event_id": "ebfb1f129b554a1b"
+    },
+    {
+      "id": "7283be47e893e346",
+      "title": "If the AI bubble bursts, it could create a serious problem for health care",
+      "category": "health",
+      "region": "",
+      "published_at": "2026-11-23T09:36:55+00:00",
+      "sources": [
+        {
+          "source": "STAT",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNVDl2THRGejl5ZlktLS1UdTZfTW5Pc2s3ZHV5dkVPeTh5akttU1AtVUNWV0hZSGd4V2JEMEhlRFF6ZUt6WUFtXzdLQ2JfNTFZejh3aGcwTllaakJmanlnbXJhbkhuSUo1TExEczVlUVdoZl9nOFhSVjNsaUhJaHloVUJsOENSVVd1QkpKZlpn?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "7283be47e893e346"
     }
   ],
   "signals": [
     {
-      "id": "9d204a99ce77317c",
+      "id": "990b66f71863693b",
       "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
-      "category": "industry",
+      "category": "agent",
       "region": "美国",
       "published_at": "2026-11-25T14:10:18+00:00",
       "sources": [
         {
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/",
-          "kind": "news"
-        },
-        {
-          "source": "The Verge",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZEl1X3IwdWxWdGJBMUg5NGN2YnNob3dxOXpkMURXTFdGYkVBOEYtUEJKRTN5SjVSczdoVUF5X2dUZEdWRVFMVFJ3X1ctZk1nRGhoN0RWSFRtRnM1ZnFDZnZiNVlFMWlIckQ3RllDaWM0MzExelJQQmdvWEM3U3lPajNabEo?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHFMME9sY3NJajRoUmFLeXBMMEd5TkZWRkpMTkdKU1c1aUo5RnVxNjBmdHY5VkdQLUVKZDY2cTNqek1HVDVTWkJYSEhmellKWk9fNGQ2SW1OcnYxNWFZaWRxb05qQTJPbFd3WW5sOFFCU3hPaTFlSUJVdWdQWE9ySnQ5a3NfbFZIUVM5UlR2d1R1ZkFOLXNycTVFX3NIa05FaGd0UTZibw?oc=5",
           "kind": "news"
         }
       ],
@@ -234,8 +285,8 @@
         "date": "2026-11-26",
         "id": "9d204a99ce77317c"
       },
-      "event_id": "9d204a99ce77317c",
-      "reports": 2,
+      "event_id": "990b66f71863693b",
+      "reports": 1,
       "insight": {
         "digest": "据 TechCrunch 转述，亚马逊与 Meta 正讨论让 Muse 连接亚马逊商城，搜索结果呈现和广告安排仍在谈判。",
         "analysis": "当 Agent 接手商品筛选，零售商需要重新决定搜索排名、广告曝光和售后归属。这些商业安排会影响接入速度。",
@@ -266,6 +317,29 @@
         "analysis": "产品能力拐点往往体现在人工纠正次数和任务交付时间。一次成功演示很难衡量日常接手成本。",
         "takeaway": "从真实用户工作中抽取三种高频任务，每次换模型记录首轮可用率、纠正次数和总用时。"
       }
+    },
+    {
+      "id": "7efd56f3c58ae609",
+      "title": "豆包个人AI助理产品“小豆”开启邀请制公测",
+      "category": "agent",
+      "region": "中国",
+      "published_at": "2026-11-24T03:50:36+00:00",
+      "sources": [
+        {
+          "source": "第一财经",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5DQ3pxM0VQRDY2UFhsWUw2SXJpemp0aUlYaEZjX3RFcUtUT2NFbFU3WHdKTUpQOWhaa21xMUdNSXV3MjViNVhqaE9nbjJCTWpGbzRn?oc=5",
+          "kind": "news"
+        },
+        {
+          "source": "每日经济新闻",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1CVDNSZEdEd05jSWt3dFl4eVlGUHlVUHdrV3FhNXF0T0h1aVEwOEFUbUQ2aGRrZ0RJNGo5MmJnMkFJV0NlUFgteWxXTEdudlMwQVc3RURIMC1UenVrbjZpci1naHdGQQ?oc=5",
+          "kind": "news"
+        }
+      ],
+      "morning": null,
+      "event_id": "7efd56f3c58ae609",
+      "reports": 2,
+      "insight": null
     }
   ],
   "agent_themes": [
@@ -276,7 +350,12 @@
         {
           "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/11/25/amazon-and-meta-reportedly-in-talks-to-lift-blockade-on-ai-agent-muse/"
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHFMME9sY3NJajRoUmFLeXBMMEd5TkZWRkpMTkdKU1c1aUo5RnVxNjBmdHY5VkdQLUVKZDY2cTNqek1HVDVTWkJYSEhmellKWk9fNGQ2SW1OcnYxNWFZaWRxb05qQTJPbFd3WW5sOFFCU3hPaTFlSUJVdWdQWE9ySnQ5a3NfbFZIUVM5UlR2d1R1ZkFOLXNycTVFX3NIa05FaGd0UTZibw?oc=5"
+        },
+        {
+          "title": "千问Go全面开放免费代打电话服务，支持订餐厅、找快递、寻失物",
+          "source": "每日经济新闻",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LMzVDanZ5ck1KZTJBbk1yaEtfSmNNZElvaXJJMHNTNXd5bEpaOEUwZEJPaUhCN0I3VjhNRi1KT3doMmlLaENyOG1HSEs3WWp4U1laTTBId3VvckdqNlZxck5mcGVjZw?oc=5"
         },
         {
           "title": "豆包有妹妹了，字节首款个人智能体开启公测，还能替我打电话",
@@ -304,6 +383,224 @@
           "title": "Meta brings its Muse AI assistant directly into Instagram DMs",
           "source": "TechCrunch",
           "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+        }
+      ]
+    }
+  ],
+  "watchlists": [
+    {
+      "id": "vendors",
+      "label": "中美头部 AI 厂商",
+      "subjects": [
+        {
+          "name": "MiniMax",
+          "url": "https://ir.minimax.cn/news-events/new-releases",
+          "stories": [
+            {
+              "title": "Anthropic万亿IPO冲击波：智谱、MiniMax大跌，市场或重估大模型定价逻辑",
+              "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9SVTNpZGEyRmRDdDdfQVNWRXg4ZXRGYVFONHNZYlF6WXNUX3plbzhqMTl3UjBGZXQ0NWh2SU1hUGVfME5zY3U3TDhBc1B0QQ?oc=5",
+              "source": "36Kr",
+              "published_at": "2026-11-20T14:16:00+00:00",
+              "type": "模型与研究"
+            }
+          ],
+          "reference": {
+            "date": "2026-11-24",
+            "title": "发布 H3 Family 生态进展",
+            "url": "https://www.minimax.io/h3-family"
+          }
+        },
+        {
+          "name": "智谱 · Z.ai",
+          "url": "https://www.zhipuai.cn/investor-relations",
+          "stories": [
+            {
+              "title": "智谱刚刚发了GLM-5.4，全新架构的那种！网友直呼：超过预期",
+              "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTFAzQ3ZKU2lDQWVRSlJyM19ucjE0N202c2pWeVZfRlZBYzlXeXNkREdLb2RuaDdkQ2JmRXdpQ3B1dGJDTDhxS2FNdjBCb0ZQVlM4cmlNUg?oc=5",
+              "source": "量子位",
+              "published_at": "2026-11-24T09:21:55+00:00",
+              "type": "产品与公司动态"
+            },
+            {
+              "title": "Anthropic万亿IPO冲击波：智谱、MiniMax大跌，市场或重估大模型定价逻辑",
+              "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9SVTNpZGEyRmRDdDdfQVNWRXg4ZXRGYVFONHNZYlF6WXNUX3plbzhqMTl3UjBGZXQ0NWh2SU1hUGVfME5zY3U3TDhBc1B0QQ?oc=5",
+              "source": "36Kr",
+              "published_at": "2026-11-20T14:16:00+00:00",
+              "type": "模型与研究"
+            }
+          ],
+          "reference": {
+            "date": "2026-11-23",
+            "title": "发布 GLM-5.4，采用 Loop Transformer",
+            "url": "https://z.ai/blog/glm-5.4"
+          }
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://openai.com/news/",
+          "stories": [
+            {
+              "title": "OpenAI says heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+              "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+              "source": "TechCrunch",
+              "published_at": "2026-11-25T20:03:27+00:00",
+              "type": "产品与公司动态"
+            },
+            {
+              "title": "“模型太强而不敢发布”？OpenAI、Anthropic内部安全争议升温",
+              "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9nSVZtNWV3cE1aYVB1V1JENjRHTnRNRkt2ZDN5aWlRSFR6aHlKYWYwNURxUmhNV3VwZURrM3QySUJYNld0c1diR3k2clN6Sy0wTmtZ?oc=5",
+              "source": "第一财经",
+              "published_at": "2026-11-25T07:05:44+00:00",
+              "type": "模型与研究"
+            }
+          ],
+          "reference": {
+            "date": "2026-11-17",
+            "title": "推出 GPT-6.2 Astra 和 Sol",
+            "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+          }
+        },
+        {
+          "name": "Anthropic · Claude",
+          "url": "https://investor.anthropic.com/news-and-events/news/default.aspx",
+          "stories": [
+            {
+              "title": "Anthropic’s Dario Amodei calls accusations of surrendering human control to AI ‘absurd’",
+              "url": "https://techcrunch.com/2026/11/25/anthropics-dario-amodei-calls-accusations-of-surrendering-human-control-to-ai-absurd/",
+              "source": "TechCrunch",
+              "published_at": "2026-11-25T19:44:24+00:00",
+              "type": "产品与公司动态"
+            },
+            {
+              "title": "AI“教父”杨立昆怒怼Anthropic CEO：渲染AI危险，只是想让开源模型非法-36氪",
+              "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBkbmdxb0Y1QXo2Q2k4YVJPM3g0d21PWjE5eEItS1pISTZTYlRWMXA4cG9vdXVHX3Vxd01uLW05ajBXdkZwdDJaVzN4VGVmblk?oc=5",
+              "source": "www.36kr.com",
+              "published_at": "2026-11-25T12:24:08+00:00",
+              "type": "模型与研究"
+            }
+          ],
+          "reference": {
+            "date": "2026-11-20",
+            "title": "公告 IPO 完成及超额配售行权",
+            "url": "https://investor.anthropic.com/news-and-events/news/default.aspx"
+          }
+        }
+      ]
+    },
+    {
+      "id": "personal",
+      "label": "个人 Agent",
+      "subjects": [
+        {
+          "name": "OpenAI Dots",
+          "url": "https://openai.com/index/introducing-dots/",
+          "stories": []
+        },
+        {
+          "name": "Today.ai",
+          "url": "https://today.ai/articles/blog/what-is-today",
+          "stories": []
+        },
+        {
+          "name": "Meta Muse",
+          "url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+          "stories": [
+            {
+              "title": "Amazon and Meta reportedly in talks to lift blockade on AI agent Muse",
+              "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSHFMME9sY3NJajRoUmFLeXBMMEd5TkZWRkpMTkdKU1c1aUo5RnVxNjBmdHY5VkdQLUVKZDY2cTNqek1HVDVTWkJYSEhmellKWk9fNGQ2SW1OcnYxNWFZaWRxb05qQTJPbFd3WW5sOFFCU3hPaTFlSUJVdWdQWE9ySnQ5a3NfbFZIUVM5UlR2d1R1ZkFOLXNycTVFX3NIa05FaGd0UTZibw?oc=5",
+              "source": "TechCrunch",
+              "published_at": "2026-11-25T14:10:18+00:00",
+              "type": "产品与公司动态"
+            },
+            {
+              "title": "Walmart teams up with Meta to bring Black Friday deals to AI agent Muse",
+              "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOblI0TVF2MWVsaGp3RmM1VEpuaHY1d1paaVg5WnFfRHlUa0Vucnpta3kwLUNzZDh4cmpRVnR6bzN3czJCMGQwVGx6cjgzUldYTnp3OFA5NGhseHFkTk9fNGhiNUxBU0FWU21mZjJRWHpuTDd0ZHU1cS0xNWpzRGtGdnlZY29VQndEbk5qbWZoVnNXck0zaTdhTURMR29BeGt0RmJHUEFuNDRQQQ?oc=5",
+              "source": "TechCrunch",
+              "published_at": "2026-11-24T21:32:38+00:00",
+              "type": "产品与公司动态"
+            }
+          ]
+        },
+        {
+          "name": "字节 · 豆包小豆",
+          "url": "https://www.doubao.com/",
+          "stories": [
+            {
+              "title": "“小豆”公测、千问Go对标竞速：实测从“聊天”到“主动办事”，个人AI助理规模化仍存关卡",
+              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uMzJzVmJBRUVJSmswWGtXajBaRUVHOXY4U0Q1OFFFZkFfRUJpOWtIQUdOeUN1MHplWWtXaEpRQ040NkwwSkFuZjlWYzg2WnBtZkdVOThwQVVVdUdOOWRteEpCVTZ6dw?oc=5",
+              "source": "每日经济新闻",
+              "published_at": "2026-11-26T00:10:00+00:00",
+              "type": "产品与公司动态"
+            },
+            {
+              "title": "68元的小豆，谁会买单？",
+              "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE0zMEFHczJLR1R5WVd0cG05bWhnNWs0Xzc3RHJDa25aMWJrY1I5b1oxbmZDVXhMTlU5QjlzUGxpemp2cTQ1Tnl0V1lfdkl6Zw?oc=5",
+              "source": "36Kr",
+              "published_at": "2026-11-25T09:41:00+00:00",
+              "type": "产品与公司动态"
+            }
+          ],
+          "reference": {
+            "date": "2026-11-24",
+            "title": "豆包小豆开启公测",
+            "url": "https://www.36kr.com/p/4083578123184773"
+          }
+        },
+        {
+          "name": "阿里 · 千问 Go!",
+          "url": "https://www.alibabagroup.com/",
+          "stories": [
+            {
+              "title": "“小豆”公测、千问Go对标竞速：实测从“聊天”到“主动办事”，个人AI助理规模化仍存关卡",
+              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5uMzJzVmJBRUVJSmswWGtXajBaRUVHOXY4U0Q1OFFFZkFfRUJpOWtIQUdOeUN1MHplWWtXaEpRQ040NkwwSkFuZjlWYzg2WnBtZkdVOThwQVVVdUdOOWRteEpCVTZ6dw?oc=5",
+              "source": "每日经济新闻",
+              "published_at": "2026-11-26T00:10:00+00:00",
+              "type": "产品与公司动态"
+            },
+            {
+              "title": "千问Go全面开放免费代打电话服务，支持订餐厅、找快递、寻失物",
+              "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LMzVDanZ5ck1KZTJBbk1yaEtfSmNNZElvaXJJMHNTNXd5bEpaOEUwZEJPaUhCN0I3VjhNRi1KT3doMmlLaENyOG1HSEs3WWp4U1laTTBId3VvckdqNlZxck5mcGVjZw?oc=5",
+              "source": "每日经济新闻",
+              "published_at": "2026-11-25T02:29:00+00:00",
+              "type": "产品与公司动态"
+            }
+          ]
+        },
+        {
+          "name": "智谱 · AutoGLM",
+          "url": "https://autoglm.zhipuai.cn/",
+          "stories": []
+        },
+        {
+          "name": "MiniMax · MaxClaw",
+          "url": "https://agent.minimax.io/",
+          "stories": []
+        }
+      ]
+    },
+    {
+      "id": "research_agents",
+      "label": "科研 Agent",
+      "subjects": [
+        {
+          "name": "月之暗面 · Kimi Researcher",
+          "url": "https://www.kimi.com/en/help/deep-research/deep-research-faq",
+          "stories": []
+        },
+        {
+          "name": "Elicit",
+          "url": "https://elicit.com/",
+          "stories": []
+        },
+        {
+          "name": "FutureHouse",
+          "url": "https://www.futurehouse.org/",
+          "stories": []
+        },
+        {
+          "name": "Ai2 · Asta",
+          "url": "https://asta.allen.ai/",
+          "stories": []
         }
       ]
     }
