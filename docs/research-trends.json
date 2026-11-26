@@ -2,36 +2,14 @@
   "start": "2026-11-13",
   "end": "2026-11-26",
   "totals": {
-    "journal": 5,
-    "preprint": 5
+    "journal": 0,
+    "preprint": 6
   },
   "themes": [
     {
-      "label": "影像与辅助诊断",
-      "journal": 4,
-      "preprint": 1,
-      "examples": [
-        {
-          "title": "An open agentic AI co-scientist for clinical and biomedical discovery.",
-          "kind": "journal",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43039361/"
-        },
-        {
-          "title": "ECG foundation models for cardiovascular screening in a cohort of young competitive athletes.",
-          "kind": "journal",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43067619/"
-        },
-        {
-          "title": "Patient- and Family-Expressed Needs and Burdens in Kidney-Related Online Discussions in Taiwan: Large Language Model–Based Analysis Across Clinical Contexts",
-          "kind": "preprint",
-          "url": "https://europepmc.org/article/PPR/PPR1373710"
-        }
-      ]
-    },
-    {
       "label": "临床工作流与决策支持",
       "journal": 0,
-      "preprint": 2,
+      "preprint": 3,
       "examples": [
         {
           "title": "Large Language Model Extraction and Inference of Physician Global Assessment from Clinical Notes in Juvenile Idiopathic Arthritis",
@@ -63,14 +41,14 @@
       ]
     },
     {
-      "label": "疾病风险与患者管理",
-      "journal": 1,
-      "preprint": 0,
+      "label": "影像与辅助诊断",
+      "journal": 0,
+      "preprint": 1,
       "examples": [
         {
-          "title": "A Meta-Research Review of Statistical Practices for Image-Reliant AI Tools Predicting Lung Cancer Outcomes.",
-          "kind": "journal",
-          "url": "https://pubmed.ncbi.nlm.nih.gov/43037489/"
+          "title": "Patient- and Family-Expressed Needs and Burdens in Kidney-Related Online Discussions in Taiwan: Large Language Model–Based Analysis Across Clinical Contexts",
+          "kind": "preprint",
+          "url": "https://europepmc.org/article/PPR/PPR1373710"
         }
       ]
     }
@@ -81,15 +59,15 @@
   ],
   "coverage": {
     "journal": {
-      "matched": 179,
-      "retrieved": 79,
-      "sources_ok": 8,
+      "matched": 82,
+      "retrieved": 30,
+      "sources_ok": 2,
       "sources_total": 8
     },
     "preprint": {
-      "matched": 103,
-      "retrieved": 30,
-      "sources_ok": 1,
+      "matched": 422,
+      "retrieved": 60,
+      "sources_ok": 2,
       "sources_total": 2
     }
   }
