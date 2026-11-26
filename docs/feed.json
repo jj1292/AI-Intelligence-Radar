@@ -7,6 +7,36 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.7",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.7",
+      "title": "OpenAI · rust-v0.174.0-alpha.7",
+      "content_text": "Release 0.174.0-alpha.7",
+      "date_published": "2026-11-26T02:55:12+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.174.0-alpha.7"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.6",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.6",
       "title": "OpenAI · 0.174.0-alpha.6",
@@ -5973,36 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "I’d like to know what real users get out of them, speed wise and also concurrent users. I’m talking about the workstation not the data center dgx b300 of course :) Thanks ! submitted by /u/spaham to r/LocalLLaMA [link] [comments]"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/LocalLLaMA/comments/1xvw34k/kittenmlkittentts2mini_hugging_face_texttospeech/",
-      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1xvw34k/kittenmlkittentts2mini_hugging_face_texttospeech/",
-      "title": "Selected Reddit communities · KittenML/kitten-tts-2-mini · Hugging Face - Text-to-Speech",
-      "content_text": "Kitten TTS 2 Mini 82M parameters, 16 languages, 118 voices, 24 kHz. ONNX with int8 weights ( 82.7 MB ; runs on CPU, no PyTorch needed), and the float32 PyTorch weights. Kitten TTS 2 Nano 17M parameters per language model, 8 languages, 37 voices, 24 kHz. ONNX with int8 weights ( 17.4 MB ; runs on CPU, no PyTorch needed), and the float32 PyTorch weights. Kitten TTS 2 Pico 7.2M parameters per languag",
-      "date_published": "2026-11-14T07:11:58+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "Kitten TTS 2 Mini 82M parameters, 16 languages, 118 voices, 24 kHz. ONNX with int8 weights ( 82.7 MB ; runs on CPU, no PyTorch needed), and the float32 PyTorch weights. Kitten TTS 2 Nano 17M parameters per language model, 8 languages, 37 vo"
         ]
       }
     }
