@@ -9,12 +9,12 @@
 <h1 align="center">🛰️ AI Intelligence Radar</h1>
 
 <p align="center">
-  <strong>Turn first-hand AI updates into traceable insights and a knowledge base that compounds over time.</strong>
+  <strong>AI intelligence across China and the US · daily briefings, hourly headlines, company watchlists, and healthcare research trends</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.9.0-7C3AED?style=for-the-badge" alt="Version v0.9.0" />
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/"><img src="https://img.shields.io/badge/AI%20Radar-Live-7C3AED?style=for-the-badge" alt="Live website" /></a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -22,7 +22,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/OpenAI-Codex-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI Codex" />
   <img src="https://img.shields.io/badge/Anthropic-Claude-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic Claude" />
-  <img src="https://img.shields.io/badge/Google-Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini" />
+  <img src="https://img.shields.io/badge/MiniMax-H3-4285F4?style=flat-square" alt="MiniMax H3" />
+  <img src="https://img.shields.io/badge/Z.ai-GLM-7C3AED?style=flat-square" alt="Z.ai GLM" />
   <img src="https://img.shields.io/badge/X-Signals-111827?style=flat-square&logo=x&logoColor=white" alt="X Signals" />
   <img src="https://img.shields.io/badge/Reddit-Community-FF4500?style=flat-square&logo=reddit&logoColor=white" alt="Reddit Community" />
   <img src="https://img.shields.io/badge/Markdown-Knowledge-0F766E?style=flat-square&logo=markdown&logoColor=white" alt="Markdown Knowledge Base" />
@@ -39,29 +40,32 @@
 
 <p align="center">
   <a href="https://jj1292.github.io/AI-Intelligence-Radar/">
-    <img src="assets/product-homepage.png" width="100%" alt="AI Intelligence Radar public website homepage" />
+    <img src="assets/product-homepage.png" width="100%" alt="AI Intelligence Radar homepage and daily briefing" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://jj1292.github.io/AI-Intelligence-Radar/"><strong>🌐 Explore the public website</strong></a>
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/"><strong>🌐 Open the website</strong></a> ·
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/#morning-edition">Daily briefing</a> ·
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/morning-edition.xml">Briefing RSS</a>
 </p>
 
 ---
 
 ## ✨ Why This Project
 
-There is no shortage of daily information, but only a small number of signals can genuinely improve how we understand the AI industry. This project is not about collecting the most content. It builds a reliable path from information to judgment.
+Read a source-linked AI briefing each morning, then check hourly headlines from China and the US. Important signals link to related headlines and briefing entries, with original sources available for verification.
 
-| 🛰️ First-hand Signals | 🧠 Insight Cards | 📈 Trend Radar |
-| --- | --- | --- |
-| Track official announcements, repositories, first-hand X accounts, and Reddit communities | Read the source, extract its thesis and mechanisms, analyze the change, and produce a decision-ready takeaway | A signal becomes a trend candidate only after it appears repeatedly across independent sources |
+| Section | Coverage |
+| --- | --- |
+| [Daily briefing](https://jj1292.github.io/AI-Intelligence-Radar/#morning-edition) | Up to 10 items per edition across personal agents, AI companies, healthcare AI and policy, product practice, and research themes. Past issues are available by date. |
+| [Important signals and hourly headlines](https://jj1292.github.io/AI-Intelligence-Radar/#important-signals) | Hourly collection from public sources. Signal cards link to relevant publishers and briefing entries. On desktop, headlines have an independently scrolling sidebar. |
+| [Watchlists](https://jj1292.github.io/AI-Intelligence-Radar/#watchlists) | Models, products, funding, and earnings from MiniMax, Z.ai, OpenAI, and Anthropic, alongside dedicated personal-agent and research-agent lists. |
+| [Healthcare AI research trends](https://jj1292.github.io/AI-Intelligence-Radar/#research-trends) | Themes from a 14-day search sample, with separate counts for selected journal publications and preprints, plus representative studies. |
 
-> [!TIP]
-> **The goal is not to read the entire internet for you. It is to preserve a small set of verifiable insights that remain useful over time.**
-
-> [!NOTE]
-> **v0.7 turns sources into one editable subscription list: maintainers add or remove sources on GitHub, the Agent republishes automatically, and subscribers only read public RSS/JSON feeds.**
+<a href="https://jj1292.github.io/AI-Intelligence-Radar/#live-intelligence">
+  <img src="assets/live-intelligence.png" width="100%" alt="Important signals and the independently scrolling hourly headlines sidebar" />
+</a>
 
 ## 🌈 Current Capabilities
 
@@ -106,40 +110,32 @@ There is no shortage of daily information, but only a small number of signals ca
 | 🔵 **T2** | Official and core-team X accounts | First-hand context and distribution signals | ![publisher](https://img.shields.io/badge/PUBLISHER-F59E0B?style=flat-square) |
 | 🟠 **T3** | Reddit AI communities | Problems, use cases, sentiment, and weak signals | ![ready](https://img.shields.io/badge/PUBLIC_RSS-22C55E?style=flat-square) |
 
-The default list contains the **official Anthropic Newsroom, 3 GitHub Release repositories, 3 Reddit communities, and 5 first-hand X accounts**. The official blog, GitHub, and Reddit run without authentication; X is enabled only after the maintainer configures a backend account. Day-to-day changes belong in [`config/subscriptions.json`](config/subscriptions.json); the advanced registry remains in [`config/sources.json`](config/sources.json).
+The website briefing draws on media RSS, public search, and official publications. Research samples come from Europe PMC. Official blogs, GitHub, and Reddit supply the rolling feeds. Account-based X collection requires maintainer configuration. Edit the [briefing queries](config/morning-edition.json), [watchlists](config/watchlists.json), or [rolling sources](config/subscriptions.json) separately.
 
 ## 🔄 How It Works
 
 ```mermaid
 flowchart LR
-    A["💻 GitHub Releases"] --> E["⚙️ Agent Loop"]
-    B["🏢 Official Releases"] --> E
-    C["𝕏 / Reddit"] --> E
-    E --> F["⏱️ 48h + Deduplicate"]
-    F --> G["🧭 Evidence Gate"]
-    G --> H["🗂️ Intelligence Cards"]
-    G --> I["📡 Trend Radar"]
-    G --> J["📰 AI Pulse Brief"]
-    E --> T["🧾 JSONL Trace"]
-
-    classDef source fill:#EEF2FF,stroke:#6366F1,color:#312E81,stroke-width:2px;
-    classDef process fill:#ECFEFF,stroke:#06B6D4,color:#164E63,stroke-width:2px;
-    classDef insight fill:#F5F3FF,stroke:#8B5CF6,color:#4C1D95,stroke-width:2px;
-    classDef output fill:#FAE8FF,stroke:#C026D3,color:#701A75,stroke-width:2px;
-    class A,B,C source;
-    class E,F process;
-    class G insight;
-    class H,I,J,T output;
+    N["Media RSS, public search, official publications"] --> H["Hourly headline collection"]
+    H --> W["Watchlists and live headlines"]
+    N --> M["Daily briefing"]
+    P["Europe PMC"] --> R["14-day research themes"]
+    R --> M
+    H --> S["Important signals"]
+    M --> S
+    M --> B["Briefing archive and RSS"]
+    L["Official blogs, GitHub, Reddit, and optional X"] --> F["Rolling RSS / JSON"]
 ```
 
-**AI Pulse is a daily output generated by Radar Agent, not a second product.** Dify remains available for visual orchestration and framework comparison; see the [`optional Dify adapter`](docs/adapters/dify.md).
+**AI Pulse is the local daily report generated by Radar Agent.** Dify remains available for visual orchestration and framework comparison; see the [`optional Dify adapter`](docs/adapters/dify.md).
 
 ## 🔔 Subscribe Directly
 
 Subscribers need no X account and do not need to install or run this project. Add either URL to Feedly, Inoreader, FreshRSS, NetNewsWire, or another feed reader:
 
 - **Public website**: [`https://jj1292.github.io/AI-Intelligence-Radar/`](https://jj1292.github.io/AI-Intelligence-Radar/)
-- **RSS 2.0**: [`https://jj1292.github.io/AI-Intelligence-Radar/feed.xml`](https://jj1292.github.io/AI-Intelligence-Radar/feed.xml)
+- **Briefing RSS**: [Daily selections](https://jj1292.github.io/AI-Intelligence-Radar/morning-edition.xml). The scheduled build starts at 07:17 Taipei time.
+- **Rolling RSS**: [`https://jj1292.github.io/AI-Intelligence-Radar/feed.xml`](https://jj1292.github.io/AI-Intelligence-Radar/feed.xml)
 - **JSON Feed 1.1**: [`https://jj1292.github.io/AI-Intelligence-Radar/feed.json`](https://jj1292.github.io/AI-Intelligence-Radar/feed.json)
 
 ```text
@@ -189,7 +185,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-70%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+[View automated test results](https://github.com/jj1292/AI-Intelligence-Radar/actions/workflows/test.yml)
 
 Current baseline: **all 3 cases pass with an average score of 2.0/2**. The v0.7 live path, without X credentials, read 55 GitHub/Reddit items, selected 46 for the feed, and completed with zero tool errors.
 
@@ -260,7 +256,8 @@ The specification is defined in [`schemas/intelligence-signal.schema.json`](sche
 | `v0.6` | Public RSS/JSON feeds, scheduled publisher, one authentication for all subscribers | ✅ Done |
 | `v0.7` | Editable subscription list, dynamic publishing, generic RSS/Atom, public Reddit feed | ✅ Done |
 | `v0.8` | Public website, continuous important signals, and the Firecrawl web adapter | ✅ Done |
-| `v0.9` | GitHub Models article analysis and the synthesis-analysis-output contract | 🚧 Current |
+| `v0.9` | Article analysis and structured output | ✅ Done |
+| Current website | Daily briefings, hourly headlines, watchlists, healthcare AI research themes, and scrollable news panel | ✅ Live |
 | `v1.0` | Memory, replay evaluation, periodic reviews, subscriptions, and source-quality scoring | 🌟 Vision |
 
 ## 📚 Documentation

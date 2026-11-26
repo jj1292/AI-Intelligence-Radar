@@ -9,12 +9,12 @@
 <h1 align="center">🛰️ AI Intelligence Radar</h1>
 
 <p align="center">
-  <strong>把一手 AI 动态变成可追溯的判断，再沉淀为自己的长期知识库。</strong>
+  <strong>中美 AI 情报站 · 每日晨报、小时热点、厂商追踪与医疗 AI 研究趋势</strong>
 </p>
 
 <p align="center">
   <a href="https://github.com/jj1292/ai-intelligence-radar/actions/workflows/test.yml"><img src="https://img.shields.io/github/actions/workflow/status/jj1292/ai-intelligence-radar/test.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=tests&color=22C55E" alt="Tests" /></a>
-  <img src="https://img.shields.io/badge/version-v0.9.0-7C3AED?style=for-the-badge" alt="Version v0.9.0" />
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/"><img src="https://img.shields.io/badge/AI%20Radar-Live-7C3AED?style=for-the-badge" alt="Live website" /></a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-2563EB?style=for-the-badge&logo=python&logoColor=white" alt="Python 3.10+" />
   <img src="https://img.shields.io/badge/license-MIT-06B6D4?style=for-the-badge" alt="MIT License" />
 </p>
@@ -22,7 +22,8 @@
 <p align="center">
   <img src="https://img.shields.io/badge/OpenAI-Codex-412991?style=flat-square&logo=openai&logoColor=white" alt="OpenAI Codex" />
   <img src="https://img.shields.io/badge/Anthropic-Claude-D97706?style=flat-square&logo=anthropic&logoColor=white" alt="Anthropic Claude" />
-  <img src="https://img.shields.io/badge/Google-Gemini-4285F4?style=flat-square&logo=googlegemini&logoColor=white" alt="Google Gemini" />
+  <img src="https://img.shields.io/badge/MiniMax-H3-4285F4?style=flat-square" alt="MiniMax H3" />
+  <img src="https://img.shields.io/badge/Z.ai-GLM-7C3AED?style=flat-square" alt="Z.ai GLM" />
   <img src="https://img.shields.io/badge/X-Signals-111827?style=flat-square&logo=x&logoColor=white" alt="X Signals" />
   <img src="https://img.shields.io/badge/Reddit-Community-FF4500?style=flat-square&logo=reddit&logoColor=white" alt="Reddit Community" />
   <img src="https://img.shields.io/badge/Markdown-Knowledge-0F766E?style=flat-square&logo=markdown&logoColor=white" alt="Markdown Knowledge Base" />
@@ -39,29 +40,32 @@
 
 <p align="center">
   <a href="https://jj1292.github.io/AI-Intelligence-Radar/">
-    <img src="assets/product-homepage.png" width="100%" alt="AI Intelligence Radar 公开网站首页" />
+    <img src="assets/product-homepage.png" width="100%" alt="AI Intelligence Radar 首页与每日晨报" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://jj1292.github.io/AI-Intelligence-Radar/"><strong>🌐 浏览公开网站</strong></a>
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/"><strong>🌐 浏览网站</strong></a> ·
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/#morning-edition">每日晨报</a> ·
+  <a href="https://jj1292.github.io/AI-Intelligence-Radar/morning-edition.xml">晨报 RSS</a>
 </p>
 
 ---
 
 ## ✨ 为什么做这个项目
 
-每天的信息很多，但真正能改变认知的信号很少。这个项目不追求“抓得最多”，而是建立一条从信息到判断的可靠链路。
+每天早上读一份可追溯的 AI 晨报，白天按小时查看中美热点。关键变化可以从重要信号跳到相关新闻或晨报原条目，再回到原始来源核验。
 
-| 🛰️ 一手信号 | 🧠 认知卡片 | 📈 趋势雷达 |
-| --- | --- | --- |
-| 跟踪官方发布、官方仓库、X 一手账号和 Reddit 社区 | 阅读正文后完成核心提炼、关键要点、分析与行动输出 | 只有多个独立信号连续出现，才升级为趋势候选 |
+| 栏目 | 覆盖内容 |
+| --- | --- |
+| [每日晨报](https://jj1292.github.io/AI-Intelligence-Radar/#morning-edition) | 每期最多 10 条，覆盖个人 Agent、AI 厂商、医疗 AI 与政策、产品实践和研究主题，支持按日期回看。 |
+| [重要信号与实时情报](https://jj1292.github.io/AI-Intelligence-Radar/#important-signals) | 每小时采集公开热点。重要信号汇集相关报道，可跳转晨报条目；桌面端可在右栏单独滚动查看实时情报。 |
+| [重点跟踪](https://jj1292.github.io/AI-Intelligence-Radar/#watchlists) | MiniMax、智谱、OpenAI、Anthropic 的模型、产品、融资与业绩；单列 Dots、Today.ai 等个人 Agent 和科研 Agent。 |
+| [医疗 AI 研究趋势](https://jj1292.github.io/AI-Intelligence-Radar/#research-trends) | 按主题汇总近 14 天检索样本，区分指定期刊论文和预印本，提供代表研究链接。 |
 
-> [!TIP]
-> **目标不是替你读完互联网，而是每天留下少量、可复核、以后还能用的知识。**
-
-> [!NOTE]
-> **v0.7 把订阅源变成一份可直接编辑的清单：维护者在 GitHub 网页增删来源，Agent 自动重新发布；普通订阅者只读公开 RSS/JSON。**
+<a href="https://jj1292.github.io/AI-Intelligence-Radar/#live-intelligence">
+  <img src="assets/live-intelligence.png" width="100%" alt="重要信号与可独立滚动的实时情报右栏" />
+</a>
 
 ## 🌈 当前能力
 
@@ -106,40 +110,32 @@
 | 🔵 **T2** | 官方与核心团队 X 账号 | 一手补充、扩散信号 | ![publisher](https://img.shields.io/badge/PUBLISHER-F59E0B?style=flat-square) |
 | 🟠 **T3** | Reddit AI 社区 | 问题、用例、情绪和弱信号 | ![ready](https://img.shields.io/badge/PUBLIC_RSS-22C55E?style=flat-square) |
 
-默认清单包含 **Anthropic 官方 Newsroom、3 个 GitHub Release 仓库、3 个 Reddit 社区和 5 个 X 一手账号**。官方博客、GitHub 与 Reddit 无需认证即可运行；X 只在维护者配置后台账号后启用。日常只需修改 [`config/subscriptions.json`](config/subscriptions.json)，高级来源注册表保留在 [`config/sources.json`](config/sources.json)。
+网站晨报的新闻候选来自媒体 RSS、公开检索和机构原文，研究样本经 Europe PMC 检索。官方博客、GitHub 与 Reddit 提供滚动订阅来源。后台 X 账号采集需要维护者配置。可分别编辑 [晨报检索词](config/morning-edition.json)、[跟踪名单](config/watchlists.json) 和 [滚动订阅源](config/subscriptions.json)。
 
 ## 🔄 系统如何工作
 
 ```mermaid
 flowchart LR
-    A["💻 GitHub Releases"] --> E["⚙️ Agent Loop"]
-    B["🏢 官方发布"] --> E
-    C["𝕏 / Reddit"] --> E
-    E --> F["⏱️ 48h + 去重"]
-    F --> G["🧭 证据与来源门"]
-    G --> H["🗂️ 情报卡片"]
-    G --> I["📡 趋势雷达"]
-    G --> J["📰 AI Pulse 日报"]
-    E --> T["🧾 JSONL Trace"]
-
-    classDef source fill:#EEF2FF,stroke:#6366F1,color:#312E81,stroke-width:2px;
-    classDef process fill:#ECFEFF,stroke:#06B6D4,color:#164E63,stroke-width:2px;
-    classDef insight fill:#F5F3FF,stroke:#8B5CF6,color:#4C1D95,stroke-width:2px;
-    classDef output fill:#FAE8FF,stroke:#C026D3,color:#701A75,stroke-width:2px;
-    class A,B,C source;
-    class E,F process;
-    class G insight;
-    class H,I,J,T output;
+    N["媒体 RSS、公开检索、机构原文"] --> H["每小时热点采集"]
+    H --> W["重点跟踪与实时情报"]
+    N --> M["每日晨报"]
+    P["Europe PMC"] --> R["近 14 天研究主题"]
+    R --> M
+    H --> S["重要信号"]
+    M --> S
+    M --> B["晨报归档与 RSS"]
+    L["官方博客、GitHub、Reddit 与可选 X"] --> F["滚动 RSS / JSON"]
 ```
 
-**AI Pulse 是 Radar Agent 生成的日报格式，不是第二个项目。** Dify 可用于可视化编排和框架对照，详见 [`Dify 可选适配器`](docs/adapters/dify.md)。
+**AI Pulse 是 Radar Agent 生成的本地日报。** Dify 可用于可视化编排和框架对照，详见 [`Dify 可选适配器`](docs/adapters/dify.md)。
 
 ## 🔔 直接订阅
 
 普通订阅者无需 X 账号，也不用安装或运行本项目。把下面任一地址添加到 Feedly、Inoreader、FreshRSS、NetNewsWire 或其他阅读器即可：
 
 - **公开网站**：[`https://jj1292.github.io/AI-Intelligence-Radar/`](https://jj1292.github.io/AI-Intelligence-Radar/)
-- **RSS 2.0**：[`https://jj1292.github.io/AI-Intelligence-Radar/feed.xml`](https://jj1292.github.io/AI-Intelligence-Radar/feed.xml)
+- **晨报 RSS**：[每日精选](https://jj1292.github.io/AI-Intelligence-Radar/morning-edition.xml)，台北时间 07:17 启动生成。
+- **滚动 RSS**：[`https://jj1292.github.io/AI-Intelligence-Radar/feed.xml`](https://jj1292.github.io/AI-Intelligence-Radar/feed.xml)
 - **JSON Feed 1.1**：[`https://jj1292.github.io/AI-Intelligence-Radar/feed.json`](https://jj1292.github.io/AI-Intelligence-Radar/feed.json)
 
 ```text
@@ -189,7 +185,7 @@ python3 -m unittest discover -s tests -v
 python3 evaluate_radar.py --strict
 ```
 
-![tests](https://img.shields.io/badge/tests-70%20passed-22C55E?style=for-the-badge&logo=checkmarx&logoColor=white)
+[查看自动测试结果](https://github.com/jj1292/AI-Intelligence-Radar/actions/workflows/test.yml)
 
 当前基线：**3 个案例全部通过，平均分 2.0/2**。v0.7 真实链路在无 X 凭证条件下读取 55 条 GitHub/Reddit 内容，筛选 46 条写入 Feed，0 个工具错误。
 
@@ -260,7 +256,8 @@ Markdown 是默认可移植格式，可以放在任意目录；Obsidian 只是�
 | `v0.6` | 公开 RSS/JSON、定时发布器、一次认证/多人订阅 | ✅ Done |
 | `v0.7` | 可编辑订阅清单、动态发布、通用 RSS/Atom、Reddit 公共源 | ✅ Done |
 | `v0.8` | 公开浏览网站、持续重要信号、Firecrawl 通用网页适配器 | ✅ Done |
-| `v0.9` | GitHub Models 正文分析、Insight Contract、提炼—分析—输出 | 🚧 Current |
+| `v0.9` | 正文分析和结构化输出 | ✅ Done |
+| 当前网站 | 每日晨报、小时热点、重点跟踪、医疗 AI 研究主题与滚动窗口 | ✅ Live |
 | `v1.0` | 记忆、回放评测、周/月复盘、主题订阅与来源质量评分 | 🌟 Vision |
 
 ## 📚 文档
