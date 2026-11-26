@@ -3,6 +3,7 @@
 Run the local server yourself and open the preview in the browser available to this environment. Do not give the user server-start instructions when you can run it.
 
 Hourly headlines link to matching morning stories. Important signals carry visible source links. Research coverage opens with topic counts and separates journal papers from preprints.
+Keep the live headlines in a bounded, vertically scrollable panel with a fixed desktop column width and a fluid single-column layout on smaller screens.
 
 Before making substantial visual changes, use the Product Design plugin's `get-context` skill when the visual source is unclear or no longer matches the current goal. When the user gives durable prototype-specific design feedback, preferences, or decisions, record them in `AGENTS.md`.
 

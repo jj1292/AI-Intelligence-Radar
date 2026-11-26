@@ -160,20 +160,24 @@ export default function IntelligenceBoard() {
         </section>
         <aside className="live-column" id="live-intelligence">
           <div className="section-heading compact-heading"><div>
-            <span className="section-kicker">HOURLY HEADLINES</span><h2>实时情报</h2>
+            <span className="section-kicker">HOURLY HEADLINES</span><h2 id="live-intelligence-title">实时情报</h2>
           </div></div>
           {data && <p className="radar-timestamp">最近采集 {TIME.format(new Date(data.updated_at))} · 台北时间</p>}
           {status === "loading" && <p role="status">情报加载中…</p>}
           {status === "unavailable" && <p role="status">暂无实时情报。</p>}
           {status === "ready" && !live.length && <p className="state-box">当前栏目暂无实时情报。</p>}
-          {live.map((row) => (
-            <article className="radar-story" id={`live-${row.id}`} key={row.id}>
-              <small>{TIME.format(new Date(row.published_at))} · {data.categories[row.category]}{row.region && ` · ${row.region}`}</small>
-              <h3><a href={row.sources[0].url} target="_blank" rel="noreferrer">{row.title} ↗</a></h3>
-              <References sources={row.sources} />
-              {row.morning && <a className="radar-morning-link" href={morningLink(row.morning)}>晨报收录 · {row.morning.date}</a>}
-            </article>
-          ))}
+          {live.length > 0 && (
+            <div className="radar-live-window" role="region" aria-labelledby="live-intelligence-title" tabIndex={0}>
+              {live.map((row) => (
+                <article className="radar-story" id={`live-${row.id}`} key={row.id}>
+                  <small>{TIME.format(new Date(row.published_at))} · {data.categories[row.category]}{row.region && ` · ${row.region}`}</small>
+                  <h3><a href={row.sources[0].url} target="_blank" rel="noreferrer">{row.title} ↗</a></h3>
+                  <References sources={row.sources} />
+                  {row.morning && <a className="radar-morning-link" href={morningLink(row.morning)}>晨报收录 · {row.morning.date}</a>}
+                </article>
+              ))}
+            </div>
+          )}
         </aside>
       </div>
       {data?.agent_themes?.length > 0 && <section className="morning-edition radar-trends" id="agent-trends">
