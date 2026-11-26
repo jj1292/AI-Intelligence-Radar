@@ -17,6 +17,7 @@ import {
 import ClickSpark from "./components/ClickSpark";
 import DecryptedText from "./components/DecryptedText";
 import Magnet from "./components/Magnet";
+import MorningEdition from "./components/MorningEdition";
 
 const FEED_URL = "./feed.json";
 const RSS_URL = "https://jj1292.github.io/AI-Intelligence-Radar/feed.xml";
@@ -449,7 +450,7 @@ export function App() {
               <Broadcast size={34} weight="fill" />
               <div>
                 <strong>AI INTELLIGENCE RADAR</strong>
-                <span>AI 行业情报雷达 · 官方更新追踪器</span>
+                <span>AI 情报站 · 每日晨报与实时情报</span>
               </div>
             </div>
             <div className="coordinates">
@@ -460,16 +461,16 @@ export function App() {
           <div className="headline-block">
             <h1>
               <DecryptedText
-                text="重要信号，"
+                text="AI 情报站"
                 speed={34}
                 maxIterations={8}
                 animateOn="view"
                 sequential
                 useOriginalCharsOnly
               />
-              <span>不是更多噪音</span>
+              <span>每日重要信号</span>
             </h1>
-            <p>追踪 Claude、Codex、Gemini 与顶尖 AI 团队的一手变化。</p>
+            <p>个人 Agent、行业动态、全球医疗 AI、产品实践与论文。</p>
           </div>
           <div className="dish-art" aria-hidden />
           <Magnet padding={44} magnetStrength={4} wrapperClassName="subscribe-magnet">
@@ -498,6 +499,8 @@ export function App() {
             ))}
           </div>
         </div>
+
+        <MorningEdition />
 
         <section className="control-deck">
           <nav className="filter-nav" aria-label="情报来源筛选">

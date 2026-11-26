@@ -67,6 +67,15 @@ Cookie 只保存在 GitHub Actions Secret 中。不要写入 Issue、README、�
 
 缺少变量或 Secret 时，工作流只跳过 X，仍会持续发布无需认证的 GitHub、RSS/Atom 和 Reddit 来源；同时不会尝试输出凭证。
 
+## AI 情报晨报
+
+晨报每天台北时间 07:37 开始采集，目标在 08:00 前发布。GitHub Actions 排队和 Pages 部署决定实际到达时间。
+
+- 编辑 [晨报配置](../../config/morning-edition.json) 维护栏目与检索词。单期最多 10 条，栏目目标配额为 2、2、3、1、2。
+- 新闻发现使用 Google News RSS 和媒体原始 RSS，研究来源为 Europe PMC。已启用的 X 采集可通过公共 Feed 提供候选。
+- 可配置 Actions Secret `RADAR_EDITOR_API_KEY` 启用中文分析，模型可通过 `RADAR_EDITOR_MODEL` 指定。有摘要的条目才会提交给模型。网页展示来源摘要和原文链接，也可从首页订阅晨报 RSS。
+- 本地验证命令为 `python -m reporters.morning_edition --output /tmp/radar-morning`。生成器写出当期 JSON、历史索引和 RSS。当天候选减少时保留较完整的一期。
+
 ## 自托管与生产替代
 
 Fork 仓库的开发者只有在运营自己的发布器时才需要配置账号；他们的下游订阅者同样不需要认证。

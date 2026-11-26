@@ -300,6 +300,48 @@ a {
   cursor: pointer;
 }
 
+.morning-edition {
+  padding: clamp(24px, 4vw, 58px);
+  border-bottom: 2px solid var(--ink);
+}
+
+.morning-header, .morning-controls, .morning-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.morning-header { justify-content: space-between; }
+.morning-header h2 { margin: 4px 0; font-size: clamp(32px, 5vw, 62px); }
+.morning-header p { margin: 0; }
+.morning-controls label { display: flex; gap: 8px; align-items: center; }
+.morning-controls select, .morning-tabs button {
+  border: 1px solid var(--ink);
+  padding: 7px 10px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+.morning-controls a { color: var(--ink); }
+.morning-tabs { margin: 22px 0; }
+.morning-tabs button { cursor: pointer; }
+.morning-tabs button[aria-pressed="true"] { background: var(--acid); }
+.morning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 16px;
+}
+.morning-lane { border-top: 3px solid var(--ink); padding: 14px 0; min-width: 0; }
+.morning-lane h3 { margin: 0 0 12px; }
+.morning-story { border-top: 1px solid var(--ink); padding: 12px 0; overflow-wrap: anywhere; }
+.morning-story h4 { font-size: 17px; line-height: 1.4; margin: 4px 0; }
+.morning-story h4 a { color: var(--ink); }
+.morning-story details { line-height: 1.55; font-size: 14px; }
+.morning-story summary { cursor: pointer; }
+.morning-story dt { font-weight: 800; }
+.morning-story dd { margin: 0 0 10px; }
+
 .content-grid {
   padding: 34px clamp(24px, 4vw, 70px) 80px;
   display: grid;

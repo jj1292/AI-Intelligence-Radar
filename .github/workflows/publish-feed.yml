@@ -3,18 +3,21 @@ name: publish-subscription-feeds
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
       - "config/subscriptions.json"
       - "agent/**"
       - "tools/insight_analysis.py"
       - "reporters/subscription_feed.py"
+      - "config/morning-edition.json"
+      - "reporters/morning_edition.py"
       - ".github/workflows/publish-feed.yml"
   schedule:
     - cron: "17 1,13 * * *"
+    - cron: "37 23 * * *"
 
 permissions:
   contents: write
-  models: read
 
 concurrency:
   group: subscription-feed-publisher
@@ -29,8 +32,6 @@ jobs:
       X_COOKIE_AUTH_TOKEN: ${{ secrets.X_COOKIE_AUTH_TOKEN }}
       X_COOKIE_CT0: ${{ secrets.X_COOKIE_CT0 }}
       FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      RADAR_ANALYSIS_MODEL: openai/gpt-4.1
       TWS_TELEMETRY: "0"
 
     steps:
@@ -51,6 +52,8 @@ jobs:
           fi
 
       - uses: actions/checkout@v4
+        with:
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -60,14 +63,20 @@ jobs:
         run: python -m pip install -r requirements.txt
 
       - name: Configure publisher account
-        if: steps.publisher-settings.outputs.configured == 'true'
+        id: x-account
+        if: steps.publisher-settings.outputs.configured == 'true' && github.event.schedule != '37 23 * * *'
+        continue-on-error: true
         env:
           X_TWSCRAPE_DB: ${{ runner.temp }}/twscrape.db
         run: python -m tools.x_twscrape setup-env
 
       - name: Collect and publish feeds
+        id: collect-feeds
+        continue-on-error: true
+        timeout-minutes: 8
+        if: github.event.schedule != '37 23 * * *'
         env:
-          X_PUBLISHER_CONFIGURED: ${{ steps.publisher-settings.outputs.configured }}
+          X_PUBLISHER_CONFIGURED: ${{ steps.x-account.outcome == 'success' }}
           X_TWSCRAPE_DB: ${{ runner.temp }}/twscrape.db
           RADAR_STATE_DIR: data/subscriptions/state
         shell: bash
@@ -84,18 +93,37 @@ jobs:
             --feed-max-items 200 \
             --hours 72
 
+      - name: Generate morning edition
+        if: github.event_name != 'schedule' || github.event.schedule == '37 23 * * *'
+        env:
+          RADAR_EDITOR_API_KEY: ${{ secrets.RADAR_EDITOR_API_KEY }}
+          RADAR_EDITOR_MODEL: ${{ vars.RADAR_EDITOR_MODEL || 'gpt-4.1-mini' }}
+        run: python -m reporters.morning_edition
+
       - name: Commit updated public feeds
         shell: bash
         run: |
           git config user.name "AI Intelligence Radar Bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/feed.xml docs/feed.json
-          if [[ -d data/subscriptions/state/checkpoints ]]; then
-            git add data/subscriptions/state/checkpoints
+          if [[ "${{ steps.collect-feeds.outcome }}" == "success" ]]; then
+            git add docs/feed.xml docs/feed.json
+            if [[ -d data/subscriptions/state/checkpoints ]]; then
+              git add data/subscriptions/state/checkpoints
+            fi
+          fi
+          if [[ -f docs/morning-edition.json ]]; then
+            git add docs/morning-edition.json docs/morning-edition.xml docs/morning-archive.json docs/editions
           fi
           if git diff --cached --quiet; then
             echo "No new feed items."
             exit 0
           fi
           git commit -m "Update public AI intelligence feeds"
-          git push origin HEAD:main
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+          done
+          exit 1

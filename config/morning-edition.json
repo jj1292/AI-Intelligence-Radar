@@ -1,0 +1,40 @@
+{
+  "agent": {
+    "label": "个人 Agent",
+    "slots": 2,
+    "queries": [
+      "\"AI agent\" (\"personal assistant\" OR \"personal agent\" OR \"shopping agent\" OR OpenClaw OR \"multi-app\") (site:techcrunch.com OR site:theverge.com OR site:about.fb.com OR site:openclaw.ai OR site:fortune.com OR site:reuters.com)"
+    ]
+  },
+  "industry": {
+    "label": "AI 公司与创业团队",
+    "slots": 2,
+    "queries": [
+      "(\"artificial intelligence\" OR \"generative AI\") (startup OR funding OR acquisition) (site:reuters.com OR site:techcrunch.com OR site:sifted.eu OR site:restofworld.org)",
+      "(\"AI model\" OR \"AI agent\") (launch OR pricing OR partnership) (site:theverge.com OR site:techcrunch.com OR site:reuters.com OR site:about.fb.com OR site:mistral.ai OR site:anthropic.com OR site:openai.com)"
+    ]
+  },
+  "health": {
+    "label": "全球医疗 AI 与政策",
+    "slots": 3,
+    "queries": [
+      "(\"artificial intelligence\" OR \"clinical AI\") (hospital OR diagnosis OR reimbursement OR validation) (site:statnews.com OR site:healthcareitnews.com OR site:healthcaredive.com OR site:fiercehealthcare.com OR site:reuters.com)",
+      "(\"AI\" OR \"artificial intelligence\") (clinical OR health OR \"medical device\") (site:fda.gov OR site:who.int OR site:ema.europa.eu OR site:gov.uk OR site:health.ec.europa.eu OR site:tga.gov.au OR site:hsa.gov.sg)",
+      "(医疗人工智能 OR 医疗AI) (监管 OR 医院 OR 商业化) (site:nhc.gov.cn OR site:nmpa.gov.cn OR site:caixin.com OR site:36kr.com)"
+    ]
+  },
+  "product": {
+    "label": "AI 产品经理实践",
+    "slots": 1,
+    "queries": [
+      "(\"AI product\" OR \"AI agent\" OR \"LLM evaluation\") (design OR evaluation OR workflow) (site:svpg.com OR site:nngroup.com OR site:producttalk.org OR site:hamel.dev OR site:simonwillison.net OR site:anthropic.com)"
+    ]
+  },
+  "research": {
+    "label": "医疗与大健康 AI 研究",
+    "slots": 2,
+    "queries": [
+      "(\"artificial intelligence\" OR \"large language model\") (clinical OR patient OR healthcare) (study OR trial OR preprint) (site:medrxiv.org OR site:nature.com OR site:jamanetwork.com OR site:thelancet.com OR site:bmj.com)"
+    ]
+  }
+}
