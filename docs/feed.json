@@ -7,6 +7,36 @@
   "language": "zh-CN",
   "items": [
     {
+      "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.9",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.9",
+      "title": "OpenAI · 0.174.0-alpha.9",
+      "content_text": "Release 0.174.0-alpha.9",
+      "date_published": "2026-11-27T17:01:23+00:00",
+      "authors": [
+        {
+          "name": "OpenAI"
+        }
+      ],
+      "tags": [
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "T1",
+        "github"
+      ],
+      "_radar": {
+        "company": "OpenAI",
+        "source_name": "openai/codex releases",
+        "source_tier": 1,
+        "platform": "github",
+        "impact_score": 1,
+        "confidence": 0.98,
+        "evidence": [
+          "Release 0.174.0-alpha.9"
+        ]
+      }
+    },
+    {
       "id": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.8",
       "url": "https://github.com/openai/codex/releases/tag/rust-v0.174.0-alpha.8",
       "title": "OpenAI · 0.174.0-alpha.8",
@@ -5973,36 +6003,6 @@
         "confidence": 0.65,
         "evidence": [
           "i'm using gemma 4 31b to do some long-text translation from chinese to vietnamese (hobby - not serious work). the biggest issue i'm having is language confusion (language contamination), i.e. output sometimes has non-latin characters not pr"
-        ]
-      }
-    },
-    {
-      "id": "https://www.reddit.com/r/OpenAI/comments/1xw2yh4/just_a_picture_of_the_staff_is_all_netizens_blame/",
-      "url": "https://www.reddit.com/r/OpenAI/comments/1xw2yh4/just_a_picture_of_the_staff_is_all_netizens_blame/",
-      "title": "Selected Reddit communities · “Just a picture of the staff is all”: Netizens blame Indian outsourcing for Microsoft 365 outage",
-      "content_text": "submitted by /u/iceCupa to r/OpenAI [link] [comments]",
-      "date_published": "2026-11-14T13:54:17+00:00",
-      "authors": [
-        {
-          "name": "Community"
-        }
-      ],
-      "tags": [
-        "community-feedback",
-        "use-cases",
-        "emerging-signals",
-        "T3",
-        "reddit"
-      ],
-      "_radar": {
-        "company": "Community",
-        "source_name": "Selected Reddit communities",
-        "source_tier": 3,
-        "platform": "reddit",
-        "impact_score": 2,
-        "confidence": 0.65,
-        "evidence": [
-          "submitted by /u/iceCupa to r/OpenAI [link] [comments]"
         ]
       }
     }
