@@ -1,15 +1,15 @@
 {
-  "start": "2026-11-13",
-  "end": "2026-11-26",
+  "start": "2026-11-14",
+  "end": "2026-11-27",
   "totals": {
     "journal": 0,
-    "preprint": 6
+    "preprint": 4
   },
   "themes": [
     {
       "label": "临床工作流与决策支持",
       "journal": 0,
-      "preprint": 3,
+      "preprint": 2,
       "examples": [
         {
           "title": "Large Language Model Extraction and Inference of Physician Global Assessment from Clinical Notes in Juvenile Idiopathic Arthritis",
@@ -24,23 +24,6 @@
       ]
     },
     {
-      "label": "药物研发与精准治疗",
-      "journal": 0,
-      "preprint": 2,
-      "examples": [
-        {
-          "title": "Prospective prediction of clinical trial outcomes from public evidence",
-          "kind": "preprint",
-          "url": "https://europepmc.org/article/PPR/PPR1373771"
-        },
-        {
-          "title": "Patient-Expressed Needs, Burdens and Barriers in Taiwanese Online Health Discussions: A Taiwan-Contextualized Friction Framework Applied With Large Language Model–Based Social Listening",
-          "kind": "preprint",
-          "url": "https://europepmc.org/article/PPR/PPR1373709"
-        }
-      ]
-    },
-    {
       "label": "影像与辅助诊断",
       "journal": 0,
       "preprint": 1,
@@ -51,6 +34,18 @@
           "url": "https://europepmc.org/article/PPR/PPR1373710"
         }
       ]
+    },
+    {
+      "label": "药物研发与精准治疗",
+      "journal": 0,
+      "preprint": 1,
+      "examples": [
+        {
+          "title": "Prospective prediction of clinical trial outcomes from public evidence",
+          "kind": "preprint",
+          "url": "https://europepmc.org/article/PPR/PPR1373771"
+        }
+      ]
     }
   ],
   "available": [
@@ -59,15 +54,15 @@
   ],
   "coverage": {
     "journal": {
-      "matched": 82,
-      "retrieved": 30,
-      "sources_ok": 2,
+      "matched": 0,
+      "retrieved": 0,
+      "sources_ok": 1,
       "sources_total": 8
     },
     "preprint": {
-      "matched": 422,
-      "retrieved": 60,
-      "sources_ok": 2,
+      "matched": 106,
+      "retrieved": 30,
+      "sources_ok": 1,
       "sources_total": 2
     }
   }
