@@ -1,15 +1,37 @@
 {
-  "start": "2026-11-14",
-  "end": "2026-11-27",
+  "start": "2026-11-15",
+  "end": "2026-11-28",
   "totals": {
-    "journal": 0,
-    "preprint": 4
+    "journal": 3,
+    "preprint": 5
   },
   "themes": [
     {
+      "label": "影像与辅助诊断",
+      "journal": 2,
+      "preprint": 1,
+      "examples": [
+        {
+          "title": "An open agentic AI co-scientist for clinical and biomedical discovery.",
+          "kind": "journal",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43039361/"
+        },
+        {
+          "title": "Opportunistic Risk Assessment of Major Osteoporotic Fractures from Routine Chest Radiographs Using Deep Learning.",
+          "kind": "journal",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43037483/"
+        },
+        {
+          "title": "Patient- and Family-Expressed Needs and Burdens in Kidney-Related Online Discussions in Taiwan: Large Language Model–Based Analysis Across Clinical Contexts",
+          "kind": "preprint",
+          "url": "https://europepmc.org/article/PPR/PPR1373710"
+        }
+      ]
+    },
+    {
       "label": "临床工作流与决策支持",
       "journal": 0,
-      "preprint": 2,
+      "preprint": 3,
       "examples": [
         {
           "title": "Large Language Model Extraction and Inference of Physician Global Assessment from Clinical Notes in Juvenile Idiopathic Arthritis",
@@ -24,14 +46,14 @@
       ]
     },
     {
-      "label": "影像与辅助诊断",
-      "journal": 0,
-      "preprint": 1,
+      "label": "疾病风险与患者管理",
+      "journal": 1,
+      "preprint": 0,
       "examples": [
         {
-          "title": "Patient- and Family-Expressed Needs and Burdens in Kidney-Related Online Discussions in Taiwan: Large Language Model–Based Analysis Across Clinical Contexts",
-          "kind": "preprint",
-          "url": "https://europepmc.org/article/PPR/PPR1373710"
+          "title": "A Meta-Research Review of Statistical Practices for Image-Reliant AI Tools Predicting Lung Cancer Outcomes.",
+          "kind": "journal",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/43037489/"
         }
       ]
     },
@@ -54,15 +76,15 @@
   ],
   "coverage": {
     "journal": {
-      "matched": 0,
-      "retrieved": 0,
-      "sources_ok": 1,
+      "matched": 93,
+      "retrieved": 48,
+      "sources_ok": 4,
       "sources_total": 8
     },
     "preprint": {
-      "matched": 106,
-      "retrieved": 30,
-      "sources_ok": 1,
+      "matched": 442,
+      "retrieved": 60,
+      "sources_ok": 2,
       "sources_total": 2
     }
   }
